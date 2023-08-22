@@ -1,4 +1,19 @@
 # studie-bertik
+TODO:
+- zacit tim large scope co jsme psali se slovaky
+- co jsme delali a proc
+- jaky mame vysledky
+- a hlavne ten vyhled do budoucnosti
+-- brutalni zmena, asi LLM
+-- Shrnout problematiku fakticity
+- prilohy: tak maximalne git
+- ukazat ze jsem neco udelal
+- a ze je to dizertabilni - tak na 5 clanku a jednu zaverecnou praci
+- 20 stránek by mělo stačit
+- definice problému
+- preliminary results
+- nemusí to mít reproducibilitu paperu
+
 
 
 
