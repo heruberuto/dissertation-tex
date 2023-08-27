@@ -1,23 +1,23 @@
 # Fdb version 3
-["bibtex minimum"] 1693152606 "minimum.aux" "minimum.bbl" "minimum" 1693152961
+["bibtex minimum"] 1693153459 "minimum.aux" "minimum.bbl" "minimum" 1693153465
   "/usr/local/texlive/2021/texmf-dist/bibtex/bst/base/apalike.bst" 1292289607 24635 604dafcc79f521a11ea73e506e1fbd98 ""
-  "minimum.aux" 1693152667 3799 6044580e0428a0956cedd82caf8b56b9 "xelatex"
+  "minimum.aux" 1693153464 5836 f555f7e86369997836c8b8ed1f8abbcf "xelatex"
   "minimum.bib" 1693138818 45337 807eb490df277bed35bad975520b2f32 ""
   (generated)
   "minimum.blg"
   "minimum.bbl"
-["makeindex minimum.idx"] 1693152370 "minimum.idx" "minimum.ind" "minimum" 1693152961
-  "minimum.idx" 1693152666 0 d41d8cd98f00b204e9800998ecf8427e "xelatex"
+["makeindex minimum.idx"] 1693153453 "minimum.idx" "minimum.ind" "minimum" 1693153465
+  "minimum.idx" 1693153463 0 d41d8cd98f00b204e9800998ecf8427e "xelatex"
   (generated)
-  "minimum.ilg"
   "minimum.ind"
-["xdvipdfmx"] 1693152667 "/Users/bertik/PhD/studie-bertik/minimum.xdv" "/Users/bertik/PhD/studie-bertik/minimum.pdf" "/Users/bertik/PhD/studie-bertik/minimum" 1693152961
-  "/Users/bertik/PhD/studie-bertik/minimum.xdv" 1693152667 140872 ace19cd681cfdd03c630f2b19254f85c "xelatex"
+  "minimum.ilg"
+["xdvipdfmx"] 1693153465 "/Users/bertik/PhD/studie-bertik/minimum.xdv" "/Users/bertik/PhD/studie-bertik/minimum.pdf" "/Users/bertik/PhD/studie-bertik/minimum" 1693153465
+  "/Users/bertik/PhD/studie-bertik/minimum.xdv" 1693153464 149156 bed6ded49e81b0664b7244638382791f "xelatex"
   (generated)
   "/Users/bertik/PhD/studie-bertik/minimum.pdf"
-["xelatex"] 1693152664 "/Users/bertik/PhD/studie-bertik/minimum.tex" "/Users/bertik/PhD/studie-bertik/minimum.xdv" "minimum" 1693152961
-  "/Users/bertik/PhD/studie-bertik/minimum.aux" 1693152667 3799 6044580e0428a0956cedd82caf8b56b9 ""
-  "/Users/bertik/PhD/studie-bertik/minimum.tex" 1693152560 3951 d2f1c6c4d19a4b509c12ac6b278406f6 ""
+["xelatex"] 1693153462 "/Users/bertik/PhD/studie-bertik/minimum.tex" "/Users/bertik/PhD/studie-bertik/minimum.xdv" "minimum" 1693153465
+  "/Users/bertik/PhD/studie-bertik/minimum.aux" 1693153464 5836 f555f7e86369997836c8b8ed1f8abbcf ""
+  "/Users/bertik/PhD/studie-bertik/minimum.tex" 1693153459 3787 facc0d7cb37d61032031f038a623b037 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -266,6 +266,10 @@
   "/usr/local/texlive/2021/texmf-var/web2c/xetex/xelatex.fmt" 1638984251 5093944 848fa78d7bef32b3260d0934b14e327f ""
   "/usr/local/texlive/2021/texmf.cnf" 1616695596 577 4c1911a7228e554c6032256d3cf5567d ""
   "chapters/1_introduction.tex" 1693152664 8497 8401d772e18fc58853c4d65c3c174dfc ""
+  "chapters/2_sota.tex" 1693152708 124 54ea372cdf834dc7adbfeb70f84d006d ""
+  "chapters/3_current_contributions.tex" 1693152903 243 ab31ebeac159448652a1514c4179a6af ""
+  "chapters/4_dissertation_plan.tex" 1693153381 73 dba22a7fd7771f896f5f5a50960186b1 ""
+  "chapters/5_conclusion.tex" 1693153405 71 3e81e26661d8e0bb5ebe3170ec786ecf ""
   "ctu_logo_black.pdf" 1693138818 9101 c06583dd248b17c9159afb5eed68768b ""
   "ctuth-core.tex" 1693138818 12688 3500ec4b6c2d8884eb24ce97a0113649 ""
   "ctuth-names.tex" 1693148962 7187 50b988a4278d6fef0348259be6753209 ""
@@ -273,16 +277,16 @@
   "ctuth-templates.tex" 1693152603 7088 246cfb2dbcd4099d962b56544d95d0d3 ""
   "ctuthesis.cls" 1693138818 2057 bb6d0b18299bcb8e2df2ab60e9254eab ""
   "fig/transformer.pdf" 1693150423 196091 967212c209388351d588b5a54c68fdf9 ""
-  "minimum.aux" 1693152667 3799 6044580e0428a0956cedd82caf8b56b9 "xelatex"
-  "minimum.bbl" 1693152606 3738 dd4ef59157492137e81c4f49cec7f9a4 "bibtex minimum"
-  "minimum.ind" 1693152370 0 d41d8cd98f00b204e9800998ecf8427e "makeindex minimum.idx"
-  "minimum.out" 1693152667 1135 2ce9e754b948f3e6a515c8f1dd2adf1e "xelatex"
-  "minimum.tex" 1693152560 3951 d2f1c6c4d19a4b509c12ac6b278406f6 ""
+  "minimum.aux" 1693153464 5836 f555f7e86369997836c8b8ed1f8abbcf "xelatex"
+  "minimum.bbl" 1693153459 3738 dd4ef59157492137e81c4f49cec7f9a4 "bibtex minimum"
+  "minimum.ind" 1693153453 0 d41d8cd98f00b204e9800998ecf8427e "makeindex minimum.idx"
+  "minimum.out" 1693153464 2217 3e068b891f23a1d00969504104a2a82c "xelatex"
+  "minimum.tex" 1693153459 3787 facc0d7cb37d61032031f038a623b037 ""
   (generated)
-  "minimum.out"
-  "/Users/bertik/PhD/studie-bertik/minimum.xdv"
-  "minimum.xdv"
   "minimum.log"
+  "minimum.xdv"
   "minimum.aux"
-  "minimum.idx"
+  "minimum.out"
   "/Users/bertik/PhD/studie-bertik/minimum.log"
+  "minimum.idx"
+  "/Users/bertik/PhD/studie-bertik/minimum.xdv"

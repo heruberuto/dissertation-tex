@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.8)  27 AUG 2023 18:11
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.8)  27 AUG 2023 18:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1114,7 +1114,17 @@ Package: ifmtarg 2018/04/16 v1.2b check for an empty argument
 )) (/usr/local/texlive/2021/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count390
-)) (/Users/bertik/PhD/studie-bertik/minimum.aux)
+)) (/Users/bertik/PhD/studie-bertik/minimum.aux
+
+LaTeX Warning: Label `sec:pretrain' multiply defined.
+
+
+LaTeX Warning: Label `sec:models' multiply defined.
+
+
+LaTeX Warning: Label `sec:models' multiply defined.
+
+)
 \openout1 = `minimum.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 100.
@@ -1348,10 +1358,25 @@ LaTeX Warning: Reference `chap:pipeline' on page 3 undefined on input line 74.
 
 LaTeX Warning: Reference `chap:nli' on page 4 undefined on input line 75.
 
+) (/Users/bertik/PhD/studie-bertik/chapters/2_sota.tex [4]
+Chapter 2.
+) (/Users/bertik/PhD/studie-bertik/chapters/3_current_contributions.tex [5
 
-LaTeX Warning: Reference `chap:conclusion' on page 4 undefined on input line 76.
+] [6
 
-) (/Users/bertik/PhD/studie-bertik/minimum.bbl [4]
+]
+Chapter 3.
+) (/Users/bertik/PhD/studie-bertik/chapters/4_dissertation_plan.tex [7] [8
+
+]
+Chapter 4.
+) (/Users/bertik/PhD/studie-bertik/chapters/5_conclusion.tex [9] [10
+
+]
+Chapter 5.
+) (/Users/bertik/PhD/studie-bertik/minimum.bbl [11] [12
+
+]
 Underfull \hbox (badness 10000) in paragraph at lines 68--74
 []\TU/lmss/m/n/10.95 STEM \TU/lmr/m/n/10.95 (2021).  Mýtům a konspiracím o covid-19 věří více
  []
@@ -1366,11 +1391,9 @@ Overfull \hbox (52.1056pt too wide) in paragraph at lines 68--74
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]$[]\TU/lmr/m/n/10.95 .
  []
 
-[5
-
-]) [6]
+[13]) [14]
 Appendix A.
-[7
+[15
 
 ] (/Users/bertik/PhD/studie-bertik/minimum.aux)
 
@@ -1549,6 +1572,10 @@ gettitlestring.sty    2019/12/15 v1.6 Cleanup title references (HO)
 ctu_logo_black.pdf    Graphic file (type pdf)
 chapters/1_introduction.tex
 fig/transformer.pdf
+chapters/2_sota.tex
+chapters/3_current_contributions.tex
+chapters/4_dissertation_plan.tex
+chapters/5_conclusion.tex
  minimum.bbl
  ***********
 
@@ -1558,16 +1585,19 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `minimum.out' has not changed.
-(rerunfilecheck)             Checksum: 2CE9E754B948F3E6A515C8F1DD2ADF1E;1135.
+(rerunfilecheck)             Checksum: 3E068B891F23A1D00969504104A2A82C;2217.
  ) 
 Here is how much of TeX's memory you used:
- 32913 strings out of 476919
- 635972 string characters out of 5821840
+ 32940 strings out of 476919
+ 636805 string characters out of 5821840
  1164658 words of memory out of 5000000
- 52166 multiletter control sequences out of 15000+600000
+ 52181 multiletter control sequences out of 15000+600000
  440681 words of font info for 111 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  93i,17n,120p,760b,536s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on /Users/bertik/PhD/studie-bertik/minimum.xdv (9 pages, 140872 bytes).
+Output written on /Users/bertik/PhD/studie-bertik/minimum.xdv (17 pages, 149156 bytes).
