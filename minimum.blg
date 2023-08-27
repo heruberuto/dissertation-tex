@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2021)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: minimum.aux
+The style file: apalike.bst
+Database file #1: minimum.bib
+Warning--empty booktitle in shukai
+You've used 14 entries,
+            1935 wiz_defined-function locations,
+            546 strings with 6867 characters,
+and the built_in function-call counts, 6514 in all, are:
+= -- 584
+> -- 463
+< -- 7
++ -- 174
+- -- 170
+* -- 605
+:= -- 1205
+add.period$ -- 41
+call.type$ -- 14
+change.case$ -- 155
+chr.to.int$ -- 14
+cite$ -- 15
+duplicate$ -- 185
+empty$ -- 327
+format.name$ -- 188
+if$ -- 1196
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 9
+newline$ -- 71
+num.names$ -- 42
+pop$ -- 134
+preamble$ -- 1
+purify$ -- 155
+quote$ -- 0
+skip$ -- 144
+stack$ -- 0
+substring$ -- 303
+swap$ -- 13
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 84
+warning$ -- 1
+while$ -- 36
+width$ -- 0
+write$ -- 176
+(There was 1 warning)

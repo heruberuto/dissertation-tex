@@ -1,0 +1,29 @@
+%!TEX ROOT=../ctutest.tex
+
+\chapter{Conclusion}
+\label{chap:conclusion}
+\label{chap:proposed}
+Our work has addressed the lack of a fact-verification dataset in Czech in two ways:
+
+Firstly, it established a scheme of transferring an English \textsf{ENWiki}-corpus-based \textsf{FEVER} dataset to the Czech language using Machine Translation and the cross-lingual mapping of \textsf{WikiMedia API}, obtaining a set of a total of 127K translated claims along with their veracity labels and evidence within the \textsf{CSWiki} corpus, which we call the \textsf{FEVER CS} dataset.
+
+Secondly, we prepared a series of human-annotation experiments, that were conducted with 163 annotators, utilizing the collaboration with the \textsf{Faculty of Social Sciences of Charles University} towards collecting about 10K \db{Claim} and \db{Label} data points stemming from our application-specific \textsf{ČTK Archive} knowledge base, achieving an inter-annotator aggreement of 0.63, measured using the 4-way Fleiss' $\kappa$.
+
+For the annotations, we have built a novel annotation platform from the ground up, naming it the \textsf{FCheck Annotations Platform} and publishing it as an open-source project. Subsequently, we have used our platform to export the novel \textsf{ČTK} dataset, that contains 3,295 textual claims along with their veracity labeling and \textsf{ČTK}-based sets of conclusive evidence, extracted from the results earlier annotation experiments.
+
+Finally, we deem this dataset eligible for training statistical models for the task of Natural Language Inference, demonstrating the usage of our data on transfer-learning a triple of Transformer networks -- \textsf{XLM-RoBERTa}, \textsf{SlavicBERT} and \textsf{multilingualBERT}, the first of which scores \textbf{85.5\%} micro-$F_1$ on the \textsf{ČTK} claim veracity labeling task.
+
+\section{Proposed solutions}
+At the end of every chapter, we provide a textual \textit{wrapup} of its result, along with remarks on its reproducibility, and, where possible, a ready-made solution in form of an open-source code, or prebuilt models and datasets shared through a public cloud-storage link.
+
+This is to encourage any future research on the topic, as well as to challenge our results and their credibility.
+
+\section{Future research goals}
+Our work at \textsf{AIC FactCheck} is far from over. After the publication of the \textsf{ČTK} dataset and the baseline NLI classifier, we are about to pursue some of the following goals that arised from the findings in previous chapters:
+
+\begin{enumerate}
+    \item The solution for the \textit{overfitting} issue from Chapter 7 should be examined, using some of the attached localized \textsf{SNLI},  \textsf{MultiNLI},  \textsf{ANLI}  and \textsf{FEVER-NLI} sets, as outlined in the previous Chapter \textit{wrapup}
+    \item The novel monolingual Czech \textbf{\textsf{CZERT}} model is to be trained and examined on the same tasks as the other models from the Chapter 7
+    \item \textbf{\textsf{The FEVER CS Baseline}} end-to-end containerized pipeline should be updated with our resulting models and that of~\cite{rypar} for the production purposes
+    \item The set of \tdvab{} \textbf{\textsf{Claim Mutations}} (Figure~\ref{fig:mutations}) collected by the \textsf{FCheck} platform is to be examined and challenged with the dataset balance in mind, as the same set of mutation tasks yielded a significantly label-unbalanced dataset to \textit{us} (Chapter~\ref{chap:dataset}), to~\cite{fever} and to~\cite{danish}, all of them in favour of the \texttt{SUPPORTS annotation}
+\end{enumerate}

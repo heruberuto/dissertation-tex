@@ -1,0 +1,89 @@
+\begin{thebibliography}{}
+
+\bibitem[Allcott and Gentzkow, 2017]{10.1257/jep.31.2.211}
+Allcott, H. and Gentzkow, M. (2017).
+\newblock Social media and fake news in the 2016 election.
+\newblock {\em Journal of Economic Perspectives}, 31(2):211--36.
+
+\bibitem[Barua et~al., 2020]{BARUA2020100119}
+Barua, Z., Barua, S., Aktar, S., Kabir, N., and Li, M. (2020).
+\newblock Effects of misinformation on covid-19 individual responses and
+  recommendations for resilience of disastrous consequences of misinformation.
+\newblock {\em Progress in Disaster Science}, 8:100119.
+
+\bibitem[Brown et~al., 2020]{gpt3}
+Brown, T.~B., Mann, B., Ryder, N., Subbiah, M., Kaplan, J., Dhariwal, P.,
+  Neelakantan, A., Shyam, P., Sastry, G., Askell, A., Agarwal, S.,
+  Herbert{-}Voss, A., Krueger, G., Henighan, T., Child, R., Ramesh, A.,
+  Ziegler, D.~M., Wu, J., Winter, C., Hesse, C., Chen, M., Sigler, E., Litwin,
+  M., Gray, S., Chess, B., Clark, J., Berner, C., McCandlish, S., Radford, A.,
+  Sutskever, I., and Amodei, D. (2020).
+\newblock Language models are few-shot learners.
+\newblock {\em CoRR}, abs/2005.14165.
+
+\bibitem[Buchanan and Benson, 2019]{doi:10.1177/2056305119888654}
+Buchanan, T. and Benson, V. (2019).
+\newblock Spreading disinformation on facebook: Do trust in message source,
+  risk propensity, or personality affect the organic reach of “fake news”?
+\newblock {\em Social Media + Society}, 5(4):2056305119888654.
+
+\bibitem[Cheng et~al., 2016]{lstm}
+Cheng, J., Dong, L., and Lapata, M. (2016).
+\newblock Long short-term memory-networks for machine reading.
+\newblock {\em CoRR}, abs/1601.06733.
+
+\bibitem[Devlin et~al., 2019]{bert}
+Devlin, J., Chang, M.-W., Lee, K., and Toutanova, K. (2019).
+\newblock Bert: Pre-training of deep bidirectional transformers for language
+  understanding.
+
+\bibitem[Dědková, 2021]{dedkova}
+Dědková, B. (2021).
+\newblock Multi-stage methods for document retrieval in the czech language.
+
+\bibitem[Gažo, 2021]{gazo}
+Gažo, A. (2021).
+\newblock Algorithms for document retrieval in czech language supporting long
+  inputs.
+
+\bibitem[Lazer et~al., 2018]{Lazer1094}
+Lazer, D. M.~J., Baum, M.~A., Benkler, Y., Berinsky, A.~J., Greenhill, K.~M.,
+  Menczer, F., Metzger, M.~J., Nyhan, B., Pennycook, G., Rothschild, D.,
+  Schudson, M., Sloman, S.~A., Sunstein, C.~R., Thorson, E.~A., Watts, D.~J.,
+  and Zittrain, J.~L. (2018).
+\newblock The science of fake news.
+\newblock {\em Science}, 359(6380):1094--1096.
+
+\bibitem[Rýpar, 2021]{rypar}
+Rýpar, M. (2021).
+\newblock Methods of document retrieval for fact-checking.
+\newblock \url{https://www.overleaf.com/read/thbvcjvvvfjp}.
+\newblock [Online; accessed 21-May-2021].
+
+\bibitem[Shu et~al., 2018]{shukai}
+Shu, K., Wang, S., Le, T., Lee, D., and Liu, H. (2018).
+\newblock Deep headline generation for clickbait detection.
+
+\bibitem[{\textsf{STEM}}, 2021]{stem}
+{\textsf{STEM}} (2021).
+\newblock Mýtům a konspiracím o covid-19 věří více než třetina české
+  internetové populace | stem.cz.
+\newblock
+  \url{https://www.stem.cz/mytum-a-konspiracim-o-covid-19-veri-vice-nez-tretina-ceske-internetove-populace/}.
+\newblock Accessed: 2021-05-03.
+
+\bibitem[Thorne et~al., 2019]{fever2}
+Thorne, J., Vlachos, A., Cocarascu, O., Christodoulopoulos, C., and Mittal, A.
+  (2019).
+\newblock The {FEVER}2.0 shared task.
+\newblock In {\em Proceedings of the Second Workshop on Fact Extraction and
+  VERification (FEVER)}, pages 1--6, Hong Kong, China. Association for
+  Computational Linguistics.
+
+\bibitem[Vaswani et~al., 2017]{vaswani}
+Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A.~N.,
+  Kaiser, L., and Polosukhin, I. (2017).
+\newblock Attention is all you need.
+\newblock {\em CoRR}, abs/1706.03762.
+
+\end{thebibliography}

@@ -1,0 +1,131 @@
+% arara: pdflatex: { synctex: yes }
+% arara: makeindex: { style: ctuthesis }
+% arara: bibtex
+
+% The class takes all the key=value arguments that \ctusetup does,
+% and a couple more: draft and oneside
+\documentclass[twoside]{ctuthesis}
+
+\ctusetup{
+%	preprint = \ctuverlog,
+	mainlanguage = english,
+	otherlanguages = {czech},
+	title-english = {NLP Methods for Automated Fact-Checking},
+	xdoctype = M,
+	xfaculty = F3,
+	department-english = {Department of Computer Science},
+	author = {Ing. Herbert Ullrich},
+	supervisor = {Ing. Jan Drchal, Ph.D.},
+	fieldofstudy-english = {Informatics},
+	subfieldofstudy-english = {Natural Language Processing},
+	keywords-czech = {Fact-checking, Natural Language Inference, Claim Generation, Transformers, LLMs},
+	keywords-english = {Fact-checking, Natural Language Inference, Claim Generation, Transformers, LLMs},
+	day = 21,
+	month = 8,
+	year = 2023,
+	pkg-listings = true
+%	monochrome = true,
+%	layout-short = true,
+}
+
+\ctuprocess
+
+\ctutemplateset{maketitle twocolumn default}{
+	\begin{twocolumnfrontmatterpage}
+		%\ctutemplate{twocolumn.thanks}
+		%\ctutemplate{twocolumn.declaration}
+		%\ctutemplate{twocolumn.abstract.in.titlelanguage}
+		%\ctutemplate{twocolumn.abstract.in.secondlanguage}
+		\ctutemplate{twocolumn.tableofcontents}
+		\ctutemplate{twocolumn.listoffigures}
+	\end{twocolumnfrontmatterpage}
+}
+
+% Theorem declarations, this is the reasonable default, anybody can do what they wish.
+% If you prefer theorems in italics rather than slanted, use \theoremstyle{plainit}
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{conjecture}[theorem]{Conjecture}
+
+\theoremstyle{note}
+\newtheorem*{remark*}{Remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\DeclareMathOperator*{\argmin}{arg\!min}
+\DeclareMathOperator*{\argmax}{arg\!max}
+
+
+% Only for testing purposes
+\listfiles
+\usepackage[pagewise]{lineno}
+\usepackage{lipsum,blindtext}
+\usepackage{mathrsfs} % provides \mathscr used in the ridiculous examples
+
+% TODO: filter out unnecessary pckgs
+%\usepackage[breaklinks=true]{hyperref}
+%\usepackage{breakcites}
+\usepackage{cite}
+%\usepackage{mathtools}
+%\usepackage{amsmath}
+%\usepackage{amsfonts}
+%\usepackage{amssymb}
+%\usepackage{algpseudocode}
+%\usepackage{algorithm}
+\usepackage[ruled,lined,linesnumbered, commentsnumbered]{algorithm2e}
+%\usepackage{listings}
+%\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{enumerate}
+\usepackage{tabularx}
+%\usepackage{hyperref}
+\usepackage{tablefootnote}
+
+\def\"#1{``#1''}
+\def\btn#1{{\itembox{\textbf{\textsf{#1}}}}}
+\def\db#1{{{\textit{\textsf{#1}}}}}
+\def\tnula{\hyperref[t0]{$\textsf{T}_{\textsf{0}}$}}
+\def\tjednaa{\hyperref[t1a]{$\textsf{T}_{\textsf{1a}}$}}
+\def\tjednab{\hyperref[t1b]{$\textsf{T}_{\textsf{1b}}$}}
+\def\tdvaa{\hyperref[t2a]{$\textsf{T}_{\textsf{2a}}$}}
+\def\tdvab{\hyperref[t2b]{$\textsf{T}_{\textsf{2b}}$}}
+\def\tdva{\hyperref[t2a]{$\textsf{T}_{\textsf{2}}$}}
+
+\begin{document}
+
+\maketitle
+
+\input{chapters/1_introduction}
+%\input{chapters/2_0_data_collection}
+%\input{chapters/2_1_fever_cs}
+%\input{chapters/2_2_ctk}
+%\input{chapters/3_dataset}
+%\input{chapters/4_fact_verification_systems}
+%\input{chapters/5_nli}
+% say that it is analogous to RTE
+% NLI Experiments
+%\input{chapters/7_conclusion}
+% future challenges
+
+%\bibliographystyle{amsalpha}
+\bibliographystyle{apalike}
+\bibliography{minimum}
+\appendix
+%\input{appendices/translations}
+\chapter{Acronyms}
+\begin{description}
+\item[BERT] Bidirectional Encoder Representations from Transformers
+\item[FEVER] Fact Extraction and Verification -- series of Shared tasks focused on fact-checking
+\item[CLI] Command-Line Interface
+\item[NLI] Natural Language Inference
+\item[ČTK] Czech Press Agency
+\end{description}
+
+
+\end{document}

@@ -1,0 +1,57 @@
+%!TEX ROOT=../ctutest.tex
+% UZAVŘENO! ÚPRAVY JEN ŽIVOTNĚ NUTNÉ NEBO VE ZBYLÉM ČASE
+
+\chapter{Data Collection}
+\label{chap:collection}
+In Chapter~\ref{chap:intro}, we have introduced the framework of automated fact-checking. In order to construct an automated fact verifier, we first need methods of collecting the samples of Czech textual claims and their respective annotations within a fixed knowledge base.
+
+These will allow us to assess the strength of the fact verifier in terms of compliance with human output for the same task. Furthermore, a dataset of sufficient size could be used to train statistical models.
+
+
+\section{Related work}
+As of May 2021, we have reviewed the following most notable papers and projects in the field, so as to provide proofs of concept and strong baselines..
+\begin{itemize}
+    \item {\techbf{Demagog dataset}}~\cite{hercig-lenc:2019:RANLP} -- dataset of verified textual claims in low-resource Slavic languages (9082 in Czech, 2835 in Polish, 12554 in Slovak), including their metadata s. a. the speaker's name and political affiliation.
+    
+    We have reviewed the Demagog dataset and deemed it not suitable for our purposes, as it does not operate under an enclosed knowledge base and rather justifies the veracity labeling through justification in natural language, often providing links from social networks, government operated webpages, etc.
+    
+    Even though the metadata could be used for statistical analyses, the loose structure of the data does not allow its straightforward use for the purpose of training/evaluation of NLP models.
+    \item {\techbf{FEVER dataset}}~\cite{fever} -- \"{a large-scale dataset for Fact Extraction and VERification} -- dataset of 185,445 claims and their veracity labels from $\{\texttt{SUPPORTS},\texttt{REFUTES},\texttt{NOT ENOUGH INFO}\}$. Each label (except \texttt{NEI}s) is accompanied by a set of all\footnote{While this is assumed to be true by the \textsf{FEVER} benchmark, there are, in fact, valid evidence sets missing, due to the time constraints for the annotation task. In~\cite{fever}, 1\% annotations were re-annotated by \textit{super-annotators} tasked to find every possible evidence set without a time constraint, which has shown the precision/recall of the regular annotations to be 95.42\% and 72.36\%, respectively.} minimum evidence sets that can be used to infer the labelling. 
+    
+    It was extracted by 50 human annotators from approximately 50,000 popular \textsf{Wikipedia} article abstracts\footnote{The introductory section (i. e. the first paragraph) of \textsf{Wikipedia} article, one before the table of contents.} and fact-verified against every abstract in the full June 2017 \textsf{Wikipedia} dump.
+    
+    This is the most commonly used dataset used for validation of fact verification pipelines to date, and has been used as a benchmark in shared tasks~\cite{fever1,fever2adversarial} that inspired the publication of number of well-performing verifiers of English claims~\cite{papelo,athene,nie2019combining}.
+    
+    It was collected using a \textsf{Flask} app called the \textsf{FEVER Annotations Platform}, which has been partly open-sourced\footnote{\url{https://github.com/awslabs/fever}} and thoroughly described in~\cite{fever}.
+    \item {\techbf{Danish fact verification datasets}}~\cite{danish} -- an effort to build an end-to-end fact verifier for the low-resource language of Danish, using the strategies employed by the submissions of the \textsf{FEVER} shared task~\cite{fever1} and \textsf{multilingual BERT}~\cite{bert} for the Document Retrieval task.
+    
+    Binau and Schulte have handcrafted a dataset of 3,395 textual claims and their labels, along with evidence from the Danish \textsf{Wikipedia}, publishing an open source Command-line interface\footnote{\url{https://github.com/HenriSchulte/Danish-Fact-Verification}} for this task.
+    
+    They have also localized the large-scale \textsf{FEVER} dataset to Danish using the \textsf{Microsoft Translator Text API} and concluded separate experiments on the translated \textsf{FEVER DA} dataset.
+\end{itemize}
+We have not found an appropriate dataset for the NLP tasks we pursue, which is a common problem of a the non-international languages, such as Czech. We say that Czech is a \textit{low-resource} language, which, in NLP, signifies the need of adopting the methods and -- where possible -- the local versions of the corpora used for the tasks on foreign languages.
+
+In order to train a verifier of our own for Czech (and for a whole different domain of the \textsf{ČTK} journal), we have attempted to repurpose the existing annotations of the \textsf{FEVER} dataset, as well as the annotation practices of both~\cite{fever} and~\cite{danish} where applicable.
+
+The subsequent chapters introduce two of the resulting datasets that made it to production -- the {\techbf FEVER CS} and the {\techbf ČTK} dataset -- and the methods of their collection.
+
+%-- TAB Fever, ctk
+\begin{center}
+\begin{table}[H]
+\begin{ctucolortab}
+\begin{tabular}{ c c c }
+\textbf{Property} & {\techbf{}FEVER CS} & \techbf{ČTK} \\
+\hline
+\textbf{Obtained through} & Machine Translation & Annotation experiments\\
+\textbf{Language style} & Encyclop\ae dic & Journalistic\\
+\textbf{Retrieval unit} & Sentence & Paragraph\\
+\textbf{Cross-references} & First level links & Knowledge scopes (\ref{sec:knowledge-scopes})\\
+\textbf{Main focus} & Document retrieval & NLI (for the time being)\\
+\textbf{Size} & 127,328 claims & 3,295 claims\\
+\end{tabular}
+\end{ctucolortab}
+\caption{Comparison of \textsf{FEVER CS} and \textsf{ČTK} datasets}
+\label{tab:notation-overview}
+\end{table}
+\end{center} 
+%-- \TAB
