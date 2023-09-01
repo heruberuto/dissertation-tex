@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.8)  27 AUG 2023 18:24
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.8)  1 SEP 2023 15:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -613,7 +613,7 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * vratio: 4:4
-* modes: twoside 
+* modes: 
 * h-part:(L,W,R)=(85.35826pt, 426.79134pt, 85.35828pt)
 * v-part:(T,H,B)=(85.35822pt, 674.3303pt, 85.35832pt)
 * \paperwidth=597.50787pt
@@ -621,13 +621,13 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 * \textwidth=426.79134pt
 * \textheight=674.3303pt
 * \oddsidemargin=13.08827pt
-* \evensidemargin=13.08829pt
+* \evensidemargin=13.08827pt
 * \topmargin=-22.78557pt
 * \headheight=16.0pt
 * \headsep=19.8738pt
 * \topskip=11.0pt
 * \footskip=27.46295pt
-* \marginparwidth=106.0pt
+* \marginparwidth=53.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
 * \skip\footins=10.0pt plus 4.0pt minus 2.0pt
@@ -635,8 +635,8 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 * \voffset=0.0pt
 * \mag=1000
 * \@twocolumnfalse
-* \@twosidetrue
-* \@mparswitchtrue
+* \@twosidefalse
+* \@mparswitchfalse
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
@@ -1124,6 +1124,9 @@ LaTeX Warning: Label `sec:models' multiply defined.
 
 LaTeX Warning: Label `sec:models' multiply defined.
 
+
+LaTeX Warning: Label `fig:framework' multiply defined.
+
 )
 \openout1 = `minimum.aux'.
 
@@ -1181,7 +1184,7 @@ Package pdflscape Info: Auto-detected driver: dvipdfm (xetex) on input line 98.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * vratio: 4:4
-* modes: twoside 
+* modes: 
 * h-part:(L,W,R)=(85.35826pt, 426.79134pt, 85.35828pt)
 * v-part:(T,H,B)=(85.35822pt, 674.3303pt, 85.35832pt)
 * \paperwidth=597.50787pt
@@ -1189,13 +1192,13 @@ Package pdflscape Info: Auto-detected driver: dvipdfm (xetex) on input line 98.
 * \textwidth=426.79134pt
 * \textheight=674.3303pt
 * \oddsidemargin=13.08827pt
-* \evensidemargin=13.08829pt
+* \evensidemargin=13.08827pt
 * \topmargin=-22.78557pt
 * \headheight=16.0pt
 * \headsep=19.8738pt
 * \topskip=11.0pt
 * \footskip=27.46295pt
-* \marginparwidth=35.35828pt
+* \marginparwidth=35.35826pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
 * \skip\footins=10.0pt plus 4.0pt minus 2.0pt
@@ -1203,8 +1206,8 @@ Package pdflscape Info: Auto-detected driver: dvipdfm (xetex) on input line 98.
 * \voffset=0.0pt
 * \mag=1000
 * \@twocolumnfalse
-* \@twosidetrue
-* \@mparswitchtrue
+* \@twosidefalse
+* \@mparswitchfalse
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
@@ -1306,94 +1309,114 @@ Overfull \hbox (5.0pt too wide) in paragraph at lines 102--102
 
 
 ]
+
+Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 102.
+
+
+Package fancyhdr Warning: \fancyhead's `E' option without twoside option is useless on input line 102.
+
+(/Users/bertik/PhD/studie-bertik/chapters/1_introduction.tex
+Chapter 1.
+
+Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 26.
+
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [2
-
-] (/Users/bertik/PhD/studie-bertik/chapters/1_introduction.tex
-Chapter 1.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 15.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 15.
-
-LaTeX Warning: Reference `fig:pipeline' on page 1 undefined on input line 21.
-
 [1
 
 
+
 ]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 30.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 30.
+File: fig/framework.pdf Graphic file (type pdf)
+<use fig/framework.pdf>
 
-LaTeX Warning: Reference `fig:pipeline' on page 2 undefined on input line 27.
 
-File: fig/transformer.pdf Graphic file (type pdf)
-<use fig/transformer.pdf>
-
-LaTeX Warning: Reference `parti' on page 2 undefined on input line 62.
-
-
-LaTeX Warning: Reference `partii' on page 2 undefined on input line 62.
+LaTeX Warning: Reference `fig:pipeline' on page 2 undefined on input line 43.
 
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 63.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 51.
 [2]
-
-LaTeX Warning: Reference `chap:collection' on page 3 undefined on input line 66.
-
-
-LaTeX Warning: Reference `chap:fever_cs' on page 3 undefined on input line 68.
-
-
-LaTeX Warning: Reference `chap:ctk' on page 3 undefined on input line 70.
-
-
-LaTeX Warning: Reference `chap:dataset' on page 3 undefined on input line 72.
-
-
-LaTeX Warning: Reference `chap:pipeline' on page 3 undefined on input line 74.
-
-[3]
-
-LaTeX Warning: Reference `chap:nli' on page 4 undefined on input line 75.
-
-) (/Users/bertik/PhD/studie-bertik/chapters/2_sota.tex [4]
+File: fig/transformer.pdf Graphic file (type pdf)
+<use fig/transformer.pdf>
+ [3]) (/Users/bertik/PhD/studie-bertik/chapters/2_sota.tex [4]
 Chapter 2.
-) (/Users/bertik/PhD/studie-bertik/chapters/3_current_contributions.tex [5
+) (/Users/bertik/PhD/studie-bertik/chapters/3_current_contributions.tex
 
-] [6
+Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 3.
+
+[5
 
 ]
 Chapter 3.
-) (/Users/bertik/PhD/studie-bertik/chapters/4_dissertation_plan.tex [7] [8
+File: fig/cedmo.pdf Graphic file (type pdf)
+<use fig/cedmo.pdf>
+
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 19--20
+ [][] 
+ []
+
+) (/Users/bertik/PhD/studie-bertik/chapters/4_dissertation_plan.tex
+
+Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 3.
+
+[6
 
 ]
+
+Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 3.
+
+
+Package fancyhdr Warning: \fancyhead's `E' option without twoside option is useless on input line 3.
+
+[7]
 Chapter 4.
-) (/Users/bertik/PhD/studie-bertik/chapters/5_conclusion.tex [9] [10
+) (/Users/bertik/PhD/studie-bertik/chapters/5_conclusion.tex
+
+Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 3.
+
+[8
 
 ]
 Chapter 5.
-) (/Users/bertik/PhD/studie-bertik/minimum.bbl [11] [12
+) (/Users/bertik/PhD/studie-bertik/minimum.bbl
+
+Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 1.
+
+[9
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 68--74
+
+Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 73.
+
+[10
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 74--80
 []\TU/lmss/m/n/10.95 STEM \TU/lmr/m/n/10.95 (2021).  Mýtům a konspiracím o covid-19 věří více
  []
 
 
-Underfull \hbox (badness 6252) in paragraph at lines 68--74
+Underfull \hbox (badness 6252) in paragraph at lines 74--80
 \TU/lmr/m/n/10.95 než třetina české internetové populace | stem.cz.  []$[][][][][] [] [] [] [][][] [] [][][][] [] [][] []
  []
 
 
-Overfull \hbox (52.1056pt too wide) in paragraph at lines 68--74
+Overfull \hbox (52.1056pt too wide) in paragraph at lines 74--80
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]$[]\TU/lmr/m/n/10.95 .
  []
 
-[13]) [14]
+) [11]
 Appendix A.
-[15
+
+Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 126.
+
+[12
 
 ] (/Users/bertik/PhD/studie-bertik/minimum.aux)
 
@@ -1571,9 +1594,11 @@ gettitlestring.sty    2019/12/15 v1.6 Cleanup title references (HO)
    ursfs.fd    1998/03/24 rsfs font definition file (jk)
 ctu_logo_black.pdf    Graphic file (type pdf)
 chapters/1_introduction.tex
+fig/framework.pdf
 fig/transformer.pdf
 chapters/2_sota.tex
 chapters/3_current_contributions.tex
+fig/cedmo.pdf
 chapters/4_dissertation_plan.tex
 chapters/5_conclusion.tex
  minimum.bbl
@@ -1589,15 +1614,15 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `minimum.out' has not changed.
-(rerunfilecheck)             Checksum: 3E068B891F23A1D00969504104A2A82C;2217.
+(rerunfilecheck)             Checksum: 465C0DD1AFA83AEC4A1F18595931E107;2008.
  ) 
 Here is how much of TeX's memory you used:
- 32940 strings out of 476919
- 636805 string characters out of 5821840
- 1164658 words of memory out of 5000000
- 52181 multiletter control sequences out of 15000+600000
- 440681 words of font info for 111 fonts, out of 8000000 for 9000
+ 32938 strings out of 476919
+ 636716 string characters out of 5821840
+ 1160666 words of memory out of 5000000
+ 52180 multiletter control sequences out of 15000+600000
+ 440665 words of font info for 109 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 93i,17n,120p,760b,536s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 93i,17n,120p,760b,534s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on /Users/bertik/PhD/studie-bertik/minimum.xdv (17 pages, 149156 bytes).
+Output written on /Users/bertik/PhD/studie-bertik/minimum.xdv (13 pages, 164368 bytes).

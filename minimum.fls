@@ -1754,6 +1754,9 @@ INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm1
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/rsfs/rsfs5.tfm
+INPUT /Users/bertik/PhD/studie-bertik/fig/framework.pdf
+INPUT /Users/bertik/PhD/studie-bertik/fig/framework.pdf
+INPUT /Users/bertik/PhD/studie-bertik/fig/framework.pdf
 INPUT /Users/bertik/PhD/studie-bertik/fig/transformer.pdf
 INPUT /Users/bertik/PhD/studie-bertik/fig/transformer.pdf
 INPUT /Users/bertik/PhD/studie-bertik/fig/transformer.pdf
@@ -1779,6 +1782,9 @@ INPUT /Users/bertik/PhD/studie-bertik/chapters/3_current_contributions.tex
 INPUT /Users/bertik/PhD/studie-bertik/chapters/3_current_contributions.tex
 INPUT /Users/bertik/PhD/studie-bertik/chapters/3_current_contributions.tex
 INPUT /Users/bertik/PhD/studie-bertik/chapters/3_current_contributions.tex
+INPUT /Users/bertik/PhD/studie-bertik/fig/cedmo.pdf
+INPUT /Users/bertik/PhD/studie-bertik/fig/cedmo.pdf
+INPUT /Users/bertik/PhD/studie-bertik/fig/cedmo.pdf
 INPUT /Users/bertik/PhD/studie-bertik/chapters/4_dissertation_plan.tex
 INPUT /Users/bertik/PhD/studie-bertik/chapters/4_dissertation_plan.tex
 INPUT /Users/bertik/PhD/studie-bertik/chapters/4_dissertation_plan.tex

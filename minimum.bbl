@@ -46,6 +46,12 @@ Gažo, A. (2021).
 \newblock Algorithms for document retrieval in czech language supporting long
   inputs.
 
+\bibitem[Guo et~al., 2022]{guo-etal-2022-survey}
+Guo, Z., Schlichtkrull, M., and Vlachos, A. (2022).
+\newblock A survey on automated fact-checking.
+\newblock {\em Transactions of the Association for Computational Linguistics},
+  10:178--206.
+
 \bibitem[Lazer et~al., 2018]{Lazer1094}
 Lazer, D. M.~J., Baum, M.~A., Benkler, Y., Berinsky, A.~J., Greenhill, K.~M.,
   Menczer, F., Metzger, M.~J., Nyhan, B., Pennycook, G., Rothschild, D.,

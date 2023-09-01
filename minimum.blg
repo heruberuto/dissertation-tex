@@ -4,45 +4,45 @@ The top-level auxiliary file: minimum.aux
 The style file: apalike.bst
 Database file #1: minimum.bib
 Warning--empty booktitle in shukai
-You've used 14 entries,
+You've used 15 entries,
             1935 wiz_defined-function locations,
-            546 strings with 6867 characters,
-and the built_in function-call counts, 6514 in all, are:
-= -- 584
-> -- 463
+            555 strings with 7080 characters,
+and the built_in function-call counts, 6942 in all, are:
+= -- 627
+> -- 481
 < -- 7
-+ -- 174
-- -- 170
-* -- 605
-:= -- 1205
-add.period$ -- 41
-call.type$ -- 14
-change.case$ -- 155
-chr.to.int$ -- 14
-cite$ -- 15
-duplicate$ -- 185
-empty$ -- 327
-format.name$ -- 188
-if$ -- 1196
++ -- 182
+- -- 176
+* -- 643
+:= -- 1279
+add.period$ -- 44
+call.type$ -- 15
+change.case$ -- 163
+chr.to.int$ -- 15
+cite$ -- 16
+duplicate$ -- 199
+empty$ -- 356
+format.name$ -- 195
+if$ -- 1277
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 9
-newline$ -- 71
-num.names$ -- 42
-pop$ -- 134
+missing$ -- 10
+newline$ -- 76
+num.names$ -- 45
+pop$ -- 140
 preamble$ -- 1
-purify$ -- 155
+purify$ -- 163
 quote$ -- 0
-skip$ -- 144
+skip$ -- 154
 stack$ -- 0
-substring$ -- 303
-swap$ -- 13
+substring$ -- 342
+swap$ -- 14
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 84
+type$ -- 90
 warning$ -- 1
-while$ -- 36
+while$ -- 40
 width$ -- 0
-write$ -- 176
+write$ -- 189
 (There was 1 warning)
