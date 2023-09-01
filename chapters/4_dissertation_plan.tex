@@ -7,6 +7,10 @@
 \subsection{Automated claim generation}
 \todo{}
 \subsection{Generative task facticity metrics}
+The common problem with generative tasks in NLP is that of explaining their reasoning in human-understandable manner and troubleshooting the prediction faults, such as the \textit{model hallucination}.
+
+For the task of claim generation, where we also face the challenge of the \textit{relevance} of the information extracted by the model, we postulate the following metrics:
+
 \begin{enumerate}
     \item {\techbf Fluency} -- \textsf{LM-Critic}~\cite{yasunaga-etal-2021-lm} perturbs the input to find local optima in output probability of its tokens, using a language model such as GPT-2 as its reference. \textsf{GPTScore}~\cite{fu2023gptscore} uses prompting a LLM (such as GPT-3.5) to obtain a model-inferred score using zero-shot learning.
     \item {\techbf Atomicity} -- can be checked using the Relationship Extraction methods: we extract the fact triples and mark the claim as atomic if there is at most one of them (after removing symmetries)

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.8)  1 SEP 2023 15:56
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.8)  1 SEP 2023 16:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1377,7 +1377,7 @@ Package fancyhdr Warning: \fancyhead's `E' option without twoside option is usel
 [7]
 Chapter 4.
 
-Overfull \hbox (2.79613pt too wide) in paragraph at lines 14--15
+Overfull \hbox (2.79613pt too wide) in paragraph at lines 18--19
 []\TU/Technika-Bold.otf(0)/bx/n/10.95 Focus and Coverage \TU/lmr/m/n/10.95 – we use the question-answering-based solutions of QAGS [[]Wang
  []
 
@@ -1387,19 +1387,19 @@ Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is usel
 
 [8
 
-]
+] [9]
 Chapter 5.
 ) (/Users/bertik/PhD/studie-bertik/minimum.bbl
 
 Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 1.
 
-[9
+[10
 
 ]
 
 Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 73.
 
-[10
+[11
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 78--84
@@ -1416,12 +1416,12 @@ Overfull \hbox (52.1056pt too wide) in paragraph at lines 78--84
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]$[]\TU/lmr/m/n/10.95 .
  []
 
-) [11]
+) [12]
 Appendix A.
 
 Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 128.
 
-[12
+[13
 
 ] (/Users/bertik/PhD/studie-bertik/minimum.aux)
 
@@ -1624,10 +1624,10 @@ Package rerunfilecheck Info: File `minimum.out' has not changed.
 Here is how much of TeX's memory you used:
  32952 strings out of 476919
  637009 string characters out of 5821840
- 1162666 words of memory out of 5000000
+ 1163666 words of memory out of 5000000
  52193 multiletter control sequences out of 15000+600000
  440673 words of font info for 110 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  93i,17n,120p,760b,534s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on /Users/bertik/PhD/studie-bertik/minimum.xdv (13 pages, 188328 bytes).
+Output written on /Users/bertik/PhD/studie-bertik/minimum.xdv (14 pages, 195384 bytes).
