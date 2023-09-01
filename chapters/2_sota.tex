@@ -7,3 +7,35 @@ This chapter will first describe the originally popular models for NLP such as B
 \label{chap:sota}
 \section{Pre-train + Fine-tune}
 \label{sec:pretrain}
+Surprisingly well performing paradigm for small data, vague tasks
+\subsection{BERT and derivatives}
+Simple training task, scalable architecture, potential to evolve into something grand
+
+\dots Which currently arrives in form of:
+
+\section{Large Language Models}
+\label{sec:llms}
+\subsection{GPT-3.5 and GPT-4}
+\label{sec:gpt}
+Obscure, paid
+\subsection{LLaMA-2 and derivatives}
+\label{sec:llama}
+Open-source, freely usable.
+Often poor czech coverage
+
+\section{Fact checking approaches}
+\subsection{FEVER and followups}
+Yields interesting benchmark with statistically quantifiable model succes, oversimplificates the problem, as it uses Wikipedia for a trusted knowledge base and only reasons based on a data from a fixed period of time, focusing on \"{atomic} claims that do not match the complexity of real-world factoids.
+\subsection{Open-domain fact-checking}
+This paper with bing for example uses the whole internet, but is that really what we want? Like, every lie can be backed with an internet -- at the end of the day you do need to draw the line of what to trust somewhere, which directly conflicts this design.
+
+\section{Claim generation}
+\begin{itemize}
+    \item Approches such as QACG exploit Question Answering
+    \item The task of extreme summarization (XSum) focuses on summarizing a long body of text into a single sentence, focusing on its most relevant aspects and facts
+    \item CLEF-CheckThat postulates the task of classifying \textit{Checkworthiness} of different parts of a long texts, such as a political debate
+\end{itemize}
+
+\section{NLP Generative task benchmarking}
+\subsection{BERTScore}
+\subsection{AlignScore}

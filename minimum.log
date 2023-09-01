@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.8)  1 SEP 2023 16:09
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.8)  1 SEP 2023 16:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1346,18 +1346,17 @@ File: fig/transformer.pdf Graphic file (type pdf)
 <use fig/transformer.pdf>
  [3]) (/Users/bertik/PhD/studie-bertik/chapters/2_sota.tex [4]
 Chapter 2.
-) (/Users/bertik/PhD/studie-bertik/chapters/3_current_contributions.tex
 
-Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 3.
+Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 32.
 
 [5
 
-]
+]) (/Users/bertik/PhD/studie-bertik/chapters/3_current_contributions.tex [6]
 Chapter 3.
 File: fig/cedmo.pdf Graphic file (type pdf)
 <use fig/cedmo.pdf>
 
-Overfull \hbox (28.45274pt too wide) in paragraph at lines 20--21
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 27--28
  [][] 
  []
 
@@ -1365,7 +1364,7 @@ Overfull \hbox (28.45274pt too wide) in paragraph at lines 20--21
 
 Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 3.
 
-[6
+[7
 
 ]
 
@@ -1374,32 +1373,31 @@ Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is usel
 
 Package fancyhdr Warning: \fancyhead's `E' option without twoside option is useless on input line 3.
 
-[7]
+[8]
 Chapter 4.
 
 Overfull \hbox (2.79613pt too wide) in paragraph at lines 18--19
 []\TU/Technika-Bold.otf(0)/bx/n/10.95 Focus and Coverage \TU/lmr/m/n/10.95 – we use the question-answering-based solutions of QAGS [[]Wang
  []
 
-) (/Users/bertik/PhD/studie-bertik/chapters/5_conclusion.tex
 
-Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 3.
+Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 27.
 
-[8
+[9
 
-] [9]
+]) (/Users/bertik/PhD/studie-bertik/chapters/5_conclusion.tex [10]
 Chapter 5.
 ) (/Users/bertik/PhD/studie-bertik/minimum.bbl
 
 Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 1.
 
-[10
+[11
 
 ]
 
 Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 73.
 
-[11
+[12
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 78--84
@@ -1416,12 +1414,12 @@ Overfull \hbox (52.1056pt too wide) in paragraph at lines 78--84
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]$[]\TU/lmr/m/n/10.95 .
  []
 
-) [12]
+) [13]
 Appendix A.
 
 Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 128.
 
-[13
+[14
 
 ] (/Users/bertik/PhD/studie-bertik/minimum.aux)
 
@@ -1619,15 +1617,15 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `minimum.out' has not changed.
-(rerunfilecheck)             Checksum: 16FC84E93689AEB7B430593C70BADDD2;2808.
+(rerunfilecheck)             Checksum: 593B2B84DC57D6F0516D23DF9D423E58;6011.
  ) 
 Here is how much of TeX's memory you used:
- 32952 strings out of 476919
- 637009 string characters out of 5821840
- 1163666 words of memory out of 5000000
- 52193 multiletter control sequences out of 15000+600000
+ 32960 strings out of 476919
+ 637104 string characters out of 5821840
+ 1160666 words of memory out of 5000000
+ 52201 multiletter control sequences out of 15000+600000
  440673 words of font info for 110 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  93i,17n,120p,760b,534s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on /Users/bertik/PhD/studie-bertik/minimum.xdv (14 pages, 195384 bytes).
+Output written on /Users/bertik/PhD/studie-bertik/minimum.xdv (15 pages, 225464 bytes).
