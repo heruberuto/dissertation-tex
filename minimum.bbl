@@ -41,6 +41,10 @@ Devlin, J., Chang, M.-W., Lee, K., and Toutanova, K. (2019).
 Dědková, B. (2021).
 \newblock Multi-stage methods for document retrieval in the czech language.
 
+\bibitem[Fu et~al., 2023]{fu2023gptscore}
+Fu, J., Ng, S.-K., Jiang, Z., and Liu, P. (2023).
+\newblock Gptscore: Evaluate as you desire.
+
 \bibitem[Gažo, 2021]{gazo}
 Gažo, A. (2021).
 \newblock Algorithms for document retrieval in czech language supporting long
@@ -91,5 +95,26 @@ Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A.~N.,
   Kaiser, L., and Polosukhin, I. (2017).
 \newblock Attention is all you need.
 \newblock {\em CoRR}, abs/1706.03762.
+
+\bibitem[Wang et~al., 2020]{wang-etal-2020-asking}
+Wang, A., Cho, K., and Lewis, M. (2020).
+\newblock Asking and answering questions to evaluate the factual consistency of
+  summaries.
+\newblock In {\em Proceedings of the 58th Annual Meeting of the Association for
+  Computational Linguistics}, pages 5008--5020, Online. Association for
+  Computational Linguistics.
+
+\bibitem[Yasunaga et~al., 2021]{yasunaga-etal-2021-lm}
+Yasunaga, M., Leskovec, J., and Liang, P. (2021).
+\newblock {LM}-critic: Language models for unsupervised grammatical error
+  correction.
+\newblock In {\em Proceedings of the 2021 Conference on Empirical Methods in
+  Natural Language Processing}, pages 7752--7763, Online and Punta Cana,
+  Dominican Republic. Association for Computational Linguistics.
+
+\bibitem[Zha et~al., 2023]{zha2023alignscore}
+Zha, Y., Yang, Y., Li, R., and Hu, Z. (2023).
+\newblock Alignscore: Evaluating factual consistency with a unified alignment
+  function.
 
 \end{thebibliography}

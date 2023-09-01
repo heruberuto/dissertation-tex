@@ -3,6 +3,18 @@
 \chapter{Dissertation plan}
 \label{chap:plan}
 
+\section{Current research agenda}
+\subsection{Automated claim generation}
+\todo{}
+\subsection{Generative task facticity metrics}
+\begin{enumerate}
+    \item {\techbf Fluency} -- \textsf{LM-Critic}~\cite{yasunaga-etal-2021-lm} perturbs the input to find local optima in output probability of its tokens, using a language model such as GPT-2 as its reference. \textsf{GPTScore}~\cite{fu2023gptscore} uses prompting a LLM (such as GPT-3.5) to obtain a model-inferred score using zero-shot learning.
+    \item {\techbf Atomicity} -- can be checked using the Relationship Extraction methods: we extract the fact triples and mark the claim as atomic if there is at most one of them (after removing symmetries)
+    \item {\techbf Faithfulness} -- we proceed to use the score proposed within the FFCI evaluation framework: $AvgTopN(BERTScore(t_i,s_j))$. Similar metric was proposed in~\cite{zha2023alignscore}, looking for optimum alignment of output and parts of input, using an arbitrary 
+    \item {\techbf Focus and Coverage} -- we use the question-answering-based solutions of QAGS~\cite{wang-etal-2020-asking}
+\end{enumerate}
+
+\section{The grand scope}
 \begin{enumerate}
     \item \textbf{Claim extraction metrics proposal based on factuality of summarization}
     \item \textbf{Claim extraction paradigm that benchmarks best in the newly given metrics}
