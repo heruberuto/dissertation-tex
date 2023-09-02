@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.8)  1 SEP 2023 16:26
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.8)  2 SEP 2023 06:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1130,31 +1130,31 @@ LaTeX Warning: Label `fig:framework' multiply defined.
 )
 \openout1 = `minimum.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 102.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 102.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 133.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 133.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Info: Redefining \microtypecontext on input line 102.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Info: Redefining \microtypecontext on input line 133.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: No adjustment of tracking.
@@ -1214,7 +1214,7 @@ Package pdflscape Info: Auto-detected driver: dvipdfm (xetex) on input line 98.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 102.
+Package hyperref Info: Link coloring OFF on input line 133.
 (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/local/texlive/2021/texmf-dist/tex/latex/refcount/refcount.sty
@@ -1224,9 +1224,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count392
 )
-LaTeX Info: Redefining \ref on input line 102.
-LaTeX Info: Redefining \pageref on input line 102.
-LaTeX Info: Redefining \nameref on input line 102.
+LaTeX Info: Redefining \ref on input line 133.
+LaTeX Info: Redefining \pageref on input line 133.
+LaTeX Info: Redefining \nameref on input line 133.
  (/Users/bertik/PhD/studie-bertik/minimum.out) (/Users/bertik/PhD/studie-bertik/minimum.out)
 \@outlinefile=\write5
 \openout5 = `minimum.out'.
@@ -1238,69 +1238,69 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 
 LaTeX Font Warning: Font shape `TU/Technika-Bold.otf(0)/bx/n' undefined
-(Font)              using `TU/Technika-Bold.otf(0)/m/n' instead on input line 104.
+(Font)              using `TU/Technika-Bold.otf(0)/m/n' instead on input line 135.
 
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `Technika-Bold.otf' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 104.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 135.
 (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 104.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 135.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 104.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 135.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 104.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 135.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 104.
+(Font)              <10.95> on input line 135.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 104.
+(Font)              <8> on input line 135.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 104.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 104.
+(Font)              <6> on input line 135.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 135.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 104.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 135.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 104.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 135.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 File: ctu_logo_black.pdf Graphic file (type pdf)
 <use ctu_logo_black.pdf>
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 104.
+(Font)              <14.4> on input line 135.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 104.
+(Font)              <10> on input line 135.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 104.
+(Font)              <7> on input line 135.
 
 
 LaTeX Font Warning: Font shape `TU/Technika-Regular.otf(0)/bx/n' undefined
-(Font)              using `TU/Technika-Regular.otf(0)/m/n' instead on input line 104.
+(Font)              using `TU/Technika-Regular.otf(0)/m/n' instead on input line 135.
 
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `Technika-Regular.otf' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Overfull \hbox (5.0pt too wide) in paragraph at lines 104--104
+Overfull \hbox (5.0pt too wide) in paragraph at lines 135--135
 []|| [][] 
  []
 
@@ -1310,10 +1310,10 @@ Overfull \hbox (5.0pt too wide) in paragraph at lines 104--104
 
 ]
 
-Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 104.
+Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 135.
 
 
-Package fancyhdr Warning: \fancyhead's `E' option without twoside option is useless on input line 104.
+Package fancyhdr Warning: \fancyhead's `E' option without twoside option is useless on input line 135.
 
 (/Users/bertik/PhD/studie-bertik/chapters/1_introduction.tex
 Chapter 1.
@@ -1347,7 +1347,12 @@ File: fig/transformer.pdf Graphic file (type pdf)
  [3]) (/Users/bertik/PhD/studie-bertik/chapters/2_sota.tex [4]
 Chapter 2.
 
-Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 32.
+Overfull \hbox (7.81195pt too wide) in paragraph at lines 23--26
+\TU/lmr/m/n/10.95 Open-source, freely usable. Often poor czech coverage Quantizace, 4b, 8b, zlomek parametrů 
+ []
+
+
+Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 33.
 
 [5
 
@@ -1417,7 +1422,7 @@ Overfull \hbox (52.1056pt too wide) in paragraph at lines 78--84
 ) [13]
 Appendix A.
 
-Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 128.
+Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 159.
 
 [14
 
@@ -1620,12 +1625,12 @@ Package rerunfilecheck Info: File `minimum.out' has not changed.
 (rerunfilecheck)             Checksum: 593B2B84DC57D6F0516D23DF9D423E58;6011.
  ) 
 Here is how much of TeX's memory you used:
- 32960 strings out of 476919
- 637104 string characters out of 5821840
- 1160666 words of memory out of 5000000
- 52201 multiletter control sequences out of 15000+600000
+ 32987 strings out of 476919
+ 637265 string characters out of 5821840
+ 1160665 words of memory out of 5000000
+ 52228 multiletter control sequences out of 15000+600000
  440673 words of font info for 110 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  93i,17n,120p,760b,534s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on /Users/bertik/PhD/studie-bertik/minimum.xdv (15 pages, 225464 bytes).
+Output written on /Users/bertik/PhD/studie-bertik/minimum.xdv (15 pages, 225828 bytes).
