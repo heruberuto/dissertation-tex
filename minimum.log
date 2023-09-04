@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.8)  4 SEP 2023 20:12
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.8)  4 SEP 2023 20:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1721,10 +1721,10 @@ Package rerunfilecheck Info: File `minimum.out' has not changed.
 Here is how much of TeX's memory you used:
  33139 strings out of 476919
  640385 string characters out of 5821840
- 1166572 words of memory out of 5000000
+ 1167572 words of memory out of 5000000
  52346 multiletter control sequences out of 15000+600000
  440745 words of font info for 119 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  93i,17n,120p,967b,838s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on /Users/bertik/PhD/studie-bertik/minimum.xdv (23 pages, 498484 bytes).
+Output written on /Users/bertik/PhD/studie-bertik/minimum.xdv (23 pages, 501856 bytes).
