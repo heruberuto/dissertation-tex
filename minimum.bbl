@@ -55,13 +55,8 @@ Conneau, A., Khandelwal, K., Goyal, N., Chaudhary, V., Wenzek, G.,
 \newblock Unsupervised cross-lingual representation learning at scale.
 \newblock {\em CoRR}, abs/1911.02116.
 
-\bibitem[Devlin et~al., 2019a]{bert}
-Devlin, J., Chang, M.-W., Lee, K., and Toutanova, K. (2019a).
-\newblock Bert: Pre-training of deep bidirectional transformers for language
-  understanding.
-
-\bibitem[Devlin et~al., 2019b]{devlin2019bert}
-Devlin, J., Chang, M.-W., Lee, K., and Toutanova, K. (2019b).
+\bibitem[Devlin et~al., 2019]{devlin2019bert}
+Devlin, J., Chang, M.-W., Lee, K., and Toutanova, K. (2019).
 \newblock {BERT}: Pre-training of deep bidirectional transformers for language
   understanding.
 \newblock In {\em Proceedings of the 2019 Conference of the North {A}merican

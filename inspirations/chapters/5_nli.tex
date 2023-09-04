@@ -20,7 +20,7 @@ For a practical instance, given a blinded datapoint formatted as in~\ref{list:fc
 
 \section{Related work}
 \label{sec:nlicorp}
-We have examined the following NLI datasets in English, and their respective state-of-the-art classifiers, largerly based on transformer models resemblant to \textsf{BERT}~\cite{bert}
+We have examined the following NLI datasets in English, and their respective state-of-the-art classifiers, largerly based on transformer models resemblant to \textsf{BERT}~\cite{devlin2019bert}
 \begin{itemize}
     \item {\techbf Stanford NLI Corpus} ({\techbf SNLI})~\cite{snli:emnlp2015}: \"{A large annotated corpus for learning natural language inference} -- a long-term standard benchmark for the task of natural language inference. Corpus of \char`~570,000 human-written English sentence pairs manually labeled for balanced classification as \texttt{entailment}, \texttt{contradiction} or \texttt{neutral}.
     
@@ -43,7 +43,7 @@ As nearly every solution examined in the Section~\ref{sec:nlicorp} relies on the
 
 First of all, let us examine the models that may already \"{speak} Czech: 
 \begin{itemize} 
-    \item {\techbf{Multilingual BERT}} ({\techbf mBERT}) -- is, basically, a variation of \textsf{Google}'s famed \textsf{BERT}$_\textsf{BASE}$ model~\cite{bert} for multiple languages, trained on the \textit{Masked Language Modeling} (\textit{MLM}) and \textit{Next Sentence Prediction} (\textit{NSP}) tasks using 104 localizations of \textsf{Wikipedia}. In our team, it has already been used for the \textit{knowledge scope} computations (\ref{sec:knowledge-scopes}), as well as for the Document Retrieval task by~\cite{rypar,michal} (\ref{tab:dr}) towards encouraging results
+    \item {\techbf{Multilingual BERT}} ({\techbf mBERT}) -- is, basically, a variation of \textsf{Google}'s famed \textsf{BERT}$_\textsf{BASE}$ model~\cite{devlin2019bert} for multiple languages, trained on the \textit{Masked Language Modeling} (\textit{MLM}) and \textit{Next Sentence Prediction} (\textit{NSP}) tasks using 104 localizations of \textsf{Wikipedia}. In our team, it has already been used for the \textit{knowledge scope} computations (\ref{sec:knowledge-scopes}), as well as for the Document Retrieval task by~\cite{rypar,michal} (\ref{tab:dr}) towards encouraging results
     
     \item {\techbf{SlavicBERT}}~\cite{slavicbert} -- similar to \textsf{mBERT}, trained on joint Bulgarian, Czech, Polish and Russian corpora
    

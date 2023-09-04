@@ -124,7 +124,7 @@ Thus, we were able to scale down the amount of data hardwired to the interactive
 
 
 
-We have used the \textsf{DrQA}~\cite{drqa} and \textsf{multilingual BERT}~\cite{bert} models trained by~\cite{michal} during his summer \textsf{AIC} internship as our internal state-of-the-art for \textsf{FEVER CS} \textsf{wiki-}abstract retrieval. The model task was to output a set of $k$ semantically nearest paragraphs ($k$-NN) to the given string.
+We have used the \textsf{DrQA}~\cite{drqa} and \textsf{multilingual BERT}~\cite{devlin2019bert} models trained by~\cite{michal} during his summer \textsf{AIC} internship as our internal state-of-the-art for \textsf{FEVER CS} \textsf{wiki-}abstract retrieval. The model task was to output a set of $k$ semantically nearest paragraphs ($k$-NN) to the given string.
 
 Where \textsf{DrQA} operates on a verbatim (\textit{term frequency–inverse document frequency}) basis, \textsf{mBERT} model calculates the paragraph \textit{embeddings} using a Transformer network pre-trained on \textsf{Wikipedia} and finetuned for the Czech Document Retrieval task.
 

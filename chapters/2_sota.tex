@@ -11,7 +11,7 @@ This chapter will first describe the originally popular models for NLP such as B
 For the last decade, the \textit{pretrain-finetune} paradigm has been a cornerstone in the field of Natural Language Processing (NLP) and has significantly shaped the development of modern NLP models. Its history in NLP can be traced back to the advent of neural networks and deep learning in the early 2010s. Initially, researchers pre-trained word embeddings using methods like Word2Vec~\cite{mikolov} and GloVe~\cite{pennington-etal-2014-glove} which captured semantic relationships among words. 
 
 \subsection{BERT and derivatives}
-The \textit{pretrain-finetune} paradigm truly rose to fame with the introduction of transformer-based models, particularly the revolutionary BERT (Bidirectional Encoder Representations from Transformers) in 2018. BERT~\cite{bert} demonstrated the power of pretraining large-scale language models on massive text corpora using an easy-to-automate general task such as \textit{Masked Language Modeling}, or \textit{Next Sentence Prediction}, followed by fine-tuning on specific downstream tasks using smaller, harder to obtain data. This approach achieved state-of-the-art results across various NLP benchmarks. Subsequently, numerous variations of pre-trained models like GPT (Generative Pre-trained Transformer) and RoBERTa emerged, each refining the pretrain-finetune paradigm to improve language understanding, generation, and transfer learning capabilities. 
+The \textit{pretrain-finetune} paradigm truly rose to fame with the introduction of transformer-based models, particularly the revolutionary BERT (Bidirectional Encoder Representations from Transformers) in 2018. BERT~\cite{devlin2019bert} demonstrated the power of pretraining large-scale language models on massive text corpora using an easy-to-automate general task such as \textit{Masked Language Modeling}, or \textit{Next Sentence Prediction}, followed by fine-tuning on specific downstream tasks using smaller, harder to obtain data. This approach achieved state-of-the-art results across various NLP benchmarks. Subsequently, numerous variations of pre-trained models like GPT (Generative Pre-trained Transformer) and RoBERTa emerged, each refining the pretrain-finetune paradigm to improve language understanding, generation, and transfer learning capabilities. 
 
 Importantly, BERT's success inspired a number of publications in training similar transformer models, varying in the definition of the general pre-training task, model size, architecture training corpus
 
@@ -24,15 +24,28 @@ Importantly, BERT's success inspired a number of publications in training simila
 
 \section{Few-shot and Zero-shot learning}
 \label{sec:llms}
-The ever-growing (sometimes, billions of parameters) transformer models have not only demonstrated superior performance on benchmark datasets but have also shown remarkable zero-shot and few-shot learning abilities, where they can perform tasks with minimal or no task-specific training data~\cite{gpt3}.
+The ever-growing (sometimes, billions of parameters in size) transformer models have not only demonstrated superior performance on benchmark datasets but have also shown remarkable zero-shot and few-shot learning abilities, where they can perform tasks with minimal or no task-specific training data~\cite{gpt3}.
 
 Few-shot learning refers to the capability of a model to perform a task when provided with only a limited amount of labeled examples. Zero-shot learning takes this concept a step further by enabling models to tackle tasks they have never seen during training. The integration of these learning paradigms into large language models like GPT-3 and subsequent iterations has spread the NLP hype even further. By utilizing a prompt or a few examples, these models can quickly adapt to new tasks, making them highly versatile, adaptable and usable to the general public.
-\subsection{GPT-3.5 and GPT-4}
+\subsection{OpenAI LLMs: GPT-3 and GPT-4}
 \label{sec:gpt}
-Obscure, paid~\cite{gpt3,gpt4}
+The first model that exhibited the few-shot learning, was a 175B-parameter autoregressive model called GPT-3 trained by~\cite{gpt3}. The model was trained on the task of generating text based on user's and its own previous tokens.
+The training procedure and data\footnote{A mixture of crawled websites, books and Wikipedia.} is throughly described in the publication, however, is prohibitively costly for most labs to reproduce, or even fine-tune. 
+
+In the fall of 2022, GPT-3 became widely popular thanks to its \textsf{ChatGPT}\footnote{\url{https://chat.openai.com}} fine-tune and demonstration app, which puts the user in the role of \textit{prompter}, texting back and forth with an LLM that predicts the most fitting reply for each conversation.
+
+With the arrival of GPT-4, the \textsf{ChatGPT} was already massively famous, and the new model already shipped with a paid-service business scheme no longer publishing the training data, tasks or even model size~\cite{gpt4}.
+
+\section{Open source LLMs}
+This puts the research community in an awkward position, as the GPT-4 achieves the state of the art in numerous NLP benchmarks~\todo{cite}, but is designed in a way that does not allow using it in any way other than as a black box, making the derived novel research rigorosity and reproducibility disputable.
+
+From the prediction times, \textsf{OpenAI} claims and general trends in NLP, there are also reasons to believe that GPT-4 is orders of magnitude larger than already wasteful GPT-3.
+This motivates an uptick in research of other LLMs that would be able to operate on smaller scale with similar results, using a peer-reviewed architecture and training scheme that is available in open source.
+
 
 \subsection{LLaMA-2 and derivatives}
 \label{sec:llama}
+
 Open-source, freely usable.
 Often poor czech coverage 
 Quantizace, 4b, 8b, zlomek parametrů\cite{openassistant}
