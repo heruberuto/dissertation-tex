@@ -105,6 +105,19 @@ Lazer, D. M.~J., Baum, M.~A., Benkler, Y., Berinsky, A.~J., Greenhill, K.~M.,
 \newblock The science of fake news.
 \newblock {\em Science}, 359(6380):1094--1096.
 
+\bibitem[Lehe{\v{c}}ka and {\v{S}}vec, 2021]{fernet}
+Lehe{\v{c}}ka, J. and {\v{S}}vec, J. (2021).
+\newblock Comparison of czech transformers on text classification tasks.
+\newblock In Espinosa-Anke, L., Mart{\'i}n-Vide, C., and Spasi{\'{c}}, I.,
+  editors, {\em Statistical Language and Speech Processing}, pages 27--37,
+  Cham. Springer International Publishing.
+
+\bibitem[Lin, 2004]{lin-2004-rouge}
+Lin, C.-Y. (2004).
+\newblock {ROUGE}: A package for automatic evaluation of summaries.
+\newblock In {\em Text Summarization Branches Out}, pages 74--81, Barcelona,
+  Spain. Association for Computational Linguistics.
+
 \bibitem[Liu et~al., 2022]{peft}
 Liu, H., Tam, D., Muqeeth, M., Mohta, J., Huang, T., Bansal, M., and Raffel, C.
   (2022).
@@ -116,6 +129,12 @@ Liu, P., Yuan, W., Fu, J., Jiang, Z., Hayashi, H., and Neubig, G. (2023).
 \newblock Pre-train, prompt, and predict: A systematic survey of prompting
   methods in natural language processing.
 \newblock {\em ACM Comput. Surv.}, 55(9).
+
+\bibitem[Liu et~al., 2019]{roberta}
+Liu, Y., Ott, M., Goyal, N., Du, J., Joshi, M., Chen, D., Levy, O., Lewis, M.,
+  Zettlemoyer, L., and Stoyanov, V. (2019).
+\newblock Roberta: {A} robustly optimized {BERT} pretraining approach.
+\newblock {\em CoRR}, abs/1907.11692.
 
 \bibitem[Mohri et~al., 2023]{mohri2023learning}
 Mohri, C., Andor, D., Choi, E., and Collins, M. (2023).
@@ -137,6 +156,11 @@ Raffel, C., Shazeer, N., Roberts, A., Lee, K., Narang, S., Matena, M., Zhou,
 Sebastian, G. (2023).
 \newblock Exploring ethical implications of chatgpt and other ai chatbots and
   regulation of disinformation propagation.
+
+\bibitem[Sido et~al., 2021]{czert}
+Sido, J., Pražák, O., Přibáň, P., Pašek, J., Seják, M., and Konopík, M.
+  (2021).
+\newblock Czert -- czech bert-like model for language representation.
 
 \bibitem[{\textsf{STEM}}, 2021]{stem}
 {\textsf{STEM}} (2021).

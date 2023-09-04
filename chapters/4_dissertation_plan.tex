@@ -36,8 +36,8 @@ For the task of claim generation, where we also face the challenge of the \texti
     
     A common problem with machine-extracted factual claims is reusing excerpts from source document along with inexplicable contextual pronouns (\"{President won't sue \textit{them}}) and relative referencing (\"{\textit{Last year}, CTU had 23K students}).
 
-\cite{choi-etal-2021-decontextualization} proposes decontextualization as a generative task with two texts on input $(s,c)$ -- sentence and context.
-    T5 model~\cite{t5-11b} is then trained on machine-generated gold data from Wikipedia to output text $s^\prime$ such that the truth-conditional meaning of $s^\prime$ in an empty context is the same as that of $s$ in $c$.
+\cite{choi-etal-2021-decontextualization} proposes decontextualization as a sequence to sequence task with two texts on input $(s,c)$ -- sentence and context.
+    T5 model~\cite{t5-11b} is then trained on machine-generated gold data from Wikipedia to output sentence $s^\prime$ such that the truth-conditional meaning of $s^\prime$ in an empty context is the same as that of $s$ in $c$.
 
     \cite{mohri2023learning} improves upon this, altering the problem formulation to minimizing surrogate loss, rejecting with a fixed predictor and claiming to get as close as $\sim3\%$ away from the theoretical limit for the task.
 
@@ -46,15 +46,27 @@ For the task of claim generation, where we also face the challenge of the \texti
     \item {\techbf Atomicity} --  \textit{does the claim describe a single entity, relation or process?}
     
     can be checked using the Relationship Extraction methods such as LUKE~\cite{yamada2020luke}. To put it simply, the RE task is to identify the entities of a text (persons, institutions,\dots) and the relations between them (such as $(\textit{\"{study at}}, \textit{Herbert}, \textit{CTU})$). The atomicity evaluation can be converted to a RE task by attempting to extract such fact triples and mark the claim as atomic if there is at most one such triple found (after removing symmetries)
-    \item {\techbf Faithfulness} -- \textit{does the claim only contain information that follows from the source document?}
+
+    \item {\techbf Faithfulness} -- \textit{does the claim only contain information that is consistent with the source document?}
     
     This metric is crucial to pinpoint \textit{model hallucinations} -- parts of claim where the model outputs stray from the information present in source text and begin to just \"{make stuff up}. We proceed to use two alternative metrics -- a score proposed within the FFCI evaluation framework~\cite{ffci} as: 
-    $$AvgTopN(BERTScore(t_i,s_j))$$
-    Similar metric was proposed in~\cite{zha2023alignscore}, looking for optimum alignment of output and parts of input, using an arbitrary 
-    \item {\techbf Focus}$@k$ -- \textit{if we generate $k$ claims using this model, what will be the proportion of gold (relevant) information among all the information listed in the generated claims?}\\
-    we use the question-answering-based solutions of QAGS~\cite{wang-etal-2020-asking}
-    \item {\techbf Coverage}$@k$ -- \textit{if we generate $k$ claims using this model, what proportion of gold (relevant) information from the source text will be covered?}\\
-    we use the question-answering-based solutions of QAGS~\cite{wang-etal-2020-asking}
+    $$\text{AvgTop-}n_{s_j\in X, t_i\in Y^\prime}(\textsc{BERTScore}(t_i,s_j))$$
+    Where the $\text{AvgTop-}n$ simply averages across the top $n$ (say, 5) highest scores, $X,Y^\prime$ are the sentences of source document and output (so, in the claim generation scenario $|Y^\prime|=1$) and $\textsc{BERTScore}$~\cite{bert-score} is a recently popular similarity score between two sentences that doesn't compare the texts on a verbatim level (like e.g., ROUGE~\cite{lin-2004-rouge} which correlates poorly with human judgement) but expresses the sentence similarity as a sum of cosine similarities between their tokens' embeddings -- this should capture semantical relations rather than the word-for-word similarity, which could be benefitial in highly inflected languages such as Czech.
+
+    Similar metric called \textsc{AlignScore} was proposed in~\cite{zha2023alignscore}, looking for optimum alignment of output and input parts, in terms of a RoBERTa model~\cite{roberta} trained to detect inconsistencies on 4.7M training examples adapted from various tasks (inference, question answering, paraphrasing,\dots) and while relatively small (355M parameters), outperforms metrics based on GPT-4 that is orders of magnitude larger. 
+
+    Empirically, the models work encouragingly well on spotting hallucinations and inconsistencies in English, and while the transduction of \textsc{BERTScore} is trivial, using a Czech embedding model such as CZERT~\cite{czert} or FERNET~\cite{fernet}, reproducing the success of \textsc{AlignScore} will require more research and data.
+
+    \item {\techbf Focus}$@k$ -- \textit{if we generate $k$ claims using this model, what will be the proportion of gold (relevant) information among all the information listed in the generated claims?}
+    
+    The metric is analogous to the concept of \textit{precision} in the common machine learning applications, however, its deciding gets more ambiguous in the natural language settings, where we are dealing with synonyms and endless number of possible wordings for every piece of information.
+
+    An ellegant and functional perspective on the problem has been brought around in QAGS\footnote{Pronounced \"{kags}, stands for \"{Question Answering and Generation for Summarization}} evaluation protocol~\cite{wang-etal-2020-asking}, where the idea is to use a Question Generation model (QG) to formulate questions in natural language based on all $k$ predicted claims. The questions are then twice answered using a Question Answering (QA) model, giving it knowledge from (i.) the predicted claims (ii.) the gold claims written by a human.
+    The focus is then defined as the proportion of questions with the same answers extracted from the gold and predicted claims, among all questions model can generate from the predicted claims. 
+
+    \item {\techbf Coverage}$@k$ -- \textit{if we generate $k$ claims using this model, what proportion of gold (relevant) information from the source text will be covered?}
+    
+    Anologous to \textit{recall@k} in general machine learning, QAGS proposes to generate questions using gold claims and try to answer them using the predicted claims, much like in the \textit{focus} scenario, but vice versa.
 \end{enumerate}
 
 \section{Data Collection}
