@@ -212,6 +212,13 @@ Stănescu, G. (2022).
 \newblock {Ukraine conflict: the challenge of informational war}.
 \newblock {\em SOCIAL SCIENCES AND EDUCATION RESEARCH REVIEW}, 9(1):146--148.
 
+\bibitem[Taori et~al., 2023]{alpaca}
+Taori, R., Gulrajani, I., Zhang, T., Dubois, Y., Li, X., Guestrin, C., Liang,
+  P., and Hashimoto, T.~B. (2023).
+\newblock Alpaca: A strong, replicable instruction-following model.
+\newblock \url{https://crfm.stanford.edu/2023/03/13/alpaca.html}.
+\newblock Accessed: 2023-09-04.
+
 \bibitem[Thorne et~al., 2019]{fever2}
 Thorne, J., Vlachos, A., Cocarascu, O., Christodoulopoulos, C., and Mittal, A.
   (2019).

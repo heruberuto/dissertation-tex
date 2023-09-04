@@ -29,26 +29,31 @@ The ever-growing (sometimes, billions of parameters in size) transformer models 
 Few-shot learning refers to the capability of a model to perform a task when provided with only a limited amount of labeled examples. Zero-shot learning takes this concept a step further by enabling models to tackle tasks they have never seen during training. The integration of these learning paradigms into large language models like GPT-3 and subsequent iterations has spread the NLP hype even further. By utilizing a prompt or a few examples, these models can quickly adapt to new tasks, making them highly versatile, adaptable and usable to the general public.
 \subsection{OpenAI LLMs: GPT-3 and GPT-4}
 \label{sec:gpt}
-The first model that exhibited the few-shot learning, was a 175B-parameter autoregressive model called GPT-3 trained by~\cite{gpt3}. The model was trained on the task of generating text based on user's and its own previous tokens.
+The first model that exhibited the few-shot learning, was a 175B-parameter autoregressive model called GPT-3 trained by~\cite{gpt3}. The model was trained on the task of generating text based on user's and its own previous outputs.
 The training procedure and data\footnote{A mixture of crawled websites, books and Wikipedia.} is throughly described in the publication, however, is prohibitively costly for most labs to reproduce, or even fine-tune. 
 
-In the fall of 2022, GPT-3 became widely popular thanks to its \textsf{ChatGPT}\footnote{\url{https://chat.openai.com}} fine-tune and demonstration app, which puts the user in the role of \textit{prompter}, texting back and forth with an LLM that predicts the most fitting reply for each conversation.
+In the fall of 2022, GPT-3 became widely popular thanks to its \textsf{ChatGPT}\footnote{\url{https://chat.openai.com}} fine-tune and demonstration app, which puts the user in the role of \textit{prompter}, texting back and forth with an LLM that predicts the most fitting reply in each conversation.
 
 With the arrival of GPT-4, the \textsf{ChatGPT} was already massively famous, and the new model already shipped with a paid-service business scheme no longer publishing the training data, tasks or even model size~\cite{gpt4}.
 
 \section{Open source LLMs}
-This puts the research community in an awkward position, as the GPT-4 achieves the state of the art in numerous NLP benchmarks~\todo{cite}, but is designed in a way that does not allow using it in any way other than as a black box, making the derived novel research rigorosity and reproducibility disputable.
+This puts the research community in an awkward position, as the GPT-4 achieves the state of the art in numerous NLP benchmarks~\todo{cite}, but is designed in a way that does not allow using it in any way other than as a black box, making the derived research rigorosity and reproducibility disputable.
 
 From the prediction times, \textsf{OpenAI} claims and general trends in NLP, there are also reasons to believe that GPT-4 is orders of magnitude larger than already wasteful GPT-3.
-This motivates an uptick in research of other LLMs that would be able to operate on smaller scale with similar results, using a peer-reviewed architecture and training scheme that is available in open source.
-
+This motivates an uptick in research of other LLMs that would be able to operate on smaller scale with similar results, using a peer-reviewed architecture, training scheme and data that is available in open source.
 
 \subsection{LLaMA-2 and derivatives}
 \label{sec:llama}
 
-Open-source, freely usable.
-Often poor czech coverage 
-Quantizace, 4b, 8b, zlomek parametrů\cite{openassistant}
+A popular robustly designed LLM to compete with the GPT family has become the \textsf{LLaMA}~\cite{llama} from \textsf{Meta research}. \todo{data, task, sizes}
+
+It has been used as a goto base model for a number of successful open-source chatbots such as~\cite{vicuna,alpaca,openassistant}.
+
+The LLaMA weights are, however, published under a restrictive license that prohibits republishing the model weights even after tuning its parameters, which limits the fine-tunes to publishing delta- or xor-weights that can not be used without the \textsf{Meta}'s permission.
+
+%Open-source, freely usable.
+%Often poor czech coverage 
+%Quantizace, 4b, 8b, zlomek parametrů\cite{openassistant}
 
 \subsection{LoRA and other optimization}
 To be able to fine-tune multi-billion-parameter models such as \textsf{LLaMA-2}~\cite{llama2} on a single TPU, multiple adjustments must be made to reduce the computational complexity.~\cite{peft}

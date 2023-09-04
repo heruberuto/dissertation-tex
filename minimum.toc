@@ -24,9 +24,9 @@
 \contentsline {subsection}{\numberline {2.4.1}FEVER and followups}{7}{subsection.2.4.1}%
 \contentsline {subsection}{\numberline {2.4.2}Open-domain fact-checking}{7}{subsection.2.4.2}%
 \contentsline {section}{\numberline {2.5}Claim generation}{7}{section.2.5}%
-\contentsline {section}{\numberline {2.6}NLP Generative task benchmarking}{7}{section.2.6}%
-\contentsline {subsection}{\numberline {2.6.1}BERTScore}{7}{subsection.2.6.1}%
-\contentsline {subsection}{\numberline {2.6.2}AlignScore}{7}{subsection.2.6.2}%
+\contentsline {section}{\numberline {2.6}NLP Generative task benchmarking}{8}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}BERTScore}{8}{subsection.2.6.1}%
+\contentsline {subsection}{\numberline {2.6.2}AlignScore}{8}{subsection.2.6.2}%
 \contentsline {chapter}{\numberline {3}Current Contribution}{9}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Datasets}{9}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}\textsc {CsFEVER}\xspace }{9}{subsection.3.1.1}%
