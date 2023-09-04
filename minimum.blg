@@ -3,46 +3,47 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: minimum.aux
 The style file: apalike.bst
 Database file #1: minimum.bib
-Warning--empty booktitle in shukai
-You've used 19 entries,
+Warning--entry type for "glorin" isn't style-file defined
+--line 2407 of file minimum.bib
+You've used 34 entries,
             1935 wiz_defined-function locations,
-            574 strings with 7874 characters,
-and the built_in function-call counts, 8806 in all, are:
-= -- 821
-> -- 563
-< -- 9
-+ -- 210
-- -- 204
-* -- 787
-:= -- 1583
-add.period$ -- 56
-call.type$ -- 19
-change.case$ -- 197
-chr.to.int$ -- 19
-cite$ -- 20
-duplicate$ -- 277
-empty$ -- 476
-format.name$ -- 227
-if$ -- 1663
-int.to.chr$ -- 1
+            641 strings with 12736 characters,
+and the built_in function-call counts, 18371 in all, are:
+= -- 1627
+> -- 1496
+< -- 13
++ -- 570
+- -- 560
+* -- 1763
+:= -- 3365
+add.period$ -- 96
+call.type$ -- 34
+change.case$ -- 450
+chr.to.int$ -- 32
+cite$ -- 34
+duplicate$ -- 480
+empty$ -- 801
+format.name$ -- 598
+if$ -- 3372
+int.to.chr$ -- 3
 int.to.str$ -- 0
-missing$ -- 12
-newline$ -- 94
-num.names$ -- 57
-pop$ -- 176
+missing$ -- 18
+newline$ -- 162
+num.names$ -- 102
+pop$ -- 412
 preamble$ -- 1
-purify$ -- 197
+purify$ -- 450
 quote$ -- 0
-skip$ -- 218
+skip$ -- 379
 stack$ -- 0
-substring$ -- 470
-swap$ -- 38
-text.length$ -- 3
+substring$ -- 769
+swap$ -- 67
+text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 114
-warning$ -- 1
-while$ -- 54
+type$ -- 204
+warning$ -- 0
+while$ -- 93
 width$ -- 0
-write$ -- 239
+write$ -- 415
 (There was 1 warning)

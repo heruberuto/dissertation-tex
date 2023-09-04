@@ -175,14 +175,13 @@
 % the abstracts are accompanied by the keywords and possibly other information
 \ctutemplateset{maketitle.twocolumn.default}{
 	\begin{twocolumnfrontmatterpage}
-		\ctutemplate{twocolumn.thanks}
-	\newpage
-		\ctutemplate{twocolumn.declaration}
-	\clearpage
-		\ctutemplate{twocolumn.abstract.in.titlelanguage}
-	\newpage
-		\ctutemplate{twocolumn.abstract.in.secondlanguage}
-	\clearpage
+%		\ctutemplate{twocolumn.thanks}
+%	\newpage
+%		\ctutemplate{twocolumn.declaration}
+%	\clearpage
+%		\ctutemplate{twocolumn.abstract.in.titlelanguage}
+%	\newpage
+%		\ctutemplate{twocolumn.abstract.in.secondlanguage}
 		\ctutemplate{twocolumn.tableofcontents}
 	% The "loft" template is included only if at least one of the lists is enabled
 	\bool_if:nTF {
@@ -219,7 +218,7 @@
 		\cleardoublepage*
 	} { }
 	% The abstract and alike
-	%\ctutemplate{maketitle.twocolumn.default}
+	\ctutemplate{maketitle.twocolumn.default}
 	\def\thepage{}
 	% Start the mainmatter
 	\mainmatter

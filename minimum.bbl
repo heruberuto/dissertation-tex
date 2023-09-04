@@ -27,34 +27,68 @@ Buchanan, T. and Benson, V. (2019).
   risk propensity, or personality affect the organic reach of “fake news”?
 \newblock {\em Social Media + Society}, 5(4):2056305119888654.
 
+\bibitem[Bútora, 2023]{butora}
+Bútora, R. (2023).
+\newblock Crowd-sourcing platform frontend for fact-checking.
+\newblock \url{https://dspace.cvut.cz/handle/10467/109505}.
+
+\bibitem[Chen et~al., 2023]{bing}
+Chen, J., Kim, G., Sriram, A., Durrett, G., and Choi, E. (2023).
+\newblock Complex claim verification with evidence retrieved in the wild.
+
 \bibitem[Cheng et~al., 2016]{lstm}
 Cheng, J., Dong, L., and Lapata, M. (2016).
 \newblock Long short-term memory-networks for machine reading.
 \newblock {\em CoRR}, abs/1601.06733.
 
-\bibitem[Devlin et~al., 2019]{bert}
-Devlin, J., Chang, M.-W., Lee, K., and Toutanova, K. (2019).
+\bibitem[Devlin et~al., 2019a]{bert}
+Devlin, J., Chang, M.-W., Lee, K., and Toutanova, K. (2019a).
 \newblock Bert: Pre-training of deep bidirectional transformers for language
   understanding.
 
-\bibitem[Dědková, 2021]{dedkova}
-Dědková, B. (2021).
-\newblock Multi-stage methods for document retrieval in the czech language.
+\bibitem[Devlin et~al., 2019b]{devlin2019bert}
+Devlin, J., Chang, M.-W., Lee, K., and Toutanova, K. (2019b).
+\newblock {BERT}: Pre-training of deep bidirectional transformers for language
+  understanding.
+\newblock In {\em Proceedings of the 2019 Conference of the North {A}merican
+  Chapter of the Association for Computational Linguistics: Human Language
+  Technologies, Volume 1 (Long and Short Papers)}, pages 4171--4186,
+  Minneapolis, Minnesota. Association for Computational Linguistics.
 
 \bibitem[Fu et~al., 2023]{fu2023gptscore}
 Fu, J., Ng, S.-K., Jiang, Z., and Liu, P. (2023).
 \newblock Gptscore: Evaluate as you desire.
-
-\bibitem[Gažo, 2021]{gazo}
-Gažo, A. (2021).
-\newblock Algorithms for document retrieval in czech language supporting long
-  inputs.
 
 \bibitem[Guo et~al., 2022]{guo-etal-2022-survey}
 Guo, Z., Schlichtkrull, M., and Vlachos, A. (2022).
 \newblock A survey on automated fact-checking.
 \newblock {\em Transactions of the Association for Computational Linguistics},
   10:178--206.
+
+\bibitem[Hu et~al., 2021]{lora}
+Hu, E.~J., Shen, Y., Wallis, P., Allen{-}Zhu, Z., Li, Y., Wang, S., and Chen,
+  W. (2021).
+\newblock Lora: Low-rank adaptation of large language models.
+\newblock {\em CoRR}, abs/2106.09685.
+
+\bibitem[Ji et~al., 2023]{Ji_2023}
+Ji, Z., Lee, N., Frieske, R., Yu, T., Su, D., Xu, Y., Ishii, E., Bang, Y.~J.,
+  Madotto, A., and Fung, P. (2023).
+\newblock Survey of hallucination in natural language generation.
+\newblock {\em {ACM} Computing Surveys}, 55(12):1--38.
+
+\bibitem[Koto et~al., 2020]{ffci}
+Koto, F., Baldwin, T., and Lau, J.~H. (2020).
+\newblock Ffci: A framework for interpretable automatic evaluation of
+  summarization.
+
+\bibitem[Köpf et~al., 2023]{openassistant}
+Köpf, A., Kilcher, Y., von Rütte, D., Anagnostidis, S., Tam, Z.-R., Stevens,
+  K., Barhoum, A., Duc, N.~M., Stanley, O., Nagyfi, R., ES, S., Suri, S.,
+  Glushkov, D., Dantuluri, A., Maguire, A., Schuhmann, C., Nguyen, H., and
+  Mattick, A. (2023).
+\newblock Openassistant conversations -- democratizing large language model
+  alignment.
 
 \bibitem[Lazer et~al., 2018]{Lazer1094}
 Lazer, D. M.~J., Baum, M.~A., Benkler, Y., Berinsky, A.~J., Greenhill, K.~M.,
@@ -64,15 +98,26 @@ Lazer, D. M.~J., Baum, M.~A., Benkler, Y., Berinsky, A.~J., Greenhill, K.~M.,
 \newblock The science of fake news.
 \newblock {\em Science}, 359(6380):1094--1096.
 
-\bibitem[Rýpar, 2021]{rypar}
-Rýpar, M. (2021).
-\newblock Methods of document retrieval for fact-checking.
-\newblock \url{https://www.overleaf.com/read/thbvcjvvvfjp}.
-\newblock [Online; accessed 21-May-2021].
+\bibitem[Liu et~al., 2022]{peft}
+Liu, H., Tam, D., Muqeeth, M., Mohta, J., Huang, T., Bansal, M., and Raffel, C.
+  (2022).
+\newblock Few-shot parameter-efficient fine-tuning is better and cheaper than
+  in-context learning.
 
-\bibitem[Shu et~al., 2018]{shukai}
-Shu, K., Wang, S., Le, T., Lee, D., and Liu, H. (2018).
-\newblock Deep headline generation for clickbait detection.
+\bibitem[Liu et~al., 2023]{prompting}
+Liu, P., Yuan, W., Fu, J., Jiang, Z., Hayashi, H., and Neubig, G. (2023).
+\newblock Pre-train, prompt, and predict: A systematic survey of prompting
+  methods in natural language processing.
+\newblock {\em ACM Comput. Surv.}, 55(9).
+
+\bibitem[OpenAI, 2023]{gpt4}
+OpenAI (2023).
+\newblock Gpt-4 technical report.
+
+\bibitem[Sebastian, 2023]{glorin}
+Sebastian, G. (2023).
+\newblock Exploring ethical implications of chatgpt and other ai chatbots and
+  regulation of disinformation propagation.
 
 \bibitem[{\textsf{STEM}}, 2021]{stem}
 {\textsf{STEM}} (2021).
@@ -82,6 +127,11 @@ Shu, K., Wang, S., Le, T., Lee, D., and Liu, H. (2018).
   \url{https://www.stem.cz/mytum-a-konspiracim-o-covid-19-veri-vice-nez-tretina-ceske-internetove-populace/}.
 \newblock Accessed: 2021-05-03.
 
+\bibitem[Stănescu, 2022]{georgiana_stanescu_2022_6795674}
+Stănescu, G. (2022).
+\newblock {Ukraine conflict: the challenge of informational war}.
+\newblock {\em SOCIAL SCIENCES AND EDUCATION RESEARCH REVIEW}, 9(1):146--148.
+
 \bibitem[Thorne et~al., 2019]{fever2}
 Thorne, J., Vlachos, A., Cocarascu, O., Christodoulopoulos, C., and Mittal, A.
   (2019).
@@ -90,11 +140,39 @@ Thorne, J., Vlachos, A., Cocarascu, O., Christodoulopoulos, C., and Mittal, A.
   VERification (FEVER)}, pages 1--6, Hong Kong, China. Association for
   Computational Linguistics.
 
+\bibitem[Touvron et~al., 2023a]{llama}
+Touvron, H., Lavril, T., Izacard, G., Martinet, X., Lachaux, M.-A., Lacroix,
+  T., Rozière, B., Goyal, N., Hambro, E., Azhar, F., Rodriguez, A., Joulin,
+  A., Grave, E., and Lample, G. (2023a).
+\newblock Llama: Open and efficient foundation language models.
+
+\bibitem[Touvron et~al., 2023b]{llama2}
+Touvron, H., Martin, L., Stone, K., Albert, P., Almahairi, A., Babaei, Y.,
+  Bashlykov, N., Batra, S., Bhargava, P., Bhosale, S., Bikel, D., Blecher, L.,
+  Ferrer, C.~C., Chen, M., Cucurull, G., Esiobu, D., Fernandes, J., Fu, J., Fu,
+  W., Fuller, B., Gao, C., Goswami, V., Goyal, N., Hartshorn, A., Hosseini, S.,
+  Hou, R., Inan, H., Kardas, M., Kerkez, V., Khabsa, M., Kloumann, I., Korenev,
+  A., Koura, P.~S., Lachaux, M.-A., Lavril, T., Lee, J., Liskovich, D., Lu, Y.,
+  Mao, Y., Martinet, X., Mihaylov, T., Mishra, P., Molybog, I., Nie, Y.,
+  Poulton, A., Reizenstein, J., Rungta, R., Saladi, K., Schelten, A., Silva,
+  R., Smith, E.~M., Subramanian, R., Tan, X.~E., Tang, B., Taylor, R.,
+  Williams, A., Kuan, J.~X., Xu, P., Yan, Z., Zarov, I., Zhang, Y., Fan, A.,
+  Kambadur, M., Narang, S., Rodriguez, A., Stojnic, R., Edunov, S., and
+  Scialom, T. (2023b).
+\newblock Llama 2: Open foundation and fine-tuned chat models.
+
 \bibitem[Vaswani et~al., 2017]{vaswani}
 Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A.~N.,
   Kaiser, L., and Polosukhin, I. (2017).
 \newblock Attention is all you need.
 \newblock {\em CoRR}, abs/1706.03762.
+
+\bibitem[Vicuna, 2023]{vicuna}
+Vicuna (2023).
+\newblock Vicuna: An open-source chatbot impressing gpt-4 with 90\%* chatgpt
+  quality.
+\newblock \url{https://vicuna.lmsys.org/}.
+\newblock Accessed: 2023-09-04.
 
 \bibitem[Wang et~al., 2020]{wang-etal-2020-asking}
 Wang, A., Cho, K., and Lewis, M. (2020).
@@ -103,6 +181,19 @@ Wang, A., Cho, K., and Lewis, M. (2020).
 \newblock In {\em Proceedings of the 58th Annual Meeting of the Association for
   Computational Linguistics}, pages 5008--5020, Online. Association for
   Computational Linguistics.
+
+\bibitem[Wright et~al., 2022]{wright}
+Wright, D., Wadden, D., Lo, K., Kuehl, B., Cohan, A., Augenstein, I., and Wang,
+  L.~L. (2022).
+\newblock Generating scientific claims for zero-shot scientific fact checking.
+\newblock In {\em Proceedings of the 60th Annual Meeting of the Association for
+  Computational Linguistics (Volume 1: Long Papers)}, pages 2448--2460, Dublin,
+  Ireland. Association for Computational Linguistics.
+
+\bibitem[Yamada et~al., 2020]{yamada2020luke}
+Yamada, I., Asai, A., Shindo, H., Takeda, H., and Matsumoto, Y. (2020).
+\newblock Luke: Deep contextualized entity representations with entity-aware
+  self-attention.
 
 \bibitem[Yasunaga et~al., 2021]{yasunaga-etal-2021-lm}
 Yasunaga, M., Leskovec, J., and Liang, P. (2021).
@@ -116,5 +207,16 @@ Yasunaga, M., Leskovec, J., and Liang, P. (2021).
 Zha, Y., Yang, Y., Li, R., and Hu, Z. (2023).
 \newblock Alignscore: Evaluating factual consistency with a unified alignment
   function.
+
+\bibitem[Zhang* et~al., 2020]{bert-score}
+Zhang*, T., Kishore*, V., Wu*, F., Weinberger, K.~Q., and Artzi, Y. (2020).
+\newblock Bertscore: Evaluating text generation with bert.
+\newblock In {\em International Conference on Learning Representations}.
+
+\bibitem[Zhao et~al., 2023]{llms}
+Zhao, W.~X., Zhou, K., Li, J., Tang, T., Wang, X., Hou, Y., Min, Y., Zhang, B.,
+  Zhang, J., Dong, Z., Du, Y., Yang, C., Chen, Y., Chen, Z., Jiang, J., Ren,
+  R., Li, Y., Tang, X., Liu, Z., Liu, P., Nie, J.-Y., and Wen, J.-R. (2023).
+\newblock A survey of large language models.
 
 \end{thebibliography}

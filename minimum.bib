@@ -30,6 +30,23 @@
   howpublished = {\url{https://www.stem.cz/mytum-a-konspiracim-o-covid-19-veri-vice-nez-tretina-ceske-internetove-populace/}},
   note         = {Accessed: 2021-05-03}
 }
+
+@misc{vicuna,
+  author       = {Vicuna},
+  year         = {2023},
+  title        = {Vicuna: An open-source chatbot impressing gpt-4 with 90\%* chatgpt quality},
+  howpublished = {\url{https://vicuna.lmsys.org/}},
+  note         = {Accessed: 2023-09-04}
+}
+
+@misc{alpaca,
+  author       = {Rohan Taori and Ishaan Gulrajani and Tianyi Zhang and Yann Dubois and Xuechen Li and Carlos Guestrin and Percy Liang and Tatsunori B. Hashimoto},
+  year         = {2023},
+  title        = {Alpaca: A Strong, Replicable Instruction-Following Model},
+  howpublished = {\url{https://crfm.stanford.edu/2023/03/13/alpaca.html}},
+  note         = {Accessed: 2023-09-04}
+}
+
 @misc{mediawiki,
   author       = {Yuri Astrakhan    and Roan Kattouw      and Victor Vasiliev   and Bryan Tong Minhand Sam Reed          and Brad Jorsch},
   year         = {2021},
@@ -71,6 +88,28 @@
   author = {Dědková, Barbora},
   year   = {2021}
 }
+
+@misc{butora,
+  title        = {Crowd-sourcing Platform Frontend for Fact-checking},
+  howpublished = {\url{https://dspace.cvut.cz/handle/10467/109505}},
+  author       = {Bútora, Roman},
+  year         = {2023}
+}
+
+@misc{mlynar,
+  title        = {Automated Fact Checking Based on Czech Wikipedia},
+  howpublished = {\url{https://dspace.cvut.cz/handle/10467/109219}},
+  author       = {Mlynář, Tomáš},
+  year         = {2023}
+}
+
+@misc{korladinova,
+  title        = {Extracting Keywords from Textual Data Clusters},
+  howpublished = {\url{https://dspace.cvut.cz/handle/10467/109209}},
+  author       = {Korladinova, Diana},
+  year         = {2023}
+}
+
 @misc{rypar,
   title        = {Methods of Document Retrieval for Fact-Checking},
   author       = {Rýpar, Martin},
@@ -1097,4 +1136,1302 @@
   url       = {https://aclanthology.org/2020.acl-main.450},
   doi       = {10.18653/v1/2020.acl-main.450},
   pages     = {5008--5020}
+}
+
+@inproceedings{aly2021feverous,
+  title     = {{FEVEROUS}: Fact Extraction and {VER}ification Over Unstructured and Structured information},
+  author    = {Rami Aly and Zhijiang Guo and Michael Sejr Schlichtkrull and James Thorne and Andreas Vlachos and Christos Christodoulopoulos and Oana Cocarascu and Arpit Mittal},
+  booktitle = {Thirty-fifth Conference on Neural Information Processing Systems Datasets and Benchmarks Track (Round 1)},
+  year      = {2021},
+  url       = {https://openreview.net/forum?id=h-flVCIlstW}
+}
+
+@inproceedings{arkhipov2019tuning,
+  title     = {Tuning Multilingual Transformers for Language-Specific Named Entity Recognition},
+  author    = {Arkhipov, Mikhail  and
+               Trofimova, Maria  and
+               Kuratov, Yuri  and
+               Sorokin, Alexey},
+  booktitle = {Proceedings of the 7th Workshop on Balto-Slavic Natural Language Processing},
+  month     = aug,
+  year      = {2019},
+  address   = {Florence, Italy},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://aclanthology.org/W19-3712},
+  doi       = {10.18653/v1/W19-3712},
+  pages     = {89--93},
+  abstract  = {Our paper addresses the problem of multilingual named entity recognition on the material of 4 languages: Russian, Bulgarian, Czech and Polish. We solve this task using the BERT model. We use a hundred languages multilingual model as base for transfer to the mentioned Slavic languages. Unsupervised pre-training of the BERT model on these 4 languages allows to significantly outperform baseline neural approaches and multilingual BERT. Additional improvement is achieved by extending BERT with a word-level CRF layer. Our system was submitted to BSNLP 2019 Shared Task on Multilingual Named Entity Recognition and demonstrated top performance in multilingual setting for two competition metrics. We open-sourced NER models and BERT model pre-trained on the four Slavic languages.}
+}
+
+@inproceedings{augenstein2019multifc,
+  title     = {{M}ulti{FC}: A Real-World Multi-Domain Dataset for Evidence-Based Fact Checking of Claims},
+  author    = {Augenstein, Isabelle  and
+               Lioma, Christina  and
+               Wang, Dongsheng  and
+               Chaves Lima, Lucas  and
+               Hansen, Casper  and
+               Hansen, Christian  and
+               Simonsen, Jakob Grue},
+  booktitle = {Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)},
+  month     = nov,
+  year      = {2019},
+  address   = {Hong Kong, China},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://aclanthology.org/D19-1475},
+  doi       = {10.18653/v1/D19-1475},
+  pages     = {4685--4697},
+  abstract  = {We contribute the largest publicly available dataset of naturally occurring factual claims for the purpose of automatic claim verification. It is collected from 26 fact checking websites in English, paired with textual sources and rich metadata, and labelled for veracity by human expert journalists. We present an in-depth analysis of the dataset, highlighting characteristics and challenges. Further, we present results for automatic veracity prediction, both with established baselines and with a novel method for joint ranking of evidence pages and predicting veracity that outperforms all baselines. Significant performance increases are achieved by encoding evidence, and by modelling metadata. Our best-performing model achieves a Macro F1 of 49.2{\%}, showing that this is a challenging testbed for claim veracity prediction.}
+}
+
+@article{beltagy2020longformer,
+  title   = {Longformer: The Long-Document Transformer},
+  author  = {Iz Beltagy and Matthew E. Peters and Arman Cohan},
+  journal = {arXiv:2004.05150},
+  year    = {2020}
+}
+
+@article{bender2018data,
+  title   = {Data Statements for Natural Language Processing: Toward Mitigating System Bias and Enabling Better Science},
+  author  = {Bender, Emily M.  and Friedman, Batya},
+  journal = {Transactions of the Association for Computational Linguistics},
+  volume  = {6},
+  year    = {2018},
+  url     = {https://aclanthology.org/Q18-1041},
+  doi     = {10.1162/tacl_a_00041},
+  pages   = {587--604}
+}
+
+@article{binau2020danish,
+  title  = {Danish Fact Verification: An End-to-End Machine Learning System for Automatic Fact-Checking of Danish Textual Claims},
+  author = {Binau, Julie and Schulte, Henri},
+  year   = {2020}
+}
+
+@inproceedings{bowman2015large,
+  title     = {A large annotated corpus for learning natural language inference},
+  author    = {Bowman, Samuel R.  and
+               Angeli, Gabor  and
+               Potts, Christopher  and
+               Manning, Christopher D.},
+  booktitle = {Proceedings of the 2015 Conference on Empirical Methods in Natural Language Processing},
+  month     = sep,
+  year      = {2015},
+  address   = {Lisbon, Portugal},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://aclanthology.org/D15-1075},
+  doi       = {10.18653/v1/D15-1075},
+  pages     = {632--642}
+}
+
+@inproceedings{brod6ley1996identifying,
+  author    = {Brodley, Carla E. and Friedl, Mark A.},
+  title     = {Identifying and Eliminating Mislabeled Training Instances},
+  year      = {1996},
+  isbn      = {026251091X},
+  publisher = {AAAI Press},
+  abstract  = {This paper presents a new approach to identifying and eliminating mislabeled training instances. The goal of this technique is to improve classification accuracies produced by learning algorithms by improving the quality of the training data. The approach employs an ensemble of classifiers that serve as a filter for the training data. Using an n-fold cross validation, the training data is passed through the filter. Only instances that the filter classifies correctly are passed to the final learning algorithm. We present an empirical evaluation of the approach for the task of automated land cover mapping from remotely sensed data. Labeling error arises in these data from a multitude of sources including lack of consistency in the vegetation classification used, variable measurement techniques, and variation in the spatial sampling resolution. Our evaluation shows that for noise levels of less than 40%, filtering results in higher predictive accuracy than not filtering, and for levels of class noise less than or equal to 20% filtering allows the base-line accuracy to be retained. Our empirical results suggest that the ensemble filter approach is an effective method for identifying labeling errors, and further, that the approach will significantly benefit ongoing research to develop accurate and robust remote sensing-based methods to map land cover at global scales.},
+  booktitle = {Proceedings of the Thirteenth National Conference on Artificial Intelligence - Volume 1},
+  pages     = {799–805},
+  numpages  = {7},
+  location  = {Portland, Oregon},
+  series    = {AAAI'96}
+}
+
+@inproceedings{burtsev2018deeppavlov,
+  title     = {{D}eep{P}avlov: Open-Source Library for Dialogue Systems},
+  author    = {Burtsev, Mikhail  and
+               Seliverstov, Alexander  and
+               Airapetyan, Rafael  and
+               Arkhipov, Mikhail  and
+               Baymurzina, Dilyara  and
+               Bushkov, Nickolay  and
+               Gureenkova, Olga  and
+               Khakhulin, Taras  and
+               Kuratov, Yuri  and
+               Kuznetsov, Denis  and
+               Litinsky, Alexey  and
+               Logacheva, Varvara  and
+               Lymar, Alexey  and
+               Malykh, Valentin  and
+               Petrov, Maxim  and
+               Polulyakh, Vadim  and
+               Pugachev, Leonid  and
+               Sorokin, Alexey  and
+               Vikhreva, Maria  and
+               Zaynutdinov, Marat},
+  booktitle = {Proceedings of {ACL} 2018, System Demonstrations},
+  month     = jul,
+  year      = {2018},
+  address   = {Melbourne, Australia},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://aclanthology.org/P18-4021},
+  doi       = {10.18653/v1/P18-4021},
+  pages     = {122--127},
+  abstract  = {Adoption of messaging communication and voice assistants has grown rapidly in the last years. This creates a demand for tools that speed up prototyping of feature-rich dialogue systems. An open-source library DeepPavlov is tailored for development of conversational agents. The library prioritises efficiency, modularity, and extensibility with the goal to make it easier to develop dialogue systems from scratch and with limited data available. It supports modular as well as end-to-end approaches to implementation of conversational agents. Conversational agent consists of skills and every skill can be decomposed into components. Components are usually models which solve typical NLP tasks such as intent classification, named entity recognition or pre-trained word vectors. Sequence-to-sequence chit-chat skill, question answering skill or task-oriented skill can be assembled from components provided in the library.}
+}
+
+@inproceedings{chang2020twotower,
+  title     = {Pre-training Tasks for Embedding-based Large-scale Retrieval},
+  author    = {Wei-Cheng Chang and Felix X. Yu and Yin-Wen Chang and Yiming Yang and Sanjiv Kumar},
+  booktitle = {International Conference on Learning Representations},
+  year      = {2020},
+  url       = {https://openreview.net/forum?id=rkg-mA4FDr}
+}
+
+@inproceedings{chatzikyriakidis2017overview,
+  title     = {An overview of Natural Language Inference Data Collection: The way forward?},
+  author    = {Chatzikyriakidis, Stergios  and
+               Cooper, Robin  and
+               Dobnik, Simon  and
+               Larsson, Staffan},
+  booktitle = {Proceedings of the Computing Natural Language Inference Workshop},
+  year      = {2017},
+  url       = {https://aclanthology.org/W17-7203}
+}
+
+@inproceedings{chen2017drqa,
+  title     = {Reading {W}ikipedia to Answer Open-Domain Questions},
+  author    = {Chen, Danqi  and
+               Fisch, Adam  and
+               Weston, Jason  and
+               Bordes, Antoine},
+  booktitle = {Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  month     = jul,
+  year      = {2017},
+  address   = {Vancouver, Canada},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://aclanthology.org/P17-1171},
+  doi       = {10.18653/v1/P17-1171},
+  pages     = {1870--1879},
+  abstract  = {This paper proposes to tackle open-domain question answering using Wikipedia as the unique knowledge source: the answer to any factoid question is a text span in a Wikipedia article. This task of machine reading at scale combines the challenges of document retrieval (finding the relevant articles) with that of machine comprehension of text (identifying the answer spans from those articles). Our approach combines a search component based on bigram hashing and TF-IDF matching with a multi-layer recurrent neural network model trained to detect answers in Wikipedia paragraphs. Our experiments on multiple existing QA datasets indicate that (1) both modules are highly competitive with respect to existing counterparts and (2) multitask learning using distant supervision on their combination is an effective complete system on this challenging task.}
+}
+
+@inproceedings{conneau2020unsupervised,
+  title     = {Unsupervised Cross-lingual Representation Learning at Scale},
+  author    = {Conneau, Alexis  and
+               Khandelwal, Kartikay  and
+               Goyal, Naman  and
+               Chaudhary, Vishrav  and
+               Wenzek, Guillaume  and
+               Guzm{\'a}n, Francisco  and
+               Grave, Edouard  and
+               Ott, Myle  and
+               Zettlemoyer, Luke  and
+               Stoyanov, Veselin},
+  booktitle = {Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics},
+  month     = jul,
+  year      = {2020},
+  address   = {Online},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://aclanthology.org/2020.acl-main.747},
+  doi       = {10.18653/v1/2020.acl-main.747},
+  pages     = {8440--8451},
+  abstract  = {This paper shows that pretraining multilingual language models at scale leads to significant performance gains for a wide range of cross-lingual transfer tasks. We train a Transformer-based masked language model on one hundred languages, using more than two terabytes of filtered CommonCrawl data. Our model, dubbed XLM-R, significantly outperforms multilingual BERT (mBERT) on a variety of cross-lingual benchmarks, including +14.6{\%} average accuracy on XNLI, +13{\%} average F1 score on MLQA, and +2.4{\%} F1 score on NER. XLM-R performs particularly well on low-resource languages, improving 15.7{\%} in XNLI accuracy for Swahili and 11.4{\%} for Urdu over previous XLM models. We also present a detailed empirical analysis of the key factors that are required to achieve these gains, including the trade-offs between (1) positive transfer and capacity dilution and (2) the performance of high and low resource languages at scale. Finally, we show, for the first time, the possibility of multilingual modeling without sacrificing per-language performance; XLM-R is very competitive with strong monolingual models on the GLUE and XNLI benchmarks. We will make our code and models publicly available.}
+}
+
+@misc{deepl,
+  author       = {\textsf{DeepL}},
+  year         = {2021},
+  title        = {DeepL Translator},
+  howpublished = {\url{https://www.deepl.com/en/translator}},
+  note         = {Accessed: 2021-05-09}
+}
+
+@inproceedings{derczynski2020maintaining,
+  title     = {Maintaining Quality in {FEVER} Annotation},
+  author    = {Derczynski, Leon  and
+               Binau, Julie  and
+               Schulte, Henri},
+  booktitle = {Proceedings of the Third Workshop on Fact Extraction and VERification (FEVER)},
+  month     = jul,
+  year      = {2020},
+  address   = {Online},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://aclanthology.org/2020.fever-1.6},
+  doi       = {10.18653/v1/2020.fever-1.6},
+  pages     = {42--46},
+  abstract  = {We propose two measures for measuring the quality of constructed claims in the FEVER task. Annotating data for this task involves the creation of supporting and refuting claims over a set of evidence. Automatic annotation processes often leave superficial patterns in data, which learning systems can detect instead of performing the underlying task. Humans also can leave these superficial patterns, either voluntarily or involuntarily (due to e.g. fatigue). The two measures introduced attempt to detect the impact of these superficial patterns. One is a new information-theoretic and distributionality based measure, \textit{DCI}; and the other an extension of neural probing work over the ARCT task, \textit{utility}. We demonstrate these measures over a recent major dataset, that from the English FEVER task in 2019.}
+}
+
+@inproceedings{devlin2019bert,
+  title     = {{BERT}: Pre-training of Deep Bidirectional Transformers for Language Understanding},
+  author    = {Devlin, Jacob  and
+               Chang, Ming-Wei  and
+               Lee, Kenton  and
+               Toutanova, Kristina},
+  booktitle = {Proceedings of the 2019 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)},
+  month     = jun,
+  year      = {2019},
+  address   = {Minneapolis, Minnesota},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://aclanthology.org/N19-1423},
+  doi       = {10.18653/v1/N19-1423},
+  pages     = {4171--4186},
+  abstract  = {We introduce a new language representation model called BERT, which stands for Bidirectional Encoder Representations from Transformers. Unlike recent language representation models (Peters et al., 2018a; Radford et al., 2018), BERT is designed to pre-train deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context in all layers. As a result, the pre-trained BERT model can be fine-tuned with just one additional output layer to create state-of-the-art models for a wide range of tasks, such as question answering and language inference, without substantial task-specific architecture modifications. BERT is conceptually simple and empirically powerful. It obtains new state-of-the-art results on eleven natural language processing tasks, including pushing the GLUE score to 80.5 (7.7 point absolute improvement), MultiNLI accuracy to 86.7{\%} (4.6{\%} absolute improvement), SQuAD v1.1 question answering Test F1 to 93.2 (1.5 point absolute improvement) and SQuAD v2.0 Test F1 to 83.1 (5.1 point absolute improvement).}
+}
+
+@inproceedings{ferreira2016emergent,
+  title     = {{E}mergent: a novel data-set for stance classification},
+  author    = {Ferreira, William  and
+               Vlachos, Andreas},
+  booktitle = {Proceedings of the 2016 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies},
+  month     = jun,
+  year      = {2016},
+  address   = {San Diego, California},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://aclanthology.org/N16-1138},
+  doi       = {10.18653/v1/N16-1138},
+  pages     = {1163--1168}
+}
+
+@inproceedings{fever2018,
+  author    = {Thorne, James and Vlachos, Andreas and Christodoulopoulos, Christos and Mittal, Arpit},
+  title     = {{FEVER}: a Large-scale Dataset for Fact Extraction and {VERification}},
+  booktitle = {NAACL-HLT},
+  year      = {2018}
+}
+
+@inproceedings{fever2018b,
+  author    = {Thorne, James and Vlachos, Andreas and Cocarascu, Oana and Christodoulopoulos, Christos and Mittal, Arpit},
+  title     = {The {Fact Extraction and VERification (FEVER)} Shared Task},
+  booktitle = {Proceedings of the First Workshop on {Fact Extraction and VERification (FEVER)}},
+  year      = {2018}
+}
+
+@article{fleiss1971measuring,
+  author    = {Fleiss, Joseph L.},
+  title     = {Measuring nominal scale agreement among many raters.},
+  journal   = {Psychological Bulletin},
+  year      = {1971},
+  publisher = {American Psychological Association},
+  address   = {US},
+  volume    = {76},
+  number    = {5},
+  pages     = {378-382},
+  keywords  = {*Measurement; *Psychiatric Patients; *Psychodiagnosis; Statistical Analysis},
+  abstract  = {Introduced the statistic kappa to measure nominal scale agreement between a fixed pair of raters. Kappa was generalized to the case where each of a sample of 30 patients was rated on a nominal scale by the same number of psychiatrist raters (n = 6), but where the raters rating 1 s were not necessarily the same as those rating another. Large sample standard errors were derived. (PsycINFO Database Record (c) 2016 APA, all rights reserved)},
+  doi       = {10.1037/h0031619},
+  url       = {https://doi.org/10.1037/h0031619}
+}
+
+@article{frenay2013classification,
+  title     = {Classification in the presence of label noise: a survey},
+  author    = {Fr{\'e}nay, Beno{\^\i}t and Verleysen, Michel},
+  journal   = {IEEE transactions on neural networks and learning systems},
+  volume    = {25},
+  number    = {5},
+  pages     = {845--869},
+  year      = {2013},
+  publisher = {IEEE}
+}
+
+@misc{googletranslation,
+  author       = {\textsf{Google}},
+  year         = {2021},
+  title        = {Cloud Translation - Google Cloud},
+  howpublished = {\url{https://cloud.google.com/translate}},
+  note         = {Accessed: 2021-05-09}
+}
+
+@inproceedings{gupta2021xfact,
+  title     = {{X}-Fact: A New Benchmark Dataset for Multilingual Fact Checking},
+  author    = {Gupta, Ashim  and
+               Srikumar, Vivek},
+  booktitle = {Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 2: Short Papers)},
+  month     = aug,
+  year      = {2021},
+  address   = {Online},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://aclanthology.org/2021.acl-short.86},
+  doi       = {10.18653/v1/2021.acl-short.86},
+  pages     = {675--682},
+  abstract  = {In this work, we introduce : the largest publicly available multilingual dataset for factual verification of naturally existing real-world claims. The dataset contains short statements in 25 languages and is labeled for veracity by expert fact-checkers. The dataset includes a multilingual evaluation benchmark that measures both out-of-domain generalization, and zero-shot capabilities of the multilingual models. Using state-of-the-art multilingual transformer-based models, we develop several automated fact-checking models that, along with textual claims, make use of additional metadata and evidence from news stories retrieved using a search engine. Empirically, our best model attains an F-score of around 40{\%}, suggesting that our dataset is a challenging benchmark for the evaluation of multilingual fact-checking models.}
+}
+
+@article{hassan2017claimbuster,
+  author     = {Hassan, Naeemul and Zhang, Gensheng and Arslan, Fatma and Caraballo, Josue and Jimenez, Damian and Gawsane, Siddhant and Hasan, Shohedul and Joseph, Minumol and Kulkarni, Aaditya and Nayak, Anil Kumar and Sable, Vikas and Li, Chengkai and Tremayne, Mark},
+  title      = {ClaimBuster: The First-Ever End-to-End Fact-Checking System},
+  year       = {2017},
+  issue_date = {August 2017},
+  publisher  = {VLDB Endowment},
+  volume     = {10},
+  number     = {12},
+  issn       = {2150-8097},
+  url        = {https://doi.org/10.14778/3137765.3137815},
+  doi        = {10.14778/3137765.3137815},
+  abstract   = {Our society is struggling with an unprecedented amount of falsehoods, hyperboles, and half-truths. Politicians and organizations repeatedly make the same false claims. Fake news floods the cyberspace and even allegedly influenced the 2016 election. In fighting false information, the number of active fact-checking organizations has grown from 44 in 2014 to 114 in early 2017. 1 Fact-checkers vet claims by investigating relevant data and documents and publish their verdicts. For instance, PolitiFact.com, one of the earliest and most popular fact-checking projects, gives factual claims truthfulness ratings such as True, Mostly True, Half true, Mostly False, False, and even "Pants on Fire". In the U.S., the election year made fact-checking a part of household terminology. For example, during the first presidential debate on September 26, 2016, NPR.org's live fact-checking website drew 7.4 million page views and delivered its biggest traffic day ever.},
+  journal    = {Proc. VLDB Endow.},
+  month      = {aug},
+  pages      = {1945–1948},
+  numpages   = {4}
+}
+
+@article{johnson2019faiss,
+  title     = {Billion-scale similarity search with  {GPU}s},
+  author    = {Johnson, Jeff and Douze, Matthijs and J{\'e}gou, Herv{\'e}},
+  journal   = {IEEE Transactions on Big Data},
+  year      = {2019},
+  publisher = {IEEE}
+}
+
+@inproceedings{kazemi2021claim,
+  title     = {Claim Matching Beyond {E}nglish to Scale Global Fact-Checking},
+  author    = {Kazemi, Ashkan  and
+               Garimella, Kiran  and
+               Gaffney, Devin  and
+               Hale, Scott},
+  booktitle = {Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)},
+  month     = aug,
+  year      = {2021},
+  address   = {Online},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://aclanthology.org/2021.acl-long.347},
+  doi       = {10.18653/v1/2021.acl-long.347},
+  pages     = {4504--4517},
+  abstract  = {Manual fact-checking does not scale well to serve the needs of the internet. This issue is further compounded in non-English contexts. In this paper, we discuss claim matching as a possible solution to scale fact-checking. We define claim matching as the task of identifying pairs of textual messages containing claims that can be served with one fact-check. We construct a novel dataset of WhatsApp tipline and public group messages alongside fact-checked claims that are first annotated for containing {``}claim-like statements{''} and then matched with potentially similar items and annotated for claim matching. Our dataset contains content in high-resource (English, Hindi) and lower-resource (Bengali, Malayalam, Tamil) languages. We train our own embedding model using knowledge distillation and a high-quality {``}teacher{''} model in order to address the imbalance in embedding quality between the low- and high-resource languages in our dataset. We provide evaluations on the performance of our solution and compare with baselines and existing state-of-the-art multilingual embedding models, namely LASER and LaBSE. We demonstrate that our performance exceeds LASER and LaBSE in all settings. We release our annotated datasets, codebooks, and trained embedding model to allow for further research.}
+}
+
+@inproceedings{khattab2020colbert,
+  author    = {Khattab, Omar and Zaharia, Matei},
+  title     = {{ColBERT}: Efficient and Effective Passage Search via Contextualized Late Interaction over {BERT}},
+  year      = {2020},
+  isbn      = {9781450380164},
+  publisher = {Association for Computing Machinery},
+  address   = {New York, NY, USA},
+  doi       = {10.1145/3397271.3401075},
+  abstract  = {Recent progress in Natural Language Understanding (NLU) is driving fast-paced advances
+               in Information Retrieval (IR), largely owed to fine-tuning deep language models (LMs)
+               for document ranking. While remarkably effective, the ranking models based on these
+               LMs increase computational cost by orders of magnitude over prior approaches, particularly
+               as they must feed each query-document pair through a massive neural network to compute
+               a single relevance score. To tackle this, we present ColBERT, a novel ranking model
+               that adapts deep LMs (in particular, BERT) for efficient retrieval. ColBERT introduces
+               a late interaction architecture that independently encodes the query and the document
+               using BERT and then employs a cheap yet powerful interaction step that models their
+               fine-grained similarity. By delaying and yet retaining this fine-granular interaction,
+               ColBERT can leverage the expressiveness of deep LMs while simultaneously gaining the
+               ability to pre-compute document representations offline, considerably speeding up
+               query processing. Crucially, ColBERT's pruning-friendly interaction mechanism enables
+               leveraging vector-similarity indexes for end-to-end retrieval directly from millions
+               of documents. We extensively evaluate ColBERT using two recent passage search datasets.
+               Results show that ColBERT's effectiveness is competitive with existing BERT-based
+               models (and outperforms every non-BERT baseline), while executing two orders-of-magnitude
+               faster and requiring up to four orders-of-magnitude fewer FLOPs per query.},
+  booktitle = {Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval},
+  pages     = {39–48},
+  numpages  = {10},
+  keywords  = {deep language models, bert, efficiency, neural ir},
+  location  = {Virtual Event, China},
+  series    = {SIGIR '20}
+}
+
+@article{kiss2006punkt,
+  title   = {Unsupervised Multilingual Sentence Boundary Detection},
+  author  = {Kiss, Tibor  and
+             Strunk, Jan},
+  journal = {Computational Linguistics},
+  volume  = {32},
+  number  = {4},
+  year    = {2006},
+  url     = {https://aclanthology.org/J06-4003},
+  doi     = {10.1162/coli.2006.32.4.485},
+  pages   = {485--525}
+}
+
+@inproceedings{kitaev2020reformer,
+  title     = {Reformer: The Efficient Transformer},
+  author    = {Nikita Kitaev and Lukasz Kaiser and Anselm Levskaya},
+  booktitle = {International Conference on Learning Representations},
+  year      = {2020},
+  url       = {https://openreview.net/forum?id=rkgNKkHtvB}
+}
+
+
+@misc{kosarko2019lindat,
+  title     = {{LINDAT} Translation service},
+  author    = {Ko{\v s}arko, Ond{\v r}ej and Vari{\v s}, Du{\v s}an and Popel, Martin},
+  url       = {http://hdl.handle.net/11234/1-2922},
+  note      = {{LINDAT}/{CLARIAH}-{CZ} digital library at the Institute of Formal and Applied Linguistics ({{\'U}FAL}), Faculty of Mathematics and Physics, Charles University},
+  copyright = {{BSD} 2-Clause "Simplified" or "{FreeBSD}" license},
+  year      = {2019}
+}
+
+@book{krippendorff2013content,
+  title     = {Content Analysis: An Introduction to Its Methodology},
+  author    = {Krippendorff, K.},
+  isbn      = {9781412983150},
+  lccn      = {2011048278},
+  url       = {https://books.google.cz/books?id=s\_yqFXnGgjQC},
+  year      = {2013},
+  pages     = {221--250},
+  publisher = {SAGE Publications}
+}
+
+@article{hayes2007krippendorff,
+  author  = {Hayes, Andrew and Krippendorff, Klaus},
+  year    = {2007},
+  month   = {04},
+  pages   = {77-89},
+  title   = {Answering the Call for a Standard Reliability Measure for Coding Data},
+  volume  = {1},
+  journal = {Communication Methods and Measures},
+  doi     = {10.1080/19312450709336664}
+}
+
+@inproceedings{lan2020albert,
+  title     = {{ALBERT}: A Lite {BERT} for Self-supervised Learning of Language Representations},
+  author    = {Zhenzhong Lan and Mingda Chen and Sebastian Goodman and Kevin Gimpel and Piyush Sharma and Radu Soricut},
+  booktitle = {International Conference on Learning Representations},
+  year      = {2020},
+  url       = {https://openreview.net/forum?id=H1eA7AEtvS}
+}
+
+@article{landis1977measurement,
+  issn      = {0006341X, 15410420},
+  url       = {http://www.jstor.org/stable/2529310},
+  abstract  = {This paper presents a general statistical methodology for the analysis of multivariate categorical data arising from observer reliability studies. The procedure essentially involves the construction of functions of the observed proportions which are directed at the extent to which the observers agree among themselves and the construction of test statistics for hypotheses involving these functions. Tests for interobserver bias are presented in terms of first-order marginal homogeneity and measures of interobserver agreement are developed as generalized kappa-type statistics. These procedures are illustrated with a clinical diagnosis example from the epidemiological literature.},
+  author    = {J. Richard Landis and Gary G. Koch},
+  journal   = {Biometrics},
+  number    = {1},
+  pages     = {159--174},
+  publisher = {[Wiley, International Biometric Society]},
+  title     = {The Measurement of Observer Agreement for Categorical Data},
+  volume    = {33},
+  year      = {1977}
+}
+
+@inproceedings{lee2019latent,
+  title     = {Latent Retrieval for Weakly Supervised Open Domain Question Answering},
+  author    = {Lee, Kenton  and
+               Chang, Ming-Wei  and
+               Toutanova, Kristina},
+  booktitle = {Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics},
+  month     = jul,
+  year      = {2019},
+  address   = {Florence, Italy},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://aclanthology.org/P19-1612},
+  doi       = {10.18653/v1/P19-1612},
+  pages     = {6086--6096},
+  abstract  = {Recent work on open domain question answering (QA) assumes strong supervision of the supporting evidence and/or assumes a blackbox information retrieval (IR) system to retrieve evidence candidates. We argue that both are suboptimal, since gold evidence is not always available, and QA is fundamentally different from IR. We show for the first time that it is possible to jointly learn the retriever and reader from question-answer string pairs and without any IR system. In this setting, evidence retrieval from all of Wikipedia is treated as a latent variable. Since this is impractical to learn from scratch, we pre-train the retriever with an Inverse Cloze Task. We evaluate on open versions of five QA datasets. On datasets where the questioner already knows the answer, a traditional IR system such as BM25 is sufficient. On datasets where a user is genuinely seeking an answer, we show that learned retrieval is crucial, outperforming BM25 by up to 19 points in exact match.}
+}
+
+@inproceedings{lin2021pyserini,
+  author    = {Lin, Jimmy and Ma, Xueguang and Lin, Sheng-Chieh and Yang, Jheng-Hong and Pradeep, Ronak and Nogueira, Rodrigo},
+  title     = {Pyserini: A {Python} Toolkit for Reproducible Information Retrieval Research with Sparse and Dense Representations},
+  year      = {2021},
+  isbn      = {9781450380379},
+  publisher = {Association for Computing Machinery},
+  address   = {New York, NY, USA},
+  doi       = {10.1145/3404835.3463238},
+  abstract  = {Pyserini is a Python toolkit for reproducible information retrieval research with
+               sparse and dense representations. It aims to provide effective, reproducible, and
+               easy-to-use first-stage retrieval in a multi-stage ranking architecture. Our toolkit
+               is self-contained as a standard Python package and comes with queries, relevance judgments,
+               pre-built indexes, and evaluation scripts for many commonly used IR test collections.
+               We aim to support, out of the box, the entire research lifecycle of efforts aimed
+               at improving ranking with modern neural approaches. In particular, Pyserini supports
+               sparse retrieval (e.g., BM25 scoring using bag-of-words representations), dense retrieval
+               (e.g., nearest-neighbor search on transformer-encoded representations), as well as
+               hybrid retrieval that integrates both approaches. This paper provides an overview
+               of toolkit features and presents empirical results that illustrate its effectiveness
+               on two popular ranking tasks. Around this toolkit, our group has built a culture of
+               reproducibility through shared norms and tools that enable rigorous automated testing.},
+  booktitle = {Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval},
+  pages     = {2356–2362},
+  numpages  = {7},
+  keywords  = {open-source search engine, first-stage retrieval},
+  location  = {Virtual Event, Canada},
+  series    = {SIGIR '21}
+}
+
+@article{murayama2021dataset,
+  title   = {Dataset of Fake News Detection and Fact Verification: A Survey},
+  author  = {Murayama, Taichi},
+  journal = {arXiv preprint arXiv:2111.03299},
+  year    = {2021}
+}
+
+@inproceedings{nakov2021automated,
+  title     = {Automated Fact-Checking for Assisting Human Fact-Checkers},
+  author    = {Nakov, Preslav and Corney, David and Hasanain, Maram and Alam, Firoj and Elsayed, Tamer and Barrón-Cedeño, Alberto and Papotti, Paolo and Shaar, Shaden and Da San Martino, Giovanni},
+  booktitle = {Proceedings of the Thirtieth International Joint Conference on
+               Artificial Intelligence, {IJCAI-21}},
+  publisher = {International Joint Conferences on Artificial Intelligence Organization},
+  editor    = {Zhi-Hua Zhou},
+  pages     = {4551--4558},
+  year      = {2021},
+  month     = {8},
+  note      = {Survey Track},
+  doi       = {10.24963/ijcai.2021/619},
+  url       = {https://doi.org/10.24963/ijcai.2021/619}
+}
+
+@inproceedings{nie2019combining,
+  title     = {Combining fact extraction and verification with neural semantic matching networks},
+  author    = {Nie, Yixin and Chen, Haonan and Bansal, Mohit},
+  booktitle = {Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume    = {33},
+  number    = {01},
+  pages     = {6859--6866},
+  year      = {2019}
+}
+
+@inproceedings{nie2020adversarial,
+  title     = {Adversarial {NLI}: A New Benchmark for Natural Language Understanding},
+  author    = {Nie, Yixin  and
+               Williams, Adina  and
+               Dinan, Emily  and
+               Bansal, Mohit  and
+               Weston, Jason  and
+               Kiela, Douwe},
+  booktitle = {Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics},
+  month     = jul,
+  year      = {2020},
+  address   = {Online},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://aclanthology.org/2020.acl-main.441},
+  doi       = {10.18653/v1/2020.acl-main.441},
+  pages     = {4885--4901},
+  abstract  = {We introduce a new large-scale NLI benchmark dataset, collected via an iterative, adversarial human-and-model-in-the-loop procedure. We show that training models on this new dataset leads to state-of-the-art performance on a variety of popular NLI benchmarks, while posing a more difficult challenge with its new test set. Our analysis sheds light on the shortcomings of current state-of-the-art models, and shows that non-expert annotators are successful at finding their weaknesses. The data collection method can be applied in a never-ending learning scenario, becoming a moving target for NLU, rather than a static benchmark that will quickly saturate.}
+}
+
+@inproceedings{niven2019probing,
+  title     = {Probing Neural Network Comprehension of Natural Language Arguments},
+  author    = {Niven, Timothy  and
+               Kao, Hung-Yu},
+  booktitle = {Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics},
+  month     = jul,
+  year      = {2019},
+  address   = {Florence, Italy},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://aclanthology.org/P19-1459},
+  doi       = {10.18653/v1/P19-1459},
+  pages     = {4658--4664},
+  abstract  = {We are surprised to find that BERT{'}s peak performance of 77{\%} on the Argument Reasoning Comprehension Task reaches just three points below the average untrained human baseline. However, we show that this result is entirely accounted for by exploitation of spurious statistical cues in the dataset. We analyze the nature of these cues and demonstrate that a range of models all exploit them. This analysis informs the construction of an adversarial dataset on which all models achieve random accuracy. Our adversarial dataset provides a more robust assessment of argument comprehension and should be adopted as the standard in future work.}
+}
+
+@inproceedings{norregaard2021danfever,
+  title     = {{D}an{FEVER}: claim verification dataset for {D}anish},
+  author    = {N{\o}rregaard, Jeppe  and
+               Derczynski, Leon},
+  booktitle = {Proceedings of the 23rd Nordic Conference on Computational Linguistics (NoDaLiDa)},
+  month     = may # { 31--2 } # jun,
+  year      = {2021},
+  address   = {Reykjavik, Iceland (Online)},
+  publisher = {Link{\"o}ping University Electronic Press, Sweden},
+  url       = {https://aclanthology.org/2021.nodalida-main.47},
+  pages     = {422--428},
+  abstract  = {We present a dataset, DanFEVER, intended for multilingual misinformation research. The dataset is in Danish and has the same format as the well-known English FEVER dataset. It can be used for testing methods in multilingual settings, as well as for creating models in production for the Danish language.}
+}
+
+@inproceedings{papineni2002bleu,
+  author    = {Papineni, Kishore and Roukos, Salim and Ward, Todd and Zhu, Wei-Jing},
+  title     = {{BLEU}: A Method for Automatic Evaluation of Machine Translation},
+  year      = {2002},
+  publisher = {Association for Computational Linguistics},
+  address   = {USA},
+  url       = {https://doi.org/10.3115/1073083.1073135},
+  doi       = {10.3115/1073083.1073135},
+  abstract  = {Human evaluations of machine translation are extensive but expensive. Human evaluations
+               can take months to finish and involve human labor that can not be reused. We propose
+               a method of automatic machine translation evaluation that is quick, inexpensive, and
+               language-independent, that correlates highly with human evaluation, and that has little
+               marginal cost per run. We present this method as an automated understudy to skilled
+               human judges which substitutes for them when there is need for quick or frequent evaluations.},
+  booktitle = {Proceedings of the 40th Annual Meeting on Association for Computational Linguistics},
+  pages     = {311–318},
+  numpages  = {8},
+  location  = {Philadelphia, Pennsylvania},
+  series    = {ACL '02}
+}
+
+@inproceedings{parikh2016decomposable,
+  title     = {A Decomposable Attention Model for Natural Language Inference},
+  author    = {Parikh, Ankur  and
+               T{\"a}ckstr{\"o}m, Oscar  and
+               Das, Dipanjan  and
+               Uszkoreit, Jakob},
+  booktitle = {Proceedings of the 2016 Conference on Empirical Methods in Natural Language Processing},
+  month     = nov,
+  year      = {2016},
+  address   = {Austin, Texas},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://aclanthology.org/D16-1244},
+  doi       = {10.18653/v1/D16-1244},
+  pages     = {2249--2255}
+}
+
+@inproceedings{pires201multilingual,
+  title     = {How Multilingual is Multilingual {BERT}?},
+  author    = {Pires, Telmo  and
+               Schlinger, Eva  and
+               Garrette, Dan},
+  booktitle = {Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics},
+  month     = jul,
+  year      = {2019},
+  address   = {Florence, Italy},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://aclanthology.org/P19-1493},
+  doi       = {10.18653/v1/P19-1493},
+  pages     = {4996--5001},
+  abstract  = {In this paper, we show that Multilingual BERT (M-BERT), released by Devlin et al. (2018) as a single language model pre-trained from monolingual corpora in 104 languages, is surprisingly good at zero-shot cross-lingual model transfer, in which task-specific annotations in one language are used to fine-tune the model for evaluation in another language. To understand why, we present a large number of probing experiments, showing that transfer is possible even to languages in different scripts, that transfer works best between typologically similar languages, that monolingual corpora can train models for code-switching, and that the model can find translation pairs. From these results, we can conclude that M-BERT does create multilingual representations, but that these representations exhibit systematic deficiencies affecting certain language pairs.}
+}
+
+@article{popel2020Transforming,
+  journal = {Nature Communications},
+  title   = {Transforming machine translation: a deep learning system reaches news translation quality comparable to human professionals},
+  author  = {Martin Popel and Marketa Tomkova and Jakub Tomek and {\L}ukasz Kaiser and Jakob Uszkoreit and Ond{\v{r}}ej Bojar and Zden{\v{e}}k {\v{Z}}abokrtsk{\'{y}}},
+  year    = {2020},
+  volume  = {11},
+  number  = {4381},
+  pages   = {1--15},
+  issn    = {2041-1723},
+  doi     = {10.1038/s41467-020-18073-9},
+  url     = {https://www.nature.com/articles/s41467-020-18073-9}
+}
+
+@inproceedings{post2018sacrebleu,
+  title     = {A Call for Clarity in Reporting {BLEU} Scores},
+  author    = {Post, Matt},
+  booktitle = {Proceedings of the Third Conference on Machine Translation: Research Papers},
+  month     = oct,
+  year      = {2018},
+  address   = {Brussels, Belgium},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://aclanthology.org/W18-6319},
+  doi       = {10.18653/v1/W18-6319},
+  pages     = {186--191},
+  abstract  = {The field of machine translation faces an under-recognized problem because of inconsistency in the reporting of scores from its dominant metric. Although people refer to {``}the{''} BLEU score, BLEU is in fact a parameterized metric whose values can vary wildly with changes to these parameters. These parameters are often not reported or are hard to find, and consequently, BLEU scores between papers cannot be directly compared. I quantify this variation, finding differences as high as 1.8 between commonly used configurations. The main culprit is different tokenization and normalization schemes applied to the reference. Pointing to the success of the parsing community, I suggest machine translation researchers settle upon the BLEU scheme used by the annual Conference on Machine Translation (WMT), which does not allow for user-supplied reference processing, and provide a new tool, SACREBLEU, to facilitate this.}
+}
+
+@inproceedings{rajpurkar2016squad,
+  title     = {{SQ}u{AD}: 100,000+ Questions for Machine Comprehension of Text},
+  author    = {Rajpurkar, Pranav  and
+               Zhang, Jian  and
+               Lopyrev, Konstantin  and
+               Liang, Percy},
+  booktitle = {Proceedings of the 2016 Conference on Empirical Methods in Natural Language Processing},
+  month     = nov,
+  year      = {2016},
+  address   = {Austin, Texas},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://aclanthology.org/D16-1264},
+  doi       = {10.18653/v1/D16-1264},
+  pages     = {2383--2392}
+}
+
+@inproceedings{reimers2019sentence,
+  title     = {Sentence-{BERT}: Sentence Embeddings using {S}iamese {BERT}-Networks},
+  author    = {Reimers, Nils  and
+               Gurevych, Iryna},
+  booktitle = {Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)},
+  month     = nov,
+  year      = {2019},
+  address   = {Hong Kong, China},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://aclanthology.org/D19-1410},
+  doi       = {10.18653/v1/D19-1410},
+  pages     = {3982--3992},
+  abstract  = {BERT (Devlin et al., 2018) and RoBERTa (Liu et al., 2019) has set a new state-of-the-art performance on sentence-pair regression tasks like semantic textual similarity (STS). However, it requires that both sentences are fed into the network, which causes a massive computational overhead: Finding the most similar pair in a collection of 10,000 sentences requires about 50 million inference computations ({\textasciitilde}65 hours) with BERT. The construction of BERT makes it unsuitable for semantic similarity search as well as for unsupervised tasks like clustering. In this publication, we present Sentence-BERT (SBERT), a modification of the pretrained BERT network that use siamese and triplet network structures to derive semantically meaningful sentence embeddings that can be compared using cosine-similarity. This reduces the effort for finding the most similar pair from 65 hours with BERT / RoBERTa to about 5 seconds with SBERT, while maintaining the accuracy from BERT. We evaluate SBERT and SRoBERTa on common STS tasks and transfer learning tasks, where it outperforms other state-of-the-art sentence embeddings methods.}
+}
+
+@inproceedings{sathe2020automated,
+  title     = {Automated Fact-Checking of Claims from {W}ikipedia},
+  author    = {Sathe, Aalok  and
+               Ather, Salar  and
+               Le, Tuan Manh  and
+               Perry, Nathan  and
+               Park, Joonsuk},
+  booktitle = {Proceedings of the 12th Language Resources and Evaluation Conference},
+  month     = may,
+  year      = {2020},
+  address   = {Marseille, France},
+  publisher = {European Language Resources Association},
+  url       = {https://aclanthology.org/2020.lrec-1.849},
+  pages     = {6874--6882},
+  abstract  = {Automated fact checking is becoming increasingly vital as both truthful and fallacious information accumulate online. Research on fact checking has benefited from large-scale datasets such as FEVER and SNLI. However, such datasets suffer from limited applicability due to the synthetic nature of claims and/or evidence written by annotators that differ from real claims and evidence on the internet. To this end, we present WikiFactCheck-English, a dataset of 124k+ triples consisting of a claim, context and an evidence document extracted from English Wikipedia articles and citations, as well as 34k+ manually written claims that are refuted by the evidence documents. This is the largest fact checking dataset consisting of real claims and evidence to date; it will allow the development of fact checking systems that can better process claims and evidence in the real world. We also show that for the NLI subtask, a logistic regression system trained using existing and novel features achieves peak accuracy of 68{\%}, providing a competitive baseline for future work. Also, a decomposable attention model trained on SNLI significantly underperforms the models trained on this dataset, suggesting that models trained on manually generated data may not be sufficiently generalizable or suitable for fact checking real-world claims.},
+  language  = {English},
+  isbn      = {979-10-95546-34-4}
+}
+
+@inproceedings{shahi2020fakecovid,
+  title     = {Fake{C}ovid -- A Multilingual Cross-domain Fact Check News Dataset for COVID-19},
+  author    = {Shahi, Gautam Kishore and Nandini, Durgesh},
+  booktitle = {Workshop Proceedings of the 14th International {AAAI} {C}onference on {W}eb and {S}ocial {M}edia},
+  year      = {2020},
+  url       = {http://workshop-proceedings.icwsm.org/pdf/2020_14.pdf}
+}
+
+@misc{sido2021czert,
+  title         = {Czert -- Czech {BERT}-like Model for Language Representation},
+  author        = {Jakub Sido and Ondřej Pražák and Pavel Přibáň and Jan Pašek and Michal Seják and Miloslav Konopík},
+  year          = {2021},
+  eprint        = {2103.13031},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.CL}
+}
+
+@article{straka2021robeczech,
+  title     = {{RobeCzech}: Czech {RoBERTa}, a Monolingual Contextualized Language Representation Model},
+  isbn      = {9783030835279},
+  issn      = {1611-3349},
+  url       = {http://dx.doi.org/10.1007/978-3-030-83527-9_17},
+  doi       = {10.1007/978-3-030-83527-9_17},
+  journal   = {Lecture Notes in Computer Science},
+  publisher = {Springer International Publishing},
+  author    = {Straka, Milan and Náplava, Jakub and Straková, Jana and Samuel, David},
+  year      = {2021},
+  pages     = {197–209}
+}
+
+@inproceedings{strakova2019,
+  title     = {Neural Architectures for Nested {NER} through Linearization},
+  author    = {Strakov{\'a}, Jana  and
+               Straka, Milan  and
+               Hajic, Jan},
+  booktitle = {Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics},
+  month     = jul,
+  year      = {2019},
+  address   = {Florence, Italy},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://www.aclweb.org/anthology/P19-1527},
+  doi       = {10.18653/v1/P19-1527},
+  pages     = {5326--5331},
+  abstract  = {We propose two neural network architectures for nested named entity recognition (NER), a setting in which named entities may overlap and also be labeled with more than one label. We encode the nested labels using a linearized scheme. In our first proposed approach, the nested labels are modeled as multilabels corresponding to the Cartesian product of the nested labels in a standard LSTM-CRF architecture. In the second one, the nested NER is viewed as a sequence-to-sequence problem, in which the input sequence consists of the tokens and output sequence of the labels, using hard attention on the word whose label is being predicted. The proposed methods outperform the nested NER state of the art on four corpora: ACE-2004, ACE-2005, GENIA and Czech CNEC. We also enrich our architectures with the recently published contextual embeddings: ELMo, BERT and Flair, reaching further improvements for the four nested entity corpora. In addition, we report flat NER state-of-the-art results for CoNLL-2002 Dutch and Spanish and for CoNLL-2003 English.}
+}
+
+@inproceedings{thorne2018automated,
+  title     = {Automated Fact Checking: Task Formulations, Methods and Future Directions},
+  author    = {Thorne, James  and
+               Vlachos, Andreas},
+  booktitle = {Proceedings of the 27th International Conference on Computational Linguistics},
+  month     = aug,
+  year      = {2018},
+  address   = {Santa Fe, New Mexico, USA},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://aclanthology.org/C18-1283},
+  pages     = {3346--3359},
+  abstract  = {The recently increased focus on misinformation has stimulated research in fact checking, the task of assessing the truthfulness of a claim. Research in automating this task has been conducted in a variety of disciplines including natural language processing, machine learning, knowledge representation, databases, and journalism. While there has been substantial progress, relevant papers and articles have been published in research communities that are often unaware of each other and use inconsistent terminology, thus impeding understanding and further progress. In this paper we survey automated fact checking research stemming from natural language processing and related disciplines, unifying the task formulations and methodologies across papers and authors. Furthermore, we highlight the use of evidence as an important distinguishing factor among them cutting across task formulations and methods. We conclude with proposing avenues for future NLP research on automated fact checking.}
+}
+
+@inproceedings{thorne2019fever2,
+  title     = {The {FEVER}2.0 Shared Task},
+  author    = {Thorne, James  and
+               Vlachos, Andreas  and
+               Cocarascu, Oana  and
+               Christodoulopoulos, Christos  and
+               Mittal, Arpit},
+  booktitle = {Proceedings of the Second Workshop on Fact Extraction and VERification (FEVER)},
+  month     = nov,
+  year      = {2019},
+  address   = {Hong Kong, China},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://aclanthology.org/D19-6601},
+  doi       = {10.18653/v1/D19-6601},
+  pages     = {1--6},
+  abstract  = {We present the results of the second Fact Extraction and VERification (FEVER2.0) Shared Task. The task challenged participants to both build systems to verify factoid claims using evidence retrieved from Wikipedia and to generate adversarial attacks against other participant{'}s systems. The shared task had three phases: \textit{building, breaking and fixing}. There were 8 systems in the builder{'}s round, three of which were new qualifying submissions for this shared task, and 5 adversaries generated instances designed to induce classification errors and one builder submitted a fixed system which had higher FEVER score and resilience than their first submission. All but one newly submitted systems attained FEVER scores higher than the best performing system from the first shared task and under adversarial evaluation, all systems exhibited losses in FEVER score. There was a great variety in adversarial attack types as well as the techniques used to generate the attacks, In this paper, we present the results of the shared task and a summary of the systems, highlighting commonalities and innovations among participating systems.}
+}
+
+@inproceedings{wang2017liar,
+  title     = {{``}{L}iar, Liar Pants on Fire{''}: A New Benchmark Dataset for Fake News Detection},
+  author    = {Wang, William Yang},
+  booktitle = {Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)},
+  month     = jul,
+  year      = {2017},
+  address   = {Vancouver, Canada},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://aclanthology.org/P17-2067},
+  doi       = {10.18653/v1/P17-2067},
+  pages     = {422--426},
+  abstract  = {Automatic fake news detection is a challenging problem in deception detection, and it has tremendous real-world political and social impacts. However, statistical approaches to combating fake news has been dramatically limited by the lack of labeled benchmark datasets. In this paper, we present LIAR: a new, publicly available dataset for fake news detection. We collected a decade-long, 12.8K manually labeled short statements in various contexts from PolitiFact.com, which provides detailed analysis report and links to source documents for each case. This dataset can be used for fact-checking research as well. Notably, this new dataset is an order of magnitude larger than previously largest public fake news datasets of similar type. Empirically, we investigate automatic fake news detection based on surface-level linguistic patterns. We have designed a novel, hybrid convolutional neural network to integrate meta-data with text. We show that this hybrid approach can improve a text-only deep learning model.}
+}
+@article{Fiser2015poornet,
+  author   = {Fi{\v{s}}er, Darja
+              and Sagot, Beno{\^i}t},
+  title    = {Constructing a poor man's wordnet in a resource-rich world},
+  journal  = {Language Resources and Evaluation},
+  year     = {2015},
+  month    = {Sep},
+  day      = {01},
+  volume   = {49},
+  number   = {3},
+  pages    = {601-635},
+  abstract = {In this paper we present a language-independent, fully modular and automatic approach to bootstrap a wordnet for a new language by recycling different types of already existing language resources, such as machine-readable dictionaries, parallel corpora, and Wikipedia. The approach, which we apply here to Slovene, takes into account monosemous and polysemous words, general and specialised vocabulary as well as simple and multi-word lexemes. The extracted words are then assigned one or several synset ids, based on a classifier that relies on several features including distributional similarity. Finally, we identify and remove highly dubious (literal, synset) pairs, based on simple distributional information extracted from a large corpus in an unsupervised way. Automatic, manual and task-based evaluations show that the resulting resource, the latest version of the Slovene wordnet, is already a valuable source of lexico-semantic information.},
+  issn     = {1574-0218},
+  doi      = {10.1007/s10579-015-9295-6},
+  url      = {https://doi.org/10.1007/s10579-015-9295-6}
+}
+
+
+@article{wang2021entailment,
+  title   = {Entailment as Few-Shot Learner},
+  author  = {Wang, Sinong and Fang, Han and Khabsa, Madian and Mao, Hanzi and Ma, Hao},
+  journal = {arXiv preprint arXiv:2104.14690},
+  year    = {2021}
+}
+
+@inproceedings{williams2018broad,
+  title     = {A Broad-Coverage Challenge Corpus for Sentence Understanding through Inference},
+  author    = {Williams, Adina  and
+               Nangia, Nikita  and
+               Bowman, Samuel},
+  booktitle = {Proceedings of the 2018 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long Papers)},
+  month     = jun,
+  year      = {2018},
+  address   = {New Orleans, Louisiana},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://aclanthology.org/N18-1101},
+  doi       = {10.18653/v1/N18-1101},
+  pages     = {1112--1122},
+  abstract  = {This paper introduces the Multi-Genre Natural Language Inference (MultiNLI) corpus, a dataset designed for use in the development and evaluation of machine learning models for sentence understanding. At 433k examples, this resource is one of the largest corpora available for natural language inference (a.k.a. recognizing textual entailment), improving upon available resources in both its coverage and difficulty. MultiNLI accomplishes this by offering data from ten distinct genres of written and spoken English, making it possible to evaluate systems on nearly the full complexity of the language, while supplying an explicit setting for evaluating cross-genre domain adaptation. In addition, an evaluation using existing machine learning models designed for the Stanford NLI corpus shows that it represents a substantially more difficult task than does that corpus, despite the two showing similar levels of inter-annotator agreement.}
+}
+
+@inproceedings{wolf2020transformers,
+  title     = {Transformers: State-of-the-Art Natural Language Processing},
+  author    = {Wolf, Thomas  and
+               Debut, Lysandre  and
+               Sanh, Victor  and
+               Chaumond, Julien  and
+               Delangue, Clement  and
+               Moi, Anthony  and
+               Cistac, Pierric  and
+               Rault, Tim  and
+               Louf, Remi  and
+               Funtowicz, Morgan  and
+               Davison, Joe  and
+               Shleifer, Sam  and
+               von Platen, Patrick  and
+               Ma, Clara  and
+               Jernite, Yacine  and
+               Plu, Julien  and
+               Xu, Canwen  and
+               Le Scao, Teven  and
+               Gugger, Sylvain  and
+               Drame, Mariama  and
+               Lhoest, Quentin  and
+               Rush, Alexander},
+  booktitle = {Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing: System Demonstrations},
+  month     = oct,
+  year      = {2020},
+  address   = {Online},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://aclanthology.org/2020.emnlp-demos.6},
+  doi       = {10.18653/v1/2020.emnlp-demos.6},
+  pages     = {38--45},
+  abstract  = {Recent progress in natural language processing has been driven by advances in both model architecture and model pretraining. Transformer architectures have facilitated building higher-capacity models and pretraining has made it possible to effectively utilize this capacity for a wide variety of tasks. Transformers is an open-source library with the goal of opening up these advances to the wider machine learning community. The library consists of carefully engineered state-of-the art Transformer architectures under a unified API. Backing this library is a curated collection of pretrained models made by and available for the community. Transformers is designed to be extensible by researchers, simple for practitioners, and fast and robust in industrial deployments. The library is available at https://github.com/huggingface/transformers.}
+}
+
+@article{xiong2021nystromformer,
+  title     = {Nystr{\"o}mformer: A Nystr{\"o}m-based Algorithm for Approximating Self-Attention},
+  author    = {Xiong, Yunyang and Zeng, Zhanpeng and Chakraborty, Rudrasis and Tan, Mingxing and Fung, Glenn and Li, Yin and Singh, Vikas},
+  booktitle = {Proceedings of the AAAI Conference on Artificial Intelligence},
+  year      = {2021}
+}
+
+@article{zeng2021fcsurvey,
+  author   = {Zeng, Xia and Abumansour, Amani S. and Zubiaga, Arkaitz},
+  title    = {Automated fact-checking: A survey},
+  journal  = {Language and Linguistics Compass},
+  volume   = {15},
+  number   = {10},
+  pages    = {e12438},
+  doi      = {https://doi.org/10.1111/lnc3.12438},
+  url      = {https://onlinelibrary.wiley.com/doi/abs/10.1111/lnc3.12438},
+  abstract = {Abstract As online false information continues to grow, automated fact-checking has gained an increasing amount of attention in recent years. Researchers in the field of Natural Language Processing (NLP) have contributed to the task by building fact-checking datasets, devising automated fact-checking pipelines and proposing NLP methods to further research in the development of different components. This article reviews relevant research on automated fact-checking covering both the claim detection and claim validation components.},
+  year     = {2021}
+}
+
+
+
+@inproceedings{yang2019hype,
+  author    = {Yang, Wei and Lu, Kuang and Yang, Peilin and Lin, Jimmy},
+  title     = {Critically Examining the "Neural Hype": Weak Baselines and the Additivity of Effectiveness Gains from Neural Ranking Models},
+  year      = {2019},
+  isbn      = {9781450361729},
+  publisher = {Association for Computing Machinery},
+  address   = {New York, NY, USA},
+  doi       = {10.1145/3331184.3331340},
+  abstract  = {Is neural IR mostly hype? In a recent SIGIR Forum article, Lin expressed skepticism
+               that neural ranking models were actually improving ad hoc retrieval effectiveness
+               in limited data scenarios. He provided anecdotal evidence that authors of neural IR
+               papers demonstrate "wins" by comparing against weak baselines. This paper provides
+               a rigorous evaluation of those claims in two ways: First, we conducted a meta-analysis
+               of papers that have reported experimental results on the TREC Robust04 test collection.
+               We do not find evidence of an upward trend in effectiveness over time. In fact, the
+               best reported results are from a decade ago and no recent neural approach comes close.
+               Second, we applied five recent neural models to rerank the strong baselines that Lin
+               used to make his arguments. A significant improvement was observed for one of the
+               models, demonstrating additivity in gains. While there appears to be merit to neural
+               IR approaches, at least some of the gains reported in the literature appear illusory.},
+  booktitle = {Proceedings of the 42nd International ACM SIGIR Conference on Research and Development in Information Retrieval},
+  pages     = {1129–1132},
+  numpages  = {4},
+  keywords  = {document ranking, meta-analysis, neural IR},
+  location  = {Paris, France},
+  series    = {SIGIR'19}
+}
+
+@article{dabre2020mtsurvey,
+  author     = {Dabre, Raj and Chu, Chenhui and Kunchukuttan, Anoop},
+  title      = {A Survey of Multilingual Neural Machine Translation},
+  year       = {2020},
+  issue_date = {September 2021},
+  publisher  = {Association for Computing Machinery},
+  address    = {New York, NY, USA},
+  volume     = {53},
+  number     = {5},
+  issn       = {0360-0300},
+  url        = {https://doi.org/10.1145/3406095},
+  doi        = {10.1145/3406095},
+  abstract   = {We present a survey on multilingual neural machine translation (MNMT), which has gained a lot of traction in recent years. MNMT has been useful in improving translation quality as a result of translation knowledge transfer (transfer learning). MNMT is more promising and interesting than its statistical machine translation counterpart, because end-to-end modeling and distributed representations open new avenues for research on machine translation. Many approaches have been proposed to exploit multilingual parallel corpora for improving translation quality. However, the lack of a comprehensive survey makes it difficult to determine which approaches are promising and, hence, deserve further exploration. In this article, we present an in-depth survey of existing literature on MNMT. We first categorize various approaches based on their central use-case and then further categorize them based on resource scenarios, underlying modeling principles, core-issues, and challenges. Wherever possible, we address the strengths and weaknesses of several techniques by comparing them with each other. We also discuss the future directions for MNMT. This article is aimed towards both beginners and experts in NMT. We hope this article will serve as a starting point as well as a source of new ideas for researchers and engineers interested in MNMT.},
+  journal    = {ACM Comput. Surv.},
+  month      = {sep},
+  articleno  = {99},
+  numpages   = {38},
+  keywords   = {Neural machine translation, multi-source, zero-shot, multilingualism, low-resource, survey}
+}
+
+@inproceedings{schuster-etal-2021-vitaminc,
+  title     = {Get Your Vitamin {C}! {R}obust Fact Verification with Contrastive Evidence},
+  author    = {Schuster, Tal  and
+               Fisch, Adam  and
+               Barzilay, Regina},
+  booktitle = {Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies},
+  month     = jun,
+  year      = {2021},
+  address   = {Online},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://www.aclweb.org/anthology/2021.naacl-main.52},
+  pages     = {624--643}
+}
+
+@inproceedings{conneau2018xnli,
+  author    = {Conneau, Alexis
+               and Rinott, Ruty
+               and Lample, Guillaume
+               and Williams, Adina
+               and Bowman, Samuel R.
+               and Schwenk, Holger
+               and Stoyanov, Veselin},
+  title     = {{XNLI}: Evaluating Cross-lingual Sentence Representations},
+  booktitle = {Proceedings of the 2018 Conference on Empirical Methods
+               in Natural Language Processing},
+  year      = {2018},
+  publisher = {Association for Computational Linguistics},
+  address   = {Online},
+  url       = {https://aclanthology.org/D18-1269/},
+  location  = {Brussels, Belgium}
+}
+
+@inproceedings{DBLP:journals/corr/abs-2107-10042fernet,
+  author    = {Lehe{\v{c}}ka, Jan
+               and {\v{S}}vec, Jan},
+  editor    = {Espinosa-Anke, Luis
+               and Mart{\'i}n-Vide, Carlos
+               and Spasi{\'{c}}, Irena},
+  title     = {Comparison of {C}zech Transformers on Text Classification Tasks},
+  booktitle = {Statistical Language and Speech Processing},
+  year      = {2021},
+  publisher = {Springer International Publishing},
+  address   = {Cham},
+  pages     = {27--37},
+  abstract  = {In this paper, we present our progress in pre-training monolingual Transformers for Czech and contribute to the research community by releasing our models for public. The need for such models emerged from our effort to employ Transformers in our language-specific tasks, but we found the performance of the published multilingual models to be very limited. Since the multilingual models are usually pre-trained from 100+ languages, most of low-resourced languages (including Czech) are under-represented in these models. At the same time, there is a huge amount of monolingual training data available in web archives like Common Crawl. We have pre-trained and publicly released two monolingual Czech Transformers and compared them with relevant public models, trained (at least partially) for Czech. The paper presents the Transformers pre-training procedure as well as a comparison of pre-trained models on text classification task from various domains.},
+  isbn      = {978-3-030-89579-2}
+}
+
+@article{vstromajerova2016between,
+  title   = {Between comparable and parallel: English-czech corpus from wikipedia},
+  author  = {{\v{S}}tromajerov{\'a}, Ad{\'e}la and Baisa, V{\'\i}t and Blahu{\v{s}}, Marek},
+  journal = {RASLAN 2016 Recent Advances in Slavonic Natural Language Processing},
+  pages   = {3},
+  year    = {2016}
+}
+@article{Althobaiti2021Wikiparallel,
+  author  = {Althobaiti, Maha Jarallah},
+  journal = {IEEE Access},
+  title   = {A Simple Yet Robust Algorithm for Automatic Extraction of Parallel Sentences: A Case Study on Arabic-English Wikipedia Articles},
+  year    = {2022},
+  volume  = {10},
+  number  = {},
+  pages   = {401-420},
+  doi     = {10.1109/ACCESS.2021.3137830}
+}
+@inproceedings{chu-etal-2014-constructing,
+  title     = {Constructing a {C}hinese{---}{J}apanese Parallel Corpus from {W}ikipedia},
+  author    = {Chu, Chenhui  and
+               Nakazawa, Toshiaki  and
+               Kurohashi, Sadao},
+  booktitle = {Proceedings of the Ninth International Conference on Language Resources and Evaluation ({LREC}'14)},
+  month     = may,
+  year      = {2014},
+  address   = {Reykjavik, Iceland},
+  publisher = {European Language Resources Association (ELRA)},
+  url       = {http://www.lrec-conf.org/proceedings/lrec2014/pdf/21_Paper.pdf},
+  pages     = {642--647},
+  abstract  = {Parallel corpora are crucial for statistical machine translation (SMT). However, they are quite scarce for most language pairs, such as Chinese―Japanese. As comparable corpora are far more available, many studies have been conducted to automatically construct parallel corpora from comparable corpora. This paper presents a robust parallel sentence extraction system for constructing a Chinese―Japanese parallel corpus from Wikipedia. The system is inspired by previous studies that mainly consist of a parallel sentence candidate filter and a binary classifier for parallel sentence identification. We improve the system by using the common Chinese characters for filtering and two novel feature sets for classification. Experiments show that our system performs significantly better than the previous studies for both accuracy in parallel sentence extraction and SMT performance. Using the system, we construct a Chinese―Japanese parallel corpus with more than 126k highly accurate parallel sentences from Wikipedia. The constructed parallel corpus is freely available at http://orchid.kuee.kyoto-u.ac.jp/{\textasciitilde}chu/resource/wiki{\_}zh{\_}ja.tgz.}
+}
+@inproceedings{mohammadi2010parallelwiki,
+  author    = {Mohammadi, Mehdi and GhasemAghaee, Nasser},
+  booktitle = {2010 Second International Conference on Computer Engineering and Applications},
+  title     = {Building Bilingual Parallel Corpora Based on Wikipedia},
+  year      = {2010},
+  volume    = {2},
+  number    = {},
+  pages     = {264-268},
+  doi       = {10.1109/ICCEA.2010.203}
+}
+@article{krippendorff1970,
+  author  = {Klaus Krippendorff},
+  title   = {Estimating the Reliability, Systematic Error and Random Error of Interval Data},
+  journal = {Educational and Psychological Measurement},
+  volume  = {30},
+  number  = {1},
+  pages   = {61-70},
+  year    = {1970},
+  doi     = {10.1177/001316447003000105},
+  url     = {         https://doi.org/10.1177/001316447003000105
+             
+             }
+}
+
+@inproceedings{guyon1994patterns,
+  author    = {Guyon, I. and Mati\'{c}, N. and Vapnik, V.},
+  title     = {Discovering Informative Patterns and Data Cleaning},
+  year      = {1994},
+  publisher = {AAAI Press},
+  address   = {Palo Alto, California, USA},
+  abstract  = {We present a method for discovering informative patterns from data. With this method, large databases can be reduced to only a few representative data entries. Our framework encompasses also methods for cleaning databases containing corrupted data. Both on-line and off-line algorithms are proposed and experimentally checked on databases of handwritten images. The generality of the framework makes it an attractive candidate for new applications in knowledge discovery.},
+  booktitle = {Proceedings of the 3rd International Conference on Knowledge Discovery and Data Mining},
+  pages     = {145–156},
+  numpages  = {12},
+  keywords  = {machine learning, information gain, knowledge discovery, data cleaning, informative patterns},
+  location  = {Seattle, WA},
+  series    = {AAAIWS'94}
+}
+
+@inproceedings{10.1007/978-3-642-02319-4_50,
+  author    = {Miranda, Andr{\'e} L. B.
+               and Garcia, Lu{\'i}s Paulo F.
+               and Carvalho, Andr{\'e} C. P. L. F.
+               and Lorena, Ana C.},
+  editor    = {Corchado, Emilio
+               and Wu, Xindong
+               and Oja, Erkki
+               and Herrero, {\'A}lvaro
+               and Baruque, Bruno},
+  title     = {Use of Classification Algorithms in Noise Detection and Elimination},
+  booktitle = {Hybrid Artificial Intelligence Systems},
+  year      = {2009},
+  publisher = {Springer Berlin Heidelberg},
+  address   = {Berlin, Heidelberg},
+  pages     = {417--424},
+  abstract  = {Data sets in Bioinformatics usually present a high level of noise. Various processes involved in biological data collection and preparation may be responsible for the introduction of this noise, such as the imprecision inherent to laboratory experiments generating these data. Using noisy data in the induction of classifiers through Machine Learning techniques may harm the classifiers prediction performance. Therefore, the predictions of these classifiers may be used for guiding noise detection and removal. This work compares three approaches for the elimination of noisy data from Bioinformatics data sets using Machine Learning classifiers: the first is based in the removal of the detected noisy examples, the second tries to reclassify these data and the third technique, named hybrid, unifies the previous approaches.},
+  isbn      = {978-3-642-02319-4}
+}
+
+@article{Jeatrakul,
+  author  = {Jeatrakul, Piyasak and Wong, Kok and Fung, Chun},
+  year    = {2010},
+  month   = {04},
+  pages   = {297-302},
+  title   = {Data Cleaning for Classification Using Misclassification Analysis},
+  volume  = {14},
+  journal = {JACIII},
+  doi     = {10.20965/jaciii.2010.p0297}
+}
+
+@inproceedings{priban-etal-2019-machine,
+  title     = {Machine Learning Approach to Fact-Checking in {W}est {S}lavic Languages},
+  author    = {P{\v{r}}ib{\'a}{\v{n}}, Pavel  and
+               Hercig, Tom{\'a}{\v{s}}  and
+               Steinberger, Josef},
+  booktitle = {Proceedings of the International Conference on Recent Advances in Natural Language Processing (RANLP 2019)},
+  month     = sep,
+  year      = {2019},
+  address   = {Varna, Bulgaria},
+  publisher = {INCOMA Ltd.},
+  url       = {https://aclanthology.org/R19-1113},
+  doi       = {10.26615/978-954-452-056-4_113},
+  pages     = {973--979},
+  abstract  = {Fake news detection and closely-related fact-checking have recently attracted a lot of attention. Automatization of these tasks has been already studied for English. For other languages, only a few studies can be found (e.g. (Baly et al., 2018)), and to the best of our knowledge, no research has been conducted for West Slavic languages. In this paper, we present datasets for Czech, Polish, and Slovak. We also ran initial experiments which set a baseline for further research into this area.}
+}
+
+@article{sido2021czert,
+  title   = {{Czert} -- Czech {BERT}-like Model for Language Representation},
+  author  = {Jakub Sido and Ondřej Pražák and Pavel Přibáň and Jan Pašek and Michal Seják and Miloslav Konopík},
+  year    = {2021},
+  journal = {arXiv:2103.13031}
+}
+@inproceedings{strakova14,
+  author    = {Strakov\'{a}, Jana  and  Straka, Milan  and  Haji\v{c}, Jan},
+  title     = {Open-{S}ource {T}ools for {M}orphology, {L}emmatization, {POS} {T}agging and {N}amed {E}ntity {R}ecognition},
+  booktitle = {Proceedings of 52nd Annual Meeting of the Association for Computational Linguistics: System Demonstrations},
+  month     = {June},
+  year      = {2014},
+  address   = {Baltimore, Maryland},
+  publisher = {Association for Computational Linguistics},
+  pages     = {13--18},
+  url       = {http://www.aclweb.org/anthology/P/P14/P14-5003.pdf}
+}
+
+@article{lora,
+  author     = {Edward J. Hu and
+                Yelong Shen and
+                Phillip Wallis and
+                Zeyuan Allen{-}Zhu and
+                Yuanzhi Li and
+                Shean Wang and
+                Weizhu Chen},
+  title      = {LoRA: Low-Rank Adaptation of Large Language Models},
+  journal    = {CoRR},
+  volume     = {abs/2106.09685},
+  year       = {2021},
+  url        = {\url{https://arxiv.org/abs/2106.09685}},
+  eprinttype = {arXiv},
+  eprint     = {2106.09685},
+  timestamp  = {Tue, 29 Jun 2021 16:55:04 +0200}
+}
+
+@misc{gpt4,
+  title         = {GPT-4 Technical Report},
+  author        = {OpenAI},
+  year          = {2023},
+  eprint        = {2303.08774},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.CL}
+}
+@misc{bing,
+  title         = {Complex Claim Verification with Evidence Retrieved in the Wild},
+  author        = {Jifan Chen and Grace Kim and Aniruddh Sriram and Greg Durrett and Eunsol Choi},
+  year          = {2023},
+  eprint        = {2305.11859},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.CL}
+}
+
+@misc{llama2,
+  title         = {Llama 2: Open Foundation and Fine-Tuned Chat Models},
+  author        = {Hugo Touvron and Louis Martin and Kevin Stone and Peter Albert and Amjad Almahairi and Yasmine Babaei and Nikolay Bashlykov and Soumya Batra and Prajjwal Bhargava and Shruti Bhosale and Dan Bikel and Lukas Blecher and Cristian Canton Ferrer and Moya Chen and Guillem Cucurull and David Esiobu and Jude Fernandes and Jeremy Fu and Wenyin Fu and Brian Fuller and Cynthia Gao and Vedanuj Goswami and Naman Goyal and Anthony Hartshorn and Saghar Hosseini and Rui Hou and Hakan Inan and Marcin Kardas and Viktor Kerkez and Madian Khabsa and Isabel Kloumann and Artem Korenev and Punit Singh Koura and Marie-Anne Lachaux and Thibaut Lavril and Jenya Lee and Diana Liskovich and Yinghai Lu and Yuning Mao and Xavier Martinet and Todor Mihaylov and Pushkar Mishra and Igor Molybog and Yixin Nie and Andrew Poulton and Jeremy Reizenstein and Rashi Rungta and Kalyan Saladi and Alan Schelten and Ruan Silva and Eric Michael Smith and Ranjan Subramanian and Xiaoqing Ellen Tan and Binh Tang and Ross Taylor and Adina Williams and Jian Xiang Kuan and Puxin Xu and Zheng Yan and Iliyan Zarov and Yuchen Zhang and Angela Fan and Melanie Kambadur and Sharan Narang and Aurelien Rodriguez and Robert Stojnic and Sergey Edunov and Thomas Scialom},
+  year          = {2023},
+  eprint        = {2307.09288},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.CL}
+}
+
+@misc{llama,
+  title         = {LLaMA: Open and Efficient Foundation Language Models},
+  author        = {Hugo Touvron and Thibaut Lavril and Gautier Izacard and Xavier Martinet and Marie-Anne Lachaux and Timothée Lacroix and Baptiste Rozière and Naman Goyal and Eric Hambro and Faisal Azhar and Aurelien Rodriguez and Armand Joulin and Edouard Grave and Guillaume Lample},
+  year          = {2023},
+  eprint        = {2302.13971},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.CL}
+}
+
+@inproceedings{wright,
+  title     = {Generating Scientific Claims for Zero-Shot Scientific Fact Checking},
+  author    = {Wright, Dustin  and
+               Wadden, David  and
+               Lo, Kyle  and
+               Kuehl, Bailey  and
+               Cohan, Arman  and
+               Augenstein, Isabelle  and
+               Wang, Lucy Lu},
+  booktitle = {Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  month     = may,
+  year      = {2022},
+  address   = {Dublin, Ireland},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://aclanthology.org/2022.acl-long.175},
+  doi       = {10.18653/v1/2022.acl-long.175},
+  pages     = {2448--2460},
+  abstract  = {Automated scientific fact checking is difficult due to the complexity of scientific language and a lack of significant amounts of training data, as annotation requires domain expertise. To address this challenge, we propose scientific claim generation, the task of generating one or more atomic and verifiable claims from scientific sentences, and demonstrate its usefulness in zero-shot fact checking for biomedical claims. We propose CLAIMGEN-BART, a new supervised method for generating claims supported by the literature, as well as KBIN, a novel method for generating claim negations. Additionally, we adapt an existing unsupervised entity-centric method of claim generation to biomedical claims, which we call CLAIMGEN-ENTITY. Experiments on zero-shot fact checking demonstrate that both CLAIMGEN-ENTITY and CLAIMGEN-BART, coupled with KBIN, achieve up to 90{\%} performance of fully supervised models trained on manually annotated claims and evidence. A rigorous evaluation study demonstrates significant improvement in generated claim and negation quality over existing baselines}
+}
+
+@misc{llms,
+  title         = {A Survey of Large Language Models},
+  author        = {Wayne Xin Zhao and Kun Zhou and Junyi Li and Tianyi Tang and Xiaolei Wang and Yupeng Hou and Yingqian Min and Beichen Zhang and Junjie Zhang and Zican Dong and Yifan Du and Chen Yang and Yushuo Chen and Zhipeng Chen and Jinhao Jiang and Ruiyang Ren and Yifan Li and Xinyu Tang and Zikang Liu and Peiyu Liu and Jian-Yun Nie and Ji-Rong Wen},
+  year          = {2023},
+  eprint        = {2303.18223},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.CL}
+}
+@article{prompting,
+  author     = {Liu, Pengfei and Yuan, Weizhe and Fu, Jinlan and Jiang, Zhengbao and Hayashi, Hiroaki and Neubig, Graham},
+  title      = {Pre-Train, Prompt, and Predict: A Systematic Survey of Prompting Methods in Natural Language Processing},
+  year       = {2023},
+  issue_date = {September 2023},
+  publisher  = {Association for Computing Machinery},
+  address    = {New York, NY, USA},
+  volume     = {55},
+  number     = {9},
+  issn       = {0360-0300},
+  url        = {https://doi.org/10.1145/3560815},
+  doi        = {10.1145/3560815},
+  abstract   = {This article surveys and organizes research works in a new paradigm in natural language processing, which we dub “prompt-based learning.” Unlike traditional supervised learning, which trains a model to take in an input x and predict an output y as P(y|x), prompt-based learning is based on language models that model the probability of text directly. To use these models to perform prediction tasks, the original input x is modified using a template into a textual string prompt x′ that has some unfilled slots, and then the language model is used to probabilistically fill the unfilled information to obtain a final string x̂, from which the final output y can be derived. This framework is powerful and attractive for a number of reasons: It allows the language model to be pre-trained on massive amounts of raw text, and by defining a new prompting function the model is able to perform few-shot or even zero-shot learning, adapting to new scenarios with few or no labeled data. In this article, we introduce the basics of this promising paradigm, describe a unified set of mathematical notations that can cover a wide variety of existing work, and organize existing work along several dimensions, e.g.,&nbsp;the choice of pre-trained language models, prompts, and tuning strategies. To make the field more accessible to interested beginners, we not only make a systematic review of existing works and a highly structured typology of prompt-based concepts but also release other resources, e.g., a website including constantly updated survey and paperlist.},
+  journal    = {ACM Comput. Surv.},
+  month      = {jan},
+  articleno  = {195},
+  numpages   = {35},
+  keywords   = {Pre-trained language models, prompting}
+}
+
+@article{Ji_2023,
+  doi       = {10.1145/3571730},
+  url       = {https://doi.org/10.1145%2F3571730},
+  year      = 2023,
+  month     = {mar},
+  publisher = {Association for Computing Machinery ({ACM})},
+  volume    = {55},
+  number    = {12},
+  pages     = {1--38},
+  author    = {Ziwei Ji and Nayeon Lee and Rita Frieske and Tiezheng Yu and Dan Su and Yan Xu and Etsuko Ishii and Ye Jin Bang and Andrea Madotto and Pascale Fung},
+  title     = {Survey of Hallucination in Natural Language Generation},
+  journal   = {{ACM} Computing Surveys}
+}
+
+@article{georgiana_stanescu_2022_6795674,
+  author  = {Georgiana Stănescu},
+  title   = {{Ukraine conflict: the challenge of informational 
+             war}},
+  journal = {SOCIAL SCIENCES AND EDUCATION RESEARCH REVIEW},
+  year    = 2022,
+  volume  = 9,
+  number  = 1,
+  pages   = {146-148},
+  month   = jul,
+  doi     = {10.5281/zenodo.6795674},
+  url     = {https://doi.org/10.5281/zenodo.6795674}
+}
+
+@unknown{glorin,
+author = {Sebastian, Glorin},
+year = {2023},
+month = {05},
+pages = {},
+title = {Exploring Ethical Implications of ChatGPT and Other AI Chatbots and Regulation of Disinformation Propagation}
+}
+@misc{peft,
+      title={Few-Shot Parameter-Efficient Fine-Tuning is Better and Cheaper than In-Context Learning}, 
+      author={Haokun Liu and Derek Tam and Mohammed Muqeeth and Jay Mohta and Tenghao Huang and Mohit Bansal and Colin Raffel},
+      year={2022},
+      eprint={2205.05638},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+@misc{openassistant,
+      title={OpenAssistant Conversations -- Democratizing Large Language Model Alignment}, 
+      author={Andreas Köpf and Yannic Kilcher and Dimitri von Rütte and Sotiris Anagnostidis and Zhi-Rui Tam and Keith Stevens and Abdullah Barhoum and Nguyen Minh Duc and Oliver Stanley and Richárd Nagyfi and Shahul ES and Sameer Suri and David Glushkov and Arnav Dantuluri and Andrew Maguire and Christoph Schuhmann and Huu Nguyen and Alexander Mattick},
+      year={2023},
+      eprint={2304.07327},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+@misc{yamada2020luke,
+      title={LUKE: Deep Contextualized Entity Representations with Entity-aware Self-attention}, 
+      author={Ikuya Yamada and Akari Asai and Hiroyuki Shindo and Hideaki Takeda and Yuji Matsumoto},
+      year={2020},
+      eprint={2010.01057},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
 }
