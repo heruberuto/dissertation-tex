@@ -12,7 +12,7 @@
 \begin{figure}
     \includegraphics[width=7cm]{fig/lm_critics.png}
     \caption{\textsf{LM-Critic} -- deciding text fluency viewed as finding local optima of Language Model output probability, reprinted from~\cite{yasunaga-etal-2021-lm}}
-    \label{fig:gptext}
+    \label{fig:lmcritic}
 \end{figure}
 \label{sec:metrics}
 
@@ -29,7 +29,7 @@ For the task of claim generation, where we also face the challenge of the \texti
 \begin{enumerate}
     \item {\techbf Fluency} -- \textit{is the claim grammatically correct and intelligible?}
     
-    Currently, we are working with two emulations of claim fluency, challenge that is similar to a standard NLP task of Gramatical Error Detection (GED): \textsf{LM-Critic} (Figure)~\cite{yasunaga-etal-2021-lm} perturbs the claim words and characters to find local optima in output probability of its tokens, using a language model such as GPT-2 as its reference. \textsf{GPTScore}~\cite{fu2023gptscore} uses prompting a LLM (such as GPT-3.5) to obtain a model-inferred score using few- or zero-shot learning.
+    Currently, we are working with two emulations of claim fluency, challenge that is similar to a standard NLP task of Gramatical Error Detection (GED): \textsf{LM-Critic} (Figure~\ref{fig:lmcritic})~\cite{yasunaga-etal-2021-lm} perturbs the claim words and characters to find local optima in output probability of its tokens, using a language model such as GPT-2 as its reference. \textsf{GPTScore}~\cite{fu2023gptscore} uses prompting a LLM (such as GPT-3.5) to obtain a model-inferred score using few- or zero-shot learning.
     
     Both can be adapted for Czech and the latter is demonstrated in Figure~\ref{fig:gptext}.
     \item {\techbf Decontextualization} -- \textit{can the claim be correctly interpreted without any additional context from the source document or elsewhere?}
