@@ -5,45 +5,45 @@ The style file: apalike.bst
 Database file #1: minimum.bib
 Warning--entry type for "glorin" isn't style-file defined
 --line 2407 of file minimum.bib
-You've used 34 entries,
+You've used 37 entries,
             1935 wiz_defined-function locations,
-            641 strings with 12736 characters,
-and the built_in function-call counts, 18371 in all, are:
-= -- 1627
-> -- 1496
+            652 strings with 13351 characters,
+and the built_in function-call counts, 19747 in all, are:
+= -- 1751
+> -- 1600
 < -- 13
-+ -- 570
-- -- 560
-* -- 1763
-:= -- 3365
-add.period$ -- 96
-call.type$ -- 34
-change.case$ -- 450
-chr.to.int$ -- 32
-cite$ -- 34
-duplicate$ -- 480
-empty$ -- 801
-format.name$ -- 598
-if$ -- 3372
++ -- 608
+- -- 598
+* -- 1894
+:= -- 3623
+add.period$ -- 104
+call.type$ -- 37
+change.case$ -- 484
+chr.to.int$ -- 35
+cite$ -- 37
+duplicate$ -- 517
+empty$ -- 865
+format.name$ -- 639
+if$ -- 3620
 int.to.chr$ -- 3
 int.to.str$ -- 0
-missing$ -- 18
-newline$ -- 162
-num.names$ -- 102
-pop$ -- 412
+missing$ -- 20
+newline$ -- 176
+num.names$ -- 111
+pop$ -- 441
 preamble$ -- 1
-purify$ -- 450
+purify$ -- 484
 quote$ -- 0
-skip$ -- 379
+skip$ -- 408
 stack$ -- 0
-substring$ -- 769
-swap$ -- 67
+substring$ -- 830
+swap$ -- 69
 text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 204
+type$ -- 222
 warning$ -- 0
-while$ -- 93
+while$ -- 101
 width$ -- 0
-write$ -- 415
+write$ -- 451
 (There was 1 warning)

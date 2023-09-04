@@ -41,6 +41,13 @@ Cheng, J., Dong, L., and Lapata, M. (2016).
 \newblock Long short-term memory-networks for machine reading.
 \newblock {\em CoRR}, abs/1601.06733.
 
+\bibitem[Choi et~al., 2021]{choi-etal-2021-decontextualization}
+Choi, E., Palomaki, J., Lamm, M., Kwiatkowski, T., Das, D., and Collins, M.
+  (2021).
+\newblock Decontextualization: Making sentences stand-alone.
+\newblock {\em Transactions of the Association for Computational Linguistics},
+  9:447--461.
+
 \bibitem[Devlin et~al., 2019a]{bert}
 Devlin, J., Chang, M.-W., Lee, K., and Toutanova, K. (2019a).
 \newblock Bert: Pre-training of deep bidirectional transformers for language
@@ -110,9 +117,21 @@ Liu, P., Yuan, W., Fu, J., Jiang, Z., Hayashi, H., and Neubig, G. (2023).
   methods in natural language processing.
 \newblock {\em ACM Comput. Surv.}, 55(9).
 
+\bibitem[Mohri et~al., 2023]{mohri2023learning}
+Mohri, C., Andor, D., Choi, E., and Collins, M. (2023).
+\newblock Learning to reject with a fixed predictor: Application to
+  decontextualization.
+
 \bibitem[OpenAI, 2023]{gpt4}
 OpenAI (2023).
 \newblock Gpt-4 technical report.
+
+\bibitem[Raffel et~al., 2019]{t5-11b}
+Raffel, C., Shazeer, N., Roberts, A., Lee, K., Narang, S., Matena, M., Zhou,
+  Y., Li, W., and Liu, P.~J. (2019).
+\newblock Exploring the limits of transfer learning with a unified text-to-text
+  transformer.
+\newblock {\em CoRR}, abs/1910.10683.
 
 \bibitem[Sebastian, 2023]{glorin}
 Sebastian, G. (2023).

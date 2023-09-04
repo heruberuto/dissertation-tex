@@ -42,8 +42,8 @@
 \contentsline {subsection}{\numberline {4.2.1}Human-in-the-loop grading of claim generators}{11}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2}Validation of the model outputs with human fact-checkers}{11}{subsection.4.2.2}%
 \contentsline {subsection}{\numberline {4.2.3}Polish dataset scraping}{11}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}Crowd-sourced fact checking platform}{11}{subsection.4.2.4}%
-\contentsline {section}{\numberline {4.3}The grand scope}{11}{section.4.3}%
+\contentsline {subsection}{\numberline {4.2.4}Crowd-sourced fact checking platform}{12}{subsection.4.2.4}%
+\contentsline {section}{\numberline {4.3}The grand scope}{12}{section.4.3}%
 \contentsline {chapter}{\numberline {5}Conclusion}{13}{chapter.5}%
 \contentsline {chapter}{Bibliography}{14}{chapter*.1}%
-\contentsline {chapter}{\numberline {A}Acronyms}{17}{appendix.A}%
+\contentsline {chapter}{\numberline {A}Acronyms}{18}{appendix.A}%

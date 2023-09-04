@@ -2405,33 +2405,61 @@
 }
 
 @unknown{glorin,
-author = {Sebastian, Glorin},
-year = {2023},
-month = {05},
-pages = {},
-title = {Exploring Ethical Implications of ChatGPT and Other AI Chatbots and Regulation of Disinformation Propagation}
+  author = {Sebastian, Glorin},
+  year   = {2023},
+  month  = {05},
+  pages  = {},
+  title  = {Exploring Ethical Implications of ChatGPT and Other AI Chatbots and Regulation of Disinformation Propagation}
 }
 @misc{peft,
-      title={Few-Shot Parameter-Efficient Fine-Tuning is Better and Cheaper than In-Context Learning}, 
-      author={Haokun Liu and Derek Tam and Mohammed Muqeeth and Jay Mohta and Tenghao Huang and Mohit Bansal and Colin Raffel},
-      year={2022},
-      eprint={2205.05638},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG}
+  title         = {Few-Shot Parameter-Efficient Fine-Tuning is Better and Cheaper than In-Context Learning},
+  author        = {Haokun Liu and Derek Tam and Mohammed Muqeeth and Jay Mohta and Tenghao Huang and Mohit Bansal and Colin Raffel},
+  year          = {2022},
+  eprint        = {2205.05638},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.LG}
 }
 @misc{openassistant,
-      title={OpenAssistant Conversations -- Democratizing Large Language Model Alignment}, 
-      author={Andreas Köpf and Yannic Kilcher and Dimitri von Rütte and Sotiris Anagnostidis and Zhi-Rui Tam and Keith Stevens and Abdullah Barhoum and Nguyen Minh Duc and Oliver Stanley and Richárd Nagyfi and Shahul ES and Sameer Suri and David Glushkov and Arnav Dantuluri and Andrew Maguire and Christoph Schuhmann and Huu Nguyen and Alexander Mattick},
-      year={2023},
-      eprint={2304.07327},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
+  title         = {OpenAssistant Conversations -- Democratizing Large Language Model Alignment},
+  author        = {Andreas Köpf and Yannic Kilcher and Dimitri von Rütte and Sotiris Anagnostidis and Zhi-Rui Tam and Keith Stevens and Abdullah Barhoum and Nguyen Minh Duc and Oliver Stanley and Richárd Nagyfi and Shahul ES and Sameer Suri and David Glushkov and Arnav Dantuluri and Andrew Maguire and Christoph Schuhmann and Huu Nguyen and Alexander Mattick},
+  year          = {2023},
+  eprint        = {2304.07327},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.CL}
 }
 @misc{yamada2020luke,
-      title={LUKE: Deep Contextualized Entity Representations with Entity-aware Self-attention}, 
-      author={Ikuya Yamada and Akari Asai and Hiroyuki Shindo and Hideaki Takeda and Yuji Matsumoto},
-      year={2020},
-      eprint={2010.01057},
+  title         = {LUKE: Deep Contextualized Entity Representations with Entity-aware Self-attention},
+  author        = {Ikuya Yamada and Akari Asai and Hiroyuki Shindo and Hideaki Takeda and Yuji Matsumoto},
+  year          = {2020},
+  eprint        = {2010.01057},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.CL}
+}
+
+@article{choi-etal-2021-decontextualization,
+  title     = {Decontextualization: Making Sentences Stand-Alone},
+  author    = {Choi, Eunsol  and
+               Palomaki, Jennimaria  and
+               Lamm, Matthew  and
+               Kwiatkowski, Tom  and
+               Das, Dipanjan  and
+               Collins, Michael},
+  journal   = {Transactions of the Association for Computational Linguistics},
+  volume    = {9},
+  year      = {2021},
+  address   = {Cambridge, MA},
+  publisher = {MIT Press},
+  url       = {https://aclanthology.org/2021.tacl-1.27},
+  doi       = {10.1162/tacl_a_00377},
+  pages     = {447--461},
+  abstract  = {Models for question answering, dialogue agents, and summarization often interpret the meaning of a sentence in a rich context and use that meaning in a new context. Taking excerpts of text can be problematic, as key pieces may not be explicit in a local window. We isolate and define the problem of sentence decontextualization: taking a sentence together with its context and rewriting it to be interpretable out of context, while preserving its meaning. We describe an annotation procedure, collect data on the Wikipedia corpus, and use the data to train models to automatically decontextualize sentences. We present preliminary studies that show the value of sentence decontextualization in a user-facing task, and as preprocessing for systems that perform document understanding. We argue that decontextualization is an important subtask in many downstream applications, and that the definitions and resources provided can benefit tasks that operate on sentences that occur in a richer context.}
+}
+
+@misc{mohri2023learning,
+      title={Learning to Reject with a Fixed Predictor: Application to Decontextualization}, 
+      author={Christopher Mohri and Daniel Andor and Eunsol Choi and Michael Collins},
+      year={2023},
+      eprint={2301.09044},
       archivePrefix={arXiv},
-      primaryClass={cs.CL}
+      primaryClass={cs.LG}
 }

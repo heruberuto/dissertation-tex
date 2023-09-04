@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.8)  4 SEP 2023 07:31
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.8)  4 SEP 2023 08:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1484,7 +1484,7 @@ File: fig/lm_critics.png Graphic file (type bmp)
 File: fig/gptext.pdf Graphic file (type pdf)
 <use fig/gptext.pdf>
 
-Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 43.
+Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 48.
 
 [10
 
@@ -1498,31 +1498,31 @@ Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is usel
 
 ]
 
-Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 68.
+Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 69.
 
 [14
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 123--129
+Underfull \hbox (badness 10000) in paragraph at lines 142--148
 []\TU/lmss/m/n/10.95 STEM \TU/lmr/m/n/10.95 (2021).  Mýtům a konspiracím o covid-19 věří více
  []
 
 
-Underfull \hbox (badness 6252) in paragraph at lines 123--129
+Underfull \hbox (badness 6252) in paragraph at lines 142--148
 \TU/lmr/m/n/10.95 než třetina české internetové populace | stem.cz.  []$[][][][][] [] [] [] [][][] [] [][][][] [] [][] []
  []
 
 
-Overfull \hbox (52.1056pt too wide) in paragraph at lines 123--129
+Overfull \hbox (52.1056pt too wide) in paragraph at lines 142--148
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]$[]\TU/lmr/m/n/10.95 .
  []
 
-[15]) [16]
+[15] [16]) [17]
 Appendix A.
 
 Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 159.
 
-[17
+[18
 
 ] (/Users/bertik/PhD/studie-bertik/minimum.aux)
 
@@ -1727,12 +1727,12 @@ Package rerunfilecheck Info: File `minimum.out' has not changed.
 (rerunfilecheck)             Checksum: 47218F8C03B0F1814B2BE2A7D6477B5F;6491.
  ) 
 Here is how much of TeX's memory you used:
- 33117 strings out of 476919
- 639956 string characters out of 5821840
- 1166571 words of memory out of 5000000
- 52326 multiletter control sequences out of 15000+600000
+ 33120 strings out of 476919
+ 640019 string characters out of 5821840
+ 1165572 words of memory out of 5000000
+ 52329 multiletter control sequences out of 15000+600000
  440729 words of font info for 117 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  93i,17n,120p,782b,838s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on /Users/bertik/PhD/studie-bertik/minimum.xdv (20 pages, 366784 bytes).
+Output written on /Users/bertik/PhD/studie-bertik/minimum.xdv (21 pages, 385820 bytes).
