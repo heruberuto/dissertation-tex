@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.8)  4 SEP 2023 10:05
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.8)  4 SEP 2023 12:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1434,19 +1434,19 @@ File: fig/transformer.pdf Graphic file (type pdf)
  [3]) (/Users/bertik/PhD/studie-bertik/chapters/2_sota.tex [4]
 Chapter 2.
 
-Overfull \hbox (7.81195pt too wide) in paragraph at lines 25--28
-\TU/lmr/m/n/10.95 Open-source, freely usable. Often poor czech coverage Quantizace, 4b, 8b, zlomek parametrů
- []
-
-
-Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 36.
+Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 21.
 
 [5
 
 ]
+Overfull \hbox (7.81195pt too wide) in paragraph at lines 36--39
+\TU/lmr/m/n/10.95 Open-source, freely usable. Often poor czech coverage Quantizace, 4b, 8b, zlomek parametrů
+ []
+
+[6]
 File: fig/bing.pdf Graphic file (type pdf)
 <use fig/bing.pdf>
- [6]) (/Users/bertik/PhD/studie-bertik/chapters/3_current_contributions.tex [7]
+) (/Users/bertik/PhD/studie-bertik/chapters/3_current_contributions.tex [7]
 Chapter 3.
 File: fig/fcheck/claim_extraction.pdf Graphic file (type pdf)
 <use fig/fcheck/claim_extraction.pdf>
@@ -1495,22 +1495,22 @@ Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is usel
 
 ]
 
-Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 69.
+Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 71.
 
 [15
 
 ] [16]
-Underfull \hbox (badness 10000) in paragraph at lines 166--172
+Underfull \hbox (badness 10000) in paragraph at lines 202--208
 []\TU/lmss/m/n/10.95 STEM \TU/lmr/m/n/10.95 (2021).  Mýtům a konspiracím o covid-19 věří více
  []
 
 
-Underfull \hbox (badness 6252) in paragraph at lines 166--172
+Underfull \hbox (badness 6252) in paragraph at lines 202--208
 \TU/lmr/m/n/10.95 než třetina české internetové populace | stem.cz.  []$[][][][][] [] [] [] [][][] [] [][][][] [] [][] []
  []
 
 
-Overfull \hbox (52.1056pt too wide) in paragraph at lines 166--172
+Overfull \hbox (52.1056pt too wide) in paragraph at lines 202--208
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]$[]\TU/lmr/m/n/10.95 .
  []
 
@@ -1721,15 +1721,15 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `minimum.out' has not changed.
-(rerunfilecheck)             Checksum: 47218F8C03B0F1814B2BE2A7D6477B5F;6491.
+(rerunfilecheck)             Checksum: D4298C45A799ABBC964872FE76503A9E;6534.
  ) 
 Here is how much of TeX's memory you used:
- 33131 strings out of 476919
- 640225 string characters out of 5821840
+ 33138 strings out of 476919
+ 640370 string characters out of 5821840
  1165572 words of memory out of 5000000
- 52338 multiletter control sequences out of 15000+600000
+ 52345 multiletter control sequences out of 15000+600000
  440745 words of font info for 119 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 93i,17n,120p,845b,838s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 93i,17n,120p,957b,838s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on /Users/bertik/PhD/studie-bertik/minimum.xdv (22 pages, 422892 bytes).
+Output written on /Users/bertik/PhD/studie-bertik/minimum.xdv (22 pages, 470980 bytes).

@@ -48,6 +48,13 @@ Choi, E., Palomaki, J., Lamm, M., Kwiatkowski, T., Das, D., and Collins, M.
 \newblock {\em Transactions of the Association for Computational Linguistics},
   9:447--461.
 
+\bibitem[Conneau et~al., 2019]{xlm-roberta}
+Conneau, A., Khandelwal, K., Goyal, N., Chaudhary, V., Wenzek, G.,
+  Guzm{\'{a}}n, F., Grave, E., Ott, M., Zettlemoyer, L., and Stoyanov, V.
+  (2019).
+\newblock Unsupervised cross-lingual representation learning at scale.
+\newblock {\em CoRR}, abs/1911.02116.
+
 \bibitem[Devlin et~al., 2019a]{bert}
 Devlin, J., Chang, M.-W., Lee, K., and Toutanova, K. (2019a).
 \newblock Bert: Pre-training of deep bidirectional transformers for language
@@ -83,6 +90,11 @@ Ji, Z., Lee, N., Frieske, R., Yu, T., Su, D., Xu, Y., Ishii, E., Bang, Y.~J.,
   Madotto, A., and Fung, P. (2023).
 \newblock Survey of hallucination in natural language generation.
 \newblock {\em {ACM} Computing Surveys}, 55(12):1--38.
+
+\bibitem[Kocián et~al., 2021]{kocian2021siamese}
+Kocián, M., Náplava, J., Štancl, D., and Kadlec, V. (2021).
+\newblock Siamese bert-based model for web search relevance ranking evaluated
+  on a new czech dataset.
 
 \bibitem[Koto et~al., 2020]{ffci}
 Koto, F., Baldwin, T., and Lau, J.~H. (2020).
@@ -136,14 +148,38 @@ Liu, Y., Ott, M., Goyal, N., Du, J., Joshi, M., Chen, D., Levy, O., Lewis, M.,
 \newblock Roberta: {A} robustly optimized {BERT} pretraining approach.
 \newblock {\em CoRR}, abs/1907.11692.
 
+\bibitem[Mikolov et~al., 2013]{mikolov}
+Mikolov, T., Chen, K., Corrado, G., and Dean, J. (2013).
+\newblock Efficient estimation of word representations in vector space.
+
 \bibitem[Mohri et~al., 2023]{mohri2023learning}
 Mohri, C., Andor, D., Choi, E., and Collins, M. (2023).
 \newblock Learning to reject with a fixed predictor: Application to
   decontextualization.
 
+\bibitem[Mroczkowski et~al., 2021]{mroczkowski-etal-2021-herbert}
+Mroczkowski, R., Rybak, P., Wr{\'o}blewska, A., and Gawlik, I. (2021).
+\newblock {H}er{BERT}: Efficiently pretrained transformer-based language model
+  for {P}olish.
+\newblock In {\em Proceedings of the 8th Workshop on Balto-Slavic Natural
+  Language Processing}, pages 1--10, Kiyv, Ukraine. Association for
+  Computational Linguistics.
+
 \bibitem[OpenAI, 2023]{gpt4}
 OpenAI (2023).
 \newblock Gpt-4 technical report.
+
+\bibitem[Pennington et~al., 2014]{pennington-etal-2014-glove}
+Pennington, J., Socher, R., and Manning, C. (2014).
+\newblock {G}lo{V}e: Global vectors for word representation.
+\newblock In {\em Proceedings of the 2014 Conference on Empirical Methods in
+  Natural Language Processing ({EMNLP})}, pages 1532--1543, Doha, Qatar.
+  Association for Computational Linguistics.
+
+\bibitem[Pikuliak et~al., 2021]{pikuliak2021slovakbert}
+Pikuliak, M., Štefan Grivalský, Konôpka, M., Blšták, M., Tamajka, M.,
+  Bachratý, V., Šimko, M., Balážik, P., Trnka, M., and Uhlárik, F. (2021).
+\newblock Slovakbert: Slovak masked language model.
 
 \bibitem[Raffel et~al., 2019]{t5-11b}
 Raffel, C., Shazeer, N., Roberts, A., Lee, K., Narang, S., Matena, M., Zhou,
@@ -169,6 +205,12 @@ Sido, J., Pražák, O., Přibáň, P., Pašek, J., Seják, M., and Konopík, M.
 \newblock
   \url{https://www.stem.cz/mytum-a-konspiracim-o-covid-19-veri-vice-nez-tretina-ceske-internetove-populace/}.
 \newblock Accessed: 2021-05-03.
+
+\bibitem[Straka et~al., 2021]{straka2021robeczech}
+Straka, M., Náplava, J., Straková, J., and Samuel, D. (2021).
+\newblock {RobeCzech}: Czech {RoBERTa}, a monolingual contextualized language
+  representation model.
+\newblock {\em Lecture Notes in Computer Science}, page 197–209.
 
 \bibitem[Stănescu, 2022]{georgiana_stanescu_2022_6795674}
 Stănescu, G. (2022).

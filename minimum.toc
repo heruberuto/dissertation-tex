@@ -13,16 +13,16 @@
 \contentsline {section}{\numberline {1.3}A word on the Transformers}{3}{section.1.3}%
 \contentsline {section}{\numberline {1.4}Dissertation minimum study outline}{3}{section.1.4}%
 \contentsline {chapter}{\numberline {2}State of the Art}{5}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Pre-train + Fine-tune}{5}{section.2.1}%
+\contentsline {section}{\numberline {2.1}Pretrain + Finetune}{5}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}BERT and derivatives}{5}{subsection.2.1.1}%
-\contentsline {section}{\numberline {2.2}Large Language Models}{5}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}GPT-3.5 and GPT-4}{5}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}LLaMA-2 and derivatives}{5}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}LoRA and other optimization}{5}{subsection.2.2.3}%
+\contentsline {section}{\numberline {2.2}Few-shot and Zero-shot learning}{6}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}GPT-3.5 and GPT-4}{6}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}LLaMA-2 and derivatives}{6}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}LoRA and other optimization}{6}{subsection.2.2.3}%
 \contentsline {section}{\numberline {2.3}Fact checking approaches}{6}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}FEVER and followups}{6}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Open-domain fact-checking}{6}{subsection.2.3.2}%
-\contentsline {section}{\numberline {2.4}Claim generation}{6}{section.2.4}%
+\contentsline {subsection}{\numberline {2.3.2}Open-domain fact-checking}{7}{subsection.2.3.2}%
+\contentsline {section}{\numberline {2.4}Claim generation}{7}{section.2.4}%
 \contentsline {section}{\numberline {2.5}NLP Generative task benchmarking}{7}{section.2.5}%
 \contentsline {subsection}{\numberline {2.5.1}BERTScore}{7}{subsection.2.5.1}%
 \contentsline {subsection}{\numberline {2.5.2}AlignScore}{7}{subsection.2.5.2}%

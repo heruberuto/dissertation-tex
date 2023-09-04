@@ -2490,3 +2490,60 @@ pages="27--37",
 abstract="In this paper, we present our progress in pre-training monolingual Transformers for Czech and contribute to the research community by releasing our models for public. The need for such models emerged from our effort to employ Transformers in our language-specific tasks, but we found the performance of the published multilingual models to be very limited. Since the multilingual models are usually pre-trained from 100+ languages, most of low-resourced languages (including Czech) are under-represented in these models. At the same time, there is a huge amount of monolingual training data available in web archives like Common Crawl. We have pre-trained and publicly released two monolingual Czech Transformers and compared them with relevant public models, trained (at least partially) for Czech. The paper presents the Transformers pre-training procedure as well as a comparison of pre-trained models on text classification task from various domains.",
 isbn="978-3-030-89579-2"
 }
+@misc{mikolov,
+      title={Efficient Estimation of Word Representations in Vector Space}, 
+      author={Tomas Mikolov and Kai Chen and Greg Corrado and Jeffrey Dean},
+      year={2013},
+      eprint={1301.3781},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@inproceedings{pennington-etal-2014-glove,
+    title = "{G}lo{V}e: Global Vectors for Word Representation",
+    author = "Pennington, Jeffrey  and
+      Socher, Richard  and
+      Manning, Christopher",
+    booktitle = "Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing ({EMNLP})",
+    month = oct,
+    year = "2014",
+    address = "Doha, Qatar",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/D14-1162",
+    doi = "10.3115/v1/D14-1162",
+    pages = "1532--1543",
+}
+
+@misc{kocian2021siamese,
+      title={Siamese BERT-based Model for Web Search Relevance Ranking Evaluated on a New Czech Dataset}, 
+      author={Matěj Kocián and Jakub Náplava and Daniel Štancl and Vladimír Kadlec},
+      year={2021},
+      eprint={2112.01810},
+      archivePrefix={arXiv},
+      primaryClass={cs.IR}
+}
+
+@inproceedings{mroczkowski-etal-2021-herbert,
+    title = "{H}er{BERT}: Efficiently Pretrained Transformer-based Language Model for {P}olish",
+    author = "Mroczkowski, Robert  and
+      Rybak, Piotr  and
+      Wr{\'o}blewska, Alina  and
+      Gawlik, Ireneusz",
+    booktitle = "Proceedings of the 8th Workshop on Balto-Slavic Natural Language Processing",
+    month = apr,
+    year = "2021",
+    address = "Kiyv, Ukraine",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.bsnlp-1.1",
+    pages = "1--10",
+    abstract = "BERT-based models are currently used for solving nearly all Natural Language Processing (NLP) tasks and most often achieve state-of-the-art results. Therefore, the NLP community conducts extensive research on understanding these models, but above all on designing effective and efficient training procedures. Several ablation studies investigating how to train BERT-like models have been carried out, but the vast majority of them concerned only the English language. A training procedure designed for English does not have to be universal and applicable to other especially typologically different languages. Therefore, this paper presents the first ablation study focused on Polish, which, unlike the isolating English language, is a fusional language. We design and thoroughly evaluate a pretraining procedure of transferring knowledge from multilingual to monolingual BERT-based models. In addition to multilingual model initialization, other factors that possibly influence pretraining are also explored, i.e. training objective, corpus size, BPE-Dropout, and pretraining length. Based on the proposed procedure, a Polish BERT-based language model {--} HerBERT {--} is trained. This model achieves state-of-the-art results on multiple downstream tasks.",
+}
+
+@misc{pikuliak2021slovakbert,
+      title={SlovakBERT: Slovak Masked Language Model}, 
+      author={Matúš Pikuliak and Štefan Grivalský and Martin Konôpka and Miroslav Blšták and Martin Tamajka and Viktor Bachratý and Marián Šimko and Pavol Balážik and Michal Trnka and Filip Uhlárik},
+      year={2021},
+      eprint={2109.15254},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}

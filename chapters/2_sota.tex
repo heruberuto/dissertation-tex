@@ -6,16 +6,27 @@
 This chapter will first describe the originally popular models for NLP such as BERT and the recent paradigm shift from \textit{pre-train+fine-tune} transfer learning framework popular since the original~\cite{devlin2019bert} paper to the currently booming LLMs which often outperform the smaller models even without the fine-tuning step~\cite{gpt4,llama,vicuna}. We will then take a look at the performance optimization methods that enable training multi-billion parameter pre-trained models on a set of task-specific data on a single GPU and their potential for our research. 
 
 \label{chap:sota}
-\section{Pre-train + Fine-tune}
+\section{Pretrain + Finetune}
 \label{sec:pretrain}
-Surprisingly well performing paradigm for small data, vague tasks
+For the last decade, the \textit{pretrain-finetune} paradigm has been a cornerstone in the field of Natural Language Processing (NLP) and has significantly shaped the development of modern NLP models. Its history in NLP can be traced back to the advent of neural networks and deep learning in the early 2010s. Initially, researchers pre-trained word embeddings using methods like Word2Vec~\cite{mikolov} and GloVe~\cite{pennington-etal-2014-glove} which captured semantic relationships among words. 
+
 \subsection{BERT and derivatives}
-Simple training task, scalable architecture, potential to evolve into something grand, czert, herbert, slovakbert
+The \textit{pretrain-finetune} paradigm truly rose to fame with the introduction of transformer-based models, particularly the revolutionary BERT (Bidirectional Encoder Representations from Transformers) in 2018. BERT~\cite{bert} demonstrated the power of pretraining large-scale language models on massive text corpora using an easy-to-automate general task such as \textit{Masked Language Modeling}, or \textit{Next Sentence Prediction}, followed by fine-tuning on specific downstream tasks using smaller, harder to obtain data. This approach achieved state-of-the-art results across various NLP benchmarks. Subsequently, numerous variations of pre-trained models like GPT (Generative Pre-trained Transformer) and RoBERTa emerged, each refining the pretrain-finetune paradigm to improve language understanding, generation, and transfer learning capabilities. 
 
-\dots Which currently arrives in form of:
+Importantly, BERT's success inspired a number of publications in training similar transformer models, varying in the definition of the general pre-training task, model size, architecture training corpus
 
-\section{Large Language Models}
+\begin{itemize}
+    \item In Czech language, monolingual models CZERT~\cite{czert}, FERNET~\cite{fernet}, RobeCzech~\cite{straka2021robeczech}, and small-e-czech~\cite{kocian2021siamese} are available for further finetuning
+    \item In Polish, HerBERT~\cite{mroczkowski-etal-2021-herbert} achieved state of the art in multiple tasks in 2021
+    \item In Slovak, SlovakBERT~\cite{pikuliak2021slovakbert} was released by KInIT and Gerulata
+    \item A multitude of multilingual models, such as \MBERT or \XLM~\cite{xlm-roberta} were pretrained on data in all three of these languages (and many others), proving that the large transformers can capture a notion of semantics and relations between pieces of text even \textit{without} the convenient constriction of a single language 
+\end{itemize}
+
+\section{Few-shot and Zero-shot learning}
 \label{sec:llms}
+The ever-growing (sometimes, billions of parameters) transformer models have not only demonstrated superior performance on benchmark datasets but have also shown remarkable zero-shot and few-shot learning abilities, where they can perform tasks with minimal or no task-specific training data~\cite{gpt3}.
+
+Few-shot learning refers to the capability of a model to perform a task when provided with only a limited amount of labeled examples. Zero-shot learning takes this concept a step further by enabling models to tackle tasks they have never seen during training. The integration of these learning paradigms into large language models like GPT-3 and subsequent iterations has spread the NLP hype even further. By utilizing a prompt or a few examples, these models can quickly adapt to new tasks, making them highly versatile, adaptable and usable to the general public.
 \subsection{GPT-3.5 and GPT-4}
 \label{sec:gpt}
 Obscure, paid~\cite{gpt3,gpt4}
