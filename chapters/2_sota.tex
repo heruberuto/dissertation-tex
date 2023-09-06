@@ -3,7 +3,9 @@
 \chapter{State of the Art}
 %--- FIG: UTF forms
 
-This chapter will first describe the originally popular models for NLP such as BERT and the recent paradigm shift from \textit{pre-train+fine-tune} transfer learning framework popular since the original~\cite{devlin2019bert} paper to the currently booming LLMs which often outperform the smaller models even without the fine-tuning step~\cite{gpt4,llama,vicuna}. We will then take a look at the performance optimization methods that enable training multi-billion parameter pre-trained models on a set of task-specific data on a single GPU and their potential for our research. 
+This chapter will first describe the originally popular models for general NLP such as BERT and the recent paradigm shift from \textit{pretrain + finetune} transfer learning framework popular since the original~\cite{devlin2019bert} paper to the currently booming LLMs which often outperform the smaller models even without the fine-tuning step~\cite{gpt4,llama,vicuna}. We will then take a look at the performance optimization methods that enable training multi-billion parameter pre-trained models on a set of task-specific data on a single GPU and their potential for our research. 
+
+To show how it relates to our main topics, we are gonna introduce currently published approaches for the automated fact-checking task, efforts related to claim generation and evaluation of NLP model outputs.
 
 \label{chap:sota}
 \section{Pretrain + Finetune}
@@ -49,7 +51,7 @@ A popular robustly designed LLM to compete with the GPT family has become the \t
 
 It has been used as a goto base model for a number of successful open-source chatbots such as~\cite{vicuna,alpaca,openassistant}.
 
-The pretrained LLaMA weights are, however, published under a restrictive license that prohibits republishing the model weights even after tuning its parameters, which limits its fine-tuners to publishing delta- or xor-weights that can not be used without the \textsf{Meta}'s permission.
+The pretrained LLaMA weights are, however, published under a restrictive license that prohibits republishing the model weights even after tuning its parameters, which limits its fine-tuners to publishing delta- or xor-weights that can not be properlyy used without \textsf{Meta}'s permission.
 
 LLaMA-2~\cite{llama2} addresses this inconvenience (as well as delivers its own take on the \textit{chatbot} task), yielding an ideal strong base model for experimentation with any NLP task in 7B, 13B and 30B sizes.
 The only obstacle left in the way is the computational cost of fine-tuning across so many parameters.
