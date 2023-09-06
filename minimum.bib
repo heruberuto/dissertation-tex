@@ -30,6 +30,14 @@
   howpublished = {\url{https://www.stem.cz/mytum-a-konspiracim-o-covid-19-veri-vice-nez-tretina-ceske-internetove-populace/}},
   note         = {Accessed: 2021-05-03}
 }
+}
+@misc{moat,
+  author       = {Dylan Patel and Aftzal Ahmad},
+  year         = {2023},
+  title        = {Google "We Have No Moat, And Neither Does OpenAI"},
+  howpublished = {\url{https://www.semianalysis.com/p/google-we-have-no-moat-and-neither}},
+  note         = {Accessed: 2023-09-06}
+}
 
 @misc{vicuna,
   author       = {Vicuna},
@@ -2447,94 +2455,125 @@
 }
 
 @misc{mohri2023learning,
-      title={Learning to Reject with a Fixed Predictor: Application to Decontextualization}, 
-      author={Christopher Mohri and Daniel Andor and Eunsol Choi and Michael Collins},
-      year={2023},
-      eprint={2301.09044},
+  title         = {Learning to Reject with a Fixed Predictor: Application to Decontextualization},
+  author        = {Christopher Mohri and Daniel Andor and Eunsol Choi and Michael Collins},
+  year          = {2023},
+  eprint        = {2301.09044},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.LG}
+}
+
+@inproceedings{lin-2004-rouge,
+  title     = {{ROUGE}: A Package for Automatic Evaluation of Summaries},
+  author    = {Lin, Chin-Yew},
+  booktitle = {Text Summarization Branches Out},
+  month     = jul,
+  year      = {2004},
+  address   = {Barcelona, Spain},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://aclanthology.org/W04-1013},
+  pages     = {74--81}
+}
+@inproceedings{fernet,
+  author    = {Lehe{\v{c}}ka, Jan
+               and {\v{S}}vec, Jan},
+  editor    = {Espinosa-Anke, Luis
+               and Mart{\'i}n-Vide, Carlos
+               and Spasi{\'{c}}, Irena},
+  title     = {Comparison of Czech Transformers on Text Classification Tasks},
+  booktitle = {Statistical Language and Speech Processing},
+  year      = {2021},
+  publisher = {Springer International Publishing},
+  address   = {Cham},
+  pages     = {27--37},
+  abstract  = {In this paper, we present our progress in pre-training monolingual Transformers for Czech and contribute to the research community by releasing our models for public. The need for such models emerged from our effort to employ Transformers in our language-specific tasks, but we found the performance of the published multilingual models to be very limited. Since the multilingual models are usually pre-trained from 100+ languages, most of low-resourced languages (including Czech) are under-represented in these models. At the same time, there is a huge amount of monolingual training data available in web archives like Common Crawl. We have pre-trained and publicly released two monolingual Czech Transformers and compared them with relevant public models, trained (at least partially) for Czech. The paper presents the Transformers pre-training procedure as well as a comparison of pre-trained models on text classification task from various domains.},
+  isbn      = {978-3-030-89579-2}
+}
+@misc{mikolov,
+  title         = {Efficient Estimation of Word Representations in Vector Space},
+  author        = {Tomas Mikolov and Kai Chen and Greg Corrado and Jeffrey Dean},
+  year          = {2013},
+  eprint        = {1301.3781},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.CL}
+}
+
+@inproceedings{pennington-etal-2014-glove,
+  title     = {{G}lo{V}e: Global Vectors for Word Representation},
+  author    = {Pennington, Jeffrey  and
+               Socher, Richard  and
+               Manning, Christopher},
+  booktitle = {Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing ({EMNLP})},
+  month     = oct,
+  year      = {2014},
+  address   = {Doha, Qatar},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://aclanthology.org/D14-1162},
+  doi       = {10.3115/v1/D14-1162},
+  pages     = {1532--1543}
+}
+
+@misc{kocian2021siamese,
+  title         = {Siamese BERT-based Model for Web Search Relevance Ranking Evaluated on a New Czech Dataset},
+  author        = {Matěj Kocián and Jakub Náplava and Daniel Štancl and Vladimír Kadlec},
+  year          = {2021},
+  eprint        = {2112.01810},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.IR}
+}
+
+@inproceedings{mroczkowski-etal-2021-herbert,
+  title     = {{H}er{BERT}: Efficiently Pretrained Transformer-based Language Model for {P}olish},
+  author    = {Mroczkowski, Robert  and
+               Rybak, Piotr  and
+               Wr{\'o}blewska, Alina  and
+               Gawlik, Ireneusz},
+  booktitle = {Proceedings of the 8th Workshop on Balto-Slavic Natural Language Processing},
+  month     = apr,
+  year      = {2021},
+  address   = {Kiyv, Ukraine},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://aclanthology.org/2021.bsnlp-1.1},
+  pages     = {1--10},
+  abstract  = {BERT-based models are currently used for solving nearly all Natural Language Processing (NLP) tasks and most often achieve state-of-the-art results. Therefore, the NLP community conducts extensive research on understanding these models, but above all on designing effective and efficient training procedures. Several ablation studies investigating how to train BERT-like models have been carried out, but the vast majority of them concerned only the English language. A training procedure designed for English does not have to be universal and applicable to other especially typologically different languages. Therefore, this paper presents the first ablation study focused on Polish, which, unlike the isolating English language, is a fusional language. We design and thoroughly evaluate a pretraining procedure of transferring knowledge from multilingual to monolingual BERT-based models. In addition to multilingual model initialization, other factors that possibly influence pretraining are also explored, i.e. training objective, corpus size, BPE-Dropout, and pretraining length. Based on the proposed procedure, a Polish BERT-based language model {--} HerBERT {--} is trained. This model achieves state-of-the-art results on multiple downstream tasks.}
+}
+
+@misc{pikuliak2021slovakbert,
+  title         = {SlovakBERT: Slovak Masked Language Model},
+  author        = {Matúš Pikuliak and Štefan Grivalský and Martin Konôpka and Miroslav Blšták and Martin Tamajka and Viktor Bachratý and Marián Šimko and Pavol Balážik and Michal Trnka and Filip Uhlárik},
+  year          = {2021},
+  eprint        = {2109.15254},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.CL}
+}
+@article{Liu_2023,
+  doi       = {10.1016/j.metrad.2023.100017},
+  url       = {https://doi.org/10.1016%2Fj.metrad.2023.100017},
+  year      = 2023,
+  month     = {sep},
+  publisher = {Elsevier {BV}},
+  volume    = {1},
+  number    = {2},
+  pages     = {100017},
+  author    = {Yiheng Liu and Tianle Han and Siyuan Ma and Jiayue Zhang and Yuanyuan Yang and Jiaming Tian and Hao He and Antong Li and Mengshen He and Zhengliang Liu and Zihao Wu and Lin Zhao and Dajiang Zhu and Xiang Li and Ning Qiang and Dingang Shen and Tianming Liu and Bao Ge},
+  title     = {Summary of {ChatGPT}-Related research and perspective towards the future of large language models},
+  journal   = {Meta-Radiology}
+}
+
+@misc{raffel2020exploring,
+      title={Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer}, 
+      author={Colin Raffel and Noam Shazeer and Adam Roberts and Katherine Lee and Sharan Narang and Michael Matena and Yanqi Zhou and Wei Li and Peter J. Liu},
+      year={2020},
+      eprint={1910.10683},
       archivePrefix={arXiv},
       primaryClass={cs.LG}
 }
 
-@inproceedings{lin-2004-rouge,
-    title = "{ROUGE}: A Package for Automatic Evaluation of Summaries",
-    author = "Lin, Chin-Yew",
-    booktitle = "Text Summarization Branches Out",
-    month = jul,
-    year = "2004",
-    address = "Barcelona, Spain",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/W04-1013",
-    pages = "74--81",
-}
-@InProceedings{fernet,
-author="Lehe{\v{c}}ka, Jan
-and {\v{S}}vec, Jan",
-editor="Espinosa-Anke, Luis
-and Mart{\'i}n-Vide, Carlos
-and Spasi{\'{c}}, Irena",
-title="Comparison of Czech Transformers on Text Classification Tasks",
-booktitle="Statistical Language and Speech Processing",
-year="2021",
-publisher="Springer International Publishing",
-address="Cham",
-pages="27--37",
-abstract="In this paper, we present our progress in pre-training monolingual Transformers for Czech and contribute to the research community by releasing our models for public. The need for such models emerged from our effort to employ Transformers in our language-specific tasks, but we found the performance of the published multilingual models to be very limited. Since the multilingual models are usually pre-trained from 100+ languages, most of low-resourced languages (including Czech) are under-represented in these models. At the same time, there is a huge amount of monolingual training data available in web archives like Common Crawl. We have pre-trained and publicly released two monolingual Czech Transformers and compared them with relevant public models, trained (at least partially) for Czech. The paper presents the Transformers pre-training procedure as well as a comparison of pre-trained models on text classification task from various domains.",
-isbn="978-3-030-89579-2"
-}
-@misc{mikolov,
-      title={Efficient Estimation of Word Representations in Vector Space}, 
-      author={Tomas Mikolov and Kai Chen and Greg Corrado and Jeffrey Dean},
-      year={2013},
-      eprint={1301.3781},
+@misc{dettmers2023qlora,
+      title={QLoRA: Efficient Finetuning of Quantized LLMs}, 
+      author={Tim Dettmers and Artidoro Pagnoni and Ari Holtzman and Luke Zettlemoyer},
+      year={2023},
+      eprint={2305.14314},
       archivePrefix={arXiv},
-      primaryClass={cs.CL}
-}
-
-@inproceedings{pennington-etal-2014-glove,
-    title = "{G}lo{V}e: Global Vectors for Word Representation",
-    author = "Pennington, Jeffrey  and
-      Socher, Richard  and
-      Manning, Christopher",
-    booktitle = "Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing ({EMNLP})",
-    month = oct,
-    year = "2014",
-    address = "Doha, Qatar",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/D14-1162",
-    doi = "10.3115/v1/D14-1162",
-    pages = "1532--1543",
-}
-
-@misc{kocian2021siamese,
-      title={Siamese BERT-based Model for Web Search Relevance Ranking Evaluated on a New Czech Dataset}, 
-      author={Matěj Kocián and Jakub Náplava and Daniel Štancl and Vladimír Kadlec},
-      year={2021},
-      eprint={2112.01810},
-      archivePrefix={arXiv},
-      primaryClass={cs.IR}
-}
-
-@inproceedings{mroczkowski-etal-2021-herbert,
-    title = "{H}er{BERT}: Efficiently Pretrained Transformer-based Language Model for {P}olish",
-    author = "Mroczkowski, Robert  and
-      Rybak, Piotr  and
-      Wr{\'o}blewska, Alina  and
-      Gawlik, Ireneusz",
-    booktitle = "Proceedings of the 8th Workshop on Balto-Slavic Natural Language Processing",
-    month = apr,
-    year = "2021",
-    address = "Kiyv, Ukraine",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2021.bsnlp-1.1",
-    pages = "1--10",
-    abstract = "BERT-based models are currently used for solving nearly all Natural Language Processing (NLP) tasks and most often achieve state-of-the-art results. Therefore, the NLP community conducts extensive research on understanding these models, but above all on designing effective and efficient training procedures. Several ablation studies investigating how to train BERT-like models have been carried out, but the vast majority of them concerned only the English language. A training procedure designed for English does not have to be universal and applicable to other especially typologically different languages. Therefore, this paper presents the first ablation study focused on Polish, which, unlike the isolating English language, is a fusional language. We design and thoroughly evaluate a pretraining procedure of transferring knowledge from multilingual to monolingual BERT-based models. In addition to multilingual model initialization, other factors that possibly influence pretraining are also explored, i.e. training objective, corpus size, BPE-Dropout, and pretraining length. Based on the proposed procedure, a Polish BERT-based language model {--} HerBERT {--} is trained. This model achieves state-of-the-art results on multiple downstream tasks.",
-}
-
-@misc{pikuliak2021slovakbert,
-      title={SlovakBERT: Slovak Masked Language Model}, 
-      author={Matúš Pikuliak and Štefan Grivalský and Martin Konôpka and Miroslav Blšták and Martin Tamajka and Viktor Bachratý and Marián Šimko and Pavol Balážik and Michal Trnka and Filip Uhlárik},
-      year={2021},
-      eprint={2109.15254},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
+      primaryClass={cs.LG}
 }

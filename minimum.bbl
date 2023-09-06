@@ -55,6 +55,10 @@ Conneau, A., Khandelwal, K., Goyal, N., Chaudhary, V., Wenzek, G.,
 \newblock Unsupervised cross-lingual representation learning at scale.
 \newblock {\em CoRR}, abs/1911.02116.
 
+\bibitem[Dettmers et~al., 2023]{dettmers2023qlora}
+Dettmers, T., Pagnoni, A., Holtzman, A., and Zettlemoyer, L. (2023).
+\newblock Qlora: Efficient finetuning of quantized llms.
+
 \bibitem[Devlin et~al., 2019]{devlin2019bert}
 Devlin, J., Chang, M.-W., Lee, K., and Toutanova, K. (2019).
 \newblock {BERT}: Pre-training of deep bidirectional transformers for language
@@ -131,11 +135,19 @@ Liu, H., Tam, D., Muqeeth, M., Mohta, J., Huang, T., Bansal, M., and Raffel, C.
 \newblock Few-shot parameter-efficient fine-tuning is better and cheaper than
   in-context learning.
 
-\bibitem[Liu et~al., 2023]{prompting}
-Liu, P., Yuan, W., Fu, J., Jiang, Z., Hayashi, H., and Neubig, G. (2023).
+\bibitem[Liu et~al., 2023a]{prompting}
+Liu, P., Yuan, W., Fu, J., Jiang, Z., Hayashi, H., and Neubig, G. (2023a).
 \newblock Pre-train, prompt, and predict: A systematic survey of prompting
   methods in natural language processing.
 \newblock {\em ACM Comput. Surv.}, 55(9).
+
+\bibitem[Liu et~al., 2023b]{Liu_2023}
+Liu, Y., Han, T., Ma, S., Zhang, J., Yang, Y., Tian, J., He, H., Li, A., He,
+  M., Liu, Z., Wu, Z., Zhao, L., Zhu, D., Li, X., Qiang, N., Shen, D., Liu, T.,
+  and Ge, B. (2023b).
+\newblock Summary of {ChatGPT}-related research and perspective towards the
+  future of large language models.
+\newblock {\em Meta-Radiology}, 1(2):100017.
 
 \bibitem[Liu et~al., 2019]{roberta}
 Liu, Y., Ott, M., Goyal, N., Du, J., Joshi, M., Chen, D., Levy, O., Lewis, M.,
@@ -164,6 +176,13 @@ Mroczkowski, R., Rybak, P., Wr{\'o}blewska, A., and Gawlik, I. (2021).
 OpenAI (2023).
 \newblock Gpt-4 technical report.
 
+\bibitem[Patel and Ahmad, 2023]{moat}
+Patel, D. and Ahmad, A. (2023).
+\newblock Google "we have no moat, and neither does openai".
+\newblock
+  \url{https://www.semianalysis.com/p/google-we-have-no-moat-and-neither}.
+\newblock Accessed: 2023-09-06.
+
 \bibitem[Pennington et~al., 2014]{pennington-etal-2014-glove}
 Pennington, J., Socher, R., and Manning, C. (2014).
 \newblock {G}lo{V}e: Global vectors for word representation.
@@ -182,6 +201,12 @@ Raffel, C., Shazeer, N., Roberts, A., Lee, K., Narang, S., Matena, M., Zhou,
 \newblock Exploring the limits of transfer learning with a unified text-to-text
   transformer.
 \newblock {\em CoRR}, abs/1910.10683.
+
+\bibitem[Raffel et~al., 2020]{raffel2020exploring}
+Raffel, C., Shazeer, N., Roberts, A., Lee, K., Narang, S., Matena, M., Zhou,
+  Y., Li, W., and Liu, P.~J. (2020).
+\newblock Exploring the limits of transfer learning with a unified text-to-text
+  transformer.
 
 \bibitem[Sebastian, 2023]{glorin}
 Sebastian, G. (2023).

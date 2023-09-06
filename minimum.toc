@@ -20,31 +20,31 @@
 \contentsline {section}{\numberline {2.3}Open source LLMs}{6}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}LLaMA-2 and derivatives}{7}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}LoRA and other optimization}{7}{subsection.2.3.2}%
-\contentsline {section}{\numberline {2.4}Fact checking approaches}{7}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}FEVER and followups}{7}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Open-domain fact-checking}{7}{subsection.2.4.2}%
-\contentsline {section}{\numberline {2.5}Claim generation}{7}{section.2.5}%
-\contentsline {section}{\numberline {2.6}NLP Generative task benchmarking}{8}{section.2.6}%
-\contentsline {subsection}{\numberline {2.6.1}BERTScore}{8}{subsection.2.6.1}%
-\contentsline {subsection}{\numberline {2.6.2}AlignScore}{8}{subsection.2.6.2}%
-\contentsline {chapter}{\numberline {3}Current Contribution}{9}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Datasets}{9}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}\textsc {CsFEVER}\xspace }{9}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}\textsc {CTKFacts}\xspace }{9}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}Other NLP datasets in West Slavic languages}{9}{subsection.3.1.3}%
-\contentsline {section}{\numberline {3.2}Models}{9}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Publications}{9}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Applications}{9}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Dissertation plan}{11}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Current research agenda}{11}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Automated claim generation}{11}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Claim generation metrics}{11}{subsection.4.1.2}%
-\contentsline {section}{\numberline {4.2}Data Collection}{14}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Human-in-the-loop grading of claim generators}{14}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Validation of the model outputs with human fact-checkers}{14}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Polish dataset scraping}{14}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}Crowd-sourced fact checking platform}{14}{subsection.4.2.4}%
-\contentsline {section}{\numberline {4.3}The grand scope}{14}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Conclusion}{15}{chapter.5}%
-\contentsline {chapter}{Bibliography}{16}{chapter*.1}%
-\contentsline {chapter}{\numberline {A}Acronyms}{20}{appendix.A}%
+\contentsline {section}{\numberline {2.4}Fact checking approaches}{8}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}FEVER and followups}{8}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Open-domain fact-checking}{8}{subsection.2.4.2}%
+\contentsline {section}{\numberline {2.5}Claim generation}{8}{section.2.5}%
+\contentsline {section}{\numberline {2.6}NLP Generative task benchmarking}{9}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}BERTScore}{9}{subsection.2.6.1}%
+\contentsline {subsection}{\numberline {2.6.2}AlignScore}{9}{subsection.2.6.2}%
+\contentsline {chapter}{\numberline {3}Current Contribution}{10}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Datasets}{10}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}\textsc {CsFEVER}\xspace }{10}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}\textsc {CTKFacts}\xspace }{10}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Other NLP datasets in West Slavic languages}{10}{subsection.3.1.3}%
+\contentsline {section}{\numberline {3.2}Models}{10}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Publications}{10}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Applications}{10}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Dissertation plan}{12}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Current research agenda}{12}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Automated claim generation}{12}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Claim generation metrics}{12}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Data Collection}{15}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Human-in-the-loop grading of claim generators}{15}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Validation of the model outputs with human fact-checkers}{15}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Polish dataset scraping}{15}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Crowd-sourced fact checking platform}{15}{subsection.4.2.4}%
+\contentsline {section}{\numberline {4.3}The grand scope}{15}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Conclusion}{16}{chapter.5}%
+\contentsline {chapter}{Bibliography}{17}{chapter*.1}%
+\contentsline {chapter}{\numberline {A}Acronyms}{22}{appendix.A}%

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.8)  6 SEP 2023 10:39
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.8)  6 SEP 2023 15:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1438,10 +1438,10 @@ Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is usel
 
 [5
 
-] [6]
+] [6] [7]
 File: fig/bing.pdf Graphic file (type pdf)
 <use fig/bing.pdf>
- [7]) (/Users/bertik/PhD/studie-bertik/chapters/3_current_contributions.tex [8]
+ [8]) (/Users/bertik/PhD/studie-bertik/chapters/3_current_contributions.tex [9]
 Chapter 3.
 File: fig/fcheck/claim_extraction.pdf Graphic file (type pdf)
 <use fig/fcheck/claim_extraction.pdf>
@@ -1460,7 +1460,7 @@ Overfull \hbox (28.45274pt too wide) in paragraph at lines 37--38
 
 Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 3.
 
-[9
+[10
 
 ]
 
@@ -1469,7 +1469,7 @@ Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is usel
 
 Package fancyhdr Warning: \fancyhead's `E' option without twoside option is useless on input line 3.
 
-[10]
+[11]
 Chapter 4.
 File: fig/lm_critics.png Graphic file (type bmp)
 <fig/lm_critics.png>
@@ -1478,43 +1478,53 @@ File: fig/gptext.pdf Graphic file (type pdf)
 
 Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 46.
 
-[11
+[12
 
-] [12] [13]) (/Users/bertik/PhD/studie-bertik/chapters/5_conclusion.tex [14]
+] [13] [14]) (/Users/bertik/PhD/studie-bertik/chapters/5_conclusion.tex [15]
 Chapter 5.
 ) (/Users/bertik/PhD/studie-bertik/minimum.bbl
 
 Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 1.
 
-[15
+[16
 
 ]
 
 Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 70.
 
-[16
+[17
 
-] [17]
-Underfull \hbox (badness 10000) in paragraph at lines 197--203
+] [18]
+Underfull \hbox (badness 2922) in paragraph at lines 180--185
+[]\TU/lmr/m/n/10.95 Patel, D. and Ahmad, A. (2023).  Google ”we have
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--185
+\TU/lmr/m/n/10.95 no moat, and neither does openai”.  []$[][][][][] [] [] [] [][][] [] [][][][][][][][][][][][] [] [][][] [] [] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 222--228
 []\TU/lmss/m/n/10.95 STEM \TU/lmr/m/n/10.95 (2021).  Mýtům a konspiracím o covid-19 věří více
  []
 
 
-Underfull \hbox (badness 6252) in paragraph at lines 197--203
+Underfull \hbox (badness 6252) in paragraph at lines 222--228
 \TU/lmr/m/n/10.95 než třetina české internetové populace | stem.cz.  []$[][][][][] [] [] [] [][][] [] [][][][] [] [][] []
  []
 
 
-Overfull \hbox (52.1056pt too wide) in paragraph at lines 197--203
+Overfull \hbox (52.1056pt too wide) in paragraph at lines 222--228
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]$[]\TU/lmr/m/n/10.95 .
  []
 
-[18]) [19]
+[19] [20]) [21]
 Appendix A.
 
 Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 159.
 
-[20
+[22
 
 ] (/Users/bertik/PhD/studie-bertik/minimum.aux)
 
@@ -1719,12 +1729,12 @@ Package rerunfilecheck Info: File `minimum.out' has not changed.
 (rerunfilecheck)             Checksum: AF61B95E3142F64C84BEC9A4C02C2C10;6736.
  ) 
 Here is how much of TeX's memory you used:
- 33139 strings out of 476919
- 640385 string characters out of 5821840
- 1166572 words of memory out of 5000000
- 52346 multiletter control sequences out of 15000+600000
+ 33143 strings out of 476919
+ 640441 string characters out of 5821840
+ 1164572 words of memory out of 5000000
+ 52350 multiletter control sequences out of 15000+600000
  440745 words of font info for 119 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  93i,17n,120p,967b,838s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on /Users/bertik/PhD/studie-bertik/minimum.xdv (23 pages, 504028 bytes).
+Output written on /Users/bertik/PhD/studie-bertik/minimum.xdv (25 pages, 540152 bytes).

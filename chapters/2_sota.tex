@@ -31,15 +31,15 @@ The ever-growing (sometimes, billions of parameters in size) transformer models 
 Few-shot learning refers to the capability of a model to perform a task when provided with only a limited amount of labeled examples. Zero-shot learning takes this concept a step further by enabling models to tackle tasks they have never seen during training. The integration of these learning paradigms into large language models like GPT-3 and subsequent iterations has spread the NLP hype even further. By utilizing a prompt or a few examples, these models can quickly adapt to new tasks, making them highly versatile, adaptable and usable to the general public.
 \subsection{OpenAI LLMs: GPT-3 and GPT-4}
 \label{sec:gpt}
-The first model that exhibited the few-shot learning, was a 175B-parameter autoregressive model called GPT-3 trained by~\cite{gpt3}. The model was trained on the task of generating text based on user's and its own previous outputs.
-The training procedure and data\footnote{A mixture of crawled websites, books and Wikipedia.} is throughly described in the publication, however, is prohibitively costly for most labs to reproduce, or even fine-tune. 
+In 2020, the few-shot learning was exhibited on GPT3 -- a 175B-parameter autoregressive model trained by~\cite{gpt3}. The model was trained on the task of generating text based on user's and its own previous outputs.
+The training procedure and data\footnote{A mixture of crawled websites, books and Wikipedia.} is throughly described in the publication, however, is prohibitively costly for most labs to reproduce, or even fine-tune at such scale. 
 
-In the fall of 2022, GPT-3 became widely popular thanks to its \textsf{ChatGPT}\footnote{\url{https://chat.openai.com}} fine-tune and demonstration app, which puts the user in the role of \textit{prompter}, texting back and forth with an LLM that predicts the most fitting reply in each conversation.
+In the fall of 2022, GPT-3 became widely popular thanks to its \textsf{ChatGPT}\footnote{\url{https://chat.openai.com}} fine-tune and demonstration app, which puts the user in the role of \textit{prompter}, texting back and forth with an LLM that predicts the most fitting reply to each conversation.
 
 With the arrival of GPT-4, the \textsf{ChatGPT} was already massively famous, and the new model already shipped with a paid-service business scheme no longer publishing the training data, tasks or even model size~\cite{gpt4}.
 
 \section{Open source LLMs}
-This puts the research community in an awkward position, as the GPT-4 achieves the state of the art in numerous NLP benchmarks~\todo{cite}, but is designed in a way that does not allow using it in any way other than as a black box, making the derived research rigorosity and reproducibility disputable.
+This puts the research community in an awkward position, as the GPT-4 achieves the state of the art in numerous NLP benchmarks~\cite{gpt4,Liu_2023}, but is designed not to be used in any way other than as a black box, making the derived research rigorosity and reproducibility disputable.
 
 From the prediction times, \textsf{OpenAI} claims and general trends in NLP, there are also reasons to believe that GPT-4 is orders of magnitude larger than already wasteful GPT-3.
 This motivates an uptick in research of other LLMs that would be able to operate on smaller scale with similar results, using a peer-reviewed architecture, training scheme and data that is available in open source.
@@ -47,13 +47,14 @@ This motivates an uptick in research of other LLMs that would be able to operate
 \subsection{LLaMA-2 and derivatives}
 \label{sec:llama}
 
-A popular robustly designed LLM to compete with the GPT family has become the \textsf{LLaMA}~\cite{llama} from \textsf{Meta research}. \todo{data, task, sizes}
+A popular foundational LLM to compete with the GPT family has become the \textsf{LLaMA}~\cite{llama} from \textsf{Meta research}. LLaMA was trained on about 5TB of publicly available  textual data\footnote{To be specific, LLaMA was trained using an autoregressive language modelling task on a mixture of English CommonCrawl Corpus, C4~\cite{raffel2020exploring}, Github, Wikipedia, project Gutenberg, Books3 corpus, ArXiv and Stack Exchange} mostly in English. 
 
-It has been used as a goto base model for a number of successful open-source chatbots such as~\cite{vicuna,alpaca,openassistant}.
+It comes in various sizes between 7B and 65B parameters, achieving a sota among open-source solvers in various tasks, and an unmatched performance in the field of single-GPU (7B and 13B) model sizes.
+LLaMA proceeds to be used as a goto base model for a number of successful open-source chatbots such as Alpaca~\cite{alpaca}, Vicuna~\cite{vicuna}, and OpenAssistant~\cite{openassistant}.
 
-The pretrained LLaMA weights are, however, published under a restrictive license that prohibits republishing the model weights even after tuning its parameters, which limits its fine-tuners to publishing delta- or xor-weights that can not be properlyy used without \textsf{Meta}'s permission.
+The pretrained LLaMA weights are, however, published under a restrictive license that prohibits republishing the model weights even after tuning its parameters, which limits its fine-tuners to publishing delta- or xor-weights that can not be properly used without \textsf{Meta}'s permission.
 
-LLaMA-2~\cite{llama2} addresses this inconvenience (as well as delivers its own take on the \textit{chatbot} task), yielding an ideal strong base model for experimentation with any NLP task in 7B, 13B and 30B sizes.
+LLaMA-2~\cite{llama2} addresses this inconvenience (as well as delivers its own take on the \textit{chatbot} task), yielding an ideal strong base model for experimentation with any NLP task in 7B, 13B and 70B sizes.
 The only obstacle left in the way is the computational cost of fine-tuning across so many parameters.
 
 %Open-source, freely usable.
@@ -61,8 +62,16 @@ The only obstacle left in the way is the computational cost of fine-tuning acros
 %Quantizace, 4b, 8b, zlomek parametrů\cite{openassistant}
 
 \subsection{LoRA and other optimization}
-To be able to fine-tune multi-billion-parameter models such as \textsf{LLaMA-2}~\cite{llama2} on a single TPU, multiple adjustments must be made to reduce the computational complexity.~\cite{peft}
-\cite{lora}
+To be able to fine-tune multi-billion-parameter models such as \textsf{LLaMA-2}~\cite{llama2} on a single TPU, successful approaches have been published to dramatically cut-down the training expenses.
+Parameter-efficient fine-tuning (PEFT)~\cite{peft} proposes approaches to only fine-tune \textit{a few} weights as opposed to the whole neural network, reducing the number of trainable parameters by orders of magnitude.
+Low-Rank Adaptation of Large Language Models (LoRA)~\cite{lora} does so by freezing the pre-trained model weights and injecting trainable rank decomposition matrices into each layer of Transformer architecture. 
+
+Quantization, which cuts the costs of working with 32- or 16-bit float parameters and opting for data types of bitsize as small as 4, also proves to be a powerful tool for LLM finetuning performance optimization~\cite{dettmers2023qlora}.
+Quantized QLoRA takes LLaMA and finetunes it into a Guanaco model family which outperforms all previous openly released LLMs on Vicuna benchmark~\cite{dettmers2023qlora} and achieves 99.3\% of the ChatGPT's performance on it while only requiring 24 hours on a single GPU.
+
+As per an alleged leaked Google's memo~\cite{moat}, this could put the future state of the art in NLP disciplines back into the hands of open source and public research, not giving any of the big tech companies a \"{moat} advantage.
+
+Either way, it goes to show that the open-source LLMs have a promising future in NLP and will be indismissible as an approach for the NLP task of \textit{Automated fact checking}.
 
 \section{Fact checking approaches}
 \subsection{FEVER and followups}
