@@ -74,11 +74,32 @@ As per an alleged leaked Google's memo~\cite{moat}, this could put the future st
 Either way, it goes to show that the open-source LLMs have a promising future in NLP and will be indismissible as an approach for the NLP task of \textit{Automated fact checking}.
 
 \section{Fact checking approaches}
-\subsection{FEVER and followups}
-Yields interesting benchmark with statistically quantifiable model succes, oversimplificates the problem, as it uses Wikipedia for a trusted knowledge base and only reasons based on a data from a fixed period of time, focusing on \"{atomic} claims that do not match the complexity of real-world factoids.
-\subsection{Open-domain fact-checking}
-This paper with bing for example uses the whole internet, but is that really what we want? Like, every lie can be backed with an internet -- at the end of the day you do need to draw the line of what to trust somewhere, which directly conflicts this design.
+Back in the late 2010s, the misinformation and its spread in the era of internet and social media became a discussed topic in the Western world, multiple institutions such as European Council marking it a severe threat to democracy and national safety~\cite{disorder}.
+The public attention and maturation of appropriate technologies motivated numerous efforts in business and academia to tackle the challenge.
+Among other events, a Fake News Challenge occured in 2017~\cite{fncweb} exploring the uses of technologies in the field and applying, for example, the LSTMs to detect stances among textual data~\cite{fnc}.
 
+\subsection{FEVER and followups}
+Soon, standard tasks started being formulated and data collected. 
+The FEVER (Fact Extraction and VERification)~\cite{fever} dataset and shared task rose to prominence in natural language processing research.
+Relatively early on, it formalized the task as a two-step problem of:
+\begin{enumerate}
+    \item Retrieving information within a structured corpus to fact-check a given claim (this resembles a standard NLP problem called \textit{information retrieval} -- IR)
+    \item Classifying the inference relation between retrieved information and claim as one of:
+    \begin{enumerate}
+        \item {\techbf supports} -- information semantically implies the claim 
+        \item {\techbf refutes} -- information semantically implies the negation of the claim 
+        \item {\techbf not enough info} otherwise 
+    \end{enumerate}
+    This classification task became known as \textit{natural language inference} and mostly replaced the previous binary classification NLP task of \textit{recognizing textual entailment} (RTE)
+\end{enumerate}
+
+The FEVER dataset was a collection of 185K human-annotated claims, their veracity labels, and sets of evidence from a structured corpus that sufficed to justify the labels.
+The corpus of choice was a 2017 English Wikipedia structured into articles, due to its reasonable size, informational richness and open license.\footnote{Is Wikipedia a trustworthy informatial canon though? 
+No, it is not supposed to -- FEVER states that it is crucial to always maintain that the fact-checking classifiers only classify \textit{with respect to} data and their reliability goes only as far as that of the underlying knowledge corpus. Therefore, \textit{supports} does not directly translate to \textit{true}, nor \textit{refutes} to \textit{false}}
+
+FEVER yields interesting benchmark with statistically quantifiable model success, motivated multiple interesting public solutions~\cite{fever1,fever2}, gives insights into the complexities of automated fact-checking task and strong baselines for research in the field. The data was later enriched by contrastive evidence in VitaminC~\cite{DBLP:journals/corr/abs-2103-08541} and by reasoning over tabular data in FEVEROUS~\cite{aly2021feverous}.
+
+To date, it keeps being a reference point in the automated fact checking research despite its limitations, such as its requirement for a fixed knowledge base and \"{atomicity}\footnote{See section 4.1.2.\ref{atomicity}} of claims.
 
 \begin{figure}
     \includegraphics[width=14cm]{fig/bing.pdf}
@@ -86,14 +107,42 @@ This paper with bing for example uses the whole internet, but is that really wha
     \label{fig:bing}
 \end{figure}
 
+\subsection{Open-domain fact-checking}
+Due to these limitations, some researchers consider the scheme from FEVER an oversimplification -- the real politics' claims to be fact-checked by journalists often consist of long syntactical structures, combine information together in a non-trivial manner and often require the most up-to-date evidence. 
+
+\"{Complex Claim Verification with Evidence Retrieved in the Wild}~\cite{bing} proposes a different scheme that overcomes these shortcomings:
+
+\begin{enumerate}
+    \item Arbitrarily complex claim is decomposed into a set of yes/no questions
+    \item An open-domain search (bing is proposed in the paper) fetches several evidence documents for each question
+    \item A claim-focused summary is extraced from each document
+    \item A veracity classifier goes through each pair of evidence and question, ranging from \"{faithful} to \"{completely wrong}
+    \item The scores are combined (all need to be \"{faithful} for a faithful claim, otherwise, a severity of inaccuracies can be approximated using some averaging 
+\end{enumerate}
+
+GPT-3 is used in steps 1, 3 and 4 of the scheme in the prototype delivered in~\cite{bing}. Zero- and few-shot approaches are being explored, few-shot unsurprisingly coming out a little better.
+
+The scheme is transducible to Czech and Figure~\ref{fig:bing} shows my early experiments with my interactive reproduction of it, predictors based on Bing and GPT-3.5 (a polished version of GPT-3).
+
+While the shift from an established FEVER framework to complex real-world claims and evidence retrieval \"{in the wild} feels exciting and practical, an obvious pitfall arises -- anyone can publish anything on internet, having it appear in Bing search and other crawlers alike. I argue that this might lead into a sort of a circular dependency of needing to reliably fact-check the evidence we have retrieved from the web, in order to be able to build a reliable fact-checker in the first place.
+
+Anyhow, the open-domain fact-checking idea opens a whole new range of approaches and shows the power of LLMs in fact-checking at its every step.
 
 \section{Claim generation}
+Another step of the fact-checking pipeline, covered by very few research publications, is the generation of the claim to be checked in the first place~\cite{guo-etal-2022-survey}.
+
+The current state of things is that journalists that fact-check statements within, say, a Facebook status, need to read through the whole document multiple times, formulate its factual claims from the stances and facts expressed in text themselves and then fact-check each of them separately.
+
+What has been examined so far were for example:
 \begin{itemize}
-    \item Approches such as QACG exploit Question Answering
-    \item The task of extreme summarization (XSum) focuses on summarizing a long body of text into a single sentence, focusing on its most relevant aspects and facts
-    \item CLEF-CheckThat postulates the task of classifying \textit{Checkworthiness} of different parts of a long texts, such as a political debate
+    \item Using Question Generation (QG) solver and converting them into a declarative sentences to emulate more claims and more data for fact checking~\cite{pan2021zeroshot}
+    \item Numerous CLEF CheckThat! challenges explored the task of estimating \textit{checkworthiness} of different parts of a long texts, such as lines in a political debate~\cite{clef19,clef21}
+    \item The task of extreme summarization (XSum) consists of summarizing a long body of text into a single sentence, focusing on its most relevant aspects and facts. Large datasets XSum~\cite{narayan-etal-2018-dont} in English and XL-Sum~\cite{xlsum} in 44 languages both present expertly annotated data from BBC news for it, as their article standard features a single-sentence summary at the beginning of each text.
 \end{itemize}
 
-\section{NLP Generative task benchmarking}
-\subsection{BERTScore}
-\subsection{AlignScore}
+\subsection{NLP summarization benchmarking}
+An important caveat to note with the NLP tasks reducing longer text to shorter text -- such as summarization or claim extraction -- is that the standard automatic metrics such as ROUGE~\cite{lin-2004-rouge} and METEOR~\cite{banerjee-lavie-2005-meteor} only focus on the \textit{content selection} aspect of tasks, based on a word-by-word overlap and were designed to use on multiple gold summaries per input, which are not often provided with modern large-scale datasets.~\cite{nlpprogress,bert-score,zha2023alignscore}
+
+These serious limitations make it questionable for anyone to claim state of the art on these tasks and motivate research for new metrics to cover all the important aspects of claim generation and do so in correlation with expert human judgment. 
+
+This will be the topic of section~\ref{metrics}, which also introduces the state-of-the-art research we are working with to arrive to a valid set of benchmarks.

@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d (TeX Live 2021)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: minimum.aux
+The style file: apalike.bst
+Database file #1: minimum.bib
+Warning--entry type for "glorin" isn't style-file defined
+--line 2420 of file minimum.bib
+Warning--empty publisher in disorder
+You've used 66 entries,
+            1935 wiz_defined-function locations,
+            782 strings with 20088 characters,
+and the built_in function-call counts, 33741 in all, are:
+= -- 3057
+> -- 2551
+< -- 28
++ -- 958
+- -- 943
+* -- 3113
+:= -- 6111
+add.period$ -- 193
+call.type$ -- 66
+change.case$ -- 799
+chr.to.int$ -- 63
+cite$ -- 67
+duplicate$ -- 989
+empty$ -- 1586
+format.name$ -- 1023
+if$ -- 6307
+int.to.chr$ -- 4
+int.to.str$ -- 0
+missing$ -- 38
+newline$ -- 316
+num.names$ -- 200
+pop$ -- 754
+preamble$ -- 1
+purify$ -- 800
+quote$ -- 0
+skip$ -- 774
+stack$ -- 0
+substring$ -- 1429
+swap$ -- 164
+text.length$ -- 13
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 394
+warning$ -- 1
+while$ -- 183
+width$ -- 0
+write$ -- 816
+(There were 2 warnings)

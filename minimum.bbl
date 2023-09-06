@@ -5,6 +5,22 @@ Allcott, H. and Gentzkow, M. (2017).
 \newblock Social media and fake news in the 2016 election.
 \newblock {\em Journal of Economic Perspectives}, 31(2):211--36.
 
+\bibitem[Aly et~al., 2021]{aly2021feverous}
+Aly, R., Guo, Z., Schlichtkrull, M.~S., Thorne, J., Vlachos, A.,
+  Christodoulopoulos, C., Cocarascu, O., and Mittal, A. (2021).
+\newblock {FEVEROUS}: Fact extraction and {VER}ification over unstructured and
+  structured information.
+\newblock In {\em Thirty-fifth Conference on Neural Information Processing
+  Systems Datasets and Benchmarks Track (Round 1)}.
+
+\bibitem[Banerjee and Lavie, 2005]{banerjee-lavie-2005-meteor}
+Banerjee, S. and Lavie, A. (2005).
+\newblock {METEOR}: An automatic metric for {MT} evaluation with improved
+  correlation with human judgments.
+\newblock In {\em Proceedings of the {ACL} Workshop on Intrinsic and Extrinsic
+  Evaluation Measures for Machine Translation and/or Summarization}, pages
+  65--72, Ann Arbor, Michigan. Association for Computational Linguistics.
+
 \bibitem[Barua et~al., 2020]{BARUA2020100119}
 Barua, Z., Barua, S., Aktar, S., Kabir, N., and Li, M. (2020).
 \newblock Effects of misinformation on covid-19 individual responses and
@@ -68,6 +84,12 @@ Devlin, J., Chang, M.-W., Lee, K., and Toutanova, K. (2019).
   Technologies, Volume 1 (Long and Short Papers)}, pages 4171--4186,
   Minneapolis, Minnesota. Association for Computational Linguistics.
 
+\bibitem[Elsayed et~al., 2021]{clef19}
+Elsayed, T., Nakov, P., Barrón-Cedeño, A., Hasanain, M., Suwaileh, R.,
+  Martino, G. D.~S., and Atanasova, P. (2021).
+\newblock Overview of the clef-2019 checkthat!: Automatic identification and
+  verification of claims.
+
 \bibitem[Fu et~al., 2023]{fu2023gptscore}
 Fu, J., Ng, S.-K., Jiang, Z., and Liu, P. (2023).
 \newblock Gptscore: Evaluate as you desire.
@@ -77,6 +99,22 @@ Guo, Z., Schlichtkrull, M., and Vlachos, A. (2022).
 \newblock A survey on automated fact-checking.
 \newblock {\em Transactions of the Association for Computational Linguistics},
   10:178--206.
+
+\bibitem[Hanselowski et~al., 2018]{fnc}
+Hanselowski, A., PVS, A., Schiller, B., Caspelherr, F., Chaudhuri, D., Meyer,
+  C.~M., and Gurevych, I. (2018).
+\newblock A retrospective analysis of the fake news challenge stance-detection
+  task.
+\newblock In {\em Proceedings of the 27th International Conference on
+  Computational Linguistics}, pages 1859--1874, Santa Fe, New Mexico, USA.
+  Association for Computational Linguistics.
+
+\bibitem[Hasan et~al., 2021]{xlsum}
+Hasan, T., Bhattacharjee, A., Islam, M.~S., Samin, K., Li, Y., Kang, Y.,
+  Rahman, M.~S., and Shahriyar, R. (2021).
+\newblock Xl-sum: Large-scale multilingual abstractive summarization for 44
+  languages.
+\newblock {\em CoRR}, abs/2106.13822.
 
 \bibitem[Hu et~al., 2021]{lora}
 Hu, E.~J., Shen, Y., Wallis, P., Allen{-}Zhu, Z., Li, Y., Wang, S., and Chen,
@@ -172,9 +210,29 @@ Mroczkowski, R., Rybak, P., Wr{\'o}blewska, A., and Gawlik, I. (2021).
   Language Processing}, pages 1--10, Kiyv, Ukraine. Association for
   Computational Linguistics.
 
+\bibitem[Nakov et~al., 2021]{clef21}
+Nakov, P., Martino, G. D.~S., Elsayed, T., Barrón-Cedeño, A., Míguez, R.,
+  Shaar, S., Alam, F., Haouari, F., Hasanain, M., Mansour, W., Hamdan, B., Ali,
+  Z.~S., Babulkov, N., Nikolov, A., Shahi, G.~K., Struß, J.~M., Mandl, T.,
+  Kutlu, M., and Kartal, Y.~S. (2021).
+\newblock Overview of the clef--2021 checkthat! lab on detecting check-worthy
+  claims, previously fact-checked claims, and fake news.
+
+\bibitem[Narayan et~al., 2018]{narayan-etal-2018-dont}
+Narayan, S., Cohen, S.~B., and Lapata, M. (2018).
+\newblock Don{'}t give me the details, just the summary! topic-aware
+  convolutional neural networks for extreme summarization.
+\newblock In {\em Proceedings of the 2018 Conference on Empirical Methods in
+  Natural Language Processing}, pages 1797--1807, Brussels, Belgium.
+  Association for Computational Linguistics.
+
 \bibitem[OpenAI, 2023]{gpt4}
 OpenAI (2023).
 \newblock Gpt-4 technical report.
+
+\bibitem[Pan et~al., 2021]{pan2021zeroshot}
+Pan, L., Chen, W., Xiong, W., Kan, M.-Y., and Wang, W.~Y. (2021).
+\newblock Zero-shot fact verification by claim generation.
 
 \bibitem[Patel and Ahmad, 2023]{moat}
 Patel, D. and Ahmad, A. (2023).
@@ -195,6 +253,13 @@ Pikuliak, M., Štefan Grivalský, Konôpka, M., Blšták, M., Tamajka, M.,
   Bachratý, V., Šimko, M., Balážik, P., Trnka, M., and Uhlárik, F. (2021).
 \newblock Slovakbert: Slovak masked language model.
 
+\bibitem[Pomerlau and Rao, 2017]{fncweb}
+Pomerlau, D. and Rao, D. (2017).
+\newblock Fake news challenge: Exploring how artificial intelligence
+  technologies could be leveraged to combat fake news.
+\newblock \url{http://www.fakenewschallenge.org}.
+\newblock Accessed: 2023-09-06.
+
 \bibitem[Raffel et~al., 2019]{t5-11b}
 Raffel, C., Shazeer, N., Roberts, A., Lee, K., Narang, S., Matena, M., Zhou,
   Y., Li, W., and Liu, P.~J. (2019).
@@ -207,6 +272,12 @@ Raffel, C., Shazeer, N., Roberts, A., Lee, K., Narang, S., Matena, M., Zhou,
   Y., Li, W., and Liu, P.~J. (2020).
 \newblock Exploring the limits of transfer learning with a unified text-to-text
   transformer.
+
+\bibitem[Schuster et~al., 2021]{DBLP:journals/corr/abs-2103-08541}
+Schuster, T., Fisch, A., and Barzilay, R. (2021).
+\newblock Get your vitamin c! robust fact verification with contrastive
+  evidence.
+\newblock {\em CoRR}, abs/2103.08541.
 
 \bibitem[Sebastian, 2023]{glorin}
 Sebastian, G. (2023).
@@ -243,6 +314,25 @@ Taori, R., Gulrajani, I., Zhang, T., Dubois, Y., Li, X., Guestrin, C., Liang,
 \newblock Alpaca: A strong, replicable instruction-following model.
 \newblock \url{https://crfm.stanford.edu/2023/03/13/alpaca.html}.
 \newblock Accessed: 2023-09-04.
+
+\bibitem[\textsf{NLP-Progress}, 2023]{nlpprogress}
+\textsf{NLP-Progress} (2023).
+\newblock On summarization.
+\newblock \url{http://nlpprogress.com/english/summarization.html}.
+\newblock Accessed: 2023-09-06.
+
+\bibitem[Thorne et~al., 2018a]{fever}
+Thorne, J., Vlachos, A., Christodoulopoulos, C., and Mittal, A. (2018a).
+\newblock {FEVER}: a large-scale dataset for fact extraction and
+  {VERification}.
+\newblock In {\em NAACL-HLT}.
+
+\bibitem[Thorne et~al., 2018b]{fever1}
+Thorne, J., Vlachos, A., Cocarascu, O., Christodoulopoulos, C., and Mittal, A.
+  (2018b).
+\newblock The {Fact Extraction and VERification (FEVER)} shared task.
+\newblock In {\em Proceedings of the First Workshop on {Fact Extraction and
+  VERification (FEVER)}}.
 
 \bibitem[Thorne et~al., 2019]{fever2}
 Thorne, J., Vlachos, A., Cocarascu, O., Christodoulopoulos, C., and Mittal, A.
@@ -293,6 +383,12 @@ Wang, A., Cho, K., and Lewis, M. (2020).
 \newblock In {\em Proceedings of the 58th Annual Meeting of the Association for
   Computational Linguistics}, pages 5008--5020, Online. Association for
   Computational Linguistics.
+
+\bibitem[Wardle and Derakhshan, 2017]{disorder}
+Wardle, C. and Derakhshan, H. (2017).
+\newblock {\em INFORMATION DISORDER : Toward an interdisciplinary framework for
+  research and policy making Information Disorder Toward an interdisciplinary
+  framework for research and policymaking}.
 
 \bibitem[Wright et~al., 2022]{wright}
 Wright, D., Wadden, D., Lo, K., Kuehl, B., Cohan, A., Augenstein, I., and Wang,

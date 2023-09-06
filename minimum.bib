@@ -30,12 +30,26 @@
   howpublished = {\url{https://www.stem.cz/mytum-a-konspiracim-o-covid-19-veri-vice-nez-tretina-ceske-internetove-populace/}},
   note         = {Accessed: 2021-05-03}
 }
-}
 @misc{moat,
   author       = {Dylan Patel and Aftzal Ahmad},
   year         = {2023},
   title        = {Google "We Have No Moat, And Neither Does OpenAI"},
   howpublished = {\url{https://www.semianalysis.com/p/google-we-have-no-moat-and-neither}},
+  note         = {Accessed: 2023-09-06}
+}
+
+@misc{nlpprogress,
+  author       = {\textsf{NLP-Progress}},
+  year         = {2023},
+  title        = {On Summarization},
+  howpublished = {\url{http://nlpprogress.com/english/summarization.html}},
+  note         = {Accessed: 2023-09-06}
+}
+@misc{fncweb,
+  author       = {Dean Pomerlau and Delip Rao},
+  year         = {2017},
+  title        = {Fake News Challenge: Exploring how artificial intelligence technologies could be leveraged to combat fake news},
+  howpublished = {\url{http://www.fakenewschallenge.org}},
   note         = {Accessed: 2023-09-06}
 }
 
@@ -2576,4 +2590,114 @@
       eprint={2305.14314},
       archivePrefix={arXiv},
       primaryClass={cs.LG}
+}
+
+@book{disorder,
+author = {Wardle, Claire and Derakhshan, Hossein},
+year = {2017},
+month = {09},
+pages = {},
+title = {INFORMATION DISORDER : Toward an interdisciplinary framework for research and policy making Information Disorder Toward an interdisciplinary framework for research and policymaking}
+}
+
+@inproceedings{fnc,
+    title = "A Retrospective Analysis of the Fake News Challenge Stance-Detection Task",
+    author = "Hanselowski, Andreas  and
+      PVS, Avinesh  and
+      Schiller, Benjamin  and
+      Caspelherr, Felix  and
+      Chaudhuri, Debanjan  and
+      Meyer, Christian M.  and
+      Gurevych, Iryna",
+    booktitle = "Proceedings of the 27th International Conference on Computational Linguistics",
+    month = aug,
+    year = "2018",
+    address = "Santa Fe, New Mexico, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/C18-1158",
+    pages = "1859--1874",
+    abstract = "The 2017 Fake News Challenge Stage 1 (FNC-1) shared task addressed a stance classification task as a crucial first step towards detecting fake news. To date, there is no in-depth analysis paper to critically discuss FNC-1{'}s experimental setup, reproduce the results, and draw conclusions for next-generation stance classification methods. In this paper, we provide such an in-depth analysis for the three top-performing systems. We first find that FNC-1{'}s proposed evaluation metric favors the majority class, which can be easily classified, and thus overestimates the true discriminative power of the methods. Therefore, we propose a new F1-based metric yielding a changed system ranking. Next, we compare the features and architectures used, which leads to a novel feature-rich stacked LSTM model that performs on par with the best systems, but is superior in predicting minority classes. To understand the methods{'} ability to generalize, we derive a new dataset and perform both in-domain and cross-domain experiments. Our qualitative and quantitative study helps interpreting the original FNC-1 scores and understand which features help improving performance and why. Our new dataset and all source code used during the reproduction study are publicly available for future research.",
+}
+@article{DBLP:journals/corr/abs-2103-08541,
+  author       = {Tal Schuster and
+                  Adam Fisch and
+                  Regina Barzilay},
+  title        = {Get Your Vitamin C! Robust Fact Verification with Contrastive Evidence},
+  journal      = {CoRR},
+  volume       = {abs/2103.08541},
+  year         = {2021},
+  url          = {https://arxiv.org/abs/2103.08541},
+  eprinttype    = {arXiv},
+  eprint       = {2103.08541},
+  timestamp    = {Tue, 23 Mar 2021 16:29:47 +0100},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-2103-08541.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@misc{clef21,
+      title={Overview of the CLEF--2021 CheckThat! Lab on Detecting Check-Worthy Claims, Previously Fact-Checked Claims, and Fake News}, 
+      author={Preslav Nakov and Giovanni Da San Martino and Tamer Elsayed and Alberto Barrón-Cedeño and Rubén Míguez and Shaden Shaar and Firoj Alam and Fatima Haouari and Maram Hasanain and Watheq Mansour and Bayan Hamdan and Zien Sheikh Ali and Nikolay Babulkov and Alex Nikolov and Gautam Kishore Shahi and Julia Maria Struß and Thomas Mandl and Mucahid Kutlu and Yavuz Selim Kartal},
+      year={2021},
+      eprint={2109.12987},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@misc{clef19,
+      title={Overview of the CLEF-2019 CheckThat!: Automatic Identification and Verification of Claims}, 
+      author={Tamer Elsayed and Preslav Nakov and Alberto Barrón-Cedeño and Maram Hasanain and Reem Suwaileh and Giovanni Da San Martino and Pepa Atanasova},
+      year={2021},
+      eprint={2109.15118},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+@inproceedings{narayan-etal-2018-dont,
+    title = "Don{'}t Give Me the Details, Just the Summary! Topic-Aware Convolutional Neural Networks for Extreme Summarization",
+    author = "Narayan, Shashi  and
+      Cohen, Shay B.  and
+      Lapata, Mirella",
+    booktitle = "Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing",
+    month = oct # "-" # nov,
+    year = "2018",
+    address = "Brussels, Belgium",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/D18-1206",
+    doi = "10.18653/v1/D18-1206",
+    pages = "1797--1807",
+    abstract = "We introduce {``}extreme summarization{''}, a new single-document summarization task which does not favor extractive strategies and calls for an abstractive modeling approach. The idea is to create a short, one-sentence news summary answering the question {``}What is the article about?{''}. We collect a real-world, large-scale dataset for this task by harvesting online articles from the British Broadcasting Corporation (BBC). We propose a novel abstractive model which is conditioned on the article{'}s topics and based entirely on convolutional neural networks. We demonstrate experimentally that this architecture captures long-range dependencies in a document and recognizes pertinent content, outperforming an oracle extractive system and state-of-the-art abstractive approaches when evaluated automatically and by humans.",
+}
+
+@article{xlsum,
+  author       = {Tahmid Hasan and
+                  Abhik Bhattacharjee and
+                  Md Saiful Islam and
+                  Kazi Samin and
+                  Yuan{-}Fang Li and
+                  Yong{-}Bin Kang and
+                  M. Sohel Rahman and
+                  Rifat Shahriyar},
+  title        = {XL-Sum: Large-Scale Multilingual Abstractive Summarization for 44
+                  Languages},
+  journal      = {CoRR},
+  volume       = {abs/2106.13822},
+  year         = {2021},
+  url          = {https://arxiv.org/abs/2106.13822},
+  eprinttype    = {arXiv},
+  eprint       = {2106.13822},
+  timestamp    = {Wed, 30 Jun 2021 16:14:10 +0200},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-2106-13822.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{banerjee-lavie-2005-meteor,
+    title = "{METEOR}: An Automatic Metric for {MT} Evaluation with Improved Correlation with Human Judgments",
+    author = "Banerjee, Satanjeev  and
+      Lavie, Alon",
+    booktitle = "Proceedings of the {ACL} Workshop on Intrinsic and Extrinsic Evaluation Measures for Machine Translation and/or Summarization",
+    month = jun,
+    year = "2005",
+    address = "Ann Arbor, Michigan",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/W05-0909",
+    pages = "65--72",
 }

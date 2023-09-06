@@ -8,6 +8,7 @@
 \subsection{Automated claim generation}
 \todo{}
 \subsection{Claim generation metrics}
+\label{metrics}
 
 \begin{figure}
     \includegraphics[width=7cm]{fig/lm_critics.png}
@@ -44,6 +45,7 @@ For the task of claim generation, where we also face the challenge of the \texti
     The approaches are reproducible using Czech Wikipedia corpus and appropriate for further examination.
 
     \item {\techbf Atomicity} --  \textit{does the claim describe a single entity, relation or process?}
+    \label{atomicity}
     
     can be checked using the Relationship Extraction methods such as LUKE~\cite{yamada2020luke}. To put it simply, the RE task is to identify the entities of a text (persons, institutions,\dots) and the relations between them (such as $(\textit{\"{study at}}, \textit{Herbert}, \textit{CTU})$). The atomicity evaluation can be converted to a RE task by attempting to extract such fact triples and mark the claim as atomic if there is at most one such triple found (after removing symmetries)
 
