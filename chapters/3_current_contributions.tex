@@ -3,10 +3,37 @@
 \chapter{Current Contribution}
 \label{chap:contribution}
 
-\textit{We have collected novel data, emulated and scraped inavailable datasets making them public or readying them for doing so, we have established numerousstate-of-the-art models and are currently working on establishing the topic of claim generation as a summarization-related NLP task.
-We are also readying metrics for fact-checking, experimenting with them and so on and soforth.}
+\textit{We have collected novel data for the fact-checking task in our application context, emulated and scraped inavailable datasets making them public or readying them for doing so, we have established numerous state-of-the-art models and we are currently working on establishing the topic of claim generation as a summarization-related NLP task.}
 
 \section{Datasets}
+Having the automated fact-checking scheme established in chapter~\ref{chap:sota}, every machine-learning solution must start with the choice or collection of appropriate training data.
+Due to the novelty of the task in Czech and other West Slavic languages, I explored a multitude of ways to acquire such data, many of them resulting in a publicly available dataset in our Huggingface repository~\footnote{\url{https://huggingface.co/ctu-aic}}, beginning to be reused by others. 
+
+\subsection{\FCZ}
+An early \"{temporary benchmark} for our endeavours in adapting the FEVER~\cite{fever} task for the Czech context was the \FCZ~\cite{lrev} dataset.
+
+In~\cite{diplomka}, I have proposed a simple FEVER data transduction scheme that can be simplified as follows:
+
+\begin{enumerate}
+    \item Each FEVER claim is translated using the (at the time maturing) Machine Translator
+    \item Evidence from English Wikipedia is not translated using MT, but mapped onto its Czech-Wikipedia counterpart using the publicly available Wikidata\footnote{Used, for example, for showing the \"{see this article in other languages} suggestions in Wikipedia sidebar}
+    \item Data with any loss in evidence due to the step 2. is discarded
+\end{enumerate}
+
+This design was relatively cheap to compute (as translating the whole 2017 Wikipedia corpus would have been a long and wasteful computation), delivering an open-license dataset of 127K claims, their labels and evidence justifications. My hope was, as both the 2017 EnWiki and our 2020 CsWiki corpus only featured the first paragraph (abstract) of each article, a document-level alignment could be assumed -- both the Czech and English text always summarize the basic facts about the same entity.
+
+This showed to be only partly true as a later human annotation on a 1\% sample of \FCZ data showed that about a third of data exhibits some levels of noise, mostly introduced during dataset translation~\cite{lrev}.
+
+While noisy, the \FCZ data still got its use in training of the information retrieval schemes of~\cite{rypar,gazo,lrev} used to this day and is openly available\footnote{\url{https://huggingface.co/datasets/ctu-aic/csfever}} under a CC license.
+
+My research on it also motivated a creation of a inference-only version of the dataset, which does not support the Information Retrieval task and therefore, does not require the mapping of evidence into a live version of Wikipedia.
+Therefore, only the EnWiki \textit{excerpts} needed to build evidence can be translated, bringing down the computational difficulty and enabling me to deliver a dataset without the transduction noise called \FCZNLI\footnote{\url{https://huggingface.co/datasets/ctu-aic/csfever_nli}}. 
+
+Another round of research \FCZ motivated and I supervised was the successful thesis of~\cite{mlynar}, modernizing the data and machine-translation methods into the 2023 state of the art.
+\cite{mlynar} further experimented with methods of automated noise detection and removal, which has not shown to be an efficient way to tackle the issue of high noise in \FCZ.
+
+However, it delivers a partly cleaned versions of it\footnote{\url{https://huggingface.co/datasets/ctu-aic/csfever_v2}} and motivates a future research of generating such data differently, using a claim generation scheme like that from~\cite{pan2021zeroshot}.
+
 \label{sec:datasets}
 \begin{figure}
     \makebox[\textwidth][c]{
@@ -17,8 +44,10 @@ We are also readying metrics for fact-checking, experimenting with them and so o
     \caption{{\techbf FCheck} -- an open-source platform for fact-checking dataset collection I developed for TAČR project; collects data for claim generation, information retrieval and natural language inference tasks}
     \label{fig:fcheck}
 \end{figure}
+\subsection{FCheck Annotations Platform}
+The imperfections in translated \FCZ data, as well as the ongoing colaboration with ČTK and the Faculty of Social Sciences brought me to also look for ways how to hand-annotate a whole new natively Czech dataset, which would both lack the noise of translated data and take the task of automated fact checking to next level, replacing a rigid, simple Wikipedic data with a more \"{real world} news report corpus of ČTK.
 
-\subsection{\FCZ}
+Figure~\ref{fig:fcheck} shows 
 \subsection{\CTK}
 \subsection{Other NLP datasets in West Slavic languages}
 \begin{enumerate}

@@ -118,6 +118,13 @@
   year         = {2023}
 }
 
+@misc{diplomka,
+  title        = {Dataset for Automated Fact Checking in Czech Language},
+  howpublished = {\url{https://dspace.cvut.cz/handle/10467/95430}},
+  author       = {Ullrich, Herbert},
+  year         = {2021}
+}
+
 @misc{mlynar,
   title        = {Automated Fact Checking Based on Czech Wikipedia},
   howpublished = {\url{https://dspace.cvut.cz/handle/10467/109219}},
@@ -2701,3 +2708,21 @@ title = {INFORMATION DISORDER : Toward an interdisciplinary framework for resear
     url = "https://aclanthology.org/W05-0909",
     pages = "65--72",
 }
+
+@Article{lrev,
+author={Ullrich, Herbert
+and Drchal, Jan
+and R{\'y}par, Martin
+and Vincourov{\'a}, Hana
+and Moravec, V{\'a}clav},
+title={CsFEVER and CTKFacts: acquiring Czech data for fact verification},
+journal={Language Resources and Evaluation},
+year={2023},
+month={May},
+day={03},
+abstract={In this paper, we examine several methods of acquiring Czech data for automated fact-checking, which is a task commonly modeled as a classification of textual claim veracity w.r.t. a corpus of trusted ground truths. We attempt to collect sets of data in form of a factual claim, evidence within the ground truth corpus, and its veracity label (supported, refuted or not enough info). As a first attempt, we generate a Czech version of the large-scale FEVER dataset built on top of Wikipedia corpus. We take a hybrid approach of machine translation and document alignment; the approach and the tools we provide can be easily applied to other languages. We discuss its weaknesses, propose a future strategy for their mitigation and publish the 127k resulting translations, as well as a version of such dataset reliably applicable for the Natural Language Inference task---the CsFEVER-NLI. Furthermore, we collect a novel dataset of 3,097 claims, which is annotated using the corpus of 2.2 M articles of Czech News Agency. We present an extended dataset annotation methodology based on the FEVER approach, and, as the underlying corpus is proprietary, we also publish a standalone version of the dataset for the task of Natural Language Inference we call CTKFactsNLI. We analyze both acquired datasets for spurious cues---annotation patterns leading to model overfitting. CTKFacts is further examined for inter-annotator agreement, thoroughly cleaned, and a typology of common annotator errors is extracted. Finally, we provide baseline models for all stages of the fact-checking pipeline and publish the NLI datasets, as well as our annotation platform and other experimental data.},
+issn={1574-0218},
+doi={10.1007/s10579-023-09654-3},
+url={https://doi.org/10.1007/s10579-023-09654-3}
+}
+

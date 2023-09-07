@@ -94,6 +94,11 @@ Elsayed, T., Nakov, P., Barrón-Cedeño, A., Hasanain, M., Suwaileh, R.,
 Fu, J., Ng, S.-K., Jiang, Z., and Liu, P. (2023).
 \newblock Gptscore: Evaluate as you desire.
 
+\bibitem[Gažo, 2021]{gazo}
+Gažo, A. (2021).
+\newblock Algorithms for document retrieval in czech language supporting long
+  inputs.
+
 \bibitem[Guo et~al., 2022]{guo-etal-2022-survey}
 Guo, Z., Schlichtkrull, M., and Vlachos, A. (2022).
 \newblock A survey on automated fact-checking.
@@ -197,6 +202,11 @@ Liu, Y., Ott, M., Goyal, N., Du, J., Joshi, M., Chen, D., Levy, O., Lewis, M.,
 Mikolov, T., Chen, K., Corrado, G., and Dean, J. (2013).
 \newblock Efficient estimation of word representations in vector space.
 
+\bibitem[Mlynář, 2023]{mlynar}
+Mlynář, T. (2023).
+\newblock Automated fact checking based on czech wikipedia.
+\newblock \url{https://dspace.cvut.cz/handle/10467/109219}.
+
 \bibitem[Mohri et~al., 2023]{mohri2023learning}
 Mohri, C., Andor, D., Choi, E., and Collins, M. (2023).
 \newblock Learning to reject with a fixed predictor: Application to
@@ -272,6 +282,12 @@ Raffel, C., Shazeer, N., Roberts, A., Lee, K., Narang, S., Matena, M., Zhou,
   Y., Li, W., and Liu, P.~J. (2020).
 \newblock Exploring the limits of transfer learning with a unified text-to-text
   transformer.
+
+\bibitem[Rýpar, 2021]{rypar}
+Rýpar, M. (2021).
+\newblock Methods of document retrieval for fact-checking.
+\newblock \url{https://www.overleaf.com/read/thbvcjvvvfjp}.
+\newblock [Online; accessed 21-May-2021].
 
 \bibitem[Schuster et~al., 2021]{DBLP:journals/corr/abs-2103-08541}
 Schuster, T., Fisch, A., and Barzilay, R. (2021).
@@ -362,6 +378,17 @@ Touvron, H., Martin, L., Stone, K., Albert, P., Almahairi, A., Babaei, Y.,
   Kambadur, M., Narang, S., Rodriguez, A., Stojnic, R., Edunov, S., and
   Scialom, T. (2023b).
 \newblock Llama 2: Open foundation and fine-tuned chat models.
+
+\bibitem[Ullrich, 2021]{diplomka}
+Ullrich, H. (2021).
+\newblock Dataset for automated fact checking in czech language.
+\newblock \url{https://dspace.cvut.cz/handle/10467/95430}.
+
+\bibitem[Ullrich et~al., 2023]{lrev}
+Ullrich, H., Drchal, J., R{\'y}par, M., Vincourov{\'a}, H., and Moravec, V.
+  (2023).
+\newblock Csfever and ctkfacts: acquiring czech data for fact verification.
+\newblock {\em Language Resources and Evaluation}.
 
 \bibitem[Vaswani et~al., 2017]{vaswani}
 Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A.~N.,
