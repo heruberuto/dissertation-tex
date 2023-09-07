@@ -372,15 +372,9 @@ Thorne, J., Vlachos, A., Christodoulopoulos, C., and Mittal, A. (2018a).
   {VERification}.
 \newblock In {\em NAACL-HLT}.
 
-\bibitem[Thorne et~al., 2018b]{fever2018}
-Thorne, J., Vlachos, A., Christodoulopoulos, C., and Mittal, A. (2018b).
-\newblock {FEVER}: a large-scale dataset for fact extraction and
-  {VERification}.
-\newblock In {\em NAACL-HLT}.
-
-\bibitem[Thorne et~al., 2018c]{fever1}
+\bibitem[Thorne et~al., 2018b]{fever1}
 Thorne, J., Vlachos, A., Cocarascu, O., Christodoulopoulos, C., and Mittal, A.
-  (2018c).
+  (2018b).
 \newblock The {Fact Extraction and VERification (FEVER)} shared task.
 \newblock In {\em Proceedings of the First Workshop on {Fact Extraction and
   VERification (FEVER)}}.

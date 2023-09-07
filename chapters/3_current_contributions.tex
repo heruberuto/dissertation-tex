@@ -61,33 +61,29 @@ Multiple \"{cross-annotations} were collected for each claim, to measure agreeme
 
 \subsection{\CTK}
 \label{sec:ctkfacts}
-
-\begin{table}
-    \begin{center}
-        \begin{minipage}{\textwidth}
-            \caption{Label distribution in \CTK splits before and after cleaning. Reprinted from~\cite{lrev}}\label{tab:ctkfacts-overview}
-            \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lllllll@{\extracolsep{\fill}}}
-                \toprule
-                & \multicolumn{3}{@{}c@{}}{\CTK uncleaned, balanced} & \multicolumn{3}{@{}c@{}}{\CTK cleaned, stratified}\\
-                \cmidrule{2-4}\cmidrule{5-7}
-                Split & {\texttt{SUPPORTS}} & \texttt{REFUTES}  & \texttt{NEI} & {\texttt{SUPPORTS}} & \texttt{REFUTES}  & \texttt{NEI}\\
-                \midrule
-                \train  & 1,164 & 549 & 503     & 1,104 & 556 & 723 \\
-                \dev    & 100 & 100 & 100       & 142 & 85 & 105\\
-                \test   & 200 & 200 & 200       & 176 & 79 & 127\\
-                \botrule
-            \end{tabular*}
-        \end{minipage}
-    \end{center}
+\begin{table}[H]
+\makebox[\textwidth][c]{
+\begin{ctucolortab}
+\begin{tabular}{ r || ccc || ccc  }
+&  \multicolumn{3}{c}{\techbf{{\CTK uncleaned, balanced}}} & \multicolumn{3}{c}{\techbf{{\CTK cleaned, stratified}}}\\
+\hline
+{} & {\texttt{SUPPORTS}} & \texttt{REFUTES}  & \texttt{NEI} & {\texttt{SUPPORTS}} & \texttt{REFUTES}  & \texttt{NEI}\\ 
+\hline
+\train  & 1,164 & 549 & 503     & 1,104 & 556 & 723 \\
+\dev    & 100 & 100 & 100       & 142 & 85 & 105\\
+\test   & 200 & 200 & 200       & 176 & 79 & 127\\
+\end{tabular}
+\end{ctucolortab}}
+\caption{Label distribution in \CTK splits before and after cleaning. Reprinted from~\cite{lrev}}
+\label{tab:ctkfacts}
 \end{table}
 
-After completing the first year annotation runs, we have extracted a total of 3,116 multi-annotated claims.
-47\% were \texttt{SUPPORT}ed by the majority of their annotations, \REF{} and \NEI{} labels were approximately even, the full distribution of labels is listed in Table~\ref{tab:ctkfacts-overview}.
+After completing the first year of annotation experiments, we have extracted a total of 3,116 multi-annotated claims.
+47\% were \texttt{SUPPORT}ed by the majority of their annotations, \REF{} and \NEI{} labels were approximately even, the full distribution of labels is listed in Table~\ref{tab:ctkfacts}.
 % We have originally experimented with balanced \dev and \test splits to punish predictors exploiting this bias.
 
 Of all the annotated claims, 1,776, that is 57\%, had at least two independent labels assigned by different annotators.
-This sample was given by the intrinsic randomness of mutated claim sampling.
-In this section, we use it to asses the quality of our data and ambiguity of the task, as well as to propose annotation cleaning methods used to arrive to our final \text{cleaned} \CTK dataset.
+I used this multiplicity to asses the quality of our data and ambiguity of the task, as well as to propose annotation cleaning methods used to arrive to our final \text{cleaned} \CTK dataset.
 
 \subsubsection{Inter-Annotator Agreement}
 \label{sec:agreement}
