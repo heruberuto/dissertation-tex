@@ -120,9 +120,7 @@ Due to these limitations, some researchers consider the scheme from FEVER an ove
     \item The scores are combined (all need to be \"{faithful} for a faithful claim, otherwise, a severity of inaccuracies can be approximated using some averaging 
 \end{enumerate}
 
-GPT-3 is used in steps 1, 3 and 4 of the scheme in the prototype delivered in~\cite{bing}. Zero- and few-shot approaches are being explored, few-shot unsurprisingly coming out a little better.
-
-The scheme is transducible to Czech and Figure~\ref{fig:bing} shows my early experiments with my interactive reproduction of it, predictors based on Bing and GPT-3.5 (a polished version of GPT-3).
+GPT-3 is used in steps 1, 3 and 4 of the scheme in the prototype delivered in~\cite{bing} in a few- and zero-shot fashion, few-shot unsurprisingly coming out a little better. The scheme is transducible to Czech and Figure~\ref{fig:bing} shows my early experiments with my interactive reproduction of it, predictors based on Bing and GPT-3.5 (a polished version of GPT-3).
 
 While the shift from an established FEVER framework to complex real-world claims and evidence retrieval \"{in the wild} feels exciting and practical, an obvious pitfall arises -- anyone can publish anything on internet, having it appear in Bing search and other crawlers alike. I argue that this might lead into a sort of a circular dependency of needing to reliably fact-check the evidence we have retrieved from the web, in order to be able to build a reliable fact-checker in the first place.
 
