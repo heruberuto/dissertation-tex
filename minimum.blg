@@ -4,47 +4,47 @@ The top-level auxiliary file: minimum.aux
 The style file: apalike.bst
 Database file #1: minimum.bib
 Warning--entry type for "glorin" isn't style-file defined
---line 2401 of file minimum.bib
+--line 2409 of file minimum.bib
 Warning--empty publisher in disorder
-You've used 88 entries,
+You've used 90 entries,
             1935 wiz_defined-function locations,
-            894 strings with 24186 characters,
-and the built_in function-call counts, 42115 in all, are:
-= -- 3894
-> -- 2918
-< -- 44
-+ -- 1089
-- -- 1067
-* -- 3764
-:= -- 7593
-add.period$ -- 265
-call.type$ -- 88
-change.case$ -- 971
-chr.to.int$ -- 84
-cite$ -- 89
-duplicate$ -- 1323
-empty$ -- 2128
-format.name$ -- 1175
-if$ -- 7954
+            901 strings with 24491 characters,
+and the built_in function-call counts, 42817 in all, are:
+= -- 3959
+> -- 2968
+< -- 45
++ -- 1107
+- -- 1085
+* -- 3824
+:= -- 7731
+add.period$ -- 270
+call.type$ -- 90
+change.case$ -- 990
+chr.to.int$ -- 86
+cite$ -- 91
+duplicate$ -- 1343
+empty$ -- 2158
+format.name$ -- 1195
+if$ -- 8078
 int.to.chr$ -- 5
 int.to.str$ -- 0
 missing$ -- 52
-newline$ -- 427
-num.names$ -- 266
-pop$ -- 901
+newline$ -- 436
+num.names$ -- 272
+pop$ -- 916
 preamble$ -- 1
-purify$ -- 972
+purify$ -- 991
 quote$ -- 0
-skip$ -- 1035
+skip$ -- 1052
 stack$ -- 0
-substring$ -- 1905
+substring$ -- 1929
 swap$ -- 216
 text.length$ -- 17
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 526
+type$ -- 538
 warning$ -- 1
-while$ -- 244
+while$ -- 248
 width$ -- 0
-write$ -- 1101
+write$ -- 1123
 (There were 2 warnings)

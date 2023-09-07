@@ -177,6 +177,11 @@ Krippendorff, K. (1970).
   interval data.
 \newblock {\em Educational and Psychological Measurement}, 30(1):61--70.
 
+\bibitem[Krotil, 2022]{krotil}
+Krotil, M. (2022).
+\newblock Text summarization methods in czech.
+\newblock \url{https://dspace.cvut.cz/handle/10467/101028}.
+
 \bibitem[Köpf et~al., 2023]{openassistant}
 Köpf, A., Kilcher, Y., von Rütte, D., Anagnostidis, S., Tam, Z.-R., Stevens,
   K., Barhoum, A., Duc, N.~M., Stanley, O., Nagyfi, R., ES, S., Suri, S.,
@@ -217,6 +222,11 @@ Liu, P., Yuan, W., Fu, J., Jiang, Z., Hayashi, H., and Neubig, G. (2023a).
 \newblock Pre-train, prompt, and predict: A systematic survey of prompting
   methods in natural language processing.
 \newblock {\em ACM Comput. Surv.}, 55(9).
+
+\bibitem[Liu et~al., 2020]{mbart}
+Liu, Y., Gu, J., Goyal, N., Li, X., Edunov, S., Ghazvininejad, M., Lewis, M.,
+  and Zettlemoyer, L. (2020).
+\newblock Multilingual denoising pre-training for neural machine translation.
 
 \bibitem[Liu et~al., 2023b]{Liu_2023}
 Liu, Y., Han, T., Ma, S., Zhang, J., Yang, Y., Tian, J., He, H., Li, A., He,

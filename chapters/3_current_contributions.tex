@@ -148,17 +148,38 @@ In my publications, I have tried and compared a multitude of neural networks for
 
 \subsection{Claim generation}
 In my current research, I am finding appropriate configurations and data to train models for the task of claim generation -- generating a factual claim (or more) into a single sentence that contains a fluent, atomic, decontextualized and faithful claim.
+In section~\ref{generation}, I~propose the claim generation as an abstractive summarization setting, and therefore, the models already have their practical use in the general task of summing up longer texts into shorter ones.
+
+As has been shown in section~\ref{benchmarking-sota}, NLP summarization task does not have a reliable standard benchmark that would capture all its required output qualities. Therefore, it remains questionable to claim the state of the art on any summarization task and I proceed to present models that excel in our empirical tests and demonstrations for project stakeholders:
+
+\begin{enumerate}
+    \item {\techbf mBART}~\cite{mbart} multilingual Transformer model has been finetuned by our team's~\cite{krotil} on SumeCzech and proprietary CNC News summarization dataset on the \"{full text to headline} task, obtaining encouraging scores across numerous summarization metrics in Czech.\\
+    I have taken this model a step further for the claim generation task, finetuning it on the {\FCZ}Sum and {\CTK}Sum datasets, yielding a working model for the task.\footnote{
+    \url{https://huggingface.co/ctu-aic/mbart25-large-eos}}
+
+    Another experiments are being carried out with the same model finetuned on Slovak\footnote{\url{https://huggingface.co/ctu-aic/mbart-at2h-cs-smesum-2}} and Polish\footnote{\url{https://huggingface.co/ctu-aic/mbart-at2h-cs-polish-news3}} data.
+    \item {\techbf LLaMA-2} shows promissing result when it comes to claim generation.
+    I have finetuned\footnote{\url{https://huggingface.co/ctu-aic/Llama-2-7b-xlsum-en}} it using the QLoRA (section~\ref{sec:lora}) approach, XL-Sum~\cite{xlsum} dataset and a concatenation-based prompting strategy~\cite{llama2}, to facilitate training across the entire length of input.
+    
+\end{enumerate}
+
+All prototype models are currently being iterated with our CEDMO project partners (fact-checkers from European organizations),  tweaked, and future tests are being designed for them based on empirical results and questionnaires.
 
 
-\section{Publications}
-\label{sec:publications}
 \section{Applications}
 \label{sec:applications}
+Numerous applications demonstrating our contributions with screenshots throughout this study are currently deployed and available online due to the CEDMO project and their testing with future users, let us therefore present the main applications I and my supervisor Jan Drchal have developed for the tasks:
+
+\begin{enumerate}
+    \item Claim extractor at \url{https://fcheck.fel.cvut.cz:1830} (figure~\ref{fig:claimgencedmo}) demonstrates the single or multiple claim generation task with our LLaMA-2 or mBART models for English and Czech texts, respectively, using a GRADIO interactive application and an API
+    \item  \url{https://fcheck.fel.cvut.cz:1831} runs a FactSearch platform by Jan Drchal, demonstrating our best performing models for the whole fact-checking tasks, integrating the XLM-RoBERTas trained on \FCZNLI data
+    \item  \url{https://fcheck.fel.cvut.cz:1832} runs the same scheme with our best performing English models and data
+\end{enumerate}
 
 \begin{figure}
     \includegraphics[width=16cm]{fig/cedmo.pdf}
     \caption{Factual claim extraction application done for the CEDMO project}
-    \label{fig:framework}
+    \label{fig:claimgencedmo}
 \end{figure}
 
 Here we will show off the demonstration tools, as well as our open-source platform \url{https://fcheck.fel.cvut.cz} and currently running claim extraction tools. 

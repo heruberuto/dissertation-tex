@@ -61,7 +61,7 @@ The only obstacle left in the way is the computational cost of fine-tuning acros
 %Often poor czech coverage 
 %Quantizace, 4b, 8b, zlomek parametrů\cite{openassistant}
 
-\subsection{LoRA and other optimization}
+\subsection{LoRA and other optimization}\label{sec:lora}
 To be able to fine-tune multi-billion-parameter models such as \textsf{LLaMA-2}~\cite{llama2} on a single TPU, successful approaches have been published to dramatically cut-down the training expenses.
 Parameter-efficient fine-tuning (PEFT)~\cite{peft} proposes approaches to only fine-tune \textit{a few} weights as opposed to the whole neural network, reducing the number of trainable parameters by orders of magnitude.
 Low-Rank Adaptation of Large Language Models (LoRA)~\cite{lora} does so by freezing the pre-trained model weights and injecting trainable rank decomposition matrices into each layer of Transformer architecture. 
@@ -139,6 +139,7 @@ What has been examined so far were for example:
 \end{itemize}
 
 \subsection{NLP summarization benchmarking}
+\label{benchmarking-sota}
 An important caveat to note with the NLP tasks reducing longer text to shorter text -- such as summarization or claim extraction -- is that the standard automatic metrics such as ROUGE~\cite{lin-2004-rouge} and METEOR~\cite{banerjee-lavie-2005-meteor} only focus on the \textit{content selection} aspect of tasks, based on a word-by-word overlap and were designed to use on multiple gold summaries per input, which are not often provided with modern large-scale datasets.~\cite{nlpprogress,bert-score,zha2023alignscore}
 
 These serious limitations make it questionable for anyone to claim state of the art on these tasks and motivate research for new metrics to cover all the important aspects of claim generation and do so in correlation with expert human judgment. 
