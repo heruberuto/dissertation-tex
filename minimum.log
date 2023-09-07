@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.8)  7 SEP 2023 14:32
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.8)  7 SEP 2023 14:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1034,76 +1034,83 @@ Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
-) (/usr/local/texlive/2021/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip83
+\multirow@cntb=\count383
+\multirow@dima=\skip84
+\bigstrutjot=\dimen341
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/tools/dcolumn.sty
+Package: dcolumn 2014/10/28 v1.06 decimal alignment package (DPC)
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/tools/array.sty
+Package: array 2020/10/01 v2.5c Tabular extension package (FMi)
+\col@sep=\dimen342
+\ar@mcellbox=\box133
+\extrarowheight=\dimen343
+\NC@list=\toks57
+\extratabsurround=\skip85
+\backup@length=\skip86
+\ar@cellbox=\box134
+)) (/usr/local/texlive/2021/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
 Invalid UTF-8 byte or sequence at line 284 replaced by U+FFFD.
 Invalid UTF-8 byte or sequence at line 299 replaced by U+FFFD.
 Invalid UTF-8 byte or sequence at line 550 replaced by U+FFFD.
 Package: algorithm2e 2017/07/18 v5.2 algorithms environments
-\c@AlgoLine=\count383
-\algocf@hangindent=\skip83
+\c@AlgoLine=\count384
+\algocf@hangindent=\skip87
  (/usr/local/texlive/2021/texmf-dist/tex/latex/relsize/relsize.sty
 Package: relsize 2013/03/29 ver 4.1
 )
-\skiptotal=\skip84
-\skiplinenumber=\skip85
-\skiprule=\skip86
-\skiphlne=\skip87
-\skiptext=\skip88
-\skiplength=\skip89
-\algomargin=\skip90
-\skipalgocfslide=\skip91
-\algowidth=\dimen341
-\inoutsize=\dimen342
-\inoutindent=\dimen343
-\interspacetitleruled=\dimen344
-\interspacealgoruled=\dimen345
-\interspacetitleboxruled=\dimen346
-\algocf@ruledwidth=\skip92
-\algocf@inoutbox=\box133
-\algocf@inputbox=\box134
-\AlCapSkip=\skip93
-\AlCapHSkip=\skip94
-\algoskipindent=\skip95
-\algocf@nlbox=\box135
-\algocf@hangingbox=\box136
-\algocf@untilbox=\box137
-\algocf@skipuntil=\skip96
-\algocf@capbox=\box138
-\algocf@lcaptionbox=\skip97
-\algoheightruledefault=\skip98
-\algoheightrule=\skip99
-\algotitleheightruledefault=\skip100
-\algotitleheightrule=\skip101
-\c@algocfline=\count384
-\c@algocfproc=\count385
-\c@algocf=\count386
-\algocf@algoframe=\box139
-\algocf@algobox=\box140
+\skiptotal=\skip88
+\skiplinenumber=\skip89
+\skiprule=\skip90
+\skiphlne=\skip91
+\skiptext=\skip92
+\skiplength=\skip93
+\algomargin=\skip94
+\skipalgocfslide=\skip95
+\algowidth=\dimen344
+\inoutsize=\dimen345
+\inoutindent=\dimen346
+\interspacetitleruled=\dimen347
+\interspacealgoruled=\dimen348
+\interspacetitleboxruled=\dimen349
+\algocf@ruledwidth=\skip96
+\algocf@inoutbox=\box135
+\algocf@inputbox=\box136
+\AlCapSkip=\skip97
+\AlCapHSkip=\skip98
+\algoskipindent=\skip99
+\algocf@nlbox=\box137
+\algocf@hangingbox=\box138
+\algocf@untilbox=\box139
+\algocf@skipuntil=\skip100
+\algocf@capbox=\box140
+\algocf@lcaptionbox=\skip101
+\algoheightruledefault=\skip102
+\algoheightrule=\skip103
+\algotitleheightruledefault=\skip104
+\algotitleheightrule=\skip105
+\c@algocfline=\count385
+\c@algocfproc=\count386
+\c@algocf=\count387
+\algocf@algoframe=\box141
+\algocf@algobox=\box142
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
-\c@subfigure=\count387
-\c@subtable=\count388
+\c@subfigure=\count388
+\c@subtable=\count389
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/tools/enumerate.sty
 Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
-\@enLab=\toks57
+\@enLab=\toks58
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
- (/usr/local/texlive/2021/texmf-dist/tex/latex/tools/array.sty
-Package: array 2020/10/01 v2.5c Tabular extension package (FMi)
-\col@sep=\dimen347
-\ar@mcellbox=\box141
-\extrarowheight=\dimen348
-\NC@list=\toks58
-\extratabsurround=\skip102
-\backup@length=\skip103
-\ar@cellbox=\box142
-)
-\TX@col@width=\dimen349
-\TX@old@table=\dimen350
-\TX@old@col=\dimen351
-\TX@target=\dimen352
-\TX@delta=\dimen353
-\TX@cols=\count389
+\TX@col@width=\dimen350
+\TX@old@table=\dimen351
+\TX@old@col=\dimen352
+\TX@target=\dimen353
+\TX@delta=\dimen354
+\TX@cols=\count390
 \TX@ftn=\toks59
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/tablefootnote/tablefootnote.sty
 Package: tablefootnote 2014/01/26 v1.1c Table foot notes (HMM)
@@ -1113,42 +1120,47 @@ Package: xifthen 2015/11/05 v1.4.0 Extended ifthen features
 Package: ifmtarg 2018/04/16 v1.2b check for an empty argument
 )) (/usr/local/texlive/2021/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count390
-)) (/Users/bertik/PhD/studie-bertik/minimum.aux
+\etb@tempcnta=\count391
+)) (/Users/bertik/PhD/studie-bertik/minimum.aux)
+Runaway argument?
+{\c 
+/Users/bertik/PhD/studie-bertik/minimum.tex:141: File ended while scanning use of \@writefile.
+<inserted text> 
+                \par 
+l.141 \begin{document}
+                      
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
 
-LaTeX Warning: Label `fig:framework' multiply defined.
-
-
-LaTeX Warning: Label `sec:metrics' multiply defined.
-
-)
 \openout1 = `minimum.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 133.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 133.
- (/usr/local/texlive/2021/texmf-dist/tex/latex/base/ts1cmr.fd
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 141.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 141.
+(/usr/local/texlive/2021/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Info: Redefining \microtypecontext on input line 133.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Info: Redefining \microtypecontext on input line 141.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: No adjustment of tracking.
@@ -1168,7 +1180,7 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: dvipdfm (xetex) on input line 98.
 )
-\c@lstlisting=\count391
+\c@lstlisting=\count392
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1208,7 +1220,7 @@ Package pdflscape Info: Auto-detected driver: dvipdfm (xetex) on input line 98.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 133.
+Package hyperref Info: Link coloring OFF on input line 141.
 (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/local/texlive/2021/texmf-dist/tex/latex/refcount/refcount.sty
@@ -1216,11 +1228,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/local/texlive/2021/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count392
+\c@section@level=\count393
 )
-LaTeX Info: Redefining \ref on input line 133.
-LaTeX Info: Redefining \pageref on input line 133.
-LaTeX Info: Redefining \nameref on input line 133.
+LaTeX Info: Redefining \ref on input line 141.
+LaTeX Info: Redefining \pageref on input line 141.
+LaTeX Info: Redefining \nameref on input line 141.
  (/Users/bertik/PhD/studie-bertik/minimum.out) (/Users/bertik/PhD/studie-bertik/minimum.out)
 \@outlinefile=\write5
 \openout5 = `minimum.out'.
@@ -1232,69 +1244,69 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 
 LaTeX Font Warning: Font shape `TU/Technika-Bold.otf(0)/bx/n' undefined
-(Font)              using `TU/Technika-Bold.otf(0)/m/n' instead on input line 135.
+(Font)              using `TU/Technika-Bold.otf(0)/m/n' instead on input line 143.
 
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `Technika-Bold.otf' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 135.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 143.
 (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 135.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 143.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 135.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 143.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 135.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 143.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 135.
+(Font)              <10.95> on input line 143.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 135.
+(Font)              <8> on input line 143.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 135.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 135.
+(Font)              <6> on input line 143.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 143.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 135.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 143.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 135.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 143.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 File: ctu_logo_black.pdf Graphic file (type pdf)
 <use ctu_logo_black.pdf>
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 135.
+(Font)              <14.4> on input line 143.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 135.
+(Font)              <10> on input line 143.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 135.
+(Font)              <7> on input line 143.
 
 
 LaTeX Font Warning: Font shape `TU/Technika-Regular.otf(0)/bx/n' undefined
-(Font)              using `TU/Technika-Regular.otf(0)/m/n' instead on input line 135.
+(Font)              using `TU/Technika-Regular.otf(0)/m/n' instead on input line 143.
 
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `Technika-Regular.otf' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Overfull \hbox (5.0pt too wide) in paragraph at lines 135--135
+Overfull \hbox (5.0pt too wide) in paragraph at lines 143--143
 []|| [][] 
  []
 
@@ -1338,7 +1350,7 @@ Overfull \hbox (5.0pt too wide) in paragraph at lines 135--135
 
 
 
-Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 135.
+Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 143.
 
 (/Users/bertik/PhD/studie-bertik/minimum.toc)
 \tf@toc=\write6
@@ -1398,16 +1410,40 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 
 
-Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 135.
+Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 143.
 
 
-Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 135.
+Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 143.
 
 
-Package fancyhdr Warning: \fancyhead's `E' option without twoside option is useless on input line 135.
+Package fancyhdr Warning: \fancyhead's `E' option without twoside option is useless on input line 143.
 
 (/Users/bertik/PhD/studie-bertik/chapters/1_introduction.tex
 Chapter 1.
+
+LaTeX Warning: Citation `ffci' on page 1 undefined on input line 10.
+
+
+LaTeX Warning: Citation `wright' on page 1 undefined on input line 10.
+
+
+LaTeX Warning: Citation `llms' on page 1 undefined on input line 13.
+
+
+LaTeX Warning: Citation `gpt3' on page 1 undefined on input line 13.
+
+
+LaTeX Warning: Citation `prompting' on page 1 undefined on input line 13.
+
+
+LaTeX Warning: Citation `bing' on page 1 undefined on input line 15.
+
+
+LaTeX Warning: Citation `Ji_2023' on page 1 undefined on input line 18.
+
+
+LaTeX Warning: Citation `bert-score' on page 1 undefined on input line 19.
+
 File: fig/politifact.pdf Graphic file (type pdf)
 <use fig/politifact.pdf>
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -1422,36 +1458,309 @@ Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is usel
 
 
 ]
+
+LaTeX Warning: Citation `stem' on page 2 undefined on input line 32.
+
+
+LaTeX Warning: Citation `Lazer1094' on page 2 undefined on input line 32.
+
+
+LaTeX Warning: Citation `10.1257/jep.31.2.211' on page 2 undefined on input line 32.
+
+
+LaTeX Warning: Citation `BARUA2020100119' on page 2 undefined on input line 32.
+
+
+LaTeX Warning: Citation `georgiana_stanescu_2022_6795674' on page 2 undefined on input line 32.
+
+
+LaTeX Warning: Citation `doi:10.1177/2056305119888654' on page 2 undefined on input line 34.
+
+
+LaTeX Warning: Citation `glorin' on page 2 undefined on input line 34.
+
+
+LaTeX Warning: Citation `fever2' on page 2 undefined on input line 36.
+
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9> on input line 38.
 File: fig/framework.pdf Graphic file (type pdf)
 <use fig/framework.pdf>
+
+LaTeX Warning: Citation `guo-etal-2022-survey' on page 2 undefined on input line 45.
+
+
+LaTeX Warning: Citation `guo-etal-2022-survey' on page 2 undefined on input line 45.
+
+
+LaTeX Warning: Citation `guo-etal-2022-survey' on page 2 undefined on input line 51.
+
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 51.
- [2]
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 52.
+[2]
+
+LaTeX Warning: Citation `vaswani' on page 3 undefined on input line 58.
+
+
+LaTeX Warning: Citation `devlin2019bert' on page 3 undefined on input line 58.
+
+
+LaTeX Warning: Citation `gpt3' on page 3 undefined on input line 58.
+
+
+LaTeX Warning: Citation `gpt4' on page 3 undefined on input line 58.
+
+
+LaTeX Warning: Citation `lstm' on page 3 undefined on input line 62.
+
+
+LaTeX Warning: Citation `vaswani' on page 3 undefined on input line 62.
+
 File: fig/transformer.pdf Graphic file (type pdf)
 <use fig/transformer.pdf>
- [3]) (/Users/bertik/PhD/studie-bertik/chapters/2_sota.tex [4]
+
+LaTeX Warning: Citation `vaswani' on page 3 undefined on input line 70.
+
+
+LaTeX Warning: Citation `vaswani' on page 3 undefined on input line 70.
+
+[3]
+
+LaTeX Warning: Reference `chap:plan' on page 4 undefined on input line 84.
+
+
+LaTeX Warning: Reference `chap:conclusion' on page 4 undefined on input line 86.
+
+) (/Users/bertik/PhD/studie-bertik/chapters/2_sota.tex [4]
 Chapter 2.
+
+LaTeX Warning: Citation `devlin2019bert' on page 5 undefined on input line 6.
+
+
+LaTeX Warning: Citation `gpt4' on page 5 undefined on input line 6.
+
+
+LaTeX Warning: Citation `llama' on page 5 undefined on input line 6.
+
+
+LaTeX Warning: Citation `vicuna' on page 5 undefined on input line 6.
+
+
+LaTeX Warning: Citation `mikolov' on page 5 undefined on input line 13.
+
+
+LaTeX Warning: Citation `pennington-etal-2014-glove' on page 5 undefined on input line 13.
+
+
+LaTeX Warning: Citation `devlin2019bert' on page 5 undefined on input line 16.
+
+
+LaTeX Warning: Citation `czert' on page 5 undefined on input line 21.
+
+
+LaTeX Warning: Citation `fernet' on page 5 undefined on input line 21.
+
+
+LaTeX Warning: Citation `straka2021robeczech' on page 5 undefined on input line 21.
+
+
+LaTeX Warning: Citation `kocian2021siamese' on page 5 undefined on input line 21.
+
 
 Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 22.
 
 [5
 
-] [6] [7]
+]
+
+LaTeX Warning: Citation `mroczkowski-etal-2021-herbert' on page 6 undefined on input line 22.
+
+
+LaTeX Warning: Citation `pikuliak2021slovakbert' on page 6 undefined on input line 23.
+
+
+LaTeX Warning: Citation `xlm-roberta' on page 6 undefined on input line 24.
+
+
+LaTeX Warning: Citation `gpt3' on page 6 undefined on input line 29.
+
+
+LaTeX Warning: Citation `gpt3' on page 6 undefined on input line 34.
+
+
+LaTeX Warning: Citation `gpt4' on page 6 undefined on input line 39.
+
+
+LaTeX Warning: Citation `gpt4' on page 6 undefined on input line 42.
+
+
+LaTeX Warning: Citation `Liu_2023' on page 6 undefined on input line 42.
+
+[6]
+
+LaTeX Warning: Citation `llama' on page 7 undefined on input line 50.
+
+
+LaTeX Warning: Citation `raffel2020exploring' on page 7 undefined on input line 50.
+
+
+LaTeX Warning: Citation `alpaca' on page 7 undefined on input line 53.
+
+
+LaTeX Warning: Citation `vicuna' on page 7 undefined on input line 53.
+
+
+LaTeX Warning: Citation `openassistant' on page 7 undefined on input line 53.
+
+
+LaTeX Warning: Citation `llama2' on page 7 undefined on input line 57.
+
+
+LaTeX Warning: Citation `llama2' on page 7 undefined on input line 65.
+
+
+LaTeX Warning: Citation `peft' on page 7 undefined on input line 66.
+
+
+LaTeX Warning: Citation `lora' on page 7 undefined on input line 67.
+
+
+LaTeX Warning: Citation `dettmers2023qlora' on page 7 undefined on input line 69.
+
+
+LaTeX Warning: Citation `dettmers2023qlora' on page 7 undefined on input line 70.
+
+
+LaTeX Warning: Citation `moat' on page 7 undefined on input line 72.
+
+
+LaTeX Warning: Citation `disorder' on page 7 undefined on input line 77.
+
+
+LaTeX Warning: Citation `fncweb' on page 7 undefined on input line 79.
+
+
+LaTeX Warning: Citation `fnc' on page 7 undefined on input line 79.
+
+[7]
+
+LaTeX Warning: Citation `fever' on page 8 undefined on input line 83.
+
+
+LaTeX Warning: Citation `fever1' on page 8 undefined on input line 100.
+
+
+LaTeX Warning: Citation `fever2' on page 8 undefined on input line 100.
+
+
+LaTeX Warning: Citation `DBLP:journals/corr/abs-2103-08541' on page 8 undefined on input line 100.
+
+
+LaTeX Warning: Citation `aly2021feverous' on page 8 undefined on input line 100.
+
+
+LaTeX Warning: Reference `atomicity' on page 8 undefined on input line 102.
+
 File: fig/bing.pdf Graphic file (type pdf)
 <use fig/bing.pdf>
- [8] [9]) (/Users/bertik/PhD/studie-bertik/chapters/3_current_contributions.tex [10]
+
+LaTeX Warning: Citation `bing' on page 8 undefined on input line 106.
+
+
+LaTeX Warning: Citation `bing' on page 8 undefined on input line 106.
+
+[8]
+
+LaTeX Warning: Citation `bing' on page 9 undefined on input line 113.
+
+
+LaTeX Warning: Citation `bing' on page 9 undefined on input line 123.
+
+[9]
+
+LaTeX Warning: Citation `guo-etal-2022-survey' on page 10 undefined on input line 130.
+
+
+LaTeX Warning: Citation `pan2021zeroshot' on page 10 undefined on input line 136.
+
+
+LaTeX Warning: Citation `clef19' on page 10 undefined on input line 137.
+
+
+LaTeX Warning: Citation `clef21' on page 10 undefined on input line 137.
+
+
+LaTeX Warning: Citation `narayan-etal-2018-dont' on page 10 undefined on input line 138.
+
+
+LaTeX Warning: Citation `xlsum' on page 10 undefined on input line 138.
+
+
+LaTeX Warning: Citation `lin-2004-rouge' on page 10 undefined on input line 142.
+
+
+LaTeX Warning: Citation `banerjee-lavie-2005-meteor' on page 10 undefined on input line 142.
+
+
+LaTeX Warning: Citation `nlpprogress' on page 10 undefined on input line 142.
+
+
+LaTeX Warning: Citation `bert-score' on page 10 undefined on input line 142.
+
+
+LaTeX Warning: Citation `zha2023alignscore' on page 10 undefined on input line 142.
+
+
+LaTeX Warning: Reference `metrics' on page 10 undefined on input line 146.
+
+) (/Users/bertik/PhD/studie-bertik/chapters/3_current_contributions.tex [10]
 Chapter 3.
+
+LaTeX Warning: Citation `fever' on page 11 undefined on input line 13.
+
+
+LaTeX Warning: Citation `lrev' on page 11 undefined on input line 13.
+
+
+LaTeX Warning: Citation `diplomka' on page 11 undefined on input line 15.
+
+
+LaTeX Warning: Citation `lrev' on page 11 undefined on input line 25.
+
+
+LaTeX Warning: Citation `rypar' on page 11 undefined on input line 27.
+
+
+LaTeX Warning: Citation `gazo' on page 11 undefined on input line 27.
+
+
+LaTeX Warning: Citation `lrev' on page 11 undefined on input line 27.
+
 
 Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 28.
 
 [11
 
 ]
+
+LaTeX Warning: Citation `mlynar' on page 12 undefined on input line 32.
+
+
+LaTeX Warning: Citation `mlynar' on page 12 undefined on input line 33.
+
+
+LaTeX Warning: Citation `pan2021zeroshot' on page 12 undefined on input line 35.
+
+
+LaTeX Warning: Reference `fig:fcheck' on page 12 undefined on input line 41.
+
+
 Overfull \hbox (51.5682pt too wide) in paragraph at lines 41--41
 [][][][]$[][][][][] [] [] [] [][][][][][] [] [][][] [] [][][][] [] [][]$[] \TU/lmr/m/n/9 (\TU/lmtt/m/n/9 testuser\TU/lmr/m/n/9 ), source at: []\TU/lmtt/m/n/9 github.com/aic-factcheck/fcheck-annotations-platform[]| 
  []
 
 File: fig/fcheck/claim_extraction.pdf Graphic file (type pdf)
-<use fig/fcheck/clai
+<use fig/fcheck/claim_extraction.pdf>
+File: fig/fcheck/mutation.pdf Graphic file (type pdf)
+<use fig/fcheck/mutation.pdf>
+File: fig

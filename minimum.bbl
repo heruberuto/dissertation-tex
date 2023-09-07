@@ -95,6 +95,11 @@ Elsayed, T., Nakov, P., Barrón-Cedeño, A., Hasanain, M., Suwaileh, R.,
 \newblock Overview of the clef-2019 checkthat!: Automatic identification and
   verification of claims.
 
+\bibitem[Fleiss, 1971]{fleiss1971measuring}
+Fleiss, J.~L. (1971).
+\newblock Measuring nominal scale agreement among many raters.
+\newblock {\em Psychological Bulletin}, 76(5):378--382.
+
 \bibitem[Fu et~al., 2023]{fu2023gptscore}
 Fu, J., Ng, S.-K., Jiang, Z., and Liu, P. (2023).
 \newblock Gptscore: Evaluate as you desire.
@@ -126,6 +131,12 @@ Hasan, T., Bhattacharjee, A., Islam, M.~S., Samin, K., Li, Y., Kang, Y.,
   languages.
 \newblock {\em CoRR}, abs/2106.13822.
 
+\bibitem[Hayes and Krippendorff, 2007]{hayes2007krippendorff}
+Hayes, A. and Krippendorff, K. (2007).
+\newblock Answering the call for a standard reliability measure for coding
+  data.
+\newblock {\em Communication Methods and Measures}, 1:77--89.
+
 \bibitem[Hu et~al., 2021]{lora}
 Hu, E.~J., Shen, Y., Wallis, P., Allen{-}Zhu, Z., Li, Y., Wang, S., and Chen,
   W. (2021).
@@ -147,6 +158,12 @@ Kocián, M., Náplava, J., Štancl, D., and Kadlec, V. (2021).
 Koto, F., Baldwin, T., and Lau, J.~H. (2020).
 \newblock Ffci: A framework for interpretable automatic evaluation of
   summarization.
+
+\bibitem[Krippendorff, 1970]{krippendorff1970}
+Krippendorff, K. (1970).
+\newblock Estimating the reliability, systematic error and random error of
+  interval data.
+\newblock {\em Educational and Psychological Measurement}, 30(1):61--70.
 
 \bibitem[Köpf et~al., 2023]{openassistant}
 Köpf, A., Kilcher, Y., von Rütte, D., Anagnostidis, S., Tam, Z.-R., Stevens,
@@ -240,6 +257,13 @@ Narayan, S., Cohen, S.~B., and Lapata, M. (2018).
 \newblock In {\em Proceedings of the 2018 Conference on Empirical Methods in
   Natural Language Processing}, pages 1797--1807, Brussels, Belgium.
   Association for Computational Linguistics.
+
+\bibitem[N{\o}rregaard and Derczynski, 2021]{norregaard2021danfever}
+N{\o}rregaard, J. and Derczynski, L. (2021).
+\newblock {D}an{FEVER}: claim verification dataset for {D}anish.
+\newblock In {\em Proceedings of the 23rd Nordic Conference on Computational
+  Linguistics (NoDaLiDa)}, pages 422--428, Reykjavik, Iceland (Online).
+  Link{\"o}ping University Electronic Press, Sweden.
 
 \bibitem[OpenAI, 2023]{gpt4}
 OpenAI (2023).
@@ -348,9 +372,15 @@ Thorne, J., Vlachos, A., Christodoulopoulos, C., and Mittal, A. (2018a).
   {VERification}.
 \newblock In {\em NAACL-HLT}.
 
-\bibitem[Thorne et~al., 2018b]{fever1}
+\bibitem[Thorne et~al., 2018b]{fever2018}
+Thorne, J., Vlachos, A., Christodoulopoulos, C., and Mittal, A. (2018b).
+\newblock {FEVER}: a large-scale dataset for fact extraction and
+  {VERification}.
+\newblock In {\em NAACL-HLT}.
+
+\bibitem[Thorne et~al., 2018c]{fever1}
 Thorne, J., Vlachos, A., Cocarascu, O., Christodoulopoulos, C., and Mittal, A.
-  (2018b).
+  (2018c).
 \newblock The {Fact Extraction and VERification (FEVER)} shared task.
 \newblock In {\em Proceedings of the First Workshop on {Fact Extraction and
   VERification (FEVER)}}.

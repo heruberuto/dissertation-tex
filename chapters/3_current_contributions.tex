@@ -60,12 +60,12 @@ The scheme and its implementations are exhaustively described in~\cite{diplomka}
 Multiple \"{cross-annotations} were collected for each claim, to measure agreement and give insights into task complexity.
 
 \subsection{\CTK}
-\label{sec:analysis-postprocessing}
+\label{sec:ctkfacts}
 
 \begin{table}
     \begin{center}
         \begin{minipage}{\textwidth}
-            \caption{Label distribution in \CTK splits before and after cleaning.}\label{tab:ctkfacts-overview}
+            \caption{Label distribution in \CTK splits before and after cleaning. Reprinted from~\cite{lrev}}\label{tab:ctkfacts-overview}
             \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lllllll@{\extracolsep{\fill}}}
                 \toprule
                 & \multicolumn{3}{@{}c@{}}{\CTK uncleaned, balanced} & \multicolumn{3}{@{}c@{}}{\CTK cleaned, stratified}\\
@@ -81,22 +81,20 @@ Multiple \"{cross-annotations} were collected for each claim, to measure agreeme
     \end{center}
 \end{table}
 
-\label{sec:dataset}
-After completing the annotation runs, we have extracted a total of 3,116 multi-annotated claims.
+After completing the first year annotation runs, we have extracted a total of 3,116 multi-annotated claims.
 47\% were \texttt{SUPPORT}ed by the majority of their annotations, \REF{} and \NEI{} labels were approximately even, the full distribution of labels is listed in Table~\ref{tab:ctkfacts-overview}.
 % We have originally experimented with balanced \dev and \test splits to punish predictors exploiting this bias.
 
 Of all the annotated claims, 1,776, that is 57\%, had at least two independent labels assigned by different annotators.
-This sample was given by the intrinsic randomness of \Ttwo{} claim sampling.
+This sample was given by the intrinsic randomness of mutated claim sampling.
 In this section, we use it to asses the quality of our data and ambiguity of the task, as well as to propose annotation cleaning methods used to arrive to our final \text{cleaned} \CTK dataset.
 
 \subsubsection{Inter-Annotator Agreement}
 \label{sec:agreement}
 
-Due to our cross-annotation design (Section~\ref{sec:cross-annotations}), we had generously sized sample of independently annotated labels in our hands.
+Due to our cross-annotation design, I had generously sized sample of independently annotated labels in our hands.
 As the total number of annotators was greater than 2, and as we allowed missing observations, we have used the Krippendorff's alpha measure~\cite{krippendorff1970} which is the standard for this case~\cite{hayes2007krippendorff}.
-\revision{For the comparison with \cite{fever2018} and \cite{norregaard2021danfever}, we also list a 4-way Fleiss' $\kappa$-agreement~\cite{fleiss1971measuring} calculated on a sample of 7.5\% claims.}
-%todo mention theirs
+For the comparison with \cite{fever} and \cite{norregaard2021danfever}, we also list a 4-way Fleiss' $\kappa$-agreement~\cite{fleiss1971measuring} calculated on a sample of 7.5\% claims.
 
 We have calculated the resulting Krippendorff's alpha agreement to be 56.42\% and Fleiss' $\kappa$ to be 63\%.
 We interpret this as an adequate result that testifies to the complexity of the task of news-based fact verification within a fixed knowledge scope.
