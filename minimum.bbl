@@ -329,10 +329,24 @@ Sebastian, G. (2023).
 \newblock Exploring ethical implications of chatgpt and other ai chatbots and
   regulation of disinformation propagation.
 
+\bibitem[Semin, 2023]{semin}
+Semin, D. (2023).
+\newblock Multitask learning for nlp classifiers.
+\newblock \url{https://dspace.cvut.cz/handle/10467/109243}.
+
 \bibitem[Sido et~al., 2021]{czert}
 Sido, J., Pražák, O., Přibáň, P., Pašek, J., Seják, M., and Konopík, M.
   (2021).
 \newblock Czert -- czech bert-like model for language representation.
+
+\bibitem[{\v{S}}tef{\'a}nik et~al., 2023]{stefanik}
+{\v{S}}tef{\'a}nik, M., Kadl{\v{c}}{\'\i}k, M., Gramacki, P., and Sojka, P.
+  (2023).
+\newblock Resources and few-shot learners for in-context learning in {S}lavic
+  languages.
+\newblock In {\em Proceedings of the 9th Workshop on Slavic Natural Language
+  Processing 2023 (SlavicNLP 2023)}, pages 94--105, Dubrovnik, Croatia.
+  Association for Computational Linguistics.
 
 \bibitem[{\textsf{STEM}}, 2021]{stem}
 {\textsf{STEM}} (2021).

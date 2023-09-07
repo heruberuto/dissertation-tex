@@ -61,26 +61,28 @@ Multiple \"{cross-annotations} were collected for each claim, to measure agreeme
 
 \subsection{\CTK}
 \label{sec:ctkfacts}
-\begin{table}[H]
-\makebox[\textwidth][c]{
-\begin{ctucolortab}
-\begin{tabular}{ r || ccc || ccc  }
-&  \multicolumn{3}{c}{\techbf{{\CTK uncleaned, balanced}}} & \multicolumn{3}{c}{\techbf{{\CTK cleaned, stratified}}}\\
-\hline
-{} & {\texttt{SUPPORTS}} & \texttt{REFUTES}  & \texttt{NEI} & {\texttt{SUPPORTS}} & \texttt{REFUTES}  & \texttt{NEI}\\ 
-\hline
-\train  & 1,164 & 549 & 503     & 1,104 & 556 & 723 \\
-\dev    & 100 & 100 & 100       & 142 & 85 & 105\\
-\test   & 200 & 200 & 200       & 176 & 79 & 127\\
-\end{tabular}
-\end{ctucolortab}}
-\caption{Label distribution in \CTK splits before and after cleaning. Reprinted from~\cite{lrev}}
-\label{tab:ctkfacts}
-\end{table}
+
 
 After completing the first year of annotation experiments, we have extracted a total of 3,116 multi-annotated claims.
 47\% were \texttt{SUPPORT}ed by the majority of their annotations, \REF{} and \NEI{} labels were approximately even, the full distribution of labels is listed in Table~\ref{tab:ctkfacts}.
 % We have originally experimented with balanced \dev and \test splits to punish predictors exploiting this bias.
+
+\begin{table}[H]
+    \makebox[\textwidth][c]{
+    \begin{ctucolortab}
+    \begin{tabular}{ r || ccc || ccc  }
+    &  \multicolumn{3}{c}{\techbf{{\CTK}}} uncleaned, balanced & \multicolumn{3}{c}{\techbf{{\CTK}} (launch)} cleaned, stratified\\
+    \hline
+    {} & {\texttt{SUPPORTS}} & \texttt{REFUTES}  & \texttt{NEI} & {\texttt{SUPPORTS}} & \texttt{REFUTES}  & \texttt{NEI}\\ 
+    \hline
+    \train  & 1,164 & 549 & 503     & 1,104 & 556 & 723 \\
+    \dev    & 100 & 100 & 100       & 142 & 85 & 105\\
+    \test   & 200 & 200 & 200       & 176 & 79 & 127\\
+    \end{tabular}
+    \end{ctucolortab}}
+    \caption{Label distribution in \CTK splits before and after cleaning. Reprinted from~\cite{lrev}}
+    \label{tab:ctkfacts}
+    \end{table}
 
 Of all the annotated claims, 1,776, that is 57\%, had at least two independent labels assigned by different annotators.
 I used this multiplicity to asses the quality of our data and ambiguity of the task, as well as to propose annotation cleaning methods used to arrive to our final \text{cleaned} \CTK dataset.
@@ -89,12 +91,19 @@ I used this multiplicity to asses the quality of our data and ambiguity of the t
 \label{sec:agreement}
 
 Due to our cross-annotation design, I had generously sized sample of independently annotated labels in our hands.
-As the total number of annotators was greater than 2, and as we allowed missing observations, we have used the Krippendorff's alpha measure~\cite{krippendorff1970} which is the standard for this case~\cite{hayes2007krippendorff}.
-For the comparison with \cite{fever} and \cite{norregaard2021danfever}, we also list a 4-way Fleiss' $\kappa$-agreement~\cite{fleiss1971measuring} calculated on a sample of 7.5\% claims.
+As the total number of annotators was greater than 2, and as missing observations were allowed, I have used the Krippendorff's alpha measure~\cite{krippendorff1970} which is the standard for this case~\cite{hayes2007krippendorff}.
+For the comparison with \cite{fever} and \cite{norregaard2021danfever}, I also list a 4-way Fleiss' $\kappa$-agreement~\cite{fleiss1971measuring} calculated on a sample of 7.5\% claims.
 
-We have calculated the resulting Krippendorff's alpha agreement to be 56.42\% and Fleiss' $\kappa$ to be 63\%.
-We interpret this as an adequate result that testifies to the complexity of the task of news-based fact verification within a fixed knowledge scope.
+I have calculated the resulting Krippendorff's alpha agreement to be 56.42\% and Fleiss' $\kappa$ to be 63\% and interpreted this as an adequate result that testifies to the complexity of the task of news-based fact verification within a fixed knowledge scope.
 It also encourages a round of annotation cleaning experiments that would exploit the number of cross-annotated claims to remove common types of noise.
+
+\subsubsection{\CTK publication}
+\CTK dataset was then subject to a thorough human-in-the-loop data cleaning until a 100\% agreement among the data was reached, in order to remove data that contains obvious noise and reveal phenomena that lead to erroneous annotations.
+The full process as well as it results are described in~\cite{lrev}.
+
+Ultimately, a dataset of 3.1K thorougly cleaned data points in a form of a factual claim, its veracity label and justifications consisting of ČTK paragraphs was published in a version for Information Retrieval\footnote{\url{https://huggingface.co/datasets/ctu-aic/ctkfacts}} for those who have access to the ČTK knowledge base to retrieve from, as well as in a special version for the task of Natural Language Inference\footnote{\url{https://huggingface.co/datasets/ctu-aic/ctkfacts_nli}} containing all the required ČTK excerpts we have negotiated to publish under open license for everyone to use.
+
+The datasets have become our standard benchmark within the AIC NLP group~\cite{semin,mlynar} and are starting to be referred and used in others' research in the field~\cite{stefanik}.
 
 \subsection{Other NLP datasets in West Slavic languages}
 \begin{enumerate}

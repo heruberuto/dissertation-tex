@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.8)  7 SEP 2023 15:07
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.8)  7 SEP 2023 16:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1471,7 +1471,7 @@ File: fig/fcheck/annotation.pdf Graphic file (type pdf)
 File: fig/cedmo.pdf Graphic file (type pdf)
 <use fig/cedmo.pdf>
 
-Overfull \hbox (28.45274pt too wide) in paragraph at lines 113--114
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 122--123
  [][] 
  []
 
@@ -1518,17 +1518,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 277--282
  []
 
 [24]
-Underfull \hbox (badness 10000) in paragraph at lines 338--344
+Underfull \hbox (badness 10000) in paragraph at lines 352--358
 []\TU/lmss/m/n/10.95 STEM \TU/lmr/m/n/10.95 (2021).  Mýtům a konspiracím o covid-19 věří více
  []
 
 
-Underfull \hbox (badness 6252) in paragraph at lines 338--344
+Underfull \hbox (badness 6252) in paragraph at lines 352--358
 \TU/lmr/m/n/10.95 než třetina české internetové populace | stem.cz.  []$[][][][][] [] [] [] [][][] [] [][][][] [] [][] []
  []
 
 
-Overfull \hbox (52.1056pt too wide) in paragraph at lines 338--344
+Overfull \hbox (52.1056pt too wide) in paragraph at lines 352--358
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]$[]\TU/lmr/m/n/10.95 .
  []
 
@@ -1741,15 +1741,15 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `minimum.out' has not changed.
-(rerunfilecheck)             Checksum: 2091FF021A53B36802E782D1159B35A4;6714.
+(rerunfilecheck)             Checksum: E5ADD1FBCA2645A9A24CB1CFDCB58077;6714.
  ) 
 Here is how much of TeX's memory you used:
- 33264 strings out of 476919
- 642434 string characters out of 5821840
+ 33266 strings out of 476919
+ 642451 string characters out of 5821840
  1168572 words of memory out of 5000000
- 52460 multiletter control sequences out of 15000+600000
+ 52462 multiletter control sequences out of 15000+600000
  440769 words of font info for 122 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  93i,17n,120p,967b,838s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on /Users/bertik/PhD/studie-bertik/minimum.xdv (31 pages, 772896 bytes).
+Output written on /Users/bertik/PhD/studie-bertik/minimum.xdv (31 pages, 791268 bytes).
