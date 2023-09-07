@@ -9,7 +9,7 @@
 Having the automated fact-checking scheme established in chapter~\ref{chap:sota}, every machine-learning solution must start with the choice or collection of appropriate training data.
 Due to the novelty of the task in Czech and other West Slavic languages, I explored a multitude of ways to acquire such data, many of them resulting in a publicly available dataset in our Huggingface repository~\footnote{\url{https://huggingface.co/ctu-aic}}, beginning to be reused by others. 
 
-\subsection{\FCZ}
+\subsection{\FCZ}\label{sec:fcz}
 An early \"{temporary benchmark} for our endeavours in adapting the FEVER~\cite{fever} task for the Czech context was the \FCZ~\cite{lrev} dataset.
 
 In~\cite{diplomka}, I have proposed a simple FEVER data transduction scheme that can be simplified as follows:
@@ -34,20 +34,30 @@ Another round of research \FCZ motivated and I supervised was the successful the
 
 However, it delivers a partly cleaned versions of it\footnote{\url{https://huggingface.co/datasets/ctu-aic/csfever_v2}} and motivates a future research of generating such data differently, using a claim generation scheme like that from~\cite{pan2021zeroshot}.
 
-\label{sec:datasets}
-\begin{figure}
-    \makebox[\textwidth][c]{
-    \includegraphics[height=8cm]{fig/fcheck/claim_extraction.pdf}
-    \includegraphics[height=8cm]{fig/fcheck/mutation.pdf}
-    \includegraphics[height=8cm]{fig/fcheck/annotation.pdf}
-    }
-    \caption{{\techbf FCheck} -- an open-source platform for fact-checking dataset collection I developed for TAČR project; collects data for claim generation, information retrieval and natural language inference tasks}
-    \label{fig:fcheck}
-\end{figure}
+
 \subsection{FCheck Annotations Platform}
 The imperfections in translated \FCZ data, as well as the ongoing colaboration with ČTK and the Faculty of Social Sciences brought me to also look for ways how to hand-annotate a whole new natively Czech dataset, which would both lack the noise of translated data and take the task of automated fact checking to next level, replacing a rigid, simple Wikipedic data with a more \"{real world} news report corpus of ČTK.
 
-Figure~\ref{fig:fcheck} shows 
+Figure~\ref{fig:fcheck} shows an open-source platform FCheck\footnote{\url{https://fcheck.fel.cvut.cz} (\texttt{testuser}), source at: \href{https://github.com/aic-factcheck/fcheck-annotations-platform}{\texttt{github.com/aic-factcheck/fcheck-annotations-platform}}} I developed to collaborate with 316 FSV CUNI students of on a collection of novel dataset in Czech using ČTK data as a ground truth corpus.
+\label{sec:datasets}
+\begin{figure}[H]
+    \makebox[\textwidth][c]{
+    \includegraphics[height=7.5cm]{fig/fcheck/claim_extraction.pdf}
+    \includegraphics[height=7.5cm]{fig/fcheck/mutation.pdf}
+    \includegraphics[height=7.5cm]{fig/fcheck/annotation.pdf}
+    }
+    \caption{{\techbf FCheck} -- platform for fact-checking data collection developed for TAČR project; collects data for claim generation, information retrieval and natural language inference tasks}
+    \label{fig:fcheck}
+\end{figure}
+
+We have established a 4-step annotation procedure inspired by the time-proven methodology of~\cite{fever} where chech-worthy paragraphs are first hand-picked among samples from the whole archive of ČTK's 3.3 M news reports published between 1 January 2000 and 6 March 2019. Then, the annotator is sampled such a paragraph and asked to \textit{extract claims} from it, i.e., formulate single-sentence summaries of some facts that appear in paragraph. This claim is always \textit{supported} by the data, so the next phase is to perturb the claim by annotator's world knowledge and form the claim \textit{mutations} -- substitutions of entities, generalizations, specifications, paraphrases or negations of the original claim. 
+The mutated claim is then fact-checked by (typically) another annotator, using the ČTK data narrowed down to a reasonable number of relevant articles (in an IR sense) as \textit{supportable}, \textit{refutable} or \textit{not enough info}, providing a set of evidence as a verdict justification.
+
+The whole application is running on multiple levels -- a yii-framework-powered PHP app is running the annotation interface, while a flask server in python is running our models based on TF-IDF~\cite{drqa} and mBERT (section~\ref{sec:bert}) for information retrieval trained among other data on the \FCZ dataset (section~\ref{sec:fcz}).
+The models are solving the Information Retrieval task on-demand (with cache) on the proprietary ČTK corpus, whenever the annotation app needs it to provide a context to the fact-checker.
+
+The scheme and its implementations are exhaustively described in~\cite{diplomka}, chapter 4 and in~\cite{lrev}, also chapter 4.
+
 \subsection{\CTK}
 \subsection{Other NLP datasets in West Slavic languages}
 \begin{enumerate}

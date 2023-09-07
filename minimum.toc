@@ -34,16 +34,16 @@
 \contentsline {section}{\numberline {3.2}Models}{13}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Publications}{13}{section.3.3}%
 \contentsline {section}{\numberline {3.4}Applications}{13}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Dissertation plan}{14}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Current research agenda}{14}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Automated claim generation}{14}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Claim generation metrics}{14}{subsection.4.1.2}%
-\contentsline {section}{\numberline {4.2}Data Collection}{17}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Human-in-the-loop grading of claim generators}{17}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Validation of the model outputs with human fact-checkers}{17}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Polish dataset scraping}{17}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}Crowd-sourced fact checking platform}{17}{subsection.4.2.4}%
-\contentsline {section}{\numberline {4.3}The grand scope}{17}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Conclusion}{18}{chapter.5}%
-\contentsline {chapter}{Bibliography}{19}{chapter*.1}%
-\contentsline {chapter}{\numberline {A}Acronyms}{25}{appendix.A}%
+\contentsline {chapter}{\numberline {4}Dissertation plan}{15}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Current research agenda}{15}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Automated claim generation}{15}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Claim generation metrics}{15}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Data Collection}{18}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Human-in-the-loop grading of claim generators}{18}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Validation of the model outputs with human fact-checkers}{18}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Polish dataset scraping}{18}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Crowd-sourced fact checking platform}{18}{subsection.4.2.4}%
+\contentsline {section}{\numberline {4.3}The grand scope}{18}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Conclusion}{19}{chapter.5}%
+\contentsline {chapter}{Bibliography}{20}{chapter*.1}%
+\contentsline {chapter}{\numberline {A}Acronyms}{26}{appendix.A}%
