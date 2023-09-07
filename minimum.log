@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.8)  7 SEP 2023 16:54
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.8)  7 SEP 2023 18:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1468,21 +1468,24 @@ File: fig/fcheck/mutation.pdf Graphic file (type pdf)
 File: fig/fcheck/annotation.pdf Graphic file (type pdf)
 <use fig/fcheck/annotation.pdf>
 [12] [13]
+Overfull \hbox (15.98343pt too wide) in paragraph at lines 124--125
+[]\TU/lmr/m/n/10.95 CTKSum – []$[][][][][] [] [] [] [][][][][][][][][][][] [] [][] [] [][][][][][][][] [] [][][][][][][][] [] [][][][][][]$[] based on source
+ []
+
+[14]
+Overfull \hbox (10.06201pt too wide) in paragraph at lines 140--141
+[]\TU/Technika-Bold.otf(0)/bx/n/10.95 XLM-RoBERTA-Large@XNLI@\TU/Technika-Bold.otf(0)/m/sc/10.95 CsFEVER-NLI\TU/lmr/m/n/10.95 , a model with 561M parameters trained
+ []
+
+[15]
 File: fig/cedmo.pdf Graphic file (type pdf)
 <use fig/cedmo.pdf>
 
-Overfull \hbox (28.45274pt too wide) in paragraph at lines 122--123
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 159--160
  [][] 
  []
 
-) (/Users/bertik/PhD/studie-bertik/chapters/4_dissertation_plan.tex [14]
-
-Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 3.
-
-
-Package fancyhdr Warning: \fancyhead's `E' option without twoside option is useless on input line 3.
-
-[15]
+) (/Users/bertik/PhD/studie-bertik/chapters/4_dissertation_plan.tex [16]
 Chapter 4.
 File: fig/lm_critics.png Graphic file (type bmp)
 <fig/lm_critics.png>
@@ -1491,53 +1494,53 @@ File: fig/gptext.pdf Graphic file (type pdf)
 
 Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 47.
 
-[16
+[17
 
-] [17] [18]) (/Users/bertik/PhD/studie-bertik/chapters/5_conclusion.tex [19]
+] [18] [19]) (/Users/bertik/PhD/studie-bertik/chapters/5_conclusion.tex [20]
 Chapter 5.
 ) (/Users/bertik/PhD/studie-bertik/minimum.bbl
 
 Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 1.
 
-[20
+[21
 
 ]
 
-Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 71.
+Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 67.
 
-[21
+[22
 
-] [22] [23]
-Underfull \hbox (badness 2922) in paragraph at lines 277--282
+] [23] [24]
+Underfull \hbox (badness 2922) in paragraph at lines 303--308
 []\TU/lmr/m/n/10.95 Patel, D. and Ahmad, A. (2023).  Google ”we have
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 277--282
+Underfull \hbox (badness 10000) in paragraph at lines 303--308
 \TU/lmr/m/n/10.95 no moat, and neither does openai”.  []$[][][][][] [] [] [] [][][] [] [][][][][][][][][][][][] [] [][][] [] [] []
  []
 
-[24]
-Underfull \hbox (badness 10000) in paragraph at lines 352--358
+[25]
+Underfull \hbox (badness 10000) in paragraph at lines 390--396
 []\TU/lmss/m/n/10.95 STEM \TU/lmr/m/n/10.95 (2021).  Mýtům a konspiracím o covid-19 věří více
  []
 
 
-Underfull \hbox (badness 6252) in paragraph at lines 352--358
+Underfull \hbox (badness 6252) in paragraph at lines 390--396
 \TU/lmr/m/n/10.95 než třetina české internetové populace | stem.cz.  []$[][][][][] [] [] [] [][][] [] [][][][] [] [][] []
  []
 
 
-Overfull \hbox (52.1056pt too wide) in paragraph at lines 352--358
+Overfull \hbox (52.1056pt too wide) in paragraph at lines 390--396
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]$[]\TU/lmr/m/n/10.95 .
  []
 
-[25] [26]) [27]
+[26] [27] [28]) [29]
 Appendix A.
 
 Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 167.
 
-[28
+[30
 
 ] (/Users/bertik/PhD/studie-bertik/minimum.aux)
 
@@ -1741,15 +1744,15 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `minimum.out' has not changed.
-(rerunfilecheck)             Checksum: E5ADD1FBCA2645A9A24CB1CFDCB58077;6714.
+(rerunfilecheck)             Checksum: 68CF3A3777A341DB200225F53048CD62;7057.
  ) 
 Here is how much of TeX's memory you used:
- 33266 strings out of 476919
- 642451 string characters out of 5821840
- 1168572 words of memory out of 5000000
- 52462 multiletter control sequences out of 15000+600000
+ 33277 strings out of 476919
+ 642620 string characters out of 5821840
+ 1177572 words of memory out of 5000000
+ 52473 multiletter control sequences out of 15000+600000
  440769 words of font info for 122 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  93i,17n,120p,967b,838s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on /Users/bertik/PhD/studie-bertik/minimum.xdv (31 pages, 791268 bytes).
+Output written on /Users/bertik/PhD/studie-bertik/minimum.xdv (33 pages, 875768 bytes).

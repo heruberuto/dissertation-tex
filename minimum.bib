@@ -438,13 +438,7 @@
   biburl        = {https://dblp.org/rec/journals/corr/abs-1910-10683.bib},
   bibsource     = {dblp computer science bibliography, https://dblp.org}
 }
-@misc{deepl,
-  author       = {\textsf{DeepL}},
-  year         = {2021},
-  title        = {DeepL Translator},
-  howpublished = {\url{https://www.deepl.com/en/translator}},
-  note         = {Accessed: 2021-05-09}
-}
+
 @misc{google,
   author       = {\textsf{Google}},
   year         = {2021},
@@ -1694,15 +1688,6 @@
   url       = {https://doi.org/10.24963/ijcai.2021/619}
 }
 
-@inproceedings{nie2019combining,
-  title     = {Combining fact extraction and verification with neural semantic matching networks},
-  author    = {Nie, Yixin and Chen, Haonan and Bansal, Mohit},
-  booktitle = {Proceedings of the AAAI Conference on Artificial Intelligence},
-  volume    = {33},
-  number    = {01},
-  pages     = {6859--6866},
-  year      = {2019}
-}
 
 @inproceedings{nie2020adversarial,
   title     = {Adversarial {NLI}: A New Benchmark for Natural Language Understanding},
@@ -2131,24 +2116,6 @@
   publisher = {Association for Computational Linguistics},
   url       = {https://www.aclweb.org/anthology/2021.naacl-main.52},
   pages     = {624--643}
-}
-
-@inproceedings{conneau2018xnli,
-  author    = {Conneau, Alexis
-               and Rinott, Ruty
-               and Lample, Guillaume
-               and Williams, Adina
-               and Bowman, Samuel R.
-               and Schwenk, Holger
-               and Stoyanov, Veselin},
-  title     = {{XNLI}: Evaluating Cross-lingual Sentence Representations},
-  booktitle = {Proceedings of the 2018 Conference on Empirical Methods
-               in Natural Language Processing},
-  year      = {2018},
-  publisher = {Association for Computational Linguistics},
-  address   = {Online},
-  url       = {https://aclanthology.org/D18-1269/},
-  location  = {Brussels, Belgium}
 }
 
 @inproceedings{DBLP:journals/corr/abs-2107-10042fernet,
@@ -2747,4 +2714,27 @@ url={https://doi.org/10.1007/s10579-023-09654-3}
     url = "https://aclanthology.org/2023.bsnlp-1.12",
     pages = "94--105",
     abstract = "Despite the rapid recent progress in creating accurate and compact in-context learners, most recent work focuses on in-context learning (ICL) for tasks in English. However, the ability to interact with users of languages outside English presents a great potential for broadening the applicability of language technologies to non-English speakers.In this work, we collect the infrastructure necessary for training and evaluation of ICL in a selection of Slavic languages: Czech, Polish, and Russian. We link a diverse set of datasets and cast these into a unified instructional format through a set of transformations and newly-crafted templates written purely in target languages.Using the newly-curated dataset, we evaluate a set of the most recent in-context learners and compare their results to the supervised baselines. Finally, we train, evaluate and publish a set of in-context learning models that we train on the collected resources and compare their performance to previous work.We find that ICL models tuned in English are also able to learn some tasks from non-English contexts, but multilingual instruction fine-tuning consistently improves the ICL ability. We also find that the massive multitask training can be outperformed by single-task training in the target language, uncovering the potential for specializing in-context learners to the language(s) of their application.",
+}
+@inproceedings{suppa-adamec-2020-summarization,
+    title = "A Summarization Dataset of {S}lovak News Articles",
+    author = "Šuppa, Marek  and
+      Adamec, Jerguš",
+    booktitle = "Proceedings of the Twelfth Language Resources and Evaluation Conference",
+    month = may,
+    year = "2020",
+    address = "Marseille, France",
+    publisher = "European Language Resources Association",
+    url = "https://aclanthology.org/2020.lrec-1.830",
+    pages = "6725--6730",
+    abstract = "As a well established NLP task, single-document summarization has seen significant interest in the past few years. However, most of the work has been done on English datasets. This is particularly noticeable in the context of evaluation where the dominant ROUGE metric assumes its input to be written in English. In this paper we aim to address both of these issues by introducing a summarization dataset of articles from a popular Slovak news site and proposing small adaptation to the ROUGE metric that make it better suited for Slovak texts. Several baselines are evaluated on the dataset, including an extractive approach based on the Multilingual version of the BERT architecture. To the best of our knowledge, the presented dataset is the first large-scale news-based summarization dataset for text written in Slovak language. It can be reproduced using the utilities available at https://github.com/NaiveNeuron/sme-sum",
+    language = "English",
+    ISBN = "979-10-95546-34-4",
+}
+@misc{conneau2018xnli,
+      title={XNLI: Evaluating Cross-lingual Sentence Representations}, 
+      author={Alexis Conneau and Guillaume Lample and Ruty Rinott and Adina Williams and Samuel R. Bowman and Holger Schwenk and Veselin Stoyanov},
+      year={2018},
+      eprint={1809.05053},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
 }

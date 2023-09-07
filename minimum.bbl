@@ -27,6 +27,13 @@ Barua, Z., Barua, S., Aktar, S., Kabir, N., and Li, M. (2020).
   recommendations for resilience of disastrous consequences of misinformation.
 \newblock {\em Progress in Disaster Science}, 8:100119.
 
+\bibitem[Bowman et~al., 2015]{snli:emnlp2015}
+Bowman, S.~R., Angeli, G., Potts, C., and Manning, C.~D. (2015).
+\newblock A large annotated corpus for learning natural language inference.
+\newblock In {\em Proceedings of the 2015 Conference on Empirical Methods in
+  Natural Language Processing (EMNLP)}. Association for Computational
+  Linguistics.
+
 \bibitem[Brown et~al., 2020]{gpt3}
 Brown, T.~B., Mann, B., Ryder, N., Subbiah, M., Kaplan, J., Dhariwal, P.,
   Neelakantan, A., Shyam, P., Sastry, G., Askell, A., Agarwal, S.,
@@ -75,6 +82,11 @@ Conneau, A., Khandelwal, K., Goyal, N., Chaudhary, V., Wenzek, G.,
   (2019).
 \newblock Unsupervised cross-lingual representation learning at scale.
 \newblock {\em CoRR}, abs/1911.02116.
+
+\bibitem[Conneau et~al., 2018]{conneau2018xnli}
+Conneau, A., Lample, G., Rinott, R., Williams, A., Bowman, S.~R., Schwenk, H.,
+  and Stoyanov, V. (2018).
+\newblock Xnli: Evaluating cross-lingual sentence representations.
 
 \bibitem[Dettmers et~al., 2023]{dettmers2023qlora}
 Dettmers, T., Pagnoni, A., Holtzman, A., and Zettlemoyer, L. (2023).
@@ -258,6 +270,20 @@ Narayan, S., Cohen, S.~B., and Lapata, M. (2018).
   Natural Language Processing}, pages 1797--1807, Brussels, Belgium.
   Association for Computational Linguistics.
 
+\bibitem[Nie et~al., 2019a]{nie2019combining}
+Nie, Y., Chen, H., and Bansal, M. (2019a).
+\newblock Combining fact extraction and verification with neural semantic
+  matching networks.
+\newblock In {\em Association for the Advancement of Artificial Intelligence
+  ({AAAI})}.
+
+\bibitem[Nie et~al., 2019b]{anli}
+Nie, Y., Williams, A., Dinan, E., Bansal, M., Weston, J., and Kiela, D.
+  (2019b).
+\newblock Adversarial {NLI:} {A} new benchmark for natural language
+  understanding.
+\newblock {\em CoRR}, abs/1910.14599.
+
 \bibitem[N{\o}rregaard and Derczynski, 2021]{norregaard2021danfever}
 N{\o}rregaard, J. and Derczynski, L. (2021).
 \newblock {D}an{FEVER}: claim verification dataset for {D}anish.
@@ -299,6 +325,13 @@ Pomerlau, D. and Rao, D. (2017).
 \newblock \url{http://www.fakenewschallenge.org}.
 \newblock Accessed: 2023-09-06.
 
+\bibitem[Popel et~al., 2020]{popel2020Transforming}
+Popel, M., Tomkova, M., Tomek, J., Kaiser, {\L}., Uszkoreit, J., Bojar, O., and
+  {\v{Z}}abokrtsk{\'{y}}, Z. (2020).
+\newblock Transforming machine translation: a deep learning system reaches news
+  translation quality comparable to human professionals.
+\newblock {\em Nature Communications}, 11(4381):1--15.
+
 \bibitem[Raffel et~al., 2019]{t5-11b}
 Raffel, C., Shazeer, N., Roberts, A., Lee, K., Narang, S., Matena, M., Zhou,
   Y., Li, W., and Liu, P.~J. (2019).
@@ -311,6 +344,11 @@ Raffel, C., Shazeer, N., Roberts, A., Lee, K., Narang, S., Matena, M., Zhou,
   Y., Li, W., and Liu, P.~J. (2020).
 \newblock Exploring the limits of transfer learning with a unified text-to-text
   transformer.
+
+\bibitem[Rajpurkar et~al., 2016]{squad}
+Rajpurkar, P., Zhang, J., Lopyrev, K., and Liang, P. (2016).
+\newblock Squad: 100, 000+ questions for machine comprehension of text.
+\newblock {\em CoRR}, abs/1606.05250.
 
 \bibitem[Rýpar, 2021]{rypar}
 Rýpar, M. (2021).
@@ -373,6 +411,18 @@ Taori, R., Gulrajani, I., Zhang, T., Dubois, Y., Li, X., Guestrin, C., Liang,
 \newblock Alpaca: A strong, replicable instruction-following model.
 \newblock \url{https://crfm.stanford.edu/2023/03/13/alpaca.html}.
 \newblock Accessed: 2023-09-04.
+
+\bibitem[\textsf{DeepL}, 2021]{deepl}
+\textsf{DeepL} (2021).
+\newblock Deepl translator.
+\newblock \url{https://www.deepl.com/en/translator}.
+\newblock Accessed: 2021-05-09.
+
+\bibitem[\textsf{Google}, 2021]{googletranslation}
+\textsf{Google} (2021).
+\newblock Cloud translation - google cloud.
+\newblock \url{https://cloud.google.com/translate}.
+\newblock Accessed: 2021-05-09.
 
 \bibitem[\textsf{NLP-Progress}, 2023]{nlpprogress}
 \textsf{NLP-Progress} (2023).
@@ -460,6 +510,15 @@ Wardle, C. and Derakhshan, H. (2017).
   research and policy making Information Disorder Toward an interdisciplinary
   framework for research and policymaking}.
 
+\bibitem[Williams et~al., 2018]{multinli}
+Williams, A., Nangia, N., and Bowman, S. (2018).
+\newblock A broad-coverage challenge corpus for sentence understanding through
+  inference.
+\newblock In {\em Proceedings of the 2018 Conference of the North American
+  Chapter of the Association for Computational Linguistics: Human Language
+  Technologies, Volume 1 (Long Papers)}, pages 1112--1122. Association for
+  Computational Linguistics.
+
 \bibitem[Wright et~al., 2022]{wright}
 Wright, D., Wadden, D., Lo, K., Kuehl, B., Cohan, A., Augenstein, I., and Wang,
   L.~L. (2022).
@@ -496,5 +555,12 @@ Zhao, W.~X., Zhou, K., Li, J., Tang, T., Wang, X., Hou, Y., Min, Y., Zhang, B.,
   Zhang, J., Dong, Z., Du, Y., Yang, C., Chen, Y., Chen, Z., Jiang, J., Ren,
   R., Li, Y., Tang, X., Liu, Z., Liu, P., Nie, J.-Y., and Wen, J.-R. (2023).
 \newblock A survey of large language models.
+
+\bibitem[Šuppa and Adamec, 2020]{suppa-adamec-2020-summarization}
+Šuppa, M. and Adamec, J. (2020).
+\newblock A summarization dataset of {S}lovak news articles.
+\newblock In {\em Proceedings of the Twelfth Language Resources and Evaluation
+  Conference}, pages 6725--6730, Marseille, France. European Language Resources
+  Association.
 
 \end{thebibliography}
