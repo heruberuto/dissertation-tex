@@ -3,40 +3,40 @@
 \chapter{Current Contribution}
 \label{chap:contribution}
 
-\textit{We have collected novel data for the fact-checking task in our application context, emulated and scraped inavailable datasets making them public or readying them for doing so, we have established numerous state-of-the-art models and we are currently working on establishing the topic of claim generation as a summarization-related NLP task.}
+\textit{We have collected novel data for the fact-checking task in our application context, emulated and scraped inavailable datasets, making them public or readying them for doing so, we have established numerous state-of-the-art models and we are currently working on establishing the topic of claim generation as a summarization-related NLP task.}
 
 \section{Datasets}
 Having the automated fact-checking scheme established in chapter~\ref{chap:sota}, every machine-learning solution must start with the choice or collection of appropriate training data.
 Due to the novelty of the task in Czech and other West Slavic languages, I explored a multitude of ways to acquire such data, many of them resulting in a publicly available dataset in our Huggingface repository~\footnote{\url{https://huggingface.co/ctu-aic}}, beginning to be reused by others. 
 
 \subsection{\FCZ}\label{sec:fcz}
-An early \"{temporary benchmark} for our endeavours in adapting the FEVER~\cite{fever} task for the Czech context was the \FCZ~\cite{lrev} dataset.
+An early \"{temporary benchmark} for our endeavors in adapting the FEVER~\cite{fever} task for the Czech context was the \FCZ~\cite{lrev} dataset.
 
 In~\cite{diplomka}, I have proposed a simple FEVER data transduction scheme that can be simplified as follows:
 
 \begin{enumerate}
     \item Each FEVER claim is translated using a Machine Translator
     \item Evidence from English Wikipedia is not translated using MT, but mapped onto its Czech-Wikipedia counterpart using the publicly available Wikidata\footnote{Used, for example, for showing the \"{see this article in other languages} suggestions in Wikipedia sidebar}
-    \item Data with any loss in evidence due to the step 2. is discarded
+    \item Data with any loss in evidence due to step 2. is discarded
 \end{enumerate}
 
-This design was relatively cheap to compute (as translating the whole 2017 Wikipedia corpus would have been a long and wasteful computation), delivering an open-license dataset of 127K claims, their labels and evidence justifications. My hope was, as both the 2017 EnWiki and our 2020 CsWiki corpus only featured the first paragraph (abstract) of each article, a document-level alignment could be assumed -- both the Czech and English text always summarize the basic facts about the same entity.
+This design was relatively cheap to compute (as translating the whole 2017 Wikipedia corpus would have been a long and wasteful computation), delivering an open-license dataset of 127K claims, their labels, and evidence justifications. My hope was, as both the 2017 EnWiki and our 2020 CsWiki corpus only featured the first paragraph (abstract) of each article, a document-level alignment could be assumed -- both the Czech and English text always summarize the basic facts about the same entity.
 
 This showed to be only partly true as a later human annotation on a 1\% sample of \FCZ data showed that about a third of data exhibits some levels of noise, mostly introduced during dataset translation~\cite{lrev}.
 
-While noisy, the \FCZ data still got its use in training of the information retrieval schemes of~\cite{rypar,gazo,lrev} used to this day and is openly available\footnote{\url{https://huggingface.co/datasets/ctu-aic/csfever}} under a CC license.
+While noisy, the \FCZ data still got its use in the training of the information retrieval schemes of~\cite{rypar, gazo, lrev} used to this day and is openly available\footnote{\url{https://huggingface.co/datasets/ctu-aic/csfever}} under a CC license.
 
-My research on it also motivated a creation of a inference-only version of the dataset, which does not support the Information Retrieval task and therefore, does not require the mapping of evidence into a live version of Wikipedia.
+My research on it also motivated the creation of an inference-only version of the dataset, which does not support the Information Retrieval task and, therefore, does not require the mapping of evidence into a live version of Wikipedia.
 Therefore, only the EnWiki \textit{excerpts} needed to build evidence can be translated, bringing down the computational difficulty and enabling me to deliver a dataset without the transduction noise called \FCZNLI\footnote{\url{https://huggingface.co/datasets/ctu-aic/csfever_nli}}. 
 
-Another round of research \FCZ motivated and I supervised was the successful thesis of~\cite{mlynar}, modernizing the data and machine-translation methods into the 2023 state of the art.
+Another round of research \FCZ motivated, and I supervised, was the successful thesis of~\cite{mlynar}, modernizing the data and machine-translation methods into the 2023 state of the art.
 \cite{mlynar} further experimented with methods of automated noise detection and removal, which has not shown to be an efficient way to tackle the issue of high noise in \FCZ.
 
-Anyhow, it delivers a partly cleaned versions of it\footnote{\url{https://huggingface.co/datasets/ctu-aic/csfever_v2}} and motivates a future research of generating such data differently, using a claim generation scheme like that from~\cite{pan2021zeroshot}.
+Anyhow, it delivers a partly cleaned version of it\footnote{\url{https://huggingface.co/datasets/ctu-aic/csfever_v2}} and motivates future research to generate such data differently, using a claim generation scheme like that from~\cite{pan2021zeroshot}.
 
 
 \subsection{FCheck Annotations Platform}
-The imperfections in translated \FCZ data, as well as the ongoing colaboration with ČTK and the Faculty of Social Sciences, brought me to also look for ways how to hand-annotate a whole new natively Czech dataset, which would both lack the noise introduced in translation and also take the task of automated fact checking to next level, replacing a rigid, simple Wikipedic data with a more \"{real world} news report corpus of ČTK.
+The imperfections in translated \FCZ data, as well as the ongoing collaboration with ČTK and the Faculty of Social Sciences, brought me to also look for ways how to hand-annotate a whole new natively Czech dataset, which would both lack the noise introduced in translation and also take the task of automated fact-checking to the next level, replacing a rigid, simple Wikipedic data with a more \"{real world} news report corpus of ČTK.
 
 Figure~\ref{fig:fcheck} shows an open-source platform FCheck\footnote{\url{https://fcheck.fel.cvut.cz} (\texttt{testuser}), source at: \href{https://github.com/aic-factcheck/fcheck-annotations-platform}{\texttt{github.com/aic-factcheck/fcheck-annotations-platform}}} I developed to collaborate with 316 FSV CUNI students of on a collection of novel dataset in Czech using ČTK data as a ground truth corpus.
 \label{sec:datasets}
@@ -46,18 +46,18 @@ Figure~\ref{fig:fcheck} shows an open-source platform FCheck\footnote{\url{https
     \includegraphics[height=7.5cm]{fig/fcheck/mutation.pdf}
     \includegraphics[height=7.5cm]{fig/fcheck/annotation.pdf}
     }
-    \caption{{\techbf FCheck} -- platform for fact-checking data collection developed for TAČR project; collects data for claim generation, information retrieval and natural language inference tasks}
+    \caption{{\techbf FCheck} -- a platform for fact-checking data collection developed for TAČR project; collects data for claim generation, information retrieval, and natural language inference tasks}
     \label{fig:fcheck}
 \end{figure}
 
-We have established a 4-step annotation procedure inspired by the time-proven methodology of~\cite{fever} where chech-worthy paragraphs are first hand-picked among samples from the whole archive of ČTK's 3.3 M news reports published between 1 January 2000 and 6 March 2019. Then, the annotator is sampled such a paragraph and asked to \textit{extract claims} from it, i.e., formulate single-sentence summaries of some facts that appear in paragraph. This claim is always \textit{supported} by the data, so the next phase is to perturb the claim by annotator's world knowledge and form the claim \textit{mutations} -- substitutions of entities, generalizations, specifications, paraphrases or negations of the original claim. 
+We have established a 4-step annotation procedure inspired by the time-proven methodology of~\cite{fever} where check-worthy paragraphs are first hand-picked among samples from the whole archive of ČTK's 3.3 M news reports published between 1 January 2000 and 6 March 2019. Then, the annotator is sampled such a paragraph and asked to \textit{extract claims} from it, i.e., formulate single-sentence summaries of some facts that appear in the paragraph. This claim is always \textit{supported} by the data, so the next phase is to perturb the claim by the annotator's world knowledge and form the claim \textit{mutations} -- substitutions of entities, generalizations, specifications, paraphrases or negations of the original claim. 
 The mutated claim is then fact-checked by (typically) another annotator, using the ČTK data narrowed down to a reasonable number of relevant articles (in an IR sense) as \textit{supportable}, \textit{refutable} or \textit{not enough info}, providing a set of evidence as a verdict justification.
 
-The whole application is running on multiple levels -- a yii-framework-powered PHP app is running the annotation interface, while a flask server in python is running our models based on TF-IDF~\cite{drqa} and mBERT (section~\ref{sec:bert}) for information retrieval trained among other data on the \FCZ dataset (section~\ref{sec:fcz}).
-The models are solving the Information Retrieval task on-demand (with cache) on the proprietary ČTK corpus, whenever the annotation app needs it to provide a context to the fact-checker.
+The whole application is running on multiple levels -- a yii-framework-powered PHP app is running the annotation interface, while a flask server in Python is running our models based on TF-IDF~\cite{drqa} and mBERT (section~\ref{sec:bert}) for information retrieval trained among other data on the \FCZ dataset (section~\ref{sec:fcz}).
+The models are solving the Information Retrieval task on-demand (with cache) on the proprietary ČTK corpus whenever the annotation app needs it to provide context to the fact-checker.
 
-The scheme and its implementations are exhaustively described in~\cite{diplomka}, chapter 4 and in~\cite{lrev}, also chapter 4.
-Multiple \"{cross-annotations} were collected for each claim, to measure agreement and give insights into task complexity.
+The scheme and its implementations are exhaustively described in~\cite{diplomka}, chapter 4, and in~\cite{lrev}, also chapter 4.
+Multiple \"{cross-annotations} were collected for each claim to measure agreement and give insights into task complexity.
 
 \subsection{\CTK}
 \label{sec:ctkfacts}
@@ -85,28 +85,28 @@ After completing the first year of annotation experiments, we have extracted a t
     \end{table}
 
 Of all the annotated claims, 1,776, that is 57\%, had at least two independent labels assigned by different annotators.
-I used this multiplicity to asses the quality of our data and ambiguity of the task, as well as to propose annotation cleaning methods used to arrive to our final \text{cleaned} \CTK dataset.
+I used this multiplicity to assess the quality of our data and the ambiguity of the task, as well as to propose annotation cleaning methods used to arrive at our final \text{cleaned} \CTK dataset.
 
 \subsubsection{Inter-Annotator Agreement}
 \label{sec:agreement}
 
-Due to our cross-annotation design, I had generously sized sample of independently annotated labels in our hands.
+Due to our cross-annotation design, I had a generously sized sample of independently annotated labels in our hands.
 As the total number of annotators was greater than 2, and as missing observations were allowed, I have used the Krippendorff's alpha measure~\cite{krippendorff1970} which is the standard for this case~\cite{hayes2007krippendorff}.
 For the comparison with \cite{fever} and \cite{norregaard2021danfever}, I also list a 4-way Fleiss' $\kappa$-agreement~\cite{fleiss1971measuring} calculated on a sample of 7.5\% claims.
 
 I have calculated the resulting Krippendorff's alpha agreement to be 56.42\% and Fleiss' $\kappa$ to be 63\% and interpreted this as an adequate result that testifies to the complexity of the task of news-based fact verification within a fixed knowledge scope.
-It also encourages a round of annotation cleaning experiments that would exploit the number of cross-annotated claims to remove common types of noise.
+It also encourages a round of annotation-cleaning experiments that would exploit the number of cross-annotated claims to remove common types of noise.
 
 \subsubsection{\CTK publication}
 \CTK dataset was then subject to a thorough human-in-the-loop data cleaning until a 100\% agreement among the data was reached, in order to remove data that contains obvious noise and reveal phenomena that lead to erroneous annotations.
-The full process as well as it results are described in~\cite{lrev}.
+The full process, as well as its results, are described in~\cite{lrev}.
 
-Ultimately, a dataset of 3.1K thorougly cleaned data points in a form of a factual claim, its veracity label and justifications consisting of ČTK paragraphs was published in a version for Information Retrieval\footnote{\url{https://huggingface.co/datasets/ctu-aic/ctkfacts}} for those who have access to the ČTK knowledge base to retrieve from, as well as in a special version for the task of Natural Language Inference\footnote{\url{https://huggingface.co/datasets/ctu-aic/ctkfacts_nli}} containing all the required ČTK excerpts we have negotiated to publish under open license for everyone to use.
+Ultimately, a dataset of 3.1K thoroughly cleaned data points in the form of a factual claim, its veracity label and justifications consisting of ČTK paragraphs was published in a version for Information Retrieval\footnote{\url{https://huggingface.co/datasets/ctu-aic/ctkfacts}} for those who have access to the ČTK knowledge base to retrieve from, as well as in a special version for the task of Natural Language Inference\footnote{\url{https://huggingface.co/datasets/ctu-aic/ctkfacts_nli}} containing all the required ČTK excerpts we have negotiated to publish under open license for everyone to use.
 
 The datasets have become our standard benchmark within the AIC NLP group~\cite{semin,mlynar} and are starting to be referred and used in others' research in the field~\cite{stefanik}.
 
 \subsection{Other NLP datasets in West Slavic languages}
-Over the time, we have accumulated numerous sets of data in Czech and other Slavic languages that have previously been poorly covered or not available at all, some of which are to be referred in our future publications.
+Over time, we have accumulated numerous sets of data in Czech and other Slavic languages that have previously been poorly covered or not available at all, some of which are to be referred in our future publications.
 For the convenience of others, most of them are already listed in our public repositories.
 Let us mention some significant examples:
 
@@ -128,17 +128,17 @@ Let us mention some significant examples:
     \end{enumerate}
 \end{enumerate}
 Up until now, some of the data was restricted to private repositories, but with this study, I am publishing most of them, as I have now found the licensing to be rather relaxed.
-If some of the repositories reader might be interested in would not be reachable, please request access to the  \url{https://huggingface.co/datasets/ctu-aic} organization to be able to see into the private part of our dataset library.
+If some of the repositories the reader might be interested in would not be reachable, please request access to the  \url{https://huggingface.co/datasets/ctu-aic} organization to be able to see into the private part of our dataset library.
 
 \section{Models}
 \label{sec:models}
-The most significant pretrained models I have made public address two tasks -- the Natural Language Inference and Claim Generation viewed as a form of Abstractive Summarization task.
+The most significant pre-trained models I have made public address two tasks -- the Natural Language Inference and Claim Generation viewed as a form of Abstractive Summarization task.
 \subsection{Natural Language Inference}
 My previous work~\cite{diplomka, lrev} also focused on establishing a strong starting state of the art on our own datasets in the tasks of NLI.
-In my publications, I have tried and compared a multitude of neural networks for the tasks, ultimately arriving to:
+In my publications, I have tried and compared a multitude of neural networks for the tasks, ultimately arriving at the following:
 \begin{itemize}
-    \item {\techbf XLM-RoBERTA-Large@XNLI@\FCZNLI}, a model with 561M parameters trained on 100-language CommonCrawl corpus finetuned on multilingual XNLI~\cite{conneau2018xnli} inference datased and then finetuned \textit{again} on the \FCZNLI task yields an unmatched 73.7\% F1 macro score on the denoised \FCZNLI inference task: \url{https://huggingface.co/ctu-aic/xlm-roberta-large-xnli-csfever_nli}
-    \item {\techbf XLM-RoBERTA-Large@SQuAD2}, a model version finetuned on a Question answering SquAD2~\cite{squad} task has shown remarkable practicality in my NLI applications and after task specific finetuning, it was able to tackle:
+    \item {\techbf XLM-RoBERTA-Large@XNLI@\FCZNLI}, a model with 561M parameters trained on 100-language CommonCrawl corpus finetuned on multilingual XNLI~\cite{conneau2018xnli} inference dataset and then finetuned \textit{again} on the \FCZNLI task yields an unmatched 73.7\% F1 macro score on the denoised \FCZNLI inference task: \url{https://huggingface.co/ctu-aic/xlm-roberta-large-xnli-csfever_nli}
+    \item {\techbf XLM-RoBERTA-Large@SQuAD2}, a model version finetuned on a Question answering SquAD2~\cite{squad} task has shown remarkable practicality in my NLI applications and after task-specific finetuning, it was able to tackle:
     \begin{enumerate}
         \item \CTKNLI\footnote{\url{https://huggingface.co/ctu-aic/xlm-roberta-large-squad2-ctkfacts_nli}} task with 76.9\% macro-F1
         \item \FCZ\footnote{\url{https://huggingface.co/ctu-aic/xlm-roberta-large-squad2-csfever_nearestp}} (noisy) task with 83.2\% macro-F1
@@ -147,10 +147,10 @@ In my publications, I have tried and compared a multitude of neural networks for
 \end{itemize}
 
 \subsection{Claim generation}
-In my current research, I am finding appropriate configurations and data to train models for the task of claim generation -- generating a factual claim (or more) into a single sentence that contains a fluent, atomic, decontextualized and faithful claim.
+In my current research, I am finding appropriate configurations and data to train models for claim generation -- generating a factual claim (or more) into a single sentence containing a fluent, atomic, decontextualized, and faithful claim.
 In section~\ref{generation}, I~propose the claim generation as an abstractive summarization setting, and therefore, the models already have their practical use in the general task of summing up longer texts into shorter ones.
 
-As has been shown in section~\ref{benchmarking-sota}, NLP summarization task does not have a reliable standard benchmark that would capture all its required output qualities. Therefore, it remains questionable to claim the state of the art on any summarization task and I proceed to present models that excel in our empirical tests and demonstrations for project stakeholders:
+As has been shown in section~\ref{benchmarking-sota}, the NLP summarization task does not have a reliable standard benchmark that would capture all its required output qualities. Therefore, it remains questionable to claim the state of the art on any summarization task, and I proceed to present models that excel in our empirical tests and demonstrations for project stakeholders:
 
 \begin{enumerate}
     \item {\techbf mBART}~\cite{mbart} multilingual Transformer model has been finetuned by our team's~\cite{krotil} on SumeCzech and proprietary CNC News summarization dataset on the \"{full text to headline} task, obtaining encouraging scores across numerous summarization metrics in Czech.\\
@@ -168,12 +168,12 @@ All prototype models are currently being iterated with our CEDMO project partner
 
 \section{Applications}
 \label{sec:applications}
-Several applications demonstrating our contributions are currently deployed and available online due to the CEDMO project and their testing with future users, let us therefore present the main applications I and my supervisor Jan Drchal have developed for the tasks:
+Several applications demonstrating our contributions are currently deployed and available online due to the CEDMO project, and their testing with future users let us, therefore, present the main applications I and my supervisor Jan Drchal have developed for the tasks:
 
 \begin{enumerate}
     \item Claim extractor at \url{https://fcheck.fel.cvut.cz:1830} (figure~\ref{fig:claimgencedmo}) demonstrates the single or multiple claim generation task with our LLaMA-2 or mBART models for English and Czech texts, respectively -- I put it together as a GRADIO interactive application and an API
     \item  \url{https://fcheck.fel.cvut.cz:1831} runs a FactSearch platform by Jan Drchal, demonstrating our best performing models for the whole fact-checking tasks, integrating the XLM-RoBERTas trained on \FCZNLI data
-    \item  \url{https://fcheck.fel.cvut.cz:1832} runs the same scheme with our best performing English models and data
+    \item  \url{https://fcheck.fel.cvut.cz:1832} runs the same scheme with our best-performing English models and data
 \end{enumerate}
 
 \begin{figure}

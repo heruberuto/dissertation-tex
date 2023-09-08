@@ -20,5 +20,11 @@
     },
     "peacock.color": "#005d93",
     "editor.wordBasedSuggestions": false,
-    "editor.autoClosingBrackets": "never"
+    "editor.autoClosingBrackets": "never",
+    "grammarly.selectors": [
+        {
+            "language": "latex",
+            "scheme": "file"
+        }
+    ]
 }

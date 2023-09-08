@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.8)  8 SEP 2023 09:28
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.8)  8 SEP 2023 12:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1413,12 +1413,8 @@ Package fancyhdr Warning: \fancyhead's `E' option without twoside option is usel
 
 (/Users/bertik/PhD/studie-bertik/chapters/1_introduction.tex
 Chapter 1.
-File: fig/politifact.pdf Graphic file (type pdf)
-<use fig/politifact.pdf>
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 28.
 
-Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 30.
+Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 23.
 
 [1
 
@@ -1427,12 +1423,16 @@ Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is usel
 
 
 ]
+File: fig/politifact.pdf Graphic file (type pdf)
+<use fig/politifact.pdf>
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 28.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9> on input line 38.
 File: fig/framework.pdf Graphic file (type pdf)
 <use fig/framework.pdf>
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 51.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 50.
  [2]
 File: fig/transformer.pdf Graphic file (type pdf)
 <use fig/transformer.pdf>
@@ -1486,32 +1486,39 @@ Overfull \hbox (28.45274pt too wide) in paragraph at lines 180--181
  [][] 
  []
 
-) (/Users/bertik/PhD/studie-bertik/chapters/4_dissertation_plan.tex [16] [17]
+) (/Users/bertik/PhD/studie-bertik/chapters/4_dissertation_plan.tex [16]
+
+Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 3.
+
+
+Package fancyhdr Warning: \fancyhead's `E' option without twoside option is useless on input line 3.
+
+[17]
 Chapter 4.
 File: fig/lm_critics.png Graphic file (type bmp)
 <fig/lm_critics.png>
 File: fig/gptext.pdf Graphic file (type pdf)
 <use fig/gptext.pdf>
 
-Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 49.
+Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 43.
 
 [18
 
-] [19] [20] [21]) (/Users/bertik/PhD/studie-bertik/chapters/5_conclusion.tex [22]
+] [19] [20] [21] [22]) (/Users/bertik/PhD/studie-bertik/chapters/5_conclusion.tex [23]
 Chapter 5.
 ) (/Users/bertik/PhD/studie-bertik/minimum.bbl
 
 Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 1.
 
-[23
+[24
 
 ]
 
 Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 67.
 
-[24
+[25
 
-] [25] [26] [27]
+] [26] [27] [28]
 Underfull \hbox (badness 2922) in paragraph at lines 324--329
 []\TU/lmr/m/n/10.95 Patel, D. and Ahmad, A. (2023).  Google ”we have
  []
@@ -1521,7 +1528,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 324--329
 \TU/lmr/m/n/10.95 no moat, and neither does openai”.  []$[][][][][] [] [] [] [][][] [] [][][][][][][][][][][][] [] [][][] [] [] []
  []
 
-[28]
+[29]
 Underfull \hbox (badness 10000) in paragraph at lines 411--417
 []\TU/lmss/m/n/10.95 STEM \TU/lmr/m/n/10.95 (2021).  Mýtům a konspiracím o covid-19 věří více
  []
@@ -1536,12 +1543,12 @@ Overfull \hbox (52.1056pt too wide) in paragraph at lines 411--417
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]$[]\TU/lmr/m/n/10.95 .
  []
 
-[29] [30]) [31]
+[30] [31]) [32]
 Appendix A.
 
 Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 169.
 
-[32
+[33
 
 ] (/Users/bertik/PhD/studie-bertik/minimum.aux)
 
@@ -1745,15 +1752,15 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `minimum.out' has not changed.
-(rerunfilecheck)             Checksum: 1361838819941396D884DCA3C44EF2CF;6902.
+(rerunfilecheck)             Checksum: 0E2D681CCAE1A7CCA305BFFD95C2D066;6712.
  ) 
 Here is how much of TeX's memory you used:
- 33287 strings out of 476919
- 642753 string characters out of 5821840
+ 33286 strings out of 476919
+ 642740 string characters out of 5821840
  1177572 words of memory out of 5000000
- 52483 multiletter control sequences out of 15000+600000
+ 52482 multiletter control sequences out of 15000+600000
  440769 words of font info for 122 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  93i,17n,120p,967b,838s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on /Users/bertik/PhD/studie-bertik/minimum.xdv (35 pages, 1001248 bytes).
+Output written on /Users/bertik/PhD/studie-bertik/minimum.xdv (36 pages, 1005868 bytes).
