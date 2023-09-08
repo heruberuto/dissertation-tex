@@ -157,29 +157,32 @@ As has been shown in section~\ref{benchmarking-sota}, the NLP summarization task
     I have taken this model a step further for the claim generation task, finetuning it on the {\FCZ}Sum and {\CTK}Sum datasets, yielding a working model for the task.\footnote{
     \url{https://huggingface.co/ctu-aic/mbart25-large-eos}}
 
-    Another experiments are being carried out with the same model finetuned on Slovak\footnote{\url{https://huggingface.co/ctu-aic/mbart-at2h-cs-smesum-2}} and Polish\footnote{\url{https://huggingface.co/ctu-aic/mbart-at2h-cs-polish-news3}} data.
-    \item {\techbf LLaMA-2} shows promissing result when it comes to claim generation.
+    Other experiments are being carried out with the same model finetuned on Slovak\footnote{\url{https://huggingface.co/ctu-aic/mbart-at2h-cs-smesum-2}} and Polish\footnote{\url{https://huggingface.co/ctu-aic/mbart-at2h-cs-polish-news3}} data.
+    \item {\techbf LLaMA-2} shows promising results when it comes to claim generation.
     I have finetuned\footnote{\url{https://huggingface.co/ctu-aic/Llama-2-7b-xlsum-en}} it using the QLoRA (section~\ref{sec:lora}) approach, XL-Sum~\cite{xlsum} dataset and a concatenation-based prompting strategy~\cite{llama2}, to facilitate training across the entire length of input.
     
 \end{enumerate}
 
-All prototype models are currently being iterated with our CEDMO project partners (fact-checkers from European organizations),  tweaked, and future tests are being designed for them based on empirical results and questionnaires.
+All prototype models are currently being iterated with our CEDMO\footnote{\url{https://cedmohub.eu}} project partners (fact-checkers from European organizations),  tweaked, and future tests are being designed for them based on empirical results and questionnaires.
+
+An application in the figure~\ref{fig:claimgencedmo} demonstrates the single or multiple claim generation task with our LLaMA-2 or mBART models for English and Czech texts, respectively -- I put it together as a GRADIO interactive application and an API.
+Another interactive application App Search \todo{screen} developed by Jan Drchal~\cite{mlynar} demonstrates our best-performing models for the whole fact-checking tasks, integrating the XLM-RoBERTas trained on \FCZNLI data.
 
 
-\section{Applications}
-\label{sec:applications}
-Several applications demonstrating our contributions are currently deployed and available online due to the CEDMO\footnote{\url{https://cedmohub.eu}} project, and their testing with future users let us, therefore, present the main applications I and my supervisor Jan Drchal have developed for the tasks:
-
-\begin{enumerate}
-    \item Claim extractor at \url{https://fcheck.fel.cvut.cz:1830} (figure~\ref{fig:claimgencedmo}) demonstrates the single or multiple claim generation task with our LLaMA-2 or mBART models for English and Czech texts, respectively -- I put it together as a GRADIO interactive application and an API
-    \item  \url{https://fcheck.fel.cvut.cz:1831} runs a FactSearch platform by Jan Drchal, demonstrating our best performing models for the whole fact-checking tasks, integrating the XLM-RoBERTas trained on \FCZNLI data
-    \item  \url{https://fcheck.fel.cvut.cz:1832} runs the same scheme with our best-performing English models and data
-\end{enumerate}
-
+%\section{Applications}
+%\label{sec:applications}
+%Several applications demonstrating our contributions are currently deployed and available online due to the CEDMO\footnote{\url{https://cedmohub.eu}} project, and their testing with future users let us, therefore, present the main applications I and my supervisor Jan Drchal have developed for the tasks:
+%
+%\begin{enumerate}
+%    \item Claim extractor at \url{https://fcheck.fel.cvut.cz:1830} (figure~\ref{fig:claimgencedmo}) demonstrates the single or multiple claim generation task with our LLaMA-2 or mBART models for English and Czech texts, respectively -- I put it together as a GRADIO interactive application and an API
+%    \item  \url{https://fcheck.fel.cvut.cz:1831} runs a FactSearch platform by Jan Drchal, demonstrating our best performing models for the whole fact-checking tasks, integrating the XLM-RoBERTas trained on \FCZNLI data
+%    \item  \url{https://fcheck.fel.cvut.cz:1832} runs the same scheme with our best-performing English models and data
+%\end{enumerate}
+%
 \begin{figure}
     \includegraphics[width=16cm]{fig/cedmo.pdf}
     \caption{Factual claim extraction application done for the CEDMO project}
     \label{fig:claimgencedmo}
 \end{figure}
-
-Here we will show off the demonstration tools, as well as our open-source platform \url{https://fcheck.fel.cvut.cz} and currently running claim extraction tools. 
+%
+%Here we will show off the demonstration tools, as well as our open-source platform \url{https://fcheck.fel.cvut.cz} and currently running claim extraction tools. 

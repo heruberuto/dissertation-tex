@@ -38,7 +38,6 @@
 \contentsline {section}{\numberline {3.2}Models}{15}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Natural Language Inference}{15}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Claim generation}{15}{subsection.3.2.2}%
-\contentsline {section}{\numberline {3.3}Applications}{16}{section.3.3}%
 \contentsline {chapter}{\numberline {4}Dissertation plan}{18}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Automated claim generation}{18}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Claim generation metrics}{18}{section.4.2}%
