@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.8)  8 SEP 2023 12:26
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.8)  8 SEP 2023 13:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1486,14 +1486,7 @@ Overfull \hbox (28.45274pt too wide) in paragraph at lines 180--181
  [][] 
  []
 
-) (/Users/bertik/PhD/studie-bertik/chapters/4_dissertation_plan.tex [16]
-
-Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 3.
-
-
-Package fancyhdr Warning: \fancyhead's `E' option without twoside option is useless on input line 3.
-
-[17]
+) (/Users/bertik/PhD/studie-bertik/chapters/4_dissertation_plan.tex [16] [17]
 Chapter 4.
 File: fig/lm_critics.png Graphic file (type bmp)
 <fig/lm_critics.png>
@@ -1529,17 +1522,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 324--329
  []
 
 [29]
-Underfull \hbox (badness 10000) in paragraph at lines 411--417
+Underfull \hbox (badness 10000) in paragraph at lines 417--423
 []\TU/lmss/m/n/10.95 STEM \TU/lmr/m/n/10.95 (2021).  Mýtům a konspiracím o covid-19 věří více
  []
 
 
-Underfull \hbox (badness 6252) in paragraph at lines 411--417
+Underfull \hbox (badness 6252) in paragraph at lines 417--423
 \TU/lmr/m/n/10.95 než třetina české internetové populace | stem.cz.  []$[][][][][] [] [] [] [][][] [] [][][][] [] [][] []
  []
 
 
-Overfull \hbox (52.1056pt too wide) in paragraph at lines 411--417
+Overfull \hbox (52.1056pt too wide) in paragraph at lines 417--423
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]$[]\TU/lmr/m/n/10.95 .
  []
 
@@ -1752,15 +1745,15 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `minimum.out' has not changed.
-(rerunfilecheck)             Checksum: 0E2D681CCAE1A7CCA305BFFD95C2D066;6712.
+(rerunfilecheck)             Checksum: B8DE5E68F76265EC21CD0ECB53F5ADD4;6709.
  ) 
 Here is how much of TeX's memory you used:
- 33286 strings out of 476919
- 642740 string characters out of 5821840
+ 33287 strings out of 476919
+ 642757 string characters out of 5821840
  1177572 words of memory out of 5000000
- 52482 multiletter control sequences out of 15000+600000
+ 52483 multiletter control sequences out of 15000+600000
  440769 words of font info for 122 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  93i,17n,120p,967b,838s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on /Users/bertik/PhD/studie-bertik/minimum.xdv (36 pages, 1005868 bytes).
+Output written on /Users/bertik/PhD/studie-bertik/minimum.xdv (36 pages, 1016868 bytes).

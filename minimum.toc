@@ -45,7 +45,7 @@
 \contentsline {section}{\numberline {4.3}Data Collection}{21}{section.4.3}%
 \contentsline {subsection}{\numberline {4.3.1}Human-in-the-loop grading of claim generators}{21}{subsection.4.3.1}%
 \contentsline {subsection}{\numberline {4.3.2}Polish dataset scraping}{21}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}Crowd-sourced fact checking platform}{22}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.3}Crowd-sourced fact-checking platform}{22}{subsection.4.3.3}%
 \contentsline {subsection}{\numberline {4.3.4}\textsc {CTKFacts}\xspace expansion}{22}{subsection.4.3.4}%
 \contentsline {section}{\numberline {4.4}Pipeline modernization}{22}{section.4.4}%
 \contentsline {section}{\numberline {4.5}The grand scope}{22}{section.4.5}%

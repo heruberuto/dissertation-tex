@@ -377,6 +377,12 @@ Rýpar, M. (2021).
 \newblock \url{https://www.overleaf.com/read/thbvcjvvvfjp}.
 \newblock [Online; accessed 21-May-2021].
 
+\bibitem[Saeed and Omlin, 2023]{SAEED2023110273}
+Saeed, W. and Omlin, C. (2023).
+\newblock Explainable ai (xai): A systematic meta-survey of current challenges
+  and future opportunities.
+\newblock {\em Knowledge-Based Systems}, 263:110273.
+
 \bibitem[Schuster et~al., 2021]{DBLP:journals/corr/abs-2103-08541}
 Schuster, T., Fisch, A., and Barzilay, R. (2021).
 \newblock Get your vitamin c! robust fact verification with contrastive
