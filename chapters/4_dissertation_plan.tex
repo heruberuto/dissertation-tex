@@ -100,16 +100,26 @@ The closest data I have found is the online news corpus~\cite{szwoch-etal-2022-c
 A scraping experiment in the Polish media such as TVP, Rzeczpospolita, Gazeta Wyborcza, Fakt, etc., is therefore being prepared to obtain an appropriate single-sentence dataset for publication -- it is also gona be another incremental step towards the disertation on the overall topic of NLP fact-checking and its stages, focusing on English and West Slavic languages. 
 
 \subsection{Crowd-sourced fact checking platform}
-In 2023, another members of our team~\cite{butora} with funding from Avast developed a crowd-sourced fact 
+In 2023, another members of our team~\cite{butora} with funding from Avast developed a crowd-sourced fact-checking platform\footnote{\url{https://factcheck.fel.cvut.cz}}, where users gather reputations like on Wikipedia, by sharing a check-worthy pieces of information found across the internet, and by their checking with sources.
+
+While I am not directly involved in the implementation of the project apart from early consulting, an experiments with FSV CUNI are to be launched populating this platform with data and users. 
+After the experiments, another data and applications are to be delivered, and their proccessing would be another part of my dissertation project.
 
 \subsection{\CTK expansion}
 In 2021/2022, another rounds of the \CTK annotation experiment (see section~\ref{sec:ctkfacts}) were carried out with the FSV CUNI students, yielding about 5K new data-points, including, for example, claims extracted from the Czech Twitter.
 
 The data is being cleaned and examined and is to be attached to one of the other upcoming publications, as well as presented in the dissertation thesis.
+
+\section{Pipeline modernization}
+As mentioned throughout the chapter~\ref{chap:sota}, the state of the art in NLP has shifted dramatically over the last year, and another of the tasks I am currently working on is the modernization of our pipeline -- Claim Generation, Information Retrieval, Natural Language Inference models -- and appropriate use of LLMs in the tasks.
+
+So far, I have successfully finetuned LLaMA-2 for the claim generation task, and we have a LoRA finetuning ready for NLI models. This, however, is going to be a topic on its own, as most of the publicly available LLMs filter out the other languages and focus solely on English.
+
 \section{The grand scope}
+Overall, in brief points, the main topics of my dissertation are expected to be:
 \begin{enumerate}
-    \item \textbf{Claim extraction metrics proposal based on factuality of summarization}
-    \item \textbf{Claim extraction paradigm that benchmarks best in the newly given metrics}
-    \item Systems for NLI built on top of LoRA paradigm to score best in the task, as showed promising by Daniil
-    
+    \item Introduction of the fact-checking task and its data, strong model baselines and specific properties in the \textbf{West Slavic} context
+    \item An integration of the step of \textbf{Claim generation} step into it, based on methods of abstractive summarization 
+    \item A delivery of reliable \textbf{metrics} for the tasks and their validation with expert-level humans
+    \item Modernization of the fact-checking paradigms and solutions in English and Czech into the age of \textbf{Large Language Models}.
 \end{enumerate}
