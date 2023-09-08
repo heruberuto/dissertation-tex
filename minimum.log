@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.8)  8 SEP 2023 13:26
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.8)  8 SEP 2023 18:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1482,6 +1482,13 @@ Overfull \hbox (28.45274pt too wide) in paragraph at lines 183--184
  [][] 
  []
 
+File: fig/factsearch.pdf Graphic file (type pdf)
+<use fig/factsearch.pdf>
+
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 189--190
+ [][] 
+ []
+
 ) (/Users/bertik/PhD/studie-bertik/chapters/4_dissertation_plan.tex [16]
 
 Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 3.
@@ -1734,6 +1741,7 @@ fig/fcheck/claim_extraction.pdf
 fig/fcheck/mutation.pdf
 fig/fcheck/annotation.pdf
 fig/cedmo.pdf
+fig/factsearch.pdf
 chapters/4_dissertation_plan.tex
 fig/lm_critics.png
 fig/gptext.pdf
@@ -1748,15 +1756,15 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `minimum.out' has not changed.
-(rerunfilecheck)             Checksum: BABBDA12CA65B6FD8ECE31C540273506;6594.
+(rerunfilecheck)             Checksum: 6CA09B1C2DD558BCA2875D20DAF27CBE;6594.
  ) 
 Here is how much of TeX's memory you used:
- 33286 strings out of 476919
- 642739 string characters out of 5821840
+ 33295 strings out of 476919
+ 642914 string characters out of 5821840
  1177572 words of memory out of 5000000
- 52482 multiletter control sequences out of 15000+600000
+ 52490 multiletter control sequences out of 15000+600000
  440769 words of font info for 122 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  93i,17n,120p,967b,838s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on /Users/bertik/PhD/studie-bertik/minimum.xdv (36 pages, 1007896 bytes).
+Output written on /Users/bertik/PhD/studie-bertik/minimum.xdv (36 pages, 1018040 bytes).

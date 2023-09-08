@@ -1,6 +1,6 @@
 %!TEX ROOT=../ctutest.tex
 
-\chapter{Current Contribution}
+\chapter{Current contribution}
 \label{chap:contribution}
 
 \textit{We have collected novel data for the fact-checking task in our application context, emulated and scraped inavailable datasets, making them public or readying them for doing so, we have established numerous state-of-the-art models and we are currently working on establishing the topic of claim generation as a summarization-related NLP task.}
@@ -35,7 +35,7 @@ Another round of research \FCZ motivated, and I supervised, was the successful t
 Anyhow, it delivers a partly cleaned version of it\footnote{\url{https://huggingface.co/datasets/ctu-aic/csfever_v2}} and motivates future research to generate such data differently, using a claim generation scheme like that from~\cite{pan2021zeroshot}.
 
 
-\subsection{FCheck Annotations Platform}
+\subsection{FCheck annotations platform}
 The imperfections in translated \FCZ data, as well as the ongoing collaboration with ČTK and the Faculty of Social Sciences, brought me to also look for ways how to hand-annotate a whole new natively Czech dataset, which would both lack the noise introduced in translation and also take the task of automated fact-checking to the next level, replacing a rigid, simple Wikipedic data with a more \"{real world} news report corpus of ČTK.
 
 Figure~\ref{fig:fcheck} shows an open-source platform FCheck\footnote{\url{https://fcheck.fel.cvut.cz} (\texttt{testuser}), source at: \href{https://github.com/aic-factcheck/fcheck-annotations-platform}{\texttt{github.com/aic-factcheck/fcheck-annotations-platform}}} I developed to collaborate with 316 FSV CUNI students of on a collection of novel dataset in Czech using ČTK data as a ground truth corpus.
@@ -87,7 +87,7 @@ After completing the first year of annotation experiments, we have extracted a t
 Of all the annotated claims, 1,776, that is 57\%, had at least two independent labels assigned by different annotators.
 I used this multiplicity to assess the quality of our data and the ambiguity of the task, as well as to propose annotation cleaning methods used to arrive at our final \text{cleaned} \CTK dataset.
 
-\subsubsection{Inter-Annotator Agreement}
+\subsubsection{Inter-annotator agreement}
 \label{sec:agreement}
 
 Due to our cross-annotation design, I had a generously sized sample of independently annotated labels in our hands.
@@ -166,7 +166,7 @@ As has been shown in section~\ref{benchmarking-sota}, the NLP summarization task
 All prototype models are currently being iterated with our CEDMO\footnote{\url{https://cedmohub.eu}} project partners (fact-checkers from European organizations),  tweaked, and future tests are being designed for them based on empirical results and questionnaires.
 
 An application in the figure~\ref{fig:claimgencedmo} demonstrates the single or multiple claim generation task with our LLaMA-2 or mBART models for English and Czech texts, respectively -- I put it together as a GRADIO interactive application and an API.
-Another interactive application App Search \todo{screen} developed by Jan Drchal~\cite{mlynar} demonstrates our best-performing models for the whole fact-checking tasks, integrating the XLM-RoBERTas trained on \FCZNLI data.
+Another interactive application App Search~\ref{fig:factsearch} developed by Jan Drchal~\cite{mlynar} demonstrates our best-performing models for the whole fact-checking tasks, integrating the XLM-RoBERTas trained on \FCZNLI data.
 
 
 %\section{Applications}
@@ -183,6 +183,12 @@ Another interactive application App Search \todo{screen} developed by Jan Drchal
     \includegraphics[width=16cm]{fig/cedmo.pdf}
     \caption{Factual claim extraction application done for the CEDMO project}
     \label{fig:claimgencedmo}
+\end{figure}
+
+\begin{figure}
+    \includegraphics[width=16cm]{fig/factsearch.pdf}
+    \caption{Automated fact-checking application \"{fact-search} verifying claims against Czech Wikipedia using our SOTA models}
+    \label{fig:factsearch}
 \end{figure}
 %
 %Here we will show off the demonstration tools, as well as our open-source platform \url{https://fcheck.fel.cvut.cz} and currently running claim extraction tools. 

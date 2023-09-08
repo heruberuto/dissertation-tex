@@ -40,7 +40,7 @@ As shown in section~\ref{benchmarking-sota}, the standard automated summarizatio
 \label{sec:metrics}
 The common problem with generative tasks in NLP is that of explaining model reasoning in a human-understandable manner and troubleshooting the prediction faults, such as the \textit{model hallucination}.
 
-For the task of claim generation, where we also face the challenge of the \textit{relevance} of the information extracted by the model, we suggest the use of the following metrics:
+For the task of claim generation, where we also face the challenge of the \textit{relevance} of the information extracted by the model, we suggest the use of the following metrics rooted in the current research on similar topics:
 
 \begin{enumerate}
     \item {\techbf Fluency} -- \textit{is the claim grammatically correct and intelligible?}
@@ -85,13 +85,15 @@ For the task of claim generation, where we also face the challenge of the \texti
     
     Analogous to \textit{recall@k} in general machine learning, QAGS proposes to generate questions using gold claims and try to answer them using the predicted claims, much like in the \textit{focus} scenario, but vice versa.
 \end{enumerate}
+The metrics are proposed in accordance with other research on model-based evaluation of similar NLP tasks~\cite{ffci,wright} and are to be refined upon experiments with annotators.
 
-\section{Data Collection}
+\section{Data collection}
 \subsection{Human-in-the-loop grading of claim generators}
-To validate the metrics referred to in section~\ref{metrics}, one needs human-annotated data for the task.
+To validate and progress the metrics referred to in section~\ref{metrics}, one needs human-annotated data for the task.
 I aim to use an experiment similar to that of~\cite{wright}, presenting annotators with ordinal scales for the claim qualities and appropriate grading for each metric conditioned by objective rules.
 
-My research will attempt to design the experiment in a way that yields the best data, checking its validity using inter-annotator agreement and other forms of feedback and publishing the data and scheme alongside the other solutions.
+My research will attempt to design the experiment in a way that yields the best data, checking its validity using inter-annotator agreement and other forms of feedback and publishing the data and scheme alongside the other solutions. 
+Collected data will be used to validate the prototype metrics from section~\ref{metrics} and propose their variations based on the findings.
 
 \subsection{Polish dataset scraping}
 While Czech has its SumeCzech~\cite{straka-etal-2018-sumeczech} and in Slovak, we can still reproduce the SMESum~\cite{suppa-adamec-2020-summarization} research, a large-scale single-sentence summarization dataset in Polish has yet to be established.
@@ -119,10 +121,11 @@ The use of LLaMA-2 and its successors for our tasks will be a topic on its own, 
 \section{The grand scope}
 Overall, in brief points, the main topics of my dissertation are expected to be:
 \begin{enumerate}
-    \item Introduction of the fact-checking task and its data, strong model baselines, and specific properties in the \textbf{West Slavic} context
-    \item An integration of the step of \textbf{Claim generation} step into it, based on methods of abstractive summarization 
-    \item A delivery of reliable \textbf{metrics} for the tasks and their validation with expert-level humans
-    \item Modernization of the fact-checking paradigms and solutions in English and Czech into the age of \textbf{Large Language Models}.
-    \item As the current instruction-tuned Large Language Models exhibit an \textbf{ability to explain their reasoning}~\cite{SAEED2023110273}, the methods of eXplainable AI (XAI) may also be integrated into our automated fact-checking framework, giving the fact-checker further insights what is behind the model classification
-    \item Multiple \textbf{validation experiments} are planned with real-world fact-checkers\footnote{Partners from CEDMO and other projects} to testify to the usability of our solutions in the real world
+    \item Introduction of the fact-checking task and its data, strong model baselines, and specific properties in the \textbf{West Slavic} context.
+    \item An integration of the step of \textbf{Claim generation} step into it, based on methods of abstractive summarization.
+    \item A delivery of reliable \textbf{metrics} for the tasks and their validation with expert-level humans.
+    \item Modernization of the automated fact-checking framework and solutions in English and Czech into the age of \textbf{Large Language Models}.
+    Solutions were proposed already -- based on proprietary black-box LLMs such as GPT-3.5~\cite{bing} -- our next goal is to deploy open-source LLMs in-house (with appropriate tweaks and fine-tuning) to ensure transparency and reproducibility of our research.
+    \item As the current instruction-tuned Large Language Models exhibit an \textbf{ability to explain their reasoning}~\cite{SAEED2023110273}, the methods of eXplainable AI (XAI) may also be integrated into our automated fact-checking framework, giving the fact-checker further insights what is behind the model classification.
+    \item Multiple \textbf{validation experiments} are planned with real-world fact-checkers\footnote{Partners from CEDMO and other projects} to testify to the usability of our solutions in the real world.
 \end{enumerate}
