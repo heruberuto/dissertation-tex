@@ -45,10 +45,10 @@
 \contentsline {subsection}{\numberline {4.1.2}Claim generation metrics}{18}{subsection.4.1.2}%
 \contentsline {section}{\numberline {4.2}Data Collection}{21}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}Human-in-the-loop grading of claim generators}{21}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Validation of the model outputs with human fact-checkers}{21}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Polish dataset scraping}{21}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}Crowd-sourced fact checking platform}{21}{subsection.4.2.4}%
-\contentsline {section}{\numberline {4.3}The grand scope}{21}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Conclusion}{22}{chapter.5}%
-\contentsline {chapter}{Bibliography}{23}{chapter*.3}%
-\contentsline {chapter}{\numberline {A}Acronyms}{31}{appendix.A}%
+\contentsline {subsection}{\numberline {4.2.2}Polish dataset scraping}{21}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Crowd-sourced fact checking platform}{22}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}\textsc {CTKFacts}\xspace expansion}{22}{subsection.4.2.4}%
+\contentsline {section}{\numberline {4.3}The grand scope}{22}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Conclusion}{23}{chapter.5}%
+\contentsline {chapter}{Bibliography}{24}{chapter*.3}%
+\contentsline {chapter}{\numberline {A}Acronyms}{32}{appendix.A}%

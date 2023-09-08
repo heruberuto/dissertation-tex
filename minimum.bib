@@ -2754,3 +2754,68 @@ url={https://doi.org/10.1007/s10579-023-09654-3}
       archivePrefix={arXiv},
       primaryClass={cs.CL}
 }
+
+@inproceedings{brio,
+    title = "{BRIO}: Bringing Order to Abstractive Summarization",
+    author = "Liu, Yixin  and
+      Liu, Pengfei  and
+      Radev, Dragomir  and
+      Neubig, Graham",
+    booktitle = "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = may,
+    year = "2022",
+    address = "Dublin, Ireland",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.acl-long.207",
+    doi = "10.18653/v1/2022.acl-long.207",
+    pages = "2890--2903",
+    abstract = "Abstractive summarization models are commonly trained using maximum likelihood estimation, which assumes a deterministic (one-point) target distribution in which an ideal model will assign all the probability mass to the reference summary. This assumption may lead to performance degradation during inference, where the model needs to compare several system-generated (candidate) summaries that have deviated from the reference summary. To address this problem, we propose a novel training paradigm which assumes a non-deterministic distribution so that different candidate summaries are assigned probability mass according to their quality. Our method achieves a new state-of-the-art result on the CNN/DailyMail (47.78 ROUGE-1) and XSum (49.07 ROUGE-1) datasets. Further analysis also shows that our model can estimate probabilities of candidate summaries that are more correlated with their level of quality.",
+}
+
+@misc{pegasus,
+      title={PEGASUS: Pre-training with Extracted Gap-sentences for Abstractive Summarization}, 
+      author={Jingqing Zhang and Yao Zhao and Mohammad Saleh and Peter J. Liu},
+      year={2020},
+      eprint={1912.08777},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+@misc{topp,
+      title={The Curious Case of Neural Text Degeneration}, 
+      author={Ari Holtzman and Jan Buys and Li Du and Maxwell Forbes and Yejin Choi},
+      year={2020},
+      eprint={1904.09751},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+@inproceedings{straka-etal-2018-sumeczech,
+    title = "{S}ume{C}zech: Large {C}zech News-Based Summarization Dataset",
+    author = "Straka, Milan  and
+      Mediankin, Nikita  and
+      Kocmi, Tom  and
+      {\v{Z}}abokrtsk{\'y}, Zden{\v{e}}k  and
+      Hude{\v{c}}ek, Vojt{\v{e}}ch  and
+      Haji{\v{c}}, Jan",
+    booktitle = "Proceedings of the Eleventh International Conference on Language Resources and Evaluation ({LREC} 2018)",
+    month = may,
+    year = "2018",
+    address = "Miyazaki, Japan",
+    publisher = "European Language Resources Association (ELRA)",
+    url = "https://aclanthology.org/L18-1551",
+}
+
+@inproceedings{szwoch-etal-2022-creation,
+    title = "Creation of {P}olish Online News Corpus for Political Polarization Studies",
+    author = "Szwoch, Joanna  and
+      Staszkow, Mateusz  and
+      Rzepka, Rafal  and
+      Araki, Kenji",
+    booktitle = "Proceedings of the LREC 2022 workshop on Natural Language Processing for Political Sciences",
+    month = jun,
+    year = "2022",
+    address = "Marseille, France",
+    publisher = "European Language Resources Association",
+    url = "https://aclanthology.org/2022.politicalnlp-1.12",
+    pages = "86--90",
+    abstract = "In this paper we describe a Polish news corpus as an attempt to create a filtered, organized and representative set of texts coming from contemporary online press articles from two major Polish TV news providers: commercial TVN24 and state-owned TVP Info. The process consists of web scraping, data cleaning and formatting. A random sample was selected from prepared data to perform a classification task. The random forest achieved the best prediction results out of all considered models. We believe that this dataset is a valuable contribution to existing Polish language corpora as online news are considered to be formal and relatively mistake-free, therefore, a reliable source of correct written language, unlike other online platforms such as blogs or social media. Furthermore, to our knowledge, such corpus from this period of time has not been created before. In the future we would like to expand this dataset with articles coming from other online news providers, repeat the classification task on a bigger scale, utilizing other algorithms. Our data analysis outcomes might be a relevant basis to improve research on a political polarization and propaganda techniques in media.",
+}

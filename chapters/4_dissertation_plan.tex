@@ -7,7 +7,21 @@
 \section{Current research agenda}
 \subsection{Automated claim generation}
 \label{generation}
-\todo{}
+
+The article I am currently readying for submission proposes the task of \textit{automated claim generation} as the process of automated extraction of factual claims from a textual document. It has multiple uses in practice, such as assisting the fact-checkers and emulating data for NLP tasks like automated fact-checking and NLI.
+
+Extracting a set of factual, atomic claims from a chunk of naturally-formed text poses a number of challenges -- what single piece of information characterizes the text best? 
+How to resolve the pronouns and coreferences in source text?
+How to adapt the extraction scheme for different speakers, styles?
+
+I find these problems to overlap with those of the \textit{abstractive summarization} task, which is recently seeing an advent of efficient solutions based on Transformer models~\cite{pegasus,brio}.
+
+The summarization scheme only requires minor tweaks -- preventing it from outputing more than one sentence of output per input and training it on data appropriately chosen to promote the summarization of more than one fact when sampling different claims from the same model using the top-$k$\footnote{Each output token is sampled from the $k$ most probable words in the dictionary} and top-$p$\footnote{Each token is sampled from the most probable words which have at most $p$ total probability mass}~\cite{topp} strategies.
+
+An initial training data is established, derived from XL-Sum~\cite{xlsum}, \FEN and \CTK and models are trained using the GPT Chat API, mBART, Pegasus, T5~\cite{t5-11b}, and LLaMA-2 (QLoRA) architectures.
+
+Looking forward, the chief tasks are going to be a cyclic iteration of claim generation data and models, refining each part after progression in the other, and most importently, a set of reliable metrics that are explainable and correlate with human judgement (see section~\ref{benchmarking-sota}).
+
 \subsection{Claim generation metrics}
 \label{metrics}
 
@@ -20,7 +34,7 @@
 
 \begin{figure}
     \includegraphics[width=11cm]{fig/gptext.pdf}
-    \caption{A self-evaluating claim generation model based on GPT-4~\cite{gpt4} using the \textsf{OpenAI API} and a few-shot approach}
+    \caption{A self-evaluating claim generation model based on GPT-3.5-turbo and GPT-4~\cite{gpt4} using the \textsf{OpenAI API} and a single-shot (one gold example given) approach}
     \label{fig:gptext}
 \end{figure}
 \label{sec:metrics}
@@ -74,12 +88,24 @@ For the task of claim generation, where we also face the challenge of the \texti
 
 \section{Data Collection}
 \subsection{Human-in-the-loop grading of claim generators}
-\subsection{Validation of the model outputs with human fact-checkers}
+To validate the metrics referred in section~\ref{metrics}, one needs a human-annotated data for the task.
+My agenda is to use an experiment similar to that of~\cite{wright}, presenting annotators with ordinal scales for the claim qualities and appropriate grading for each metrics conditioned by objective rules.
+
+My research will attempt to design the experiment in a way that yields the best data, checking its validity using inter-annotator agreement and other forms of feedback and publishing the data and scheme alongside the other solutions.
+
 \subsection{Polish dataset scraping}
-Will be first of its kind for NLP purposes
+While Czech has its SumeCzech~\cite{straka-etal-2018-sumeczech} and in Slovak, we can still reproduce the SMESum~\cite{suppa-adamec-2020-summarization} research, a large-scale single-sentence summarization dataset in Polish has yet to be established.
+The closest data I have found is the online news corpus~\cite{szwoch-etal-2022-creation} collected for the purpuses of studying political polarization (and nowhere published, despite my e-mail urgences).
+
+A scraping experiment in the Polish media such as TVP, Rzeczpospolita, Gazeta Wyborcza, Fakt, etc., is therefore being prepared to obtain an appropriate single-sentence dataset for publication -- it is also gona be another incremental step towards the disertation on the overall topic of NLP fact-checking and its stages, focusing on English and West Slavic languages. 
 
 \subsection{Crowd-sourced fact checking platform}
-\todo{Cite boys}~\cite{butora}
+In 2023, another members of our team~\cite{butora} with funding from Avast developed a crowd-sourced fact 
+
+\subsection{\CTK expansion}
+In 2021/2022, another rounds of the \CTK annotation experiment (see section~\ref{sec:ctkfacts}) were carried out with the FSV CUNI students, yielding about 5K new data-points, including, for example, claims extracted from the Czech Twitter.
+
+The data is being cleaned and examined and is to be attached to one of the other upcoming publications, as well as presented in the dissertation thesis.
 \section{The grand scope}
 \begin{enumerate}
     \item \textbf{Claim extraction metrics proposal based on factuality of summarization}

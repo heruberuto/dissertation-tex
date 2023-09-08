@@ -18,6 +18,6 @@
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Factual claim extraction application done for the CEDMO project\relax }}{17}{figure.3.2}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces \textsf {LM-Critic} -- deciding text fluency viewed as finding local optima of Language Model output probability, reprinted from~\cite {yasunaga-etal-2021-lm}\relax }}{19}{figure.4.1}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces A self-evaluating claim generation model based on GPT-4~\cite {gpt4} using the \textsf {OpenAI API} and a few-shot approach\relax }}{20}{figure.4.2}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces A self-evaluating claim generation model based on GPT-3.5-turbo and GPT-4~\cite {gpt4} using the \textsf {OpenAI API} and a single-shot (one gold example given) approach\relax }}{20}{figure.4.2}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }

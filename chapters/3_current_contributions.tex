@@ -15,7 +15,7 @@ An early \"{temporary benchmark} for our endeavours in adapting the FEVER~\cite{
 In~\cite{diplomka}, I have proposed a simple FEVER data transduction scheme that can be simplified as follows:
 
 \begin{enumerate}
-    \item Each FEVER claim is translated using the (at the time maturing) Machine Translator
+    \item Each FEVER claim is translated using a Machine Translator
     \item Evidence from English Wikipedia is not translated using MT, but mapped onto its Czech-Wikipedia counterpart using the publicly available Wikidata\footnote{Used, for example, for showing the \"{see this article in other languages} suggestions in Wikipedia sidebar}
     \item Data with any loss in evidence due to the step 2. is discarded
 \end{enumerate}
@@ -32,11 +32,11 @@ Therefore, only the EnWiki \textit{excerpts} needed to build evidence can be tra
 Another round of research \FCZ motivated and I supervised was the successful thesis of~\cite{mlynar}, modernizing the data and machine-translation methods into the 2023 state of the art.
 \cite{mlynar} further experimented with methods of automated noise detection and removal, which has not shown to be an efficient way to tackle the issue of high noise in \FCZ.
 
-However, it delivers a partly cleaned versions of it\footnote{\url{https://huggingface.co/datasets/ctu-aic/csfever_v2}} and motivates a future research of generating such data differently, using a claim generation scheme like that from~\cite{pan2021zeroshot}.
+Anyhow, it delivers a partly cleaned versions of it\footnote{\url{https://huggingface.co/datasets/ctu-aic/csfever_v2}} and motivates a future research of generating such data differently, using a claim generation scheme like that from~\cite{pan2021zeroshot}.
 
 
 \subsection{FCheck Annotations Platform}
-The imperfections in translated \FCZ data, as well as the ongoing colaboration with ČTK and the Faculty of Social Sciences brought me to also look for ways how to hand-annotate a whole new natively Czech dataset, which would both lack the noise of translated data and take the task of automated fact checking to next level, replacing a rigid, simple Wikipedic data with a more \"{real world} news report corpus of ČTK.
+The imperfections in translated \FCZ data, as well as the ongoing colaboration with ČTK and the Faculty of Social Sciences, brought me to also look for ways how to hand-annotate a whole new natively Czech dataset, which would both lack the noise introduced in translation and also take the task of automated fact checking to next level, replacing a rigid, simple Wikipedic data with a more \"{real world} news report corpus of ČTK.
 
 Figure~\ref{fig:fcheck} shows an open-source platform FCheck\footnote{\url{https://fcheck.fel.cvut.cz} (\texttt{testuser}), source at: \href{https://github.com/aic-factcheck/fcheck-annotations-platform}{\texttt{github.com/aic-factcheck/fcheck-annotations-platform}}} I developed to collaborate with 316 FSV CUNI students of on a collection of novel dataset in Czech using ČTK data as a ground truth corpus.
 \label{sec:datasets}

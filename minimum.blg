@@ -6,45 +6,45 @@ Database file #1: minimum.bib
 Warning--entry type for "glorin" isn't style-file defined
 --line 2409 of file minimum.bib
 Warning--empty publisher in disorder
-You've used 90 entries,
+You've used 95 entries,
             1935 wiz_defined-function locations,
-            901 strings with 24491 characters,
-and the built_in function-call counts, 42817 in all, are:
-= -- 3959
-> -- 2968
-< -- 45
-+ -- 1107
-- -- 1085
-* -- 3824
-:= -- 7731
-add.period$ -- 270
-call.type$ -- 90
-change.case$ -- 990
-chr.to.int$ -- 86
-cite$ -- 91
-duplicate$ -- 1343
-empty$ -- 2158
-format.name$ -- 1195
-if$ -- 8078
-int.to.chr$ -- 5
+            922 strings with 25550 characters,
+and the built_in function-call counts, 45177 in all, are:
+= -- 4192
+> -- 3098
+< -- 47
++ -- 1156
+- -- 1131
+* -- 4018
+:= -- 8133
+add.period$ -- 286
+call.type$ -- 95
+change.case$ -- 1038
+chr.to.int$ -- 90
+cite$ -- 96
+duplicate$ -- 1435
+empty$ -- 2301
+format.name$ -- 1246
+if$ -- 8551
+int.to.chr$ -- 6
 int.to.str$ -- 0
-missing$ -- 52
-newline$ -- 436
-num.names$ -- 272
-pop$ -- 916
+missing$ -- 55
+newline$ -- 459
+num.names$ -- 287
+pop$ -- 969
 preamble$ -- 1
-purify$ -- 991
+purify$ -- 1039
 quote$ -- 0
-skip$ -- 1052
+skip$ -- 1117
 stack$ -- 0
-substring$ -- 1929
-swap$ -- 216
-text.length$ -- 17
+substring$ -- 2055
+swap$ -- 237
+text.length$ -- 19
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 538
+type$ -- 568
 warning$ -- 1
-while$ -- 248
+while$ -- 264
 width$ -- 0
-write$ -- 1123
+write$ -- 1187
 (There were 2 warnings)

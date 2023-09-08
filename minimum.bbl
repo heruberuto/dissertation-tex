@@ -149,6 +149,10 @@ Hayes, A. and Krippendorff, K. (2007).
   data.
 \newblock {\em Communication Methods and Measures}, 1:77--89.
 
+\bibitem[Holtzman et~al., 2020]{topp}
+Holtzman, A., Buys, J., Du, L., Forbes, M., and Choi, Y. (2020).
+\newblock The curious case of neural text degeneration.
+
 \bibitem[Hu et~al., 2021]{lora}
 Hu, E.~J., Shen, Y., Wallis, P., Allen{-}Zhu, Z., Li, Y., Wang, S., and Chen,
   W. (2021).
@@ -211,9 +215,9 @@ Lin, C.-Y. (2004).
 \newblock In {\em Text Summarization Branches Out}, pages 74--81, Barcelona,
   Spain. Association for Computational Linguistics.
 
-\bibitem[Liu et~al., 2022]{peft}
+\bibitem[Liu et~al., 2022a]{peft}
 Liu, H., Tam, D., Muqeeth, M., Mohta, J., Huang, T., Bansal, M., and Raffel, C.
-  (2022).
+  (2022a).
 \newblock Few-shot parameter-efficient fine-tuning is better and cheaper than
   in-context learning.
 
@@ -235,6 +239,13 @@ Liu, Y., Han, T., Ma, S., Zhang, J., Yang, Y., Tian, J., He, H., Li, A., He,
 \newblock Summary of {ChatGPT}-related research and perspective towards the
   future of large language models.
 \newblock {\em Meta-Radiology}, 1(2):100017.
+
+\bibitem[Liu et~al., 2022b]{brio}
+Liu, Y., Liu, P., Radev, D., and Neubig, G. (2022b).
+\newblock {BRIO}: Bringing order to abstractive summarization.
+\newblock In {\em Proceedings of the 60th Annual Meeting of the Association for
+  Computational Linguistics (Volume 1: Long Papers)}, pages 2890--2903, Dublin,
+  Ireland. Association for Computational Linguistics.
 
 \bibitem[Liu et~al., 2019]{roberta}
 Liu, Y., Ott, M., Goyal, N., Du, J., Joshi, M., Chen, D., Levy, O., Lewis, M.,
@@ -404,6 +415,14 @@ Sido, J., Pražák, O., Přibáň, P., Pašek, J., Seják, M., and Konopík, M.
   \url{https://www.stem.cz/mytum-a-konspiracim-o-covid-19-veri-vice-nez-tretina-ceske-internetove-populace/}.
 \newblock Accessed: 2021-05-03.
 
+\bibitem[Straka et~al., 2018]{straka-etal-2018-sumeczech}
+Straka, M., Mediankin, N., Kocmi, T., {\v{Z}}abokrtsk{\'y}, Z., Hude{\v{c}}ek,
+  V., and Haji{\v{c}}, J. (2018).
+\newblock {S}ume{C}zech: Large {C}zech news-based summarization dataset.
+\newblock In {\em Proceedings of the Eleventh International Conference on
+  Language Resources and Evaluation ({LREC} 2018)}, Miyazaki, Japan. European
+  Language Resources Association (ELRA).
+
 \bibitem[Straka et~al., 2021]{straka2021robeczech}
 Straka, M., Náplava, J., Straková, J., and Samuel, D. (2021).
 \newblock {RobeCzech}: Czech {RoBERTa}, a monolingual contextualized language
@@ -414,6 +433,14 @@ Straka, M., Náplava, J., Straková, J., and Samuel, D. (2021).
 Stănescu, G. (2022).
 \newblock {Ukraine conflict: the challenge of informational war}.
 \newblock {\em SOCIAL SCIENCES AND EDUCATION RESEARCH REVIEW}, 9(1):146--148.
+
+\bibitem[Szwoch et~al., 2022]{szwoch-etal-2022-creation}
+Szwoch, J., Staszkow, M., Rzepka, R., and Araki, K. (2022).
+\newblock Creation of {P}olish online news corpus for political polarization
+  studies.
+\newblock In {\em Proceedings of the LREC 2022 workshop on Natural Language
+  Processing for Political Sciences}, pages 86--90, Marseille, France. European
+  Language Resources Association.
 
 \bibitem[Taori et~al., 2023]{alpaca}
 Taori, R., Gulrajani, I., Zhang, T., Dubois, Y., Li, X., Guestrin, C., Liang,
@@ -554,6 +581,11 @@ Yasunaga, M., Leskovec, J., and Liang, P. (2021).
 Zha, Y., Yang, Y., Li, R., and Hu, Z. (2023).
 \newblock Alignscore: Evaluating factual consistency with a unified alignment
   function.
+
+\bibitem[Zhang et~al., 2020]{pegasus}
+Zhang, J., Zhao, Y., Saleh, M., and Liu, P.~J. (2020).
+\newblock Pegasus: Pre-training with extracted gap-sentences for abstractive
+  summarization.
 
 \bibitem[Zhang* et~al., 2020]{bert-score}
 Zhang*, T., Kishore*, V., Wu*, F., Weinberger, K.~Q., and Artzi, Y. (2020).
