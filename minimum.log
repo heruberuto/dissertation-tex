@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.8)  8 SEP 2023 09:04
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.8)  8 SEP 2023 09:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1539,7 +1539,7 @@ Overfull \hbox (52.1056pt too wide) in paragraph at lines 411--417
 [29] [30]) [31]
 Appendix A.
 
-Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 167.
+Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 169.
 
 [32
 
@@ -1756,4 +1756,4 @@ Here is how much of TeX's memory you used:
  1348 hyphenation exceptions out of 8191
  93i,17n,120p,967b,838s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on /Users/bertik/PhD/studie-bertik/minimum.xdv (35 pages, 1000300 bytes).
+Output written on /Users/bertik/PhD/studie-bertik/minimum.xdv (35 pages, 1001248 bytes).
