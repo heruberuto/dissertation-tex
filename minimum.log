@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.8)  8 SEP 2023 18:18
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.8)  10 SEP 2023 17:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1532,17 +1532,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 324--329
  []
 
 [29]
-Underfull \hbox (badness 10000) in paragraph at lines 417--423
+Underfull \hbox (badness 10000) in paragraph at lines 411--417
 []\TU/lmss/m/n/10.95 STEM \TU/lmr/m/n/10.95 (2021).  Mýtům a konspiracím o covid-19 věří více
  []
 
 
-Underfull \hbox (badness 6252) in paragraph at lines 417--423
+Underfull \hbox (badness 6252) in paragraph at lines 411--417
 \TU/lmr/m/n/10.95 než třetina české internetové populace | stem.cz.  []$[][][][][] [] [] [] [][][] [] [][][][] [] [][] []
  []
 
 
-Overfull \hbox (52.1056pt too wide) in paragraph at lines 417--423
+Overfull \hbox (52.1056pt too wide) in paragraph at lines 411--417
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]$[]\TU/lmr/m/n/10.95 .
  []
 
@@ -1759,12 +1759,12 @@ Package rerunfilecheck Info: File `minimum.out' has not changed.
 (rerunfilecheck)             Checksum: 6CA09B1C2DD558BCA2875D20DAF27CBE;6594.
  ) 
 Here is how much of TeX's memory you used:
- 33295 strings out of 476919
- 642914 string characters out of 5821840
+ 33294 strings out of 476919
+ 642893 string characters out of 5821840
  1177572 words of memory out of 5000000
- 52490 multiletter control sequences out of 15000+600000
+ 52489 multiletter control sequences out of 15000+600000
  440769 words of font info for 122 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  93i,17n,120p,967b,838s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on /Users/bertik/PhD/studie-bertik/minimum.xdv (36 pages, 1018040 bytes).
+Output written on /Users/bertik/PhD/studie-bertik/minimum.xdv (36 pages, 1017320 bytes).

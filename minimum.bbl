@@ -360,12 +360,6 @@ Raffel, C., Shazeer, N., Roberts, A., Lee, K., Narang, S., Matena, M., Zhou,
   transformer.
 \newblock {\em CoRR}, abs/1910.10683.
 
-\bibitem[Raffel et~al., 2020]{raffel2020exploring}
-Raffel, C., Shazeer, N., Roberts, A., Lee, K., Narang, S., Matena, M., Zhou,
-  Y., Li, W., and Liu, P.~J. (2020).
-\newblock Exploring the limits of transfer learning with a unified text-to-text
-  transformer.
-
 \bibitem[Rajpurkar et~al., 2016]{squad}
 Rajpurkar, P., Zhang, J., Lopyrev, K., and Liang, P. (2016).
 \newblock Squad: 100, 000+ questions for machine comprehension of text.
