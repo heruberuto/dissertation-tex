@@ -1,14 +1,14 @@
 This is BibTeX, Version 0.99d (TeX Live 2021)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
-The top-level auxiliary file: minimum.aux
+The top-level auxiliary file: aux/dissertation.aux
 The style file: apalike.bst
-Database file #1: minimum.bib
+Database file #1: dissertation.bib
 Warning--entry type for "glorin" isn't style-file defined
---line 2409 of file minimum.bib
+--line 2409 of file dissertation.bib
 Warning--empty publisher in disorder
 You've used 95 entries,
             1935 wiz_defined-function locations,
-            928 strings with 25718 characters,
+            929 strings with 25748 characters,
 and the built_in function-call counts, 45066 in all, are:
 = -- 4188
 > -- 3063

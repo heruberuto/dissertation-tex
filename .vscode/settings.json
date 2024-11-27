@@ -19,7 +19,7 @@
         "titleBar.inactiveForeground": "#e7e7e799"
     },
     "peacock.color": "#005d93",
-    "editor.wordBasedSuggestions": false,
+    "editor.wordBasedSuggestions": "off",
     "editor.autoClosingBrackets": "never",
     "grammarly.selectors": [
         {

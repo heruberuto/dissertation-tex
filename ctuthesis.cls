@@ -1,4 +1,4 @@
-%!TEX ROOT = matyama2_2016dipl.tex
+%!TEX ROOT = dissertation.tex
 
 \RequirePackage{expl3,l3keys2e}
 \RequirePackage{environ}
