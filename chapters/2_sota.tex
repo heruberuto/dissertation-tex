@@ -3,7 +3,7 @@
 \chapter{State of the Art}
 %--- FIG: UTF forms
 
-This chapter will first describe the originally popular models for general NLP, such as BERT and the recent paradigm shift from \textit{pretrain + finetune} transfer learning framework popular since the original~\cite{devlin2019bert} paper to the currently booming LLMs, which often outperform the smaller models even without the fine-tuning step~\cite{gpt4, llama, vicuna}. We will then take a look at the performance optimization methods that enable training multi-billion parameter pre-trained models on a set of task-specific data on a single GPU and their potential for our research. 
+This chapter surveys the evolution from BERT‑style transfer learning to instruction‑following LLMs that often outperform smaller fine‑tuned models even without additional training~\cite{devlin2019bert,gpt4,llama,vicuna}. We then review efficiency methods that make fine‑tuning multi‑billion‑parameter models on a single GPU practical and discuss their relevance to our work.
 
 To show how it relates to our main topics, we will introduce currently published approaches for the automated fact-checking task, efforts related to claim generation, and evaluation of NLP model outputs.
 
