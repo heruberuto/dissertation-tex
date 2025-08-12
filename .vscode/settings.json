@@ -19,5 +19,6 @@
             "language": "latex",
             "scheme": "file"
         }
-    ]
+    ],
+    "kiroAgent.configureMCP": "Disabled"
 }
