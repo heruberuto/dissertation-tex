@@ -1,0 +1,24 @@
+    \centering
+    \setlength\tabcolsep{3pt} % default value: 6pt
+    \resizebox{\columnwidth}{!}{%
+    \begin{tabular}{lcccc}
+        \toprule
+        \textbf{Classifier} & \textbf{Acc} & \textbf{$F_1$} & \textbf{Prec.} & \textbf{{\footnotesize {Recall}}} \\
+        \midrule
+        GPT4o & 0.72 & 0.46 & 0.48 & 0.47 \\
+        Claude 3.5 Sonnet & 0.64 & 0.49 & 0.50 & 0.52 \\
+        DeBERTa & 0.63 & 0.39 & 0.40 & 0.41 \\
+        DeBERTa - random@10 & 0.65 & 0.41 & 0.41 & 0.44 \\
+        $0.5\cdot\mbox{DeBERTa}+0.5\cdot\mbox{GPT4o}$ & 0.70 & 0.43 & 0.41 & 0.45 \\
+        $0.5\cdot\mbox{DeBERTa}+0.5\cdot\mbox{Claude}$ & 0.68 & 0.47 & 0.50 & 0.49 \\
+        $0.3\cdot\mbox{DeBERTa}+0.7\cdot\mbox{GPT4o}$ & 0.72 & 0.45 & 0.45 & 0.46 \\
+        $0.3\cdot\mbox{DeBERTa}+0.7\cdot\mbox{Claude}$ & 0.66 & \textbf{0.50} & \textbf{0.51} & \textbf{0.53} \\
+        $0.1\cdot\mbox{DeBERTa}+0.9\cdot\mbox{GPT4o}$ & {0.72} & 0.39 & 0.46 & 0.43 \\
+        $0.1\cdot\mbox{DeBERTa}+0.9\cdot\mbox{Claude}$ & 0.64 & 0.49 & 0.50 & 0.54 \\
+        \midrule
+        Llama 3.1 & \textbf{0.73} & 0.44 & 0.43 & 0.46 \\
+        \bottomrule
+    \end{tabular}
+    }
+    \caption{Evalution of the label generators, classifier models and their ensembles on the \averitec development set. $F_1$, Precision and Recall are computed as macro-averages. The random@10 suffix indicates that the classifier used average of 10 different random orders of QA pairs for each claim. GPT4o stands for the Likert classifier based on GPT-4o, Claude 3.5 Sonnet is the Likert classifier based on Claude 3.5 Sonnet, and DeBERTa is classifier based on DeBERTaV3 Large fine-tuned on \averitec{} gold evidence and labels.}
+    \label{tab:nli}

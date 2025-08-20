@@ -1,23 +1,23 @@
 # Fdb version 3
-["bibtex aux/dissertation"] 0 "aux/dissertation.aux" "aux/dissertation.bbl" "aux/dissertation" 1755588666
+["bibtex aux/dissertation"] 0 "aux/dissertation.aux" "aux/dissertation.bbl" "aux/dissertation" 1755705327
   "/usr/local/texlive/2021/texmf-dist/bibtex/bst/base/apalike.bst" 1292289607 24635 604dafcc79f521a11ea73e506e1fbd98 ""
   "aux/dissertation.aux" 0 -1 0 "xelatex"
   "dissertation.bib" 1696247665 172448 5d3493abedb9998a730519506f76da17 ""
   (generated)
-  "aux/dissertation.blg"
   "aux/dissertation.bbl"
-["makeindex aux/dissertation.idx"] 0 "aux/dissertation.idx" "aux/dissertation.ind" "aux/dissertation" 1755588666
+  "aux/dissertation.blg"
+["makeindex aux/dissertation.idx"] 0 "aux/dissertation.idx" "aux/dissertation.ind" "aux/dissertation" 1755705327
   "aux/dissertation.idx" 0 -1 0 "xelatex"
   (generated)
   "aux/dissertation.ilg"
   "aux/dissertation.ind"
-["xdvipdfmx"] 1755588664 "/Users/bertik/PhD/dizertace/aux/dissertation.xdv" "/Users/bertik/PhD/dizertace/aux/dissertation.pdf" "/Users/bertik/PhD/dizertace/aux/dissertation" 1755588666
-  "/Users/bertik/PhD/dizertace/aux/dissertation.xdv" 1755588664 1002096 fb01b60917c6151f24603eab2d719e1d "xelatex"
+["xdvipdfmx"] 1755705325 "/Users/bertik/PhD/dizertace/aux/dissertation.xdv" "/Users/bertik/PhD/dizertace/aux/dissertation.pdf" "/Users/bertik/PhD/dizertace/aux/dissertation" 1755705327
+  "/Users/bertik/PhD/dizertace/aux/dissertation.xdv" 1755705325 1374524 c9f35c259885a288944b2ed3a5a70128 "xelatex"
   (generated)
   "/Users/bertik/PhD/dizertace/aux/dissertation.pdf"
-["xelatex"] 1755588663 "/Users/bertik/PhD/dizertace/dissertation.tex" "/Users/bertik/PhD/dizertace/aux/dissertation.xdv" "dissertation" 1755588666
-  "/Users/bertik/PhD/dizertace/aux/dissertation.aux" 1755588663 8 a94a2480d3289e625eea47cd1b285758 ""
-  "/Users/bertik/PhD/dizertace/dissertation.tex" 1755588663 12344 2ad5da7b3e40f07f937fcb26de08a19f ""
+["xelatex"] 1755705323 "/Users/bertik/PhD/dizertace/dissertation.tex" "/Users/bertik/PhD/dizertace/aux/dissertation.xdv" "dissertation" 1755705327
+  "/Users/bertik/PhD/dizertace/aux/dissertation.aux" 1755705323 8 a94a2480d3289e625eea47cd1b285758 ""
+  "/Users/bertik/PhD/dizertace/dissertation.tex" 1755705147 12655 fde87c43b12c974887509fcc72e5760a ""
   "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -275,14 +275,16 @@
   "chapters/2_sota.tex" 1754640080 17168 4a76fad5859bceae5fc041b56164f28b ""
   "chapters/3_current_contributions.tex" 1754639989 18683 be2cb74d25bfc1988a6e4fbdeacdf7bd ""
   "chapters/4_dissertation_plan.tex" 1754639989 13195 a3c1270e6ea38a89bc3ef413b32d8c91 ""
-  "chapters/5_conclusion.tex" 1754639989 987 929cf709a1ddcb5f125e112800592402 ""
+  "chapters/5_averitec.tex" 1755705323 34367 333742e391c4e07ec94919721eabe9e6 ""
+  "chapters/6_fever.tex" 1755704879 56 f74fa49fb24f84e790cd0cdb4d58e478 ""
+  "chapters/9_conclusion.tex" 1754639989 987 929cf709a1ddcb5f125e112800592402 ""
   "ctu_logo_black.pdf" 1693138818 9101 c06583dd248b17c9159afb5eed68768b ""
   "ctuth-core.tex" 1732708503 12683 3c298272f2e6f3e87760b50ff918bd22 ""
   "ctuth-names.tex" 1732708478 7216 740037614719a61d1f5b16bfb500b156 ""
   "ctuth-pkg.tex" 1732708503 32858 d85477bcb15ee9f4f0442fd10890553e ""
   "ctuth-templates.tex" 1732708503 7077 ba745e43e18021e2cb44a2fdc5856623 ""
   "ctuthesis.cls" 1732708503 2052 fea704a66beff0f8bc2726010ea5e5d8 ""
-  "dissertation.tex" 1755588663 12344 2ad5da7b3e40f07f937fcb26de08a19f ""
+  "dissertation.tex" 1755705147 12655 fde87c43b12c974887509fcc72e5760a ""
   "fig/bing.pdf" 1693771627 151492 6aab9782047c9ece1e56e72cec5a9e18 ""
   "fig/cedmo.pdf" 1693426982 79965 b74625d8a0e5d98fc1a3f531ab38c70f ""
   "fig/factsearch.pdf" 1694189611 195813 ac15da6ffc577fbb228743549ac25493 ""
@@ -294,14 +296,17 @@
   "fig/lm_critics.png" 1693804426 1696741 ca2d2426b6ff597e84f662258d92fdc5 ""
   "fig/politifact.pdf" 1693635348 799787 41dc9f7d730af9e7d258dfe81ba925b9 ""
   "fig/transformer.pdf" 1693150423 196091 967212c209388351d588b5a54c68fdf9 ""
+  "figures/eval_table.tex" 1755705062 1699 9ccf932e91b676b055e9f50818528538 ""
+  "figures/pipeline.pdf" 1755705062 43563 b816033f2b46d2521482e7f80136fa31 ""
+  "figures/pipeline_table.tex" 1755705062 1471 7b7cab04e36eb3b492fddaefb41f67bf ""
   (generated)
   "aux/dissertation.out"
-  "/Users/bertik/PhD/dizertace/aux/dissertation.xdv"
-  "/Users/bertik/PhD/dizertace/aux/dissertation.log"
-  "aux/dissertation.idx"
-  "aux/dissertation.toc"
-  "aux/dissertation.aux"
-  "aux/dissertation.log"
   "aux/dissertation.lof"
   "aux/dissertation.xdv"
+  "/Users/bertik/PhD/dizertace/aux/dissertation.xdv"
+  "aux/dissertation.idx"
+  "aux/dissertation.aux"
+  "aux/dissertation.log"
+  "aux/dissertation.toc"
+  "/Users/bertik/PhD/dizertace/aux/dissertation.log"
   "aux/dissertation.lot"
