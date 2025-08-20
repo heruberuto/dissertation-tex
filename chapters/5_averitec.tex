@@ -251,13 +251,13 @@ In this paper, we describe the use and development of a RAG pipeline over real w
 Its main advantage are its simplicity, consisting of just two decoupled modules -- Retriever and an Evidence~\& Label Generator -- and leveraging the trainable parameters of a LLM rather than on complex pipeline engineering.
 The LLMs capabilities may further improve in future, making the upgrades of our system trivial.
 
-In section~\ref{sec:system}, we describe the process of adding features to both modules well in an iterative fashion, describing real problems we have encountered and the justifications of their solution, hoping to share our experience on how to make such systems robust and \review{well-performing}.
+In section~\ref{sec:system}, we describe the process of adding features to both modules well in an iterative fashion, describing real problems we have encountered and the justifications of their solution, hoping to share our experience on how to make such systems robust and well-performing.
 We publish our failed approaches in section~\ref{sec:failed} and the metrics we observed to benchmark our systems in section~\ref{sec:results}. 
 We release our Python codebase to facilitate further research and applications of our system, either as a baseline for future research, or for experimenting alongside human fact-checkers.
 
 \subsection{Future works}
 \begin{enumerate}
-    \item Integrating a search API for use in \review{real-world applications} 
+    \item Integrating a search API for use in real-world applications
     \item Re-examine the Likert-scale rating (section~\ref{likert}) to establish a more appropriate and fine-grained means of tokenizing the label probabilities
     \item Generating evidence in the form of declarative sentences rather than Question-Answer pairs should be explored to see if it leads for better or worse fact-checking performance
     \item RAG-tuned LLMs such as those introduced in~\cite{menick2022teachinglanguagemodelssupport} could be explored to see if they offer a more reliable source citing
