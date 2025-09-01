@@ -1,22 +1,22 @@
 # Fdb version 3
-["bibtex aux/dissertation"] 0 "aux/dissertation.aux" "aux/dissertation.bbl" "aux/dissertation" 1755705456
+["bibtex aux/dissertation"] 0 "aux/dissertation.aux" "aux/dissertation.bbl" "aux/dissertation" 1756750566
   "/usr/local/texlive/2021/texmf-dist/bibtex/bst/base/apalike.bst" 1292289607 24635 604dafcc79f521a11ea73e506e1fbd98 ""
-  "aux/dissertation.aux" 1755705454 32842 6b88126ebdfb74e1c964bd3df00f8b8e "xelatex"
+  "aux/dissertation.aux" 0 -1 0 "xelatex"
   "dissertation.bib" 1696247665 172448 5d3493abedb9998a730519506f76da17 ""
   (generated)
-  "aux/dissertation.bbl"
   "aux/dissertation.blg"
-["makeindex aux/dissertation.idx"] 1755705454 "aux/dissertation.idx" "aux/dissertation.ind" "aux/dissertation" 1755705456
-  "aux/dissertation.idx" 1755705453 0 d41d8cd98f00b204e9800998ecf8427e "xelatex"
+  "aux/dissertation.bbl"
+["makeindex aux/dissertation.idx"] 0 "aux/dissertation.idx" "aux/dissertation.ind" "aux/dissertation" 1756750566
+  "aux/dissertation.idx" 0 -1 0 "xelatex"
   (generated)
-  "aux/dissertation.ilg"
   "aux/dissertation.ind"
-["xdvipdfmx"] 1755705450 "/Users/bertik/PhD/dizertace/aux/dissertation.xdv" "/Users/bertik/PhD/dizertace/aux/dissertation.pdf" "/Users/bertik/PhD/dizertace/aux/dissertation" 1755705450
-  "/Users/bertik/PhD/dizertace/aux/dissertation.xdv" 1755705450 1374524 6316b366d21914b988b1017ef21ef664 "xelatex"
+  "aux/dissertation.ilg"
+["xdvipdfmx"] 1756750564 "/Users/bertik/PhD/dizertace/aux/dissertation.xdv" "/Users/bertik/PhD/dizertace/aux/dissertation.pdf" "/Users/bertik/PhD/dizertace/aux/dissertation" 1756750566
+  "/Users/bertik/PhD/dizertace/aux/dissertation.xdv" 1756750564 1373652 b196fde5eb7ed1e21a64a40eec396524 "xelatex"
   (generated)
   "/Users/bertik/PhD/dizertace/aux/dissertation.pdf"
-["xelatex"] 1755705456 "/Users/bertik/PhD/dizertace/dissertation.tex" "/Users/bertik/PhD/dizertace/aux/dissertation.xdv" "dissertation" 1755705456
-  "/Users/bertik/PhD/dizertace/aux/dissertation.aux" 0 -1 0 ""
+["xelatex"] 1756750562 "/Users/bertik/PhD/dizertace/dissertation.tex" "/Users/bertik/PhD/dizertace/aux/dissertation.xdv" "dissertation" 1756750566
+  "/Users/bertik/PhD/dizertace/aux/dissertation.aux" 1756750562 8 a94a2480d3289e625eea47cd1b285758 ""
   "/Users/bertik/PhD/dizertace/dissertation.tex" 1755705147 12655 fde87c43b12c974887509fcc72e5760a ""
   "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
@@ -284,7 +284,6 @@
   "ctuth-pkg.tex" 1732708503 32858 d85477bcb15ee9f4f0442fd10890553e ""
   "ctuth-templates.tex" 1732708503 7077 ba745e43e18021e2cb44a2fdc5856623 ""
   "ctuthesis.cls" 1732708503 2052 fea704a66beff0f8bc2726010ea5e5d8 ""
-  "dissertation.aux" 0 -1 0 ""
   "dissertation.tex" 1755705147 12655 fde87c43b12c974887509fcc72e5760a ""
   "fig/bing.pdf" 1693771627 151492 6aab9782047c9ece1e56e72cec5a9e18 ""
   "fig/cedmo.pdf" 1693426982 79965 b74625d8a0e5d98fc1a3f531ab38c70f ""
@@ -299,15 +298,15 @@
   "fig/transformer.pdf" 1693150423 196091 967212c209388351d588b5a54c68fdf9 ""
   "figures/eval_table.tex" 1755705062 1699 9ccf932e91b676b055e9f50818528538 ""
   "figures/pipeline.pdf" 1755705062 43563 b816033f2b46d2521482e7f80136fa31 ""
-  "figures/pipeline_table.tex" 1755705062 1471 7b7cab04e36eb3b492fddaefb41f67bf ""
+  "figures/pipeline_table.tex" 1756750449 1381 d2e05a01c157783b28eb12690e7ad84d ""
   (generated)
-  "aux/dissertation.log"
-  "aux/dissertation.xdv"
-  "/Users/bertik/PhD/dizertace/aux/dissertation.xdv"
-  "aux/dissertation.aux"
-  "aux/dissertation.lof"
-  "/Users/bertik/PhD/dizertace/aux/dissertation.log"
   "aux/dissertation.idx"
-  "aux/dissertation.lot"
-  "aux/dissertation.out"
+  "/Users/bertik/PhD/dizertace/aux/dissertation.log"
   "aux/dissertation.toc"
+  "aux/dissertation.lof"
+  "aux/dissertation.out"
+  "aux/dissertation.lot"
+  "aux/dissertation.log"
+  "aux/dissertation.aux"
+  "/Users/bertik/PhD/dizertace/aux/dissertation.xdv"
+  "aux/dissertation.xdv"
