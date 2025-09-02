@@ -3,7 +3,7 @@
 \chapter{AVeriTeC Paper}
 \section{Introduction}
 \label{sec:introduction}
-We release \review{a} pipeline for fact-checking claims using evidence retrieved from the web consisting of two modules -- a \textit{retriever}, which picks the most relevant sources among the available knowledge store\footnote{Due to the pre-retrieval step that was used to generate knowledge stores, our \say{retriever} module could more conventionally be referred to as a \say{reranker}, which we refrain from, to avoid confusion with reranking steps it uses as a subroutine.} and an \textit{evidence \& label generator} which generates evidence for the claim using these sources, as well as its veracity label. 
+We release {a} pipeline for fact-checking claims using evidence retrieved from the web consisting of two modules -- a \textit{retriever}, which picks the most relevant sources among the available knowledge store\footnote{Due to the pre-retrieval step that was used to generate knowledge stores, our \say{retriever} module could more conventionally be referred to as a \say{reranker}, which we refrain from, to avoid confusion with reranking steps it uses as a subroutine.} and an \textit{evidence \& label generator} which generates evidence for the claim using these sources, as well as its veracity label. 
 
 Our pipeline is a variant of the popular Retrieval-augmented Generation (RAG) scheme~\cite{rag}, making it easy to re-implement using established frameworks such as Langchain, Haystack, or our attached Python codebase for future research or to use as a baseline.
 
@@ -23,11 +23,11 @@ This paper describes our pipeline and the decisions taken at each module, achiev
 \begin{enumerate}
     \item \textbf{\averitec{} shared task}~\cite{averitec2024} releases the datase of real-world fact-checked claims, annotated with evidence available at the date the claim was made.
     
-    \review{It proposes the \textbf{\averitec{} Score} -- a method of unsupervised scoring of fact-checking pipeline against this gold data using Hungarian METEOR score, matching the evidence questions (Q) or the whole evidence (Q+A).
+    {It proposes the \textbf{\averitec{} Score} -- a method of unsupervised scoring of fact-checking pipeline against this gold data using Hungarian METEOR score, matching the evidence questions (Q) or the whole evidence (Q+A).
     The score is then calculated as the proportion of claims with accurate label and sound evidence (using a threshold for Hu-METEOR such as 0.25) among all claims in the dataset, giving an estimate on \say{how often the whole fact-checking pipeline succeeds end to end}.}
 
     The provided \textbf{baseline} is a pipeline of search query generation, API search (producing a knowledge store), sentence retrieval, Question-and-answer (QA) generation, QA reranking, QA-wise claim classification and label aggregation, achieving an overall \averitec{} test set score of 11\%.  
-    \item \review{\textbf{FEVER Shared Task}~\cite{thorne-etal-2018-fact}, a predecessor to the \averitec{}, worked with a similar dataset engineered on top of the enclosed domain Wikipedic data rather than real-world fact-checks. 
+    \item {\textbf{FEVER Shared Task}~\cite{thorne-etal-2018-fact}, a predecessor to the \averitec{}, worked with a similar dataset engineered on top of the enclosed domain Wikipedic data rather than real-world fact-checks. 
     Its top-ranking solutions used a simpler pipeline of Document Retrieval, Sentence Reranking and Natural Language Inference, improving its modules in a decoupled manner and scoring well above 60\% in a similarly computed FEVER score~\cite{thorne-etal-2018-fever} on this data.}
     \item \textbf{Our previous research} on fact-checking pipelines~\cite{Ullrich2023,drchal2023pipelinedatasetgenerationautomated} using data similar to FEVER and \averitec{} shows significant superiority of fact-checking pipelines that \textbf{retrieve the whole documents} for the inference step, rather than retrieving out-of-context sentences.
     \item \textbf{Retrieval-Augmented Generation (RAG) for Knowledge-Intensive Tasks}~\cite{rag} takes this a step further, leveraging Large Language Model (LLM) for the task, providing it the whole text of retrieved documents (each a chunk of Wikipedia) and simply instructing it to predict the evidence and label on top of it, achieving results within 4.3\% from the FEVER state of the art by the time of its publication (December 2020) \textit{without} engineering a custom pipeline for the task.
@@ -36,19 +36,19 @@ This paper describes our pipeline and the decisions taken at each module, achiev
 
 \section{System description}
 \label{sec:system}
-\review{Our system design prioritizes simplicity, and its core idea is using a straightforward RAG pipeline without engineering extra steps, customizing only the retrieval step and LLM prompting } (Listing~\ref{lst:llm_system_prompt} \review{in Appendix~\ref{appendix_sec:system_prompt}}).
+{Our system design prioritizes simplicity, and its core idea is using a straightforward RAG pipeline without engineering extra steps, customizing only the retrieval step and LLM prompting } (Listing~\ref{lst:llm_system_prompt} {in Appendix~\ref{appendix_sec:system_prompt}}).
 Despite that, this section describes and justifies our decisions taken at each step, our additions to the naive version of RAG modules to tune them for the specific task of fact-checking, and their impact on the system performance.
 
 \subsection{Retrieval module}
 \label{retrieval}
 To ease comparison with the baseline and other systems designed for the task, our system does not use direct internet/search-engine access for its retrieval, but an \averitec{} \textit{knowledge store} provided alongside each claim.
 
-\review{To use our pipeline in the wild, our retrieval module is decoupled from the rest of the pipeline and can be swapped out in favour of an internet search module such as SerpApi\footnote{\url{https://serpapi.com/}} as a whole, or it can be used on top of a knowledge store emulated using large crawled corpora such as CommonCrawl\footnote{\url{https://commoncrawl.org/}} and a pre-retrieval module.}
+{To use our pipeline in the wild, our retrieval module is decoupled from the rest of the pipeline and can be swapped out in favour of an internet search module such as SerpApi\footnote{\url{https://serpapi.com/}} as a whole, or it can be used on top of a knowledge store emulated using large crawled corpora such as CommonCrawl\footnote{\url{https://commoncrawl.org/}} and a pre-retrieval module.}
 
 \subsubsection{Knowledge stores}
 Each claim's knowledge store contains pre-scraped results for various search queries that can be derived from the claim using human annotation or generative models.
-The knowledge stores used with ours as well as the baseline system can be downloaded from the \averitec{}  dataset page\footnote{\url{https://fever.ai/dataset/averitec.html}}, containing about 1000 pre-scraped \textit{documents}\footnote{\label{devsetnote}The numbers are orientational and were computed on knowledge stores provided for the \averitec{}  dev set.}, each consisting of $28$ sentences at median\footnoteref{devsetnote}, albeit varying wildly between documents.
-The methods used for generating the knowledge stores are explained in more detail by~\citet{averitec2024}.
+The knowledge stores used with ours as well as the baseline system can be downloaded from the \averitec{}  dataset page\footnote{\url{https://fever.ai/dataset/averitec.html}}, containing about 1000 pre-scraped \textit{documents}\footnote{\label{devsetnote}The numbers are orientational and were computed on knowledge stores provided for the \averitec{}  dev set.}, each consisting of $28$ sentences at median\footnote{devsetnote}, albeit varying wildly between documents.
+The methods used for generating the knowledge stores are explained in more detail by~\cite{averitec2024}.
 %To use our system in the wild, this knowledge store can be emulated using a search API such as SerpApi, or even a large document collection such as Common Crawl pruned down to similar orders of magnitude using a cheap retrieval method and the claim as a search query.
 
 Our retrieval module then focuses on picking a set of $k$ ($k=10$ in the examples below, as well as in our submitted system) most appropriate document chunks to fact-check the provided claim within this knowledge store.
@@ -60,7 +60,7 @@ It takes less time to embed the whole knowledge store into vectors than to match
 
 For our proof of concept, we explore the MTEB~\cite{muennighoff-etal-2023-mteb} benchmark leaderboard, looking for a reasonably-sized open-source embedding model, ultimately picking Mixedbread's mxbai-large-v1~\cite{li-li-2024-aoe,emb2024mxbai} optimized for the cosine objective fitting our inteded use.
 
-\review{To reduce querying time at a reasonable exactness tradeoff, we use Faiss index~\cite{douze2024faiss,johnson2019billion} to store our vectors, allowing us to only precompute semantical representation once, making the retriever respond rapidly in empirical experiments, allowing a very agile prototyping of novel methods to be used.}
+{To reduce querying time at a reasonable exactness tradeoff, we use Faiss index~\cite{douze2024faiss,johnson2019billion} to store our vectors, allowing us to only precompute semantical representation once, making the retriever respond rapidly in empirical experiments, allowing a very agile prototyping of novel methods to be used.}
 \
 \subsubsection{Chunking with added context}
 Our initial experiments with the whole \averitec{}  documents for the Document Retrieval step have revealed a significant weakness -- while most documents fit within the input size of the embedding model, outliers are common, often with \textit{hundreds of thousands} characters, exceeding the 512 input tokens with little to no coverage of their content.
@@ -69,7 +69,7 @@ Upon further examination, these are typically PDF documents of legislature, docu
 
 This workflow inspires the use of \textit{document chunk retrieval} as used in~\cite{rag}, commonly paired with RAG.
 We partition each document into sets of its sentences of combined length of $N$ characters at most.
-To take advantage of the full input size of the vector embedding model we use for semantical search, we \review{arbitrarily} set our bound $N=512*4=2048$, \review{where 512 is} the input dimension of common embedding models, 4 often being used as a rule-of-thumb number of characters per token for US English in modern tokenizers~\cite{tokens}.
+To take advantage of the full input size of the vector embedding model we use for semantical search, we {arbitrarily} set our bound $N=512*4=2048$, {where 512 is} the input dimension of common embedding models, 4 often being used as a rule-of-thumb number of characters per token for US English in modern tokenizers~\cite{tokens}.
 
 Importantly, each chunk is  assigned metadata -- the source URL, as well as the full text of the next and previous chunk within the same document.
 This way, chunks can be presented to the LLM along with their original context in the generation module, where the length constraint is much less of an issue than in vector embedding.
@@ -82,11 +82,11 @@ As each of the thousands of claims has its own knowledge store, each of possibly
 This yields a reasonably-sized document store for embedding each chunk into a vector, taking an average of 40 s to compute and store using the method described in Section~\ref{sec:knn} for each dev-claim using our Tesla V100 GPU.
 
 This allows a quick and agile production of vectorstores for further querying and experimentation, motivated by the \averitec{}  test data being published just several days before the announced submission deadline.
-\review{The pruning also keeps the resource intensity moderate for real-world applications.
+{The pruning also keeps the resource intensity moderate for real-world applications.
 However, if time is not of the essence, the step can be omitted.}
 
 \subsubsection{Diversifying sources: MMR}
-\review{Our choice of embedding search based on the entire claim rather than generating \say{search queries} introduces less noise and captures the semantics of the whole claim.
+{Our choice of embedding search based on the entire claim rather than generating \say{search queries} introduces less noise and captures the semantics of the whole claim.
 It is, however, prone to redundancy among search results, which we address using a reranking by the results' Maximal Marginal Relevance (MMR)~\cite{carbonell-mmr}, a metric popular for the RAG task, which maximizes the search results' score computed as (for $D_i\in P$)
 $$\lambda \cdot \mathrm{Sim}(D_i, Q) - (1-\lambda) \cdot \max_{D_j \in S} \mathrm{Sim}(D_i, D_j)$$
 $Sim$ denoting the cosine-similarity between embeddings, $Q$ being the search query, and $P$ the pre-fetched set of documents (by a search which simply maximizes their $Sim$ to $Q$), forming $S$ as the final search result, by adding each $D_i$ as MMR-argmax one by one, until reaching its desired size.}
@@ -99,15 +99,15 @@ The second and the last module on our proposed pipeline for automated fact check
 
 Our approach leverages a Large Language Model (LLM), instructing it to output both evidence and the label in a single step, as a chain of thought.
 We rely on JSON-structured output generation with source referencing using a numeric identifier, we estimate the label confidences using Likert-scale ratings.
-The full system prompt can be examined in Listing~\ref{lst:llm_system_prompt} \review{in Appendix~\ref{appendix_sec:system_prompt},} and this section further explains the choices behind it.
+The full system prompt can be examined in Listing~\ref{lst:llm_system_prompt} {in Appendix~\ref{appendix_sec:system_prompt},} and this section further explains the choices behind it.
 
 \subsubsection{JSON generation}
 
-To be able to collect LLM's results programmatically, we exploit their capability to produce structured outputs, which is on \review{the} rise, with datasets available for tuning~\cite{tang2024strucbenchlargelanguagemodels} and by the time of writing of this paper (August 2024), systems for strictly structured prediction are beginning to be launched by major providers~\cite{json}.
+To be able to collect LLM's results programmatically, we exploit their capability to produce structured outputs, which is on {the} rise, with datasets available for tuning~\cite{tang2024strucbenchlargelanguagemodels} and by the time of writing of this paper (August 2024), systems for strictly structured prediction are beginning to be launched by major providers~\cite{json}.
 
-Despite not having access to such structured-prediction API by the time of \averitec{} shared task, the current generation of models examined for the task (section~\ref{sec:chosen_llms}) rarely strays from the desired format if properly explained within a system prompt -- we instruct our models to output a JSON of pre-defined properties (see prompt Listing~\ref{lst:llm_system_prompt} \review{in Appendix~\ref{appendix_sec:system_prompt}}) featuring both evidence and the veracity verdict for a given claims.
+Despite not having access to such structured-prediction API by the time of \averitec{} shared task, the current generation of models examined for the task (section~\ref{sec:chosen_llms}) rarely strays from the desired format if properly explained within a system prompt -- we instruct our models to output a JSON of pre-defined properties (see prompt Listing~\ref{lst:llm_system_prompt} {in Appendix~\ref{appendix_sec:system_prompt}}) featuring both evidence and the veracity verdict for a given claims.
 
-Although we implement fallbacks, less than 0.5\% of our predictions \review{threw} a parsing exception throughout experimentation, and could be easily recovered using the same prompting again, exploiting the intrinsic randomness of LLM predictions.
+Although we implement fallbacks, less than 0.5\% of our predictions {threw} a parsing exception throughout experimentation, and could be easily recovered using the same prompting again, exploiting the intrinsic randomness of LLM predictions.
 
 \subsubsection{Chain-of-thought prompting}
 While JSON dictionary should be order-invariant, we can actually exploit the order of outputs in our output structure to make LLMS like GPT-4o output better results~\cite{cot}.
@@ -115,7 +115,7 @@ This is commonly referred to as the \say{chain-of-thought} prompting -- if we in
 
 \subsubsection{Source referring}
 To be able to backtrack the generated evidence to the urls of the used sources, we simply augment each question-answer pair with a source field.
-We assign a 1-based index\footnote{\review{We chose the 1-based source indexing to exploit the source-referring data in LLM train set such as Wikipedia, where source numbers start with 1. The improvement in quality over 0-based indexing was not experimentally tested.}}  to each of the sources to facilitate tokenization and prompt the LLM to refer it as the source ID with each evidence it generates.
+We assign a 1-based index\footnote{{We chose the 1-based source indexing to exploit the source-referring data in LLM train set such as Wikipedia, where source numbers start with 1. The improvement in quality over 0-based indexing was not experimentally tested.}}  to each of the sources to facilitate tokenization and prompt the LLM to refer it as the source ID with each evidence it generates.
 While hallucination can not be fully prevented, it is less common than it may appear -- with RAG gaining popularity, the models are being trained to cite their sources using special citation tokens~\cite{menick2022teachinglanguagemodelssupport}, not dissimilarly to our proposal.
 
 \subsubsection{Dynamic few-shot learning}
@@ -190,7 +190,7 @@ During the experiments, we discovered that classifying the \textit{Conflicting E
 To overcome this problem, we tried to build a binary classifier with cherrypicking as positive class. We tried to use the DeBERTaV3 Large model with both basic and weighted cross-entropy loss (other experimental settings were the same as in section~\ref{subsubsec:concatenation}), but it could not pick up the training task due to the \textit{Conflicting Evidence/Cherrypicking} underrepresentation in train set -- less than 7\% of the samples carry the label. 
 
 Even after exploring various other methods, we did not get a reliable detection scheme for this task, perhaps motivating a future collection of data that represents the class better.
-While writing this system description paper, we found an interesting research by~\citet{jaradat2024contextawaredetectioncherrypickingnews} that uses a radically different approach to detect cherrypicking in newspaper articles.
+While writing this system description paper, we found an interesting research by~\cite{jaradat2024contextawaredetectioncherrypickingnews} that uses a radically different approach to detect cherrypicking in newspaper articles.
 
 
 \section{Results and analysis}
@@ -200,7 +200,7 @@ We examine our pipeline results using two sets of metrics -- firstly, we measure
 While the retrieval module is fixed throughout the experiment (a full scheme described in section~\ref{retrieval}), various Evidence \& Label generators and classifiers are compared in Table~\ref{tab:nli}, showcasing their performance on the same sources.
 The results show that if we disregard the quality of evidence, models are more or less interchangeable, without a clear winner across the board -- an ensemble of DeBERTA and Claude-3.5-Sonnet gives the best $F_1$ score, while GPT-4o scores 72\% accuracy.
 \begin{table}\input{figures/eval_table.tex}\end{table}
-\begin{table*}\input{figures/pipeline_table.tex}\end{table*}
+\begin{table}\input{figures/pipeline_table.tex}\end{table}
 
 In real world, however, the evidence quality is critical for the fact-checking task.
 We therefore proceed to estimate it using the hu-METEOR evidence question score, QA score and \averitec{} score benchmarks briefly explained in Section~\ref{avscore} and in greater detail in~\cite{averitec2024}.
@@ -216,7 +216,7 @@ Posterior to the original experiments and to the \averitec{} submission deadline
 During our experimentation July 2024, we have made around 9000 requests to OpenAI's \texttt{gpt-4o-2024-05-13} batch API, at a total cost of \$363.
 This gives a mean cost estimate of \$0.04 per a single fact-check (or \$0.08 using the API without the batch discount) that can be further reduced using cheaper models, such as \texttt{gpt-4o-2024-08-06}.
 
-We argue that such costs make our model suitable for further experiments alongside human fact-checkers\review{,} whose time spent reading through each source and proposing each evidence by themselves would certainly come at a higher price.
+We argue that such costs make our model suitable for further experiments alongside human fact-checkers{,} whose time spent reading through each source and proposing each evidence by themselves would certainly come at a higher price.
 
 Our successive experiments with Llama 3.1~\cite{dubey2024llama3herdmodels} show promising results as well, nearly achieving parity with GPT.
 The use of open-source models such as LLaMa or Mistral allows running our pipeline on premise, without leaking data to a third party and billing anything else than the computational resources.
@@ -227,19 +227,19 @@ In this section, we provide the results of an explorative analysis of 20 randoml
 
 
 \subsubsection{Pipeline errors}
-Our pipeline tends to rely on unofficial (often newspaper) sources rather than official government sources, e.g., with a domain ending or containing \texttt{gov}. On the other hand, it seems that the annotators prefer those sources. This could be remedied by implementing a different source selection strategy, preferring those official sources. For an example, see Listing~\ref{lst:gov_error} \review{in Appendix~\ref{appendix_sec:errors}}.
+Our pipeline tends to rely on unofficial (often newspaper) sources rather than official government sources, e.g., with a domain ending or containing \texttt{gov}. On the other hand, it seems that the annotators prefer those sources. This could be remedied by implementing a different source selection strategy, preferring those official sources. For an example, see Listing~\ref{lst:gov_error} {in Appendix~\ref{appendix_sec:errors}}.
 
 Another thing that could be recognised as an error is that our pipeline usually generates all ten allowed questions (upper bound given by the task~\cite{averitec2024}). The analysis of the samples shows that the last questions are often unrelated or redundant to the claim and do not contribute directly to better veracity evaluation. However, since the classification step of our pipeline is not dependent on the number of question-answer pairs, this is not a critical error.
-Listing~\ref{lst:unrelated_questions} \review{in Appendix~\ref{appendix_sec:errors}} shows an example of a \review{data point} with some unrelated questions.
+Listing~\ref{lst:unrelated_questions} {in Appendix~\ref{appendix_sec:errors}} shows an example of a {data point} with some unrelated questions.
 
-When the pipeline generates extractive answers, it sometimes happens that the answer is not precisely extracted from the source text but slightly modified. An example of this error can be seen in Listing~\ref{lst:extractive_error} \review{in Appendix~\ref{appendix_sec:errors}}. This error is not critical, but it could be improved in future works, e.g. using post-processing via string matching.
+When the pipeline generates extractive answers, it sometimes happens that the answer is not precisely extracted from the source text but slightly modified. An example of this error can be seen in Listing~\ref{lst:extractive_error} {in Appendix~\ref{appendix_sec:errors}}. This error is not critical, but it could be improved in future works, e.g. using post-processing via string matching.
 
 Individual errors were also caused by the fact that we do not use the claim date in our pipeline and because our pipeline cannot analyse PDFs with tables properly. The last erroneous behaviour we have noticed is that the majority of questions and answers are often generated from a single source. This should not be viewed as an error, but by introducing diversity into the sources, the pipeline would be more reliable when deployed in real-world scenarios.
 
 \subsubsection{Dataset errors}
-During the error analysis of our pipeline, we also found some errors in the \averitec{} dataset that we would like to mention. In some cases, there is a leakage of PolitiFact \review{or Factcheck.org} fact-checking articles where the claim is already fact-checked. This leads to a situation where our pipeline gives a correct verdict using the leaked evidence. However, annotators gave a different label (often Not Enough Evidence). \review{An example of this error is shown in Listing~\ref{lst:polifact_leakage} in Appendix~\ref{appendix_sec:errors}}. 
+During the error analysis of our pipeline, we also found some errors in the \averitec{} dataset that we would like to mention. In some cases, there is a leakage of PolitiFact {or Factcheck.org} fact-checking articles where the claim is already fact-checked. This leads to a situation where our pipeline gives a correct verdict using the leaked evidence. However, annotators gave a different label (often Not Enough Evidence). {An example of this error is shown in Listing~\ref{lst:polifact_leakage} in Appendix~\ref{appendix_sec:errors}}. 
 
-Another issue we have noticed is the inconsistency in the questions and answers given by annotators. \review{Sometimes, they tend to be longer, including non-relevant information, while some are much shorter, as seen in Listing~\ref{lst:different_lengths} in Appendix~\ref{appendix_sec:errors}}. The questions are often too general, or the annotators seem to use outside knowledge. This inconsistency in the dataset leads to a decreased performance of any models evaluated on this dataset.
+Another issue we have noticed is the inconsistency in the questions and answers given by annotators. {Sometimes, they tend to be longer, including non-relevant information, while some are much shorter, as seen in Listing~\ref{lst:different_lengths} in Appendix~\ref{appendix_sec:errors}}. The questions are often too general, or the annotators seem to use outside knowledge. This inconsistency in the dataset leads to a decreased performance of any models evaluated on this dataset.
 
 \subsubsection{Summary}
 Despite the abovementioned errors, the explorative analysis revealed that our pipeline consistently gives reasonable questions and answers for the claims. Most misclassified samples in those 20 data points were due to dataset errors.
