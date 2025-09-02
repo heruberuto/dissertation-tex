@@ -1,16 +1,18 @@
-    \centering
-    \begin{tabular}{l | c c c | c c c}
-    \hline
-    &\multicolumn{3}{c|}{\textbf{Dev Set Scores}} & \multicolumn{3}{c}{\textbf{Test Set Scores}}  \\
-    \textbf{Pipeline Name} & \textbf{Q only} & \textbf{Q+A} & \textbf{\averitec{}} & \textbf{Q only} & \textbf{Q+A} & \textbf{AVeriTeC} \\ \hline
-    \textbf{GPT-4o (full-featured pipeline)}      & \textbf{0.46} & \textbf{0.29} & \textbf{0.42} & 0.46 & \textbf{0.32} & \textbf{0.50}\\
-    GPT-4o s         & 0.45 & 0.28 & 0.38 & 0.45 & 0.30 & 0.47 \\
-    Claude-3.5 f             & 0.43 & 0.28 & 0.35 & 0.42 & 0.30 & 0.46 \\
-    GPT-4o de              & 0.45 & 0.28 & 0.36 & -- & -- & --\\
-    \averitec{} bl            & 0.24 & 0.19 & 0.09 & 0.24 & 0.20 & 0.11\\
-    \hline
-    Llama 3.1 70B & \textbf{0.46} & 0.27 & 0.36 & \textbf{0.47} & 0.29 & 0.42\\
-    \bottomrule
-    \end{tabular}
-    \caption{Comparison of Pipeline Scores on Dev and Test Sets. \review{Q, Q+A are Hu-METEOR scores against gold data,} AVeriTeC scores \review{are calculated as referred in section~\ref{avscore} thresholded at 0.25}. \say{Full-featured} pipelines use the all the improvement techniques introduced in section~\ref{sec:system}, while the simplified pipeline omits the dynamic few-shot learning, answer-type-tuning and Likert-scale confidence emulation described in section~\ref{sec:generation}}
-    \label{tab:pipeline_scores}
+\centering
+    \resizebox{\columnwidth}{!}{%
+\begin{tabular}{l | c c c | c c c}
+\hline
+&\multicolumn{3}{c|}{\textbf{Dev Set Scores}} & \multicolumn{3}{c}{\textbf{Test Set Scores}}  \\
+\textbf{Pipeline Name} & \textbf{Q only} & \textbf{Q+A} & \textbf{\averitec{}} & \textbf{Q only} & \textbf{Q+A} & \textbf{AVeriTeC} \\ \hline
+\textbf{GPT-4o (full-featured pipeline)}      & \textbf{0.46} & \textbf{0.29} & \textbf{0.42} & 0.46 & \textbf{0.32} & \textbf{0.50}\\
+GPT-4o (simplified)         & 0.45 & 0.28 & 0.38 & 0.45 & 0.30 & 0.47 \\
+Claude-3.5 (full-featured)             & 0.43 & 0.28 & 0.35 & 0.42 & 0.30 & 0.46 \\
+GPT-4o (with DeBERTa classifier)              & 0.45 & 0.28 & 0.36 & -- & -- & --\\
+\averitec{} aseline            & 0.24 & 0.19 & 0.09 & 0.24 & 0.20 & 0.11\\
+\hline
+Llama 3.1 70B (full-featured) & \textbf{0.46} & 0.27 & 0.36 & \textbf{0.47} & 0.29 & 0.42\\
+\bottomrule
+\end{tabular}
+}
+\caption{Comparison of Pipeline Scores on Dev and Test Sets. \review{Q, Q+A are Hu-METEOR scores against gold data,} AVeriTeC scores \review{are calculated as referred in section~\ref{avscore} thresholded at 0.25}. \say{Full-featured} pipelines use the all the improvement techniques introduced in section~\ref{sec:system}, while the simplified pipeline omits the dynamic few-shot learning, answer-type-tuning and Likert-scale confidence emulation described in section~\ref{sec:generation}}
+\label{tab:pipeline_scores}

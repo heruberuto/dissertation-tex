@@ -42,7 +42,7 @@ pdflatex dissertation.tex
   - `2_sota.tex` - State of the art review
   - `3_current_contributions.tex` - Current research contributions
   - `4_dissertation_plan.tex` - Future dissertation plan
-  - `5_conclusion.tex` - Conclusions
+  - `9_conclusion.tex` - Conclusions
 - **Bibliography**: `dissertation.bib` - BibTeX references
 - **Figures**: `fig/` directory contains all dissertation figures (PDF, PNG formats)
 

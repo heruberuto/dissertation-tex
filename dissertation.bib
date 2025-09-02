@@ -2824,3 +2824,597 @@ author = {Waddah Saeed and Christian Omlin},
 keywords = {Explainable AI (XAI), Interpretable AI, Black-box, Machine learning, Deep learning, Meta-survey, Responsible AI},
 abstract = {The past decade has seen significant progress in artificial intelligence (AI), which has resulted in algorithms being adopted for resolving a variety of problems. However, this success has been met by increasing model complexity and employing black-box AI models that lack transparency. In response to this need, Explainable AI (XAI) has been proposed to make AI more transparent and thus advance the adoption of AI in critical domains. Although there are several reviews of XAI topics in the literature that have identified challenges and potential research directions of XAI, these challenges and research directions are scattered. This study, hence, presents a systematic meta-survey of challenges and future research directions in XAI organized in two themes: (1) general challenges and research directions of XAI and (2) challenges and research directions of XAI based on machine learning life cycle’s phases: design, development, and deployment. We believe that our meta-survey contributes to XAI literature by providing a guide for future exploration in the XAI area.}
 }
+
+
+
+@inproceedings{rag,
+  address =       {Red Hook, NY, USA},
+  author =        {Lewis, Patrick and Perez, Ethan and
+                   Piktus, Aleksandra and Petroni, Fabio and
+                   Karpukhin, Vladimir and Goyal, Naman and
+                   K\"{u}ttler, Heinrich and Lewis, Mike and
+                   Yih, Wen-tau and Rockt\"{a}schel, Tim and
+                   Riedel, Sebastian and Kiela, Douwe},
+  booktitle =     {Proceedings of the 34th International Conference on
+                   Neural Information Processing Systems},
+  publisher =     {Curran Associates Inc.},
+  series =        {NIPS '20},
+  title =         {Retrieval-augmented generation for
+                   knowledge-intensive NLP tasks},
+  year =          {2020},
+  abstract =      {Large pre-trained language models have been shown to
+                   store factual knowledge in their parameters, and
+                   achieve state-of-the-art results when fine-tuned on
+                   downstream NLP tasks. However, their ability to
+                   access and precisely manipulate knowledge is still
+                   limited, and hence on knowledge-intensive tasks,
+                   their performance lags behind task-specific
+                   architectures. Additionally, providing provenance for
+                   their decisions and updating their world knowledge
+                   remain open research problems. Pre-trained models
+                   with a differentiable access mechanism to explicit
+                   non-parametric memory can overcome this issue, but
+                   have so far been only investigated for extractive
+                   downstream tasks. We explore a general-purpose
+                   fine-tuning recipe for retrieval-augmented generation
+                   (RAG) — models which combine pre-trained parametric
+                   and non-parametric memory for language generation. We
+                   introduce RAG models where the parametric memory is a
+                   pre-trained seq2seq model and the non-parametric
+                   memory is a dense vector index of Wikipedia, accessed
+                   with a pre-trained neural retriever. We compare two
+                   RAG formulations, one which conditions on the same
+                   retrieved passages across the whole generated
+                   sequence, and another which can use different
+                   passages per token. We fine-tune and evaluate our
+                   models on a wide range of knowledge-intensive NLP
+                   tasks and set the state of the art on three open
+                   domain QA tasks, outperforming parametric seq2seq
+                   models and task-specific retrieve-and-extract
+                   architectures. For language generation tasks, we find
+                   that RAG models generate more specific, diverse and
+                   factual language than a state-of-the-art
+                   parametric-only seq2seq baseline.},
+  isbn =          {9781713829546},
+  url =           {https://proceedings.neurips.cc/paper_files/paper/2020/file/
+                  6b493230205f780e1bc26945df7481e5-Paper.pdf},
+}
+
+@inproceedings{averitec2024,
+  address =       {Red Hook, NY, USA},
+  author =        {Schlichtkrull, Michael and Guo, Zhijiang and
+                   Vlachos, Andreas},
+  booktitle =     {Proceedings of the 37th International Conference on
+                   Neural Information Processing Systems},
+  publisher =     {Curran Associates Inc.},
+  series =        {NIPS '23},
+  title =         {AVERITEC: a dataset for real-world claim verification
+                   with evidence from the web},
+  year =          {2024},
+  abstract =      {Existing datasets for automated fact-checking have
+                   substantial limitations, such as relying on
+                   artificial claims, lacking annotations for evidence
+                   and intermediate reasoning, or including evidence
+                   published after the claim. In this paper, we
+                   introduce AVERITEC, a new dataset of 4,568 real-world
+                   claims covering fact-checks by 50 different
+                   organizations. Each claim is annotated with
+                   question-answer pairs supported by evidence available
+                   online, as well as textual justifications explaining
+                   how the evidence combines to produce a verdict.
+                   Through a multi-round annotation process, we avoid
+                   common pitfalls including context dependence,
+                   evidence insufficiency, and temporal leakage, and
+                   reach a substantial inter-annotator agreement of κ =
+                   0.619 on verdicts. We develop a baseline as well as
+                   an evaluation scheme for verifying claims through
+                   question-answering against the open web.},
+  url =           {https://dl.acm.org/doi/10.5555/3666122.3668964},
+}
+
+@inproceedings{thorne-etal-2018-fact,
+  address =       {Brussels, Belgium},
+  author =        {Thorne, James and Vlachos, Andreas and
+                   Cocarascu, Oana and Christodoulopoulos, Christos and
+                   Mittal, Arpit},
+  booktitle =     {Proceedings of the First Workshop on Fact Extraction
+                   and {VER}ification ({FEVER})},
+  editor =        {Thorne, James and Vlachos, Andreas and
+                   Cocarascu, Oana and Christodoulopoulos, Christos and
+                   Mittal, Arpit},
+  month =         nov,
+  pages =         {1--9},
+  publisher =     {Association for Computational Linguistics},
+  title =         {The Fact Extraction and {VER}ification ({FEVER})
+                   Shared Task},
+  year =          {2018},
+  doi =           {10.18653/v1/W18-5501},
+  url =           {https://aclanthology.org/W18-5501},
+}
+
+@inproceedings{thorne-etal-2018-fever,
+  address =       {New Orleans, Louisiana},
+  author =        {Thorne, James and Vlachos, Andreas and
+                   Christodoulopoulos, Christos and Mittal, Arpit},
+  booktitle =     {Proceedings of the 2018 Conference of the North
+                   {A}merican Chapter of the Association for
+                   Computational Linguistics: Human Language
+                   Technologies, Volume 1 (Long Papers)},
+  editor =        {Walker, Marilyn and Ji, Heng and Stent, Amanda},
+  month =         jun,
+  pages =         {809--819},
+  publisher =     {Association for Computational Linguistics},
+  title =         {{FEVER}: a Large-scale Dataset for Fact Extraction
+                   and {VER}ification},
+  year =          {2018},
+  doi =           {10.18653/v1/N18-1074},
+  url =           {https://aclanthology.org/N18-1074},
+}
+
+@article{Ullrich2023,
+  author =        {Ullrich, Herbert and Drchal, Jan and
+                   R{\'y}par, Martin and Vincourov{\'a}, Hana and
+                   Moravec, V{\'a}clav},
+  journal =       {Language Resources and Evaluation},
+  month =         {Dec},
+  number =        {4},
+  pages =         {1571-1605},
+  title =         {CsFEVER and CTKFacts: acquiring Czech data for fact
+                   verification},
+  volume =        {57},
+  year =          {2023},
+  abstract =      {In this paper, we examine several methods of
+                   acquiring Czech data for automated fact-checking,
+                   which is a task commonly modeled as a classification
+                   of textual claim veracity w.r.t. a corpus of trusted
+                   ground truths. We attempt to collect sets of data in
+                   form of a factual claim, evidence within the ground
+                   truth corpus, and its veracity label (supported,
+                   refuted or not enough info). As a first attempt, we
+                   generate a Czech version of the large-scale FEVER
+                   dataset built on top of Wikipedia corpus. We take a
+                   hybrid approach of machine translation and document
+                   alignment; the approach and the tools we provide can
+                   be easily applied to other languages. We discuss its
+                   weaknesses, propose a future strategy for their
+                   mitigation and publish the 127k resulting
+                   translations, as well as a version of such dataset
+                   reliably applicable for the Natural Language
+                   Inference task---the CsFEVER-NLI. Furthermore, we
+                   collect a novel dataset of 3,097 claims, which is
+                   annotated using the corpus of 2.2 M articles of
+                   Czech News Agency. We present an extended dataset
+                   annotation methodology based on the FEVER approach,
+                   and, as the underlying corpus is proprietary, we also
+                   publish a standalone version of the dataset for the
+                   task of Natural Language Inference we call
+                   CTKFactsNLI. We analyze both acquired datasets for
+                   spurious cues---annotation patterns leading to model
+                   overfitting. CTKFacts is further examined for
+                   inter-annotator agreement, thoroughly cleaned, and a
+                   typology of common annotator errors is extracted.
+                   Finally, we provide baseline models for all stages of
+                   the fact-checking pipeline and publish the NLI
+                   datasets, as well as our annotation platform and
+                   other experimental data.},
+  doi =           {10.1007/s10579-023-09654-3},
+  issn =          {1574-0218},
+  url =           {https://doi.org/10.1007/s10579-023-09654-3},
+}
+
+@misc{drchal2023pipelinedatasetgenerationautomated,
+  author =        {Jan Drchal and Herbert Ullrich and Tomáš Mlynář and
+                   Václav Moravec},
+  title =         {Pipeline and Dataset Generation for Automated
+                   Fact-checking in Almost Any Language},
+  year =          {2023},
+  url =           {https://arxiv.org/abs/2312.10171},
+}
+
+@misc{dejean2024thoroughcomparisoncrossencodersllms,
+  author =        {Hervé Déjean and Stéphane Clinchant and
+                   Thibault Formal},
+  title =         {A Thorough Comparison of Cross-Encoders and LLMs for
+                   Reranking SPLADE},
+  year =          {2024},
+  url =           {https://arxiv.org/abs/2403.10407},
+}
+
+@inproceedings{muennighoff-etal-2023-mteb,
+  address =       {Dubrovnik, Croatia},
+  author =        {Muennighoff, Niklas and Tazi, Nouamane and
+                   Magne, Loic and Reimers, Nils},
+  booktitle =     {Proceedings of the 17th Conference of the European
+                   Chapter of the Association for Computational
+                   Linguistics},
+  editor =        {Vlachos, Andreas and Augenstein, Isabelle},
+  month =         may,
+  pages =         {2014--2037},
+  publisher =     {Association for Computational Linguistics},
+  title =         {{MTEB}: Massive Text Embedding Benchmark},
+  year =          {2023},
+  doi =           {10.18653/v1/2023.eacl-main.148},
+  url =           {https://aclanthology.org/2023.eacl-main.148},
+}
+
+@inproceedings{li-li-2024-aoe,
+  address =       {Bangkok, Thailand},
+  author =        {Li, Xianming and Li, Jing},
+  booktitle =     {Proceedings of the 62nd Annual Meeting of the
+                   Association for Computational Linguistics (Volume 1:
+                   Long Papers)},
+  editor =        {Ku, Lun-Wei and Martins, Andre and Srikumar, Vivek},
+  month =         aug,
+  pages =         {1825--1839},
+  publisher =     {Association for Computational Linguistics},
+  title =         {{A}o{E}: Angle-optimized Embeddings for Semantic
+                   Textual Similarity},
+  year =          {2024},
+  abstract =      {Text embedding is pivotal in semantic textual
+                   similarity (STS) tasks, which are crucial components
+                   in Large Language Model (LLM) applications. STS
+                   learning largely relies on the cosine function as the
+                   optimization objective to reflect semantic
+                   similarity. However, the cosine has saturation zones
+                   rendering vanishing gradients and hindering learning
+                   subtle semantic differences in text embeddings. To
+                   address this issue, we propose a novel
+                   Angle-optimized Embedding model, AoE. It optimizes
+                   angle differences in complex space to explore
+                   similarity in saturation zones better. To set up a
+                   comprehensive evaluation, we experimented with
+                   existing short-text STS, our newly collected
+                   long-text STS, and downstream task datasets.
+                   Extensive experimental results on STS and MTEB
+                   benchmarks show that AoE significantly outperforms
+                   popular text embedding models neglecting cosine
+                   saturation zones. It highlights that AoE can produce
+                   high-quality text embeddings and broadly benefit
+                   downstream tasks.},
+  url =           {https://aclanthology.org/2024.acl-long.101},
+}
+
+@{emb2024mxbai,
+  author =        {Sean Lee and Aamir Shakir and Darius Koenig and
+                   Julius Lipp},
+  title =         {Open Source Strikes Bread - New Fluffy Embeddings
+                   Model},
+  year =          {2024},
+  url =           {https://www.mixedbread.ai/blog/mxbai-embed-large-v1},
+}
+
+@article{douze2024faiss,
+  author =        {Matthijs Douze and Alexandr Guzhva and Chengqi Deng and
+                   Jeff Johnson and Gergely Szilvasy and
+                   Pierre-Emmanuel Mazaré and Maria Lomeli and
+                   Lucas Hosseini and Hervé Jégou},
+  title =         {The Faiss library},
+  year =          {2024},
+}
+
+@article{johnson2019billion,
+  author =        {Johnson, Jeff and Douze, Matthijs and
+                   J{\'e}gou, Herv{\'e}},
+  journal =       {IEEE Transactions on Big Data},
+  number =        {3},
+  pages =         {535--547},
+  publisher =     {IEEE},
+  title =         {Billion-scale similarity search with {GPUs}},
+  volume =        {7},
+  year =          {2019},
+  doi =           {10.1109/TBDATA.2019.2921572},
+}
+
+@misc{tokens,
+  author =        {OpenAI},
+  note =          {Accessed: 15 August 2024},
+  title =         {What are tokens and how to count them?},
+  year =          {2023},
+  url =           {https://help.openai.com/en/articles/4936856-what-are-tokens-
+                  and-how-to-count-them#},
+}
+
+
+@inproceedings{carbonell-mmr,
+  address =       {New York, NY, USA},
+  author =        {Carbonell, Jaime and Goldstein, Jade},
+  booktitle =     {Proceedings of the 21st Annual International ACM
+                   SIGIR Conference on Research and Development in
+                   Information Retrieval},
+  pages =         {335–336},
+  publisher =     {Association for Computing Machinery},
+  series =        {SIGIR '98},
+  title =         {The use of MMR, diversity-based reranking for
+                   reordering documents and producing summaries},
+  year =          {1998},
+  doi =           {10.1145/290941.291025},
+  isbn =          {1581130155},
+  url =           {https://doi.org/10.1145/290941.291025},
+}
+
+@misc{tang2024strucbenchlargelanguagemodels,
+  author =        {Xiangru Tang and Yiming Zong and Jason Phang and
+                   Yilun Zhao and Wangchunshu Zhou and Arman Cohan and
+                   Mark Gerstein},
+  title =         {Struc-Bench: Are Large Language Models Really Good at
+                   Generating Complex Structured Data?},
+  year =          {2024},
+  url =           {https://arxiv.org/abs/2309.08963},
+}
+
+@misc{json,
+  author =        {OpenAI},
+  note =          {Accessed: 15 August 2024},
+  title =         {Introducing structured outputs in the API},
+  year =          {2024},
+  url =           {https://openai.com/index/introducing-structured-outputs-in-
+                  the-api/#},
+}
+
+@inproceedings{cot,
+  address =       {Red Hook, NY, USA},
+  author =        {Wei, Jason and Wang, Xuezhi and Schuurmans, Dale and
+                   Bosma, Maarten and Ichter, Brian and Xia, Fei and
+                   Chi, Ed H. and Le, Quoc V. and Zhou, Denny},
+  booktitle =     {Proceedings of the 36th International Conference on
+                   Neural Information Processing Systems},
+  publisher =     {Curran Associates Inc.},
+  series =        {NIPS '22},
+  title =         {Chain-of-thought prompting elicits reasoning in large
+                   language models},
+  year =          {2024},
+  abstract =      {We explore how generating a chain of thought—a
+                   series of intermediate reasoning
+                   steps—significantly improves the ability of large
+                   language models to perform complex reasoning. In
+                   particular, we show how such reasoning abilities
+                   emerge naturally in sufficiently large language
+                   models via a simple method called chain-of-thought
+                   prompting, where a few chain of thought
+                   demonstrations are provided as exemplars in
+                   prompting.Experiments on three large language models
+                   show that chain-of-thought prompting improves
+                   performance on a range of arithmetic, commonsense,
+                   and symbolic reasoning tasks. The empirical gains can
+                   be striking. For instance, prompting a PaLM 540B with
+                   just eight chain-of-thought exemplars achieves
+                   state-of-the-art accuracy on the GSM8K benchmark of
+                   math word problems, surpassing even finetuned GPT-3
+                   with a verifier.},
+  isbn =          {9781713871088},
+  url =           {https://dl.acm.org/doi/10.5555/3600270.3602070},
+}
+
+@misc{menick2022teachinglanguagemodelssupport,
+  author =        {Jacob Menick and Maja Trebacz and Vladimir Mikulik and
+                   John Aslanides and Francis Song and Martin Chadwick and
+                   Mia Glaese and Susannah Young and
+                   Lucy Campbell-Gillingham and Geoffrey Irving and
+                   Nat McAleese},
+  title =         {Teaching language models to support answers with
+                   verified quotes},
+  year =          {2022},
+  url =           {https://arxiv.org/abs/2203.11147},
+}
+
+@inproceedings{fewshot,
+  address =       {Red Hook, NY, USA},
+  author =        {Brown, Tom B. and Mann, Benjamin and Ryder, Nick and
+                   Subbiah, Melanie and Kaplan, Jared and
+                   Dhariwal, Prafulla and Neelakantan, Arvind and
+                   Shyam, Pranav and Sastry, Girish and Askell, Amanda and
+                   Agarwal, Sandhini and Herbert-Voss, Ariel and
+                   Krueger, Gretchen and Henighan, Tom and Child, Rewon and
+                   Ramesh, Aditya and Ziegler, Daniel M. and Wu, Jeffrey and
+                   Winter, Clemens and Hesse, Christopher and Chen, Mark and
+                   Sigler, Eric and Litwin, Mateusz and Gray, Scott and
+                   Chess, Benjamin and Clark, Jack and
+                   Berner, Christopher and McCandlish, Sam and
+                   Radford, Alec and Sutskever, Ilya and Amodei, Dario},
+  booktitle =     {Proceedings of the 34th International Conference on
+                   Neural Information Processing Systems},
+  publisher =     {Curran Associates Inc.},
+  series =        {NIPS '20},
+  title =         {Language models are few-shot learners},
+  year =          {2020},
+  abstract =      {We demonstrate that scaling up language models
+                   greatly improves task-agnostic, few-shot performance,
+                   sometimes even becoming competitive with prior
+                   state-of-the-art fine-tuning approaches.
+                   Specifically, we train GPT-3, an autoregressive
+                   language model with 175 billion parameters, 10x more
+                   than any previous non-sparse language model, and test
+                   its performance in the few-shot setting. For all
+                   tasks, GPT-3 is applied without any gradient updates
+                   or fine-tuning, with tasks and few-shot
+                   demonstrations specified purely via text interaction
+                   with the model. GPT-3 achieves strong performance on
+                   many NLP datasets, including translation,
+                   question-answering, and cloze tasks. We also identify
+                   some datasets where GPT-3's few-shot learning still
+                   struggles, as well as some datasets where GPT-3 faces
+                   methodological issues related to training on large
+                   web corpora.},
+  isbn =          {9781713829546},
+  url =           {https://proceedings.neurips.cc/paper_files/paper/2020/file/
+                  1457c0d6bfcb4967418bfb8ac142f64a-Paper.pdf},
+}
+
+@misc{golkar2023xvalcontinuousnumberencoding,
+  author =        {Siavash Golkar and Mariel Pettee and
+                   Michael Eickenberg and Alberto Bietti and
+                   Miles Cranmer and Geraud Krawezik and
+                   Francois Lanusse and Michael McCabe and Ruben Ohana and
+                   Liam Parker and Bruno Régaldo-Saint Blancard and
+                   Tiberiu Tesileanu and Kyunghyun Cho and Shirley Ho},
+  title =         {xVal: A Continuous Number Encoding for Large Language
+                   Models},
+  year =          {2023},
+  url =           {https://arxiv.org/abs/2310.02989},
+}
+
+@article{likert1932technique,
+  author =        {Likert, Rensis},
+  journal =       {Archives of Psychology},
+  number =        {140},
+  pages =         {55},
+  title =         {A technique for the measurement of attitudes},
+  volume =        {22},
+  year =          {1932},
+}
+
+@article{likertstudy,
+  author =        {Joshi, Ankur and Kale, Saket and Chandel, Satish and
+                   Pal, Dinesh},
+  journal =       {British Journal of Applied Science \& Technology},
+  month =         {01},
+  pages =         {396-403},
+  title =         {Likert Scale: Explored and Explained},
+  volume =        {7},
+  year =          {2015},
+  doi =           {10.9734/BJAST/2015/14975},
+}
+
+@inproceedings{NIPS1989_0336dcba,
+  author =        {Bridle, John},
+  booktitle =     {Advances in Neural Information Processing Systems},
+  editor =        {D. Touretzky},
+  pages =         {},
+  publisher =     {Morgan-Kaufmann},
+  title =         {Training Stochastic Model Recognition Algorithms as
+                   Networks can Lead to Maximum Mutual Information
+                   Estimation of Parameters},
+  volume =        {2},
+  year =          {1989},
+  url =           {https://proceedings.neurips.cc/paper_files/paper/1989/file/
+                  0336dcbab05b9d5ad24f4333c7658a0e-Paper.pdf},
+}
+
+@inproceedings{devlin-etal-2019-bert,
+  address =       {Minneapolis, Minnesota},
+  author =        {Devlin, Jacob and Chang, Ming-Wei and Lee, Kenton and
+                   Toutanova, Kristina},
+  booktitle =     {Proceedings of the 2019 Conference of the North
+                   {A}merican Chapter of the Association for
+                   Computational Linguistics: Human Language
+                   Technologies, Volume 1 (Long and Short Papers)},
+  editor =        {Burstein, Jill and Doran, Christy and
+                   Solorio, Thamar},
+  month =         jun,
+  pages =         {4171--4186},
+  publisher =     {Association for Computational Linguistics},
+  title =         {{BERT}: Pre-training of Deep Bidirectional
+                   Transformers for Language Understanding},
+  year =          {2019},
+  doi =           {10.18653/v1/N19-1423},
+  url =           {https://aclanthology.org/N19-1423},
+}
+
+@misc{he2023debertav3improvingdebertausing,
+  author =        {Pengcheng He and Jianfeng Gao and Weizhu Chen},
+  title =         {DeBERTaV3: Improving DeBERTa using ELECTRA-Style
+                   Pre-Training with Gradient-Disentangled Embedding
+                   Sharing},
+  year =          {2023},
+  url =           {https://arxiv.org/abs/2111.09543},
+}
+
+@inproceedings{wolf-etal-2020-transformers,
+  address =       {Online},
+  author =        {Wolf, Thomas and Debut, Lysandre and Sanh, Victor and
+                   Chaumond, Julien and Delangue, Clement and
+                   Moi, Anthony and Cistac, Pierric and Rault, Tim and
+                   Louf, Remi and Funtowicz, Morgan and Davison, Joe and
+                   Shleifer, Sam and von Platen, Patrick and Ma, Clara and
+                   Jernite, Yacine and Plu, Julien and Xu, Canwen and
+                   Le Scao, Teven and Gugger, Sylvain and Drame, Mariama and
+                   Lhoest, Quentin and Rush, Alexander},
+  booktitle =     {Proceedings of the 2020 Conference on Empirical
+                   Methods in Natural Language Processing: System
+                   Demonstrations},
+  editor =        {Liu, Qun and Schlangen, David},
+  month =         oct,
+  pages =         {38--45},
+  publisher =     {Association for Computational Linguistics},
+  title =         {Transformers: State-of-the-Art Natural Language
+                   Processing},
+  year =          {2020},
+  doi =           {10.18653/v1/2020.emnlp-demos.6},
+  url =           {https://aclanthology.org/2020.emnlp-demos.6},
+}
+
+@article{scikit-learn,
+  author =        {Pedregosa, F. and Varoquaux, G. and Gramfort, A. and
+                   Michel, V. and Thirion, B. and Grisel, O. and
+                   Blondel, M. and Prettenhofer, P. and Weiss, R. and
+                   Dubourg, V. and Vanderplas, J. and Passos, A. and
+                   Cournapeau, D. and Brucher, M. and Perrot, M. and
+                   Duchesnay, E.},
+  journal =       {Journal of Machine Learning Research},
+  pages =         {2825--2830},
+  title =         {Scikit-learn: Machine Learning in {P}ython},
+  volume =        {12},
+  year =          {2011},
+  url =           {https://jmlr.org/papers/v12/pedregosa11a.html},
+}
+
+@misc{jaradat2024contextawaredetectioncherrypickingnews,
+  author =        {Israa Jaradat and Haiqi Zhang and Chengkai Li},
+  title =         {On Context-aware Detection of Cherry-picking in News
+                   Reporting},
+  year =          {2024},
+  url =           {https://arxiv.org/abs/2401.05650},
+}
+
+@misc{dubey2024llama3herdmodels,
+  author =        {Abhimanyu Dubey and Abhinav Jauhri and Abhinav Pandey and
+                   Abhishek Kadian and Ahmad Al-Dahle and Aiesha Letman and
+                   Akhil Mathur and Alan Schelten and Amy Yang and
+                   Angela Fan and Anirudh Goyal and Anthony Hartshorn and
+                   Aobo Yang and ... and Zhiwei Zhao},
+  title =         {The Llama 3 Herd of Models},
+  year =          {2024},
+  url =           {https://arxiv.org/abs/2407.21783},
+}
+
+@inproceedings{vllm,
+  address =       {New York, NY, USA},
+  author =        {Kwon, Woosuk and Li, Zhuohan and Zhuang, Siyuan and
+                   Sheng, Ying and Zheng, Lianmin and Yu, Cody Hao and
+                   Gonzalez, Joseph and Zhang, Hao and Stoica, Ion},
+  booktitle =     {Proceedings of the 29th Symposium on Operating
+                   Systems Principles},
+  pages =         {611–626},
+  publisher =     {Association for Computing Machinery},
+  series =        {SOSP '23},
+  title =         {Efficient Memory Management for Large Language Model
+                   Serving with PagedAttention},
+  year =          {2023},
+  abstract =      {High throughput serving of large language models
+                   (LLMs) requires batching sufficiently many requests
+                   at a time. However, existing systems struggle because
+                   the key-value cache (KV cache) memory for each
+                   request is huge and grows and shrinks dynamically.
+                   When managed inefficiently, this memory can be
+                   significantly wasted by fragmentation and redundant
+                   duplication, limiting the batch size. To address this
+                   problem, we propose PagedAttention, an attention
+                   algorithm inspired by the classical virtual memory
+                   and paging techniques in operating systems. On top of
+                   it, we build vLLM, an LLM serving system that
+                   achieves (1) near-zero waste in KV cache memory and
+                   (2) flexible sharing of KV cache within and across
+                   requests to further reduce memory usage. Our
+                   evaluations show that vLLM improves the throughput of
+                   popular LLMs by 2--4\texttimes{} with the same level
+                   of latency compared to the state-of-the-art systems,
+                   such as FasterTransformer and Orca. The improvement
+                   is more pronounced with longer sequences, larger
+                   models, and more complex decoding algorithms. vLLM's
+                   source code is publicly available at
+                   https://github.com/vllm-project/vllm.},
+  doi =           {10.1145/3600006.3613165},
+  isbn =          {9798400702297},
+  url =           {https://doi.org/10.1145/3600006.3613165},
+}
+
