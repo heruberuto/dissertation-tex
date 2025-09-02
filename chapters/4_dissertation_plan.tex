@@ -2,24 +2,24 @@
 
 \chapter{Dissertation plan}
 \label{chap:plan}
-	extit{This chapter describes my current research agenda for automated fact‑checking with NLP methods; the final section outlines the dissertation.}
+\textit{This chapter describes my current research agenda and its meaning for my future dissertation thesis on automated fact-checking using NLP methods, which is outlined in the last section.}
 
 \section{Automated claim generation}
 \label{generation}
 
-An article in preparation proposes \textit{automated claim generation} as extracting factual claims from a document. This can assist fact‑checkers and emulate data for related tasks (fact‑checking, NLI).
+The article I am currently readying for submission proposes the task of \textit{automated claim generation} as the process of extracting factual claims from a textual document. It has multiple uses in practice, such as assisting the fact-checkers and emulating data for NLP tasks like automated fact-checking and NLI.
 
-Extracting fluent, atomic claims from naturally written text raises challenges—what information best characterizes the text? 
+Extracting a set of factual, atomic claims from a chunk of naturally formed text poses many challenges -- what single piece of information characterizes the text best? 
 How does one resolve the pronouns and coreferences in source text?
 How does one adapt the extraction scheme for different speakers and stylistic forms?
 
-These problems overlap with \textit{abstractive summarization}, which recently made progress via Transformer models~\cite{pegasus,brio}.
+I find these problems to overlap with those of the \textit{abstractive summarization} task, which has recently seen an advent of efficient solutions based on Transformer models~\cite{pegasus, brio}.
 
-The summarization setup needs minor tweaks: enforce single‑sentence outputs and encourage diverse factual foci via sampling (top‑$k$\footnote{Each output token is sampled from the $k$ most probable words.} and top‑$p$\footnote{Each token is sampled from the smallest prefix of tokens whose total probability mass is at most $p$.}~\cite{topp}).
+The summarization scheme only requires minor tweaks -- preventing it from outputting more than one sentence of output per input and training it on data appropriately chosen to promote the summarization of more than one fact when sampling different claims from the same model using the top-$k$\footnote{Each output token is sampled from the $k$ most probable words in the dictionary} and top-$p$\footnote{Each token is sampled from the most probable words which have at most $p$ total probability mass}~\cite{topp} strategies.
 
-Initial training data comes from XL‑Sum~\cite{xlsum}, \FEN, and \CTK. We train mBART, Pegasus, T5~\cite{t5-11b}, and LLaMA‑2 (QLoRA) models, with additional experiments via chat APIs.
+An initial training data is derived from XL-Sum~\cite{xlsum}, \FEN and \CTK, and models are trained using mBART, Pegasus, T5~\cite{t5-11b}, and LLaMA-2 (QLoRA) architectures.  Additional experiments are being carried out using the GPT Chat API.
 
-Going forward, we will iterate on data and models in tandem and, crucially, develop reliable, explainable metrics that correlate with human judgment.
+Moving forward, the primary tasks will be a cyclic iteration of claim generation data and models, refining each part after progression in the other, and most importantly, a set of reliable metrics that are explainable and correlate with human judgment.
 As shown in section~\ref{benchmarking-sota}, the standard automated summarization metrics are not appropriate as a benchmark for the task.
 
 \section{Claim generation metrics}
@@ -30,20 +30,22 @@ As shown in section~\ref{benchmarking-sota}, the standard automated summarizatio
     \caption{\textsf{LM-Critic} -- deciding text fluency viewed as finding local optima of Language Model output probability, reprinted from~\cite{yasunaga-etal-2021-lm}}
     \label{fig:lmcritic}
 \end{figure}
+\label{sec:metrics}
 
 \begin{figure}
     \includegraphics[width=11cm]{fig/gptext.pdf}
     \caption{A self-evaluating claim generation model based on GPT-3.5-turbo and GPT-4~\cite{gpt4} using the \textsf{OpenAI API} and a single-shot (one gold example given) approach}
     \label{fig:gptext}
 \end{figure}
-Generative tasks pose two issues: explaining model behavior in human‑understandable terms and diagnosing failures such as \textit{hallucinations}.
+\label{sec:metrics}
+The common problem with generative tasks in NLP is that of explaining model reasoning in a human-understandable manner and troubleshooting the prediction faults, such as the \textit{model hallucination}.
 
 For the task of claim generation, where we also face the challenge of the \textit{relevance} of the information extracted by the model, we suggest the use of the following metrics rooted in the current research on similar topics:
 
 \begin{enumerate}
     \item {\techbf Fluency} -- \textit{is the claim grammatically correct and intelligible?}
     
-    We explore two proxies for claim fluency—akin to Grammatical Error Detection (GED): \textsf{LM‑Critic} (Figure~\ref{fig:lmcritic})~\cite{yasunaga-etal-2021-lm} perturbs tokens to probe local optima of LM probabilities (e.g., GPT‑2 as reference), and \textsf{GPTScore}~\cite{fu2023gptscore} prompts an LLM (e.g., GPT‑3) for a direct fluency score in few‑/zero‑shot settings.
+    Currently, we are working with two emulations of claim fluency, challenge that is similar to a standard NLP task of Gramatical Error Detection (GED): \textsf{LM-Critic} (Figure~\ref{fig:lmcritic})~\cite{yasunaga-etal-2021-lm} perturbs the claim words and characters to find local optima in output probability of its tokens, using a language model such as GPT-2 as its reference. \textsf{GPTScore}~\cite{fu2023gptscore} uses prompting a LLM (such as GPT-3) to obtain a model-inferred score using few- or zero-shot learning.
     
     Both can be adapted for Czech and the latter is demonstrated in Figure~\ref{fig:gptext}.
     \item {\techbf Decontextualization} -- \textit{can the claim be correctly interpreted without any additional context from the source document or elsewhere?}
@@ -60,21 +62,21 @@ For the task of claim generation, where we also face the challenge of the \texti
     \item {\techbf Atomicity} --  \textit{does the claim describe a single entity, relation or process?}
     \label{atomicity}
     
-    Claim atomicity can be proxied via Relation Extraction (RE), e.g., LUKE~\cite{yamada2020luke}. Identify entities and relations (e.g., $(\textit{study at}, \textit{Herbert}, \textit{CTU})$); mark a claim as atomic if at most one such triple is found (after symmetry normalization).
+    Claim atomicity can be checked using the Relationship Extraction methods such as LUKE~\cite{yamada2020luke}. Simply put, the RE task is to identify the entities of a text (persons, institutions,\dots) and the relations between them (such as $(\textit{\"{study at}}, \textit{Herbert}, \textit{CTU})$). The atomicity evaluation can be converted to a RE task by attempting to extract such fact triples and mark the claim as atomic if there is at most one such triple found (after removing symmetries)
 
     \item {\techbf Faithfulness} -- \textit{does the claim only contain information that is consistent with the source document?}
     
-    This metric is crucial to pinpoint \textit{hallucinations}—parts of the claim unsupported by the source. We use two alternatives: a score within the FFCI framework~\cite{ffci}:
+    This metric is crucial to pinpoint \textit{model hallucinations} -- parts of the claim where the model outputs stray from the information present in the source text and begin to just \"{make stuff up}. We proceed to use two alternative metrics -- a score proposed within the FFCI evaluation framework~\cite{ffci} as: 
     $$\text{AvgTop-}n_{s_j\in X, t_i\in Y^\prime}(\textsc{BERTScore}(t_i,s_j))$$
-    Here $\text{AvgTop-}n$ averages the top $n$ (e.g., $n{=}5$) scores; $X$ and $Y^\prime$ are sentence sets from the source and the model output (for claim generation, $|Y^\prime|{=}1$). $\textsc{BERTScore}$~\cite{bert-score} compares sentence embeddings rather than surface word overlap (e.g., ROUGE~\cite{lin-2004-rouge}), which helps in morphologically rich languages like Czech.
+    Where the $\text{AvgTop-}n$ simply averages across the top $n$ (say, 5) highest scores, $X,Y^\prime$ are the sets of sentences in the source document and model output, respectively (so, in the claim generation scenario $|Y^\prime|=1$) and $\textsc{BERTScore}$~\cite{bert-score} is a recently popular similarity score between two sentences that doesn't compare the texts on a verbatim level (like, e.g., ROUGE~\cite{lin-2004-rouge} which correlates poorly with human judgment) but expresses the sentence similarity as a sum of cosine similarities between their tokens' embeddings -- this should capture semantical relations rather than the word-for-word similarity, which could be beneficial in highly inflected languages such as Czech.
 
-    A related metric, \textsc{AlignScore}~\cite{zha2023alignscore}, optimizes alignment between input and output spans via a RoBERTa~\cite{roberta} model trained for inconsistency detection on 4.7M examples spanning NLI, QA, paraphrase, etc. Despite being relatively small (355M parameters), it outperforms some GPT‑4‑based metrics.
+    Similar metric called \textsc{AlignScore} was proposed in~\cite{zha2023alignscore}, looking for optimum alignment of output and input parts, in terms of a RoBERTa model~\cite{roberta} trained to detect inconsistencies on 4.7M training examples adapted from various tasks (inference, question answering, paraphrasing,\dots) and while it is relatively small (355M parameters), it outperforms metrics based on GPT-4 that is orders of magnitude larger. 
 
     Empirically, the models work encouragingly well on spotting hallucinations and inconsistencies in English, and while the transduction of \textsc{BERTScore} is trivial, using a Czech embedding model such as CZERT~\cite{czert} or FERNET~\cite{fernet}, reproducing the success of \textsc{AlignScore} will require more research and data.
 
     \item {\techbf Focus}$@k$ -- \textit{if we generate $k$ claims using this model, what will be the proportion of gold (relevant) information among all the information listed in the generated claims?}
     
-    The metric is analogous to \textit{precision}, but decisions are ambiguous in natural language due to synonyms and many valid phrasings.
+    The metric is analogous to the concept of \textit{precision} in the common machine learning applications; however, its deciding gets more ambiguous in the natural language setting, where we are dealing with synonyms and an endless number of possible wordings for every piece of information.
 
     An elegant and functional perspective on the problem has been brought around in QAGS\footnote{Pronounced \"{kags}, stands for \"{Question Answering and Generation for Summarization}} evaluation protocol~\cite{wang-etal-2020-asking}, where the idea is to use a Question Generation model (QG) to formulate questions in natural language based on all $k$ predicted claims. The questions are then twice answered using a Question Answering (QA) model, giving it knowledge from (i.) the predicted claims (ii.) the gold claims written by a human.
     The focus is then defined as the proportion of questions with the same answers extracted from the gold and predicted claims among all questions the model can generate from the predicted claims. 

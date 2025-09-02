@@ -3,20 +3,20 @@
 \chapter{Introduction}
 \label{chap:intro}
 
-My dissertation, as well as my long‑term research, centers on \textit{automated fact‑checking} using modern Natural Language Processing (NLP) methods.
+My dissertation, as well as my long-term research, centers around the field of \textit{automated fact checking} through the means of Natural Language Processing (NLP) and its modern methods.
 The work consists of the analysis of the whole fact-checking process, its subdivision, and simplification into tasks that can be efficiently addressed using the current state-of-the-art NLP methods, collection of data appropriate to benchmark such tasks, delivery of example solutions and their validation against similar research in other languages and related tasks.
 
-Our group focuses primarily on fact‑checking tasks in West Slavic languages (Czech, Slovak, Polish), and secondarily in English.
-So far, I have collected and published datasets for fact‑checking and its subroutines, trained and analyzed models, and begun work on explainable metrics that capture \textit{facticity}—a challenge in itself~\cite{ffci,wright}.
+The main focus of mine and of our research group are the fact-checking-related tasks in the West Slavic languages (Czech, Slovak, and Polish) and secondarily in English.
+My contribution has so far been the collection and publication of novel datasets for the fact-checking task and its subroutines, models trained for the tasks and their debate, including the ongoing establishment of metrics that would explainably rate the model success and error rates in terms close to the human notion of \textit{facticity} (which proves to be a challenge on its own, requiring another round of novel research~\cite{ffci, wright}). 
 
-My doctoral aim is to cover the full path from obtaining a factual claim—for example, extracting it from a political debate—to predicting its veracity and justifying it rigorously with evidence.
-With the recent NLP boom—sparked by transformers and later by Large Language Models (LLMs)~\cite{llms}, few‑shot learning~\cite{gpt3}, and prompting~\cite{prompting}—a significant part of the work is the timely adoption and evaluation of fast‑evolving SOTA methods in our context.
+My doctoral aim is to cover every step on the path from gathering a factual claim -- for example, extracting it from a political debate -- to predicting its veracity verdict and justifying it rigorously with hard data.
+With the recent boom in NLP beginning with the advent of transformer networks and later the Large Language Models (LLMs)~\cite{llms}, few-shot learning~\cite{gpt3} and prompting~\cite{prompting} a significant part of the research is and has to be an appropriate and timely adoption of new ever-evolvingstate-of-the-art NLP solutions, based on well-designed studies in our specific context.
 
-Overall, I build on prior Czech fact‑checking research, extend it to other languages, and evolve the transformer \textit{pre‑training \& fine‑tuning} paradigm toward an LLM‑centric design, which already shows strong performance on related tasks in English~\cite{bing}.
+Overall, my agenda is to follow up on my published research on fact-checking in Czech with methods that reiterate on our results in other languages and evolving our previous methodology based on transformer \textit{pre-training \& fine-tuning} paradigm to a computationally feasible design based on LLMs, which are already exhibiting superiority tasks similar to ours~\cite{bing} in English.
 
-My recent focus within the broader fact‑checking pipeline is \textit{claim generation}, which I aim to establish as a benchmarked NLP task adjacent to \textit{abstractive summarization}.
-To benchmark the task, we need metrics that capture phenomena such as \textit{model hallucinations}—a common issue in modern LLMs~\cite{Ji_2023}.
-Because word‑overlap metrics for generation correlate poorly with human judgment~\cite{bert-score} and model‑based metrics can be opaque, I also focus on human‑understandable model‑based metrics.
+My recent focus within the whole grand fact-checking scheme is the step of \textit{claim generation}, which I aim to establish among the other commonly benchmarked NLP tasks within the scientific community, adjacent to that of \textit{abstractive summarization}.
+To benchmark the task, one would need a set of metrics that properly reflect phenomena such as \textit{model hallucinations} -- a common problem of modern-day LLMs~\cite{Ji_2023}.
+As the exact word-level metrics for NLP generative tasks do not correlate well with human judgement~\cite{bert-score} and model-based metrics are hard to explain, my research also focuses on delivery of a set of human-understandable model-based metrics.
 
 This study aims to show the directions I am taking to address these challenges, the reasoning behind them, my research questions, and the current results that motivated them.
 

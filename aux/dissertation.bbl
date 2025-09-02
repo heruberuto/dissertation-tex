@@ -34,34 +34,15 @@ Bowman, S.~R., Angeli, G., Potts, C., and Manning, C.~D. (2015).
   Natural Language Processing (EMNLP)}. Association for Computational
   Linguistics.
 
-\bibitem[Bridle, 1989]{NIPS1989_0336dcba}
-Bridle, J. (1989).
-\newblock Training stochastic model recognition algorithms as networks can lead
-  to maximum mutual information estimation of parameters.
-\newblock In Touretzky, D., editor, {\em Advances in Neural Information
-  Processing Systems}, volume~2. Morgan-Kaufmann.
-
-\bibitem[Brown et~al., 2020a]{gpt3}
+\bibitem[Brown et~al., 2020]{gpt3}
 Brown, T.~B., Mann, B., Ryder, N., Subbiah, M., Kaplan, J., Dhariwal, P.,
   Neelakantan, A., Shyam, P., Sastry, G., Askell, A., Agarwal, S.,
   Herbert{-}Voss, A., Krueger, G., Henighan, T., Child, R., Ramesh, A.,
   Ziegler, D.~M., Wu, J., Winter, C., Hesse, C., Chen, M., Sigler, E., Litwin,
   M., Gray, S., Chess, B., Clark, J., Berner, C., McCandlish, S., Radford, A.,
-  Sutskever, I., and Amodei, D. (2020a).
+  Sutskever, I., and Amodei, D. (2020).
 \newblock Language models are few-shot learners.
 \newblock {\em CoRR}, abs/2005.14165.
-
-\bibitem[Brown et~al., 2020b]{fewshot}
-Brown, T.~B., Mann, B., Ryder, N., Subbiah, M., Kaplan, J., Dhariwal, P.,
-  Neelakantan, A., Shyam, P., Sastry, G., Askell, A., Agarwal, S.,
-  Herbert-Voss, A., Krueger, G., Henighan, T., Child, R., Ramesh, A., Ziegler,
-  D.~M., Wu, J., Winter, C., Hesse, C., Chen, M., Sigler, E., Litwin, M., Gray,
-  S., Chess, B., Clark, J., Berner, C., McCandlish, S., Radford, A., Sutskever,
-  I., and Amodei, D. (2020b).
-\newblock Language models are few-shot learners.
-\newblock In {\em Proceedings of the 34th International Conference on Neural
-  Information Processing Systems}, NIPS '20, Red Hook, NY, USA. Curran
-  Associates Inc.
 
 \bibitem[Buchanan and Benson, 2019]{doi:10.1177/2056305119888654}
 Buchanan, T. and Benson, V. (2019).
@@ -73,14 +54,6 @@ Buchanan, T. and Benson, V. (2019).
 Bútora, R. (2023).
 \newblock Crowd-sourcing platform frontend for fact-checking.
 \newblock \url{https://dspace.cvut.cz/handle/10467/109505}.
-
-\bibitem[Carbonell and Goldstein, 1998]{carbonell-mmr}
-Carbonell, J. and Goldstein, J. (1998).
-\newblock The use of mmr, diversity-based reranking for reordering documents
-  and producing summaries.
-\newblock In {\em Proceedings of the 21st Annual International ACM SIGIR
-  Conference on Research and Development in Information Retrieval}, SIGIR '98,
-  page 335–336, New York, NY, USA. Association for Computing Machinery.
 
 \bibitem[Chen et~al., 2017]{drqa}
 Chen, D., Fisch, A., Weston, J., and Bordes, A. (2017).
@@ -119,45 +92,14 @@ Conneau, A., Lample, G., Rinott, R., Williams, A., Bowman, S.~R., Schwenk, H.,
 Dettmers, T., Pagnoni, A., Holtzman, A., and Zettlemoyer, L. (2023).
 \newblock Qlora: Efficient finetuning of quantized llms.
 
-\bibitem[Devlin et~al., 2019a]{devlin2019bert}
-Devlin, J., Chang, M.-W., Lee, K., and Toutanova, K. (2019a).
+\bibitem[Devlin et~al., 2019]{devlin2019bert}
+Devlin, J., Chang, M.-W., Lee, K., and Toutanova, K. (2019).
 \newblock {BERT}: Pre-training of deep bidirectional transformers for language
   understanding.
 \newblock In {\em Proceedings of the 2019 Conference of the North {A}merican
   Chapter of the Association for Computational Linguistics: Human Language
   Technologies, Volume 1 (Long and Short Papers)}, pages 4171--4186,
   Minneapolis, Minnesota. Association for Computational Linguistics.
-
-\bibitem[Devlin et~al., 2019b]{devlin-etal-2019-bert}
-Devlin, J., Chang, M.-W., Lee, K., and Toutanova, K. (2019b).
-\newblock {BERT}: Pre-training of deep bidirectional transformers for language
-  understanding.
-\newblock In Burstein, J., Doran, C., and Solorio, T., editors, {\em
-  Proceedings of the 2019 Conference of the North {A}merican Chapter of the
-  Association for Computational Linguistics: Human Language Technologies,
-  Volume 1 (Long and Short Papers)}, pages 4171--4186, Minneapolis, Minnesota.
-  Association for Computational Linguistics.
-
-\bibitem[Douze et~al., 2024]{douze2024faiss}
-Douze, M., Guzhva, A., Deng, C., Johnson, J., Szilvasy, G., Mazaré, P.-E.,
-  Lomeli, M., Hosseini, L., and Jégou, H. (2024).
-\newblock The faiss library.
-
-\bibitem[Drchal et~al., 2023]{drchal2023pipelinedatasetgenerationautomated}
-Drchal, J., Ullrich, H., Mlynář, T., and Moravec, V. (2023).
-\newblock Pipeline and dataset generation for automated fact-checking in almost
-  any language.
-
-\bibitem[Dubey et~al., 2024]{dubey2024llama3herdmodels}
-Dubey, A., Jauhri, A., Pandey, A., Kadian, A., Al-Dahle, A., Letman, A.,
-  Mathur, A., Schelten, A., Yang, A., Fan, A., Goyal, A., Hartshorn, A., Yang,
-  A., ..., and Zhao, Z. (2024).
-\newblock The llama 3 herd of models.
-
-\bibitem[Déjean et~al., 2024]{dejean2024thoroughcomparisoncrossencodersllms}
-Déjean, H., Clinchant, S., and Formal, T. (2024).
-\newblock A thorough comparison of cross-encoders and llms for reranking
-  splade.
 
 \bibitem[Elsayed et~al., 2021]{clef19}
 Elsayed, T., Nakov, P., Barrón-Cedeño, A., Hasanain, M., Suwaileh, R.,
@@ -178,12 +120,6 @@ Fu, J., Ng, S.-K., Jiang, Z., and Liu, P. (2023).
 Gažo, A. (2021).
 \newblock Algorithms for document retrieval in czech language supporting long
   inputs.
-
-\bibitem[Golkar et~al., 2023]{golkar2023xvalcontinuousnumberencoding}
-Golkar, S., Pettee, M., Eickenberg, M., Bietti, A., Cranmer, M., Krawezik, G.,
-  Lanusse, F., McCabe, M., Ohana, R., Parker, L., Blancard, B. R.-S.,
-  Tesileanu, T., Cho, K., and Ho, S. (2023).
-\newblock xval: A continuous number encoding for large language models.
 
 \bibitem[Guo et~al., 2022]{guo-etal-2022-survey}
 Guo, Z., Schlichtkrull, M., and Vlachos, A. (2022).
@@ -213,11 +149,6 @@ Hayes, A. and Krippendorff, K. (2007).
   data.
 \newblock {\em Communication Methods and Measures}, 1:77--89.
 
-\bibitem[He et~al., 2023]{he2023debertav3improvingdebertausing}
-He, P., Gao, J., and Chen, W. (2023).
-\newblock Debertav3: Improving deberta using electra-style pre-training with
-  gradient-disentangled embedding sharing.
-
 \bibitem[Holtzman et~al., 2020]{topp}
 Holtzman, A., Buys, J., Du, L., Forbes, M., and Choi, Y. (2020).
 \newblock The curious case of neural text degeneration.
@@ -233,16 +164,6 @@ Ji, Z., Lee, N., Frieske, R., Yu, T., Su, D., Xu, Y., Ishii, E., Bang, Y.~J.,
   Madotto, A., and Fung, P. (2023).
 \newblock Survey of hallucination in natural language generation.
 \newblock {\em {ACM} Computing Surveys}, 55(12):1--38.
-
-\bibitem[Johnson et~al., 2019]{johnson2019billion}
-Johnson, J., Douze, M., and J{\'e}gou, H. (2019).
-\newblock Billion-scale similarity search with {GPUs}.
-\newblock {\em IEEE Transactions on Big Data}, 7(3):535--547.
-
-\bibitem[Joshi et~al., 2015]{likertstudy}
-Joshi, A., Kale, S., Chandel, S., and Pal, D. (2015).
-\newblock Likert scale: Explored and explained.
-\newblock {\em British Journal of Applied Science \& Technology}, 7:396--403.
 
 \bibitem[Kocián et~al., 2021]{kocian2021siamese}
 Kocián, M., Náplava, J., Štancl, D., and Kadlec, V. (2021).
@@ -264,15 +185,6 @@ Krippendorff, K. (1970).
 Krotil, M. (2022).
 \newblock Text summarization methods in czech.
 \newblock \url{https://dspace.cvut.cz/handle/10467/101028}.
-
-\bibitem[Kwon et~al., 2023]{vllm}
-Kwon, W., Li, Z., Zhuang, S., Sheng, Y., Zheng, L., Yu, C.~H., Gonzalez, J.,
-  Zhang, H., and Stoica, I. (2023).
-\newblock Efficient memory management for large language model serving with
-  pagedattention.
-\newblock In {\em Proceedings of the 29th Symposium on Operating Systems
-  Principles}, SOSP '23, page 611–626, New York, NY, USA. Association for
-  Computing Machinery.
 
 \bibitem[Köpf et~al., 2023]{openassistant}
 Köpf, A., Kilcher, Y., von Rütte, D., Anagnostidis, S., Tam, Z.-R., Stevens,
@@ -296,28 +208,6 @@ Lehe{\v{c}}ka, J. and {\v{S}}vec, J. (2021).
 \newblock In Espinosa-Anke, L., Mart{\'i}n-Vide, C., and Spasi{\'{c}}, I.,
   editors, {\em Statistical Language and Speech Processing}, pages 27--37,
   Cham. Springer International Publishing.
-
-\bibitem[Lewis et~al., 2020]{rag}
-Lewis, P., Perez, E., Piktus, A., Petroni, F., Karpukhin, V., Goyal, N.,
-  K\"{u}ttler, H., Lewis, M., Yih, W.-t., Rockt\"{a}schel, T., Riedel, S., and
-  Kiela, D. (2020).
-\newblock Retrieval-augmented generation for knowledge-intensive nlp tasks.
-\newblock In {\em Proceedings of the 34th International Conference on Neural
-  Information Processing Systems}, NIPS '20, Red Hook, NY, USA. Curran
-  Associates Inc.
-
-\bibitem[Li and Li, 2024]{li-li-2024-aoe}
-Li, X. and Li, J. (2024).
-\newblock {A}o{E}: Angle-optimized embeddings for semantic textual similarity.
-\newblock In Ku, L.-W., Martins, A., and Srikumar, V., editors, {\em
-  Proceedings of the 62nd Annual Meeting of the Association for Computational
-  Linguistics (Volume 1: Long Papers)}, pages 1825--1839, Bangkok, Thailand.
-  Association for Computational Linguistics.
-
-\bibitem[Likert, 1932]{likert1932technique}
-Likert, R. (1932).
-\newblock A technique for the measurement of attitudes.
-\newblock {\em Archives of Psychology}, 22(140):55.
 
 \bibitem[Lin, 2004]{lin-2004-rouge}
 Lin, C.-Y. (2004).
@@ -363,12 +253,6 @@ Liu, Y., Ott, M., Goyal, N., Du, J., Joshi, M., Chen, D., Levy, O., Lewis, M.,
 \newblock Roberta: {A} robustly optimized {BERT} pretraining approach.
 \newblock {\em CoRR}, abs/1907.11692.
 
-\bibitem[Menick et~al., 2022]{menick2022teachinglanguagemodelssupport}
-Menick, J., Trebacz, M., Mikulik, V., Aslanides, J., Song, F., Chadwick, M.,
-  Glaese, M., Young, S., Campbell-Gillingham, L., Irving, G., and McAleese, N.
-  (2022).
-\newblock Teaching language models to support answers with verified quotes.
-
 \bibitem[Mikolov et~al., 2013]{mikolov}
 Mikolov, T., Chen, K., Corrado, G., and Dean, J. (2013).
 \newblock Efficient estimation of word representations in vector space.
@@ -389,14 +273,6 @@ Mroczkowski, R., Rybak, P., Wr{\'o}blewska, A., and Gawlik, I. (2021).
   for {P}olish.
 \newblock In {\em Proceedings of the 8th Workshop on Balto-Slavic Natural
   Language Processing}, pages 1--10, Kiyv, Ukraine. Association for
-  Computational Linguistics.
-
-\bibitem[Muennighoff et~al., 2023]{muennighoff-etal-2023-mteb}
-Muennighoff, N., Tazi, N., Magne, L., and Reimers, N. (2023).
-\newblock {MTEB}: Massive text embedding benchmark.
-\newblock In Vlachos, A. and Augenstein, I., editors, {\em Proceedings of the
-  17th Conference of the European Chapter of the Association for Computational
-  Linguistics}, pages 2014--2037, Dubrovnik, Croatia. Association for
   Computational Linguistics.
 
 \bibitem[Nakov et~al., 2021]{clef21}
@@ -436,19 +312,9 @@ N{\o}rregaard, J. and Derczynski, L. (2021).
   Linguistics (NoDaLiDa)}, pages 422--428, Reykjavik, Iceland (Online).
   Link{\"o}ping University Electronic Press, Sweden.
 
-\bibitem[OpenAI, 2023a]{gpt4}
-OpenAI (2023a).
+\bibitem[OpenAI, 2023]{gpt4}
+OpenAI (2023).
 \newblock Gpt-4 technical report.
-
-\bibitem[OpenAI, 2023b]{tokens}
-OpenAI (2023b).
-\newblock What are tokens and how to count them?
-\newblock Accessed: 15 August 2024.
-
-\bibitem[OpenAI, 2024]{json}
-OpenAI (2024).
-\newblock Introducing structured outputs in the api.
-\newblock Accessed: 15 August 2024.
 
 \bibitem[Pan et~al., 2021]{pan2021zeroshot}
 Pan, L., Chen, W., Xiong, W., Kan, M.-Y., and Wang, W.~Y. (2021).
@@ -460,14 +326,6 @@ Patel, D. and Ahmad, A. (2023).
 \newblock
   \url{https://www.semianalysis.com/p/google-we-have-no-moat-and-neither}.
 \newblock Accessed: 2023-09-06.
-
-\bibitem[Pedregosa et~al., 2011]{scikit-learn}
-Pedregosa, F., Varoquaux, G., Gramfort, A., Michel, V., Thirion, B., Grisel,
-  O., Blondel, M., Prettenhofer, P., Weiss, R., Dubourg, V., Vanderplas, J.,
-  Passos, A., Cournapeau, D., Brucher, M., Perrot, M., and Duchesnay, E.
-  (2011).
-\newblock Scikit-learn: Machine learning in {P}ython.
-\newblock {\em Journal of Machine Learning Research}, 12:2825--2830.
 
 \bibitem[Pennington et~al., 2014]{pennington-etal-2014-glove}
 Pennington, J., Socher, R., and Manning, C. (2014).
@@ -507,12 +365,6 @@ Rajpurkar, P., Zhang, J., Lopyrev, K., and Liang, P. (2016).
 \newblock Squad: 100, 000+ questions for machine comprehension of text.
 \newblock {\em CoRR}, abs/1606.05250.
 
-\bibitem[Robertson et~al., 1995]{bm25}
-Robertson, S., Walker, S., Jones, S., Hancock-Beaulieu, M.~M., and Gatford, M.
-  (1995).
-\newblock Okapi at trec-3.
-\newblock In {\em Overview of the Third Text REtrieval Conference (TREC-3)}.
-
 \bibitem[Rýpar, 2021]{rypar}
 Rýpar, M. (2021).
 \newblock Methods of document retrieval for fact-checking.
@@ -524,14 +376,6 @@ Saeed, W. and Omlin, C. (2023).
 \newblock Explainable ai (xai): A systematic meta-survey of current challenges
   and future opportunities.
 \newblock {\em Knowledge-Based Systems}, 263:110273.
-
-\bibitem[Schlichtkrull et~al., 2024]{averitec2024}
-Schlichtkrull, M., Guo, Z., and Vlachos, A. (2024).
-\newblock Averitec: a dataset for real-world claim verification with evidence
-  from the web.
-\newblock In {\em Proceedings of the 37th International Conference on Neural
-  Information Processing Systems}, NIPS '23, Red Hook, NY, USA. Curran
-  Associates Inc.
 
 \bibitem[Schuster et~al., 2021]{DBLP:journals/corr/abs-2103-08541}
 Schuster, T., Fisch, A., and Barzilay, R. (2021).
@@ -598,12 +442,6 @@ Szwoch, J., Staszkow, M., Rzepka, R., and Araki, K. (2022).
   Processing for Political Sciences}, pages 86--90, Marseille, France. European
   Language Resources Association.
 
-\bibitem[Tang et~al., 2024]{tang2024strucbenchlargelanguagemodels}
-Tang, X., Zong, Y., Phang, J., Zhao, Y., Zhou, W., Cohan, A., and Gerstein, M.
-  (2024).
-\newblock Struc-bench: Are large language models really good at generating
-  complex structured data?
-
 \bibitem[Taori et~al., 2023]{alpaca}
 Taori, R., Gulrajani, I., Zhang, T., Dubois, Y., Li, X., Guestrin, C., Liang,
   P., and Hashimoto, T.~B. (2023).
@@ -635,31 +473,12 @@ Thorne, J., Vlachos, A., Christodoulopoulos, C., and Mittal, A. (2018a).
   {VERification}.
 \newblock In {\em NAACL-HLT}.
 
-\bibitem[Thorne et~al., 2018b]{thorne-etal-2018-fever}
-Thorne, J., Vlachos, A., Christodoulopoulos, C., and Mittal, A. (2018b).
-\newblock {FEVER}: a large-scale dataset for fact extraction and
-  {VER}ification.
-\newblock In Walker, M., Ji, H., and Stent, A., editors, {\em Proceedings of
-  the 2018 Conference of the North {A}merican Chapter of the Association for
-  Computational Linguistics: Human Language Technologies, Volume 1 (Long
-  Papers)}, pages 809--819, New Orleans, Louisiana. Association for
-  Computational Linguistics.
-
-\bibitem[Thorne et~al., 2018c]{fever1}
+\bibitem[Thorne et~al., 2018b]{fever1}
 Thorne, J., Vlachos, A., Cocarascu, O., Christodoulopoulos, C., and Mittal, A.
-  (2018c).
+  (2018b).
 \newblock The {Fact Extraction and VERification (FEVER)} shared task.
 \newblock In {\em Proceedings of the First Workshop on {Fact Extraction and
   VERification (FEVER)}}.
-
-\bibitem[Thorne et~al., 2018d]{thorne-etal-2018-fact}
-Thorne, J., Vlachos, A., Cocarascu, O., Christodoulopoulos, C., and Mittal, A.
-  (2018d).
-\newblock The fact extraction and {VER}ification ({FEVER}) shared task.
-\newblock In Thorne, J., Vlachos, A., Cocarascu, O., Christodoulopoulos, C.,
-  and Mittal, A., editors, {\em Proceedings of the First Workshop on Fact
-  Extraction and {VER}ification ({FEVER})}, pages 1--9, Brussels, Belgium.
-  Association for Computational Linguistics.
 
 \bibitem[Thorne et~al., 2019]{fever2}
 Thorne, J., Vlachos, A., Cocarascu, O., Christodoulopoulos, C., and Mittal, A.
@@ -695,17 +514,11 @@ Ullrich, H. (2021).
 \newblock Dataset for automated fact checking in czech language.
 \newblock \url{https://dspace.cvut.cz/handle/10467/95430}.
 
-\bibitem[Ullrich et~al., 2023a]{lrev}
+\bibitem[Ullrich et~al., 2023]{lrev}
 Ullrich, H., Drchal, J., R{\'y}par, M., Vincourov{\'a}, H., and Moravec, V.
-  (2023a).
+  (2023).
 \newblock Csfever and ctkfacts: acquiring czech data for fact verification.
 \newblock {\em Language Resources and Evaluation}.
-
-\bibitem[Ullrich et~al., 2023b]{Ullrich2023}
-Ullrich, H., Drchal, J., R{\'y}par, M., Vincourov{\'a}, H., and Moravec, V.
-  (2023b).
-\newblock Csfever and ctkfacts: acquiring czech data for fact verification.
-\newblock {\em Language Resources and Evaluation}, 57(4):1571--1605.
 
 \bibitem[Vaswani et~al., 2017]{vaswani}
 Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A.~N.,
@@ -734,15 +547,6 @@ Wardle, C. and Derakhshan, H. (2017).
   research and policy making Information Disorder Toward an interdisciplinary
   framework for research and policymaking}.
 
-\bibitem[Wei et~al., 2024]{cot}
-Wei, J., Wang, X., Schuurmans, D., Bosma, M., Ichter, B., Xia, F., Chi, E.~H.,
-  Le, Q.~V., and Zhou, D. (2024).
-\newblock Chain-of-thought prompting elicits reasoning in large language
-  models.
-\newblock In {\em Proceedings of the 36th International Conference on Neural
-  Information Processing Systems}, NIPS '22, Red Hook, NY, USA. Curran
-  Associates Inc.
-
 \bibitem[Williams et~al., 2018]{multinli}
 Williams, A., Nangia, N., and Bowman, S. (2018).
 \newblock A broad-coverage challenge corpus for sentence understanding through
@@ -751,17 +555,6 @@ Williams, A., Nangia, N., and Bowman, S. (2018).
   Chapter of the Association for Computational Linguistics: Human Language
   Technologies, Volume 1 (Long Papers)}, pages 1112--1122. Association for
   Computational Linguistics.
-
-\bibitem[Wolf et~al., 2020]{wolf-etal-2020-transformers}
-Wolf, T., Debut, L., Sanh, V., Chaumond, J., Delangue, C., Moi, A., Cistac, P.,
-  Rault, T., Louf, R., Funtowicz, M., Davison, J., Shleifer, S., von Platen,
-  P., Ma, C., Jernite, Y., Plu, J., Xu, C., Le~Scao, T., Gugger, S., Drame, M.,
-  Lhoest, Q., and Rush, A. (2020).
-\newblock Transformers: State-of-the-art natural language processing.
-\newblock In Liu, Q. and Schlangen, D., editors, {\em Proceedings of the 2020
-  Conference on Empirical Methods in Natural Language Processing: System
-  Demonstrations}, pages 38--45, Online. Association for Computational
-  Linguistics.
 
 \bibitem[Wright et~al., 2022]{wright}
 Wright, D., Wadden, D., Lo, K., Kuehl, B., Cohan, A., Augenstein, I., and Wang,
