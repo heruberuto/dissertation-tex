@@ -1,5 +1,9 @@
 \begin{thebibliography}{}
 
+\bibitem[Akhtar et~al., 2024]{akhtar2024ev2r}
+Akhtar, M., Schlichtkrull, M., and Vlachos, A. (2024).
+\newblock Ev2r: Evaluating evidence retrieval in automated fact-checking.
+
 \bibitem[Allcott and Gentzkow, 2017]{10.1257/jep.31.2.211}
 Allcott, H. and Gentzkow, M. (2017).
 \newblock Social media and fake news in the 2016 election.
@@ -114,6 +118,14 @@ Conneau, A., Khandelwal, K., Goyal, N., Chaudhary, V., Wenzek, G.,
 Conneau, A., Lample, G., Rinott, R., Williams, A., Bowman, S.~R., Schwenk, H.,
   and Stoyanov, V. (2018).
 \newblock Xnli: Evaluating cross-lingual sentence representations.
+
+\bibitem[DeepSeek-AI et~al.,
+  2025]{deepseekai2025deepseekr1incentivizingreasoningcapability}
+DeepSeek-AI, Guo, D., Yang, D., Zhang, H., Song, J., Zhang, R., Xu, R., Zhu,
+  Q., Ma, S., Wang, P., Bi, X., Zhang, X., Yu, X., Wu, Y., Wu, Z.~F., ..., and
+  Zhang, Z. (2025).
+\newblock Deepseek-r1: Incentivizing reasoning capability in llms via
+  reinforcement learning.
 
 \bibitem[Dettmers et~al., 2023]{dettmers2023qlora}
 Dettmers, T., Pagnoni, A., Holtzman, A., and Zettlemoyer, L. (2023).
@@ -372,6 +384,16 @@ Liu, Y., Ott, M., Goyal, N., Du, J., Joshi, M., Chen, D., Levy, O., Lewis, M.,
 \newblock Roberta: {A} robustly optimized {BERT} pretraining approach.
 \newblock {\em CoRR}, abs/1907.11692.
 
+\bibitem[Malon, 2024]{malon-2024-multi}
+Malon, C. (2024).
+\newblock Multi-hop evidence pursuit meets the web: Team papelo at {FEVER}
+  2024.
+\newblock In Schlichtkrull, M., Chen, Y., Whitehouse, C., Deng, Z., Akhtar, M.,
+  Aly, R., Guo, Z., Christodoulopoulos, C., Cocarascu, O., Mittal, A., Thorne,
+  J., and Vlachos, A., editors, {\em Proceedings of the Seventh Fact Extraction
+  and VERification Workshop (FEVER)}, pages 27--36, Miami, Florida, USA.
+  Association for Computational Linguistics.
+
 \bibitem[Menick et~al., 2022]{menick2022teachinglanguagemodelssupport}
 Menick, J., Trebacz, M., Mikulik, V., Aslanides, J., Song, F., Chadwick, M.,
   Glaese, M., Young, S., Campbell-Gillingham, L., Irving, G., and McAleese, N.
@@ -522,6 +544,15 @@ Robertson, S., Walker, S., Jones, S., Hancock-Beaulieu, M.~M., and Gatford, M.
 \newblock Okapi at trec-3.
 \newblock In {\em Overview of the Third Text REtrieval Conference (TREC-3)}.
 
+\bibitem[Rothermel et~al., 2024]{rothermel-etal-2024-infact}
+Rothermel, M., Braun, T., Rohrbach, M., and Rohrbach, A. (2024).
+\newblock {I}n{F}act: A strong baseline for automated fact-checking.
+\newblock In Schlichtkrull, M., Chen, Y., Whitehouse, C., Deng, Z., Akhtar, M.,
+  Aly, R., Guo, Z., Christodoulopoulos, C., Cocarascu, O., Mittal, A., Thorne,
+  J., and Vlachos, A., editors, {\em Proceedings of the Seventh Fact Extraction
+  and VERification Workshop (FEVER)}, pages 108--112, Miami, Florida, USA.
+  Association for Computational Linguistics.
+
 \bibitem[Rýpar, 2021]{rypar}
 Rýpar, M. (2021).
 \newblock Methods of document retrieval for fact-checking.
@@ -534,8 +565,20 @@ Saeed, W. and Omlin, C. (2023).
   and future opportunities.
 \newblock {\em Knowledge-Based Systems}, 263:110273.
 
-\bibitem[Schlichtkrull et~al., 2024]{averitec2024}
-Schlichtkrull, M., Guo, Z., and Vlachos, A. (2024).
+\bibitem[Schlichtkrull et~al., 2024a]{schlichtkrull-etal-2024-automated}
+Schlichtkrull, M., Chen, Y., Whitehouse, C., Deng, Z., Akhtar, M., Aly, R.,
+  Guo, Z., Christodoulopoulos, C., Cocarascu, O., Mittal, A., Thorne, J., and
+  Vlachos, A. (2024a).
+\newblock The automated verification of textual claims ({AV}eri{T}e{C}) shared
+  task.
+\newblock In Schlichtkrull, M., Chen, Y., Whitehouse, C., Deng, Z., Akhtar, M.,
+  Aly, R., Guo, Z., Christodoulopoulos, C., Cocarascu, O., Mittal, A., Thorne,
+  J., and Vlachos, A., editors, {\em Proceedings of the Seventh Fact Extraction
+  and VERification Workshop (FEVER)}, pages 1--26, Miami, Florida, USA.
+  Association for Computational Linguistics.
+
+\bibitem[Schlichtkrull et~al., 2024b]{averitec2024}
+Schlichtkrull, M., Guo, Z., and Vlachos, A. (2024b).
 \newblock Averitec: a dataset for real-world claim verification with evidence
   from the web.
 \newblock In {\em Proceedings of the 37th International Conference on Neural
@@ -716,6 +759,16 @@ Ullrich, H., Drchal, J., R{\'y}par, M., Vincourov{\'a}, H., and Moravec, V.
 \newblock Csfever and ctkfacts: acquiring czech data for fact verification.
 \newblock {\em Language Resources and Evaluation}, 57(4):1571--1605.
 
+\bibitem[Ullrich et~al., 2024]{ullrich-etal-2024-aic}
+Ullrich, H., Mlyn{\'a}{\v{r}}, T., and Drchal, J. (2024).
+\newblock {AIC} {CTU} system at {AV}eri{T}e{C}: Re-framing automated
+  fact-checking as a simple {RAG} task.
+\newblock In Schlichtkrull, M., Chen, Y., Whitehouse, C., Deng, Z., Akhtar, M.,
+  Aly, R., Guo, Z., Christodoulopoulos, C., Cocarascu, O., Mittal, A., Thorne,
+  J., and Vlachos, A., editors, {\em Proceedings of the Seventh Fact Extraction
+  and VERification Workshop (FEVER)}, pages 137--150, Miami, Florida, USA.
+  Association for Computational Linguistics.
+
 \bibitem[Vaswani et~al., 2017]{vaswani}
 Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A.~N.,
   Kaiser, L., and Polosukhin, I. (2017).
@@ -785,6 +838,12 @@ Yamada, I., Asai, A., Shindo, H., Takeda, H., and Matsumoto, Y. (2020).
 \newblock Luke: Deep contextualized entity representations with entity-aware
   self-attention.
 
+\bibitem[Yang et~al., 2025]{yang2025qwen3technicalreport}
+Yang, A., Li, A., Yang, B., Zhang, B., Hui, B., Zheng, B., Yu, B., Gao, C.,
+  Huang, C., Lv, C., Zheng, C., Liu, D., Zhou, F., Huang, F., Zhou, F. H. .~Z.,
+  and Qiu, Z. (2025).
+\newblock Qwen3 technical report.
+
 \bibitem[Yasunaga et~al., 2021]{yasunaga-etal-2021-lm}
 Yasunaga, M., Leskovec, J., and Liang, P. (2021).
 \newblock {LM}-critic: Language models for unsupervised grammatical error
@@ -792,6 +851,16 @@ Yasunaga, M., Leskovec, J., and Liang, P. (2021).
 \newblock In {\em Proceedings of the 2021 Conference on Empirical Methods in
   Natural Language Processing}, pages 7752--7763, Online and Punta Cana,
   Dominican Republic. Association for Computational Linguistics.
+
+\bibitem[Yoon et~al., 2024]{yoon-etal-2024-hero}
+Yoon, Y., Jung, J., Yoon, S., and Park, K. (2024).
+\newblock {H}er{O} at {AV}eri{T}e{C}: The herd of open large language models
+  for verifying real-world claims.
+\newblock In Schlichtkrull, M., Chen, Y., Whitehouse, C., Deng, Z., Akhtar, M.,
+  Aly, R., Guo, Z., Christodoulopoulos, C., Cocarascu, O., Mittal, A., Thorne,
+  J., and Vlachos, A., editors, {\em Proceedings of the Seventh Fact Extraction
+  and VERification Workshop (FEVER)}, pages 130--136, Miami, Florida, USA.
+  Association for Computational Linguistics.
 
 \bibitem[Zha et~al., 2023]{zha2023alignscore}
 Zha, Y., Yang, Y., Li, R., and Hu, Z. (2023).
