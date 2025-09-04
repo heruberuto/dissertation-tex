@@ -46,7 +46,7 @@ Our pipeline, depicted in Figure~\ref{fig:pipeline2025}, consists of precomputat
     \end{enumerate}
     \item Evidence \& label generation module
     \begin{enumerate}[1.]   % Second-level: 1., 2., 3.
-        \item We instruct a Large Language Model (LLM) to produce Question-Answer pairs required to fact-check given claim based on the provided sources, and predict its veracity verdict in a single output. We pass it the texts of all $l$ sources, and several few-shot QA-pair generation examples picked from Averitec train set retrieved using BM25 based on the tested claim. The whole instruction is serialized into a system prompt and the format we used can be seen in Appendix~\ref{appendix_sec:system2025_prompt}.
+        \item We instruct a Large Language Model (LLM) to produce Question-Answer pairs required to fact-check given claim based on the provided sources, and predict its veracity verdict in a single output. We pass it the texts of all $l$ sources, and several few-shot QA-pair generation examples picked from Averitec train set retrieved using BM25 based on the tested claim. The whole instruction is serialized into a system prompt and the format we used can be seen in Appendix~\ref{appendix_sec:system_prompt}.
         \item \textbf{Claim} is then passed to the LLM as a user message.
         \item LLM is called to \textbf{generate the evidence} as a Question-Answer-Source triples and the Likert-scale scores for each possible \textbf{veracity verdict} in a single prediction, performing a chain of thought. 
         \item The LLM output is parsed, and the verdict with the highest score is chosen for the claim.

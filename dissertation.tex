@@ -171,5 +171,212 @@
 \item[ČTK] Czech Press Agency
 \end{description}
 
+\chapter{Prompts and metaparameters}
+\section{Examples of errors}
+\label{appendix_sec:errors}
+\lstset{
+    %framexleftmargin=5mm,
+    basicstyle=\ttfamily\footnotesize\linespread{0.9}, % Smaller font with less spacing
+    numbers=none, % Line numbers on the left
+    stepnumber=1, % Line numbers for every line
+    numbersep=5pt, % Space between line numbers and code
+    tabsize=4, % Size of tabs
+    showstringspaces=false, % Don't show spaces in strings
+    breaklines=true, % Line wrapping
+    breakatwhitespace=true,
+    frame=lines, % Add a frame around the code
+    captionpos=b, % Caption at the 
+    breakindent=1em,
+    frame=single
+}
+
+\begin{lstlisting}[caption={Example of a claim where our pipeline uses newspaper sources instead of official government sources.}, label={lst:gov_error}, breaklines=true, breakatwhitespace=false, columns=fullflexible]
+Claim 479: Donald Trump said "When the anarchists started ripping down our statues and monuments, right outside, I signed an order immediately, 10 years in prison."
+
+gold evidence example: 
+    question: What was the law signed by Trump regarding damaging federal property?
+    answer: Trump signed an executive order that authorizes a penalty of up to 10 years in prison for damaging federal property. It does not say that it will automatically be a 10 year prison sentence.,
+    source_url: https://web.archive.org/web/20210224033536/https://www.whitehouse.gov/presidential-actions/executive-order-protecting-american-monuments-memorials-statues-combating-recent-criminal-violence/
+
+pipeline evidence example: 
+    question: Did Trump sign an order related to vandalism of statues and monuments?, 
+    answer: Yes, Trump signed an executive order to prosecute those who damage national monuments, making it a punishable offense with up to 10 years in jail.,
+    url: https://m.economictimes.com/news/international/world-news/trump-makes-vandalising-national-monuments-punishable-offence-with-up-to-10-yrs-jail/articleshow/76658610.cms
+    
+\end{lstlisting}
+
+\begin{lstlisting}[caption={Example of a claim and questions showing that the last tends to be unrelated or redundant to fact-checking of the claim.}, label={lst:unrelated_questions}, breaklines=true, breakatwhitespace=false, columns=fullflexible]
+Claim 295: Trump campaign asked Joe Biden to release a list of potential Supreme Court picks only after Ginsburg's passing
+question 1: Did Joe Biden claim that the Trump campaign asked him to release a list of potential Supreme Court picks only after Ginsburg's passing?
+question 2: Did the Trump campaign ask Joe Biden to release a list of potential Supreme Court picks before Ginsburg's passing?
+question 3: When did Trump release his latest list of potential Supreme Court nominees?
+question 4: Did Trump personally demand that Biden release a list of potential Supreme Court nominees before Ginsburg's death?
+question 5: What did Trump say about Biden releasing a list of potential Supreme Court nominees during the Republican National Convention?
+question 6: Did the Trump campaign issue a statement on September 17, 2020, regarding Biden releasing a list of potential Supreme Court nominees?
+question 7: What did the Trump campaign's statement on September 9, 2020, say about Biden releasing a list of potential Supreme Court nominees?
+question 8: Did Biden indicate in June 2020 that he might release a list of potential Supreme Court picks?
+quetion 9: What reason did Biden give for not releasing a list of potential Supreme Court nominees?,
+question 10: Did Biden pledge to nominate a Black woman to the Supreme Court?
+    
+\end{lstlisting}
+
+\begin{lstlisting}[caption={Example of a claim where our pipeline did not exactly extract the answer.}, label={lst:extractive_error}, breaklines=true, breakatwhitespace=false, columns=fullflexible]
+Claim #155 - Trump said 'there were fine people on both side' in far-right protests.
+answer: "You had some very bad people in that group, but you also had people that were very fine people, on both sides.", 
+answer_type: Extractive
+url: https://www.theatlantic.com/politics/archive/2017/08/trump-defends-white-nationalist-protesters-some-very-fine-people-on-both-sides/537012/
+scraped text: ... "You also had some very fine people on both sides," he said. The Unite the Right rally that sparked the violence in Charlottesville featured several leading names in the white-nationalist alt-right movement, and also attracted people displaying Nazi symbols. ...
+\end{lstlisting}
+
+\begin{lstlisting}[caption={An example of a claim where the evidence consists mainly of evidence from PolitiFact and Factcheck.org fact-checking articles leading to different predicted label than in the gold dataset}, label={lst:polifact_leakage}, breaklines=true, breakatwhitespace=false, columns=fullflexible]
+Claim #483 - Donald Trump said "We have spent nearly $2.5 trillion on completely rebuilding our military, which was very badly depleted when I took office."
+Gold Label: Not Enough Evidence
+Predicted Label: Refuted
+pipeline evidence example: 
+    question: What is the total defense budget for the last four fiscal years under Trump?
+    url: https://www.politifact.com/factchecks/2020/jan/10/donald-trump/trump-exaggerates-spending-us-military-rebuild/
+    question: Did Trump spend $2.5 trillion specifically on rebuilding the military?
+    url: https://www.factcheck.org/2020/07/trumps-false-military-equipment-claim/
+    ...
+\end{lstlisting}
+\pagebreak
+\begin{lstlisting}[caption={An example of a claims which differs in length.}, label={lst:different_lengths}, breaklines=true, breakatwhitespace=false, columns=fullflexible]
+Claim #0 - In a letter to Steve Jobs, Sean Connery refused to appear in an apple commercial.
+Gold Evidence:
+    question: Where was the claim first published
+    answer: It was first published on Sccopertino
+    question: What kind of website is Scoopertino
+    answer: Scoopertino is an imaginary news organization devoted to ferreting out the most relevant stories in the world of Apple, whether or not they actually occurred - says their about page
+
+Claim #315 - The fastest Supreme Court justice ever confirmed in the U.S. was 47 days.
+Gold Evidence:
+    question: What is the quickest time a Supreme Court justice nomination has been confirmed in the United States?
+    answer: John Paul Stevens waited the fewest number of days (19)-followed by the most recent nominee to the Court, Amy Coney Barrett (27).61
+    question: What is the average number of days between a nomination for a Supreme Court justice and the final Senate vote?
+    answer: Overall, the average number of days from nomination to final Senate vote is 68.2 days (or approximately 2.2 months), while the median is 69.0 days.62 Of the 9 Justices currently serving on the Court, the average number of days from nomination to final Senate vote is 72.1 days (or approximately 2.4 months), while the median is 73.0 days. Among the current Justices, Amy Coney Barrett waited the fewest number of days from nomination to confirmation (27), while Clarence Thomas waited the greatest number of days (99).
+\end{lstlisting}
+
+
+\lstset{
+    language={},
+    basicstyle=\ttfamily\footnotesize\linespread{0.9}, % Smaller font with less spacing
+    keywordstyle=\color{blue}\bfseries,
+    commentstyle=\color{green!50!black}\itshape,
+    stringstyle=\color{orange},
+    numberstyle=\tiny\color{gray},
+    numbers=none, % Line numbers on the left
+    stepnumber=1, % Line numbers for every line
+    numbersep=5pt, % Space between line numbers and code
+    tabsize=4, % Size of tabs
+    showstringspaces=false, % Don't show spaces in strings
+    breaklines=true, % Line wrapping
+    breakatwhitespace=true,
+    frame=lines, % Add a frame around the code
+    captionpos=b, % Caption at the 
+    breakindent=1em,
+}
+\begin{figure*}
+    \section{System prompt}
+    \label{appendix_sec:system_prompt}
+    \begin{lstlisting}[breaklines=true, language={}, frame=single, caption={System prompt for the LLMs, \averitec{} claim is to be entered into the user prompt. Three dots represent omitted repeating parts of the prompt. Reprinted from~\cite{ullrich-etal-2024-aic}.}, label={lst:llm_system_prompt}]
+You are a professional fact checker, formulate up to 10 questions that cover all the facts needed to validate whether the factual statement (in User message) is true, false, uncertain or a matter of opinion. Each question has one of four answer types: Boolean, Extractive, Abstractive and Unanswerable using the provided sources.
+After formulating Your questions and their answers using the provided sources, You evaluate the possible veracity verdicts (Supported claim, Refuted claim, Not enough evidence, or Conflicting evidence/Cherrypicking) given your claim and evidence on a Likert scale (1 - Strongly disagree, 2 - Disagree, 3 - Neutral, 4 - Agree, 5 - Strongly agree). Ultimately, you note the single likeliest veracity verdict according to your best knowledge.
+The facts must be coming from these sources, please refer them using assigned IDs:
+---
+## Source ID: 1 [url]
+[context before]
+[page content]
+[context after]
+...
+
+---
+## Output formatting
+Please, you MUST only print the output in the following output format:
+```json
+{
+ "questions":
+     [
+         {"question": "<Your first question>", "answer": "<The answer to the Your first question>", "source": "<Single numeric source ID backing the answer for Your first question>", "answer_type":"<The type of first answer>"},
+         {"question": "<Your second question>", "answer": "<The answer to the Your second question>", "source": "<Single numeric Source ID backing the answer for Your second question>", "answer_type":"<The type of second answer>"}
+     ],
+ "claim_veracity": {
+     "Supported": "<Likert-scale rating of how much You agree with the 'Supported' veracity classification>",
+     "Refuted": "<Likert-scale rating of how much You agree with the 'Refuted' veracity classification>",
+     "Not Enough Evidence": "<Likert-scale rating of how much You agree with the 'Not Enough Evidence' veracity classification>",
+     "Conflicting Evidence/Cherrypicking": "<Likert-scale rating of how much You agree with the 'Conflicting Evidence/Cherrypicking' veracity classification>"
+ },
+ "veracity_verdict": "<The suggested veracity classification for the claim>"
+}
+```
+---
+## Few-shot learning
+You have access to the following few-shot learning examples for questions and answers.:
+
+### Question examples for claim "{example["claim"]}" (verdict {example["gold_label"]})
+"question": "{question}", "answer": "{answer}", "answer_type": "{answer_type}"
+...
+    \end{lstlisting}
+\end{figure*}
+
+
+\label{appendix_sec:think}
+
+
+\lstset{
+    language={},
+    basicstyle=\ttfamily\footnotesize\linespread{0.9}, % Smaller font with less spacing
+    keywordstyle=\color{blue}\bfseries,
+    commentstyle=\color{green!50!black}\itshape,
+    stringstyle=\color{orange},
+    numberstyle=\tiny\color{gray},
+    numbers=none, % Line numbers on the left
+    stepnumber=1, % Line numbers for every line
+    numbersep=5pt, % Space between line numbers and code
+    tabsize=4, % Size of tabs
+    showstringspaces=false, % Don't show spaces in strings
+    breaklines=true, % Line wrapping
+    breakatwhitespace=true,
+    frame=lines, % Add a frame around the code
+    captionpos=b, % Caption at the 
+    breakindent=1em,
+}
+\begin{figure*}
+    \section{Qwen3 thinking example}
+    \label{appendix_sec:think}
+    \begin{lstlisting}[breaklines=true, language={}, frame=single, caption={Qwen3 thinking tokens example.}, label={lst:think}]
+<think>
+Okay, let's tackle this query. The user is claiming that due to Imran Khan's criticism of Macron's comments on Islam, French authorities cancelled the visas of 183 Pakistani citizens and deported 118 from the country. I need to verify this using the provided sources.
+
+First, I'll look through the sources to see if there's any mention of visa cancellations or deportations related to Imran Khan's criticism. 
+
+Looking at Source ID 1, it talks about Imran Khan responding to Macron's remarks and the condemnation of Islamophobic policies, but there's no mention of visa cancellations or deportations. 
+...
+Source ID 4 and 5 discuss diplomatic tensions, but not specific numbers of deportations. Source 5 and 6 from Newscomworld.com talk about fears of deportations of Pakistanis in France but don't mention specific numbers like 183 or 118.
+...
+Source ID 10 mentions Pakistan summoning the French envoy but again, no numbers on deportations.
+
+None of the sources mention 183 visas cancelled or 118 deported. The closest is Source 2, which mentions one individual, Muhammad Mansha, but that's a single case. The other sources discuss diplomatic tensions, protests, and possible fears of deportations but no actual numbers provided. 
+
+Therefore, the claim about 183 and 118 seems to be unsupported. The answer would be that there's no evidence of such numbers in the sources provided. The veracity verdict would be Refuted, as the sources don't support the specific numbers given.
+</think>
+
+```json
+{
+    "questions": [
+        {"question": "Did French authorities cancel visas or deport Pakistani citizens in response to Imran Khan's criticism of Macron's comments on Islam?", "answer": "No specific information about visa cancellations or deportations of 183 Pakistani citizens or 118 deportees is mentioned in the provided sources.", "source": "10", "answer_type": "Boolean"},
+        ...
+        {"question": "What was the role of social media in the diplomatic dispute between Pakistan and France?", "answer": "Social media was used to spread calls for boycotts of French products and even nuclear attacks on France, but these were not confirmed by official sources.", "source": "5", "answer_type": "Extractive"}
+    ],
+    "claim_veracity": {
+        "Supported": "1",
+        "Refuted": "5",
+        "Not Enough Evidence": "1",
+        "Conflicting Evidence/Cherrypicking": "1"
+    },
+    "veracity_verdict": "Refuted"
+}
+```
+    \end{lstlisting}
+\end{figure*}
 
 \end{document}
